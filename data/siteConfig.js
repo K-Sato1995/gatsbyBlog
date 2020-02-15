@@ -2,11 +2,11 @@ module.exports = {
   siteTitle: "K-Sato's Blog",
   siteDescription: 'This is my blog',
   authorName: 'K-Sato',
-  twitterUsername: 'k-sato',
+  twitterUsername: '_k-sato',
   authorAvatar: 'avatar.png', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `K-Sato yade`,
-  siteUrl: '',
+  siteUrl: 'https://k-sato.github.io/',
   disqusSiteUrl: 'https://k-sato-blog',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
   pathPrefix: '/k-sato', // Note: it must *not* have a trailing slash.
