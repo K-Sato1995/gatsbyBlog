@@ -6,8 +6,8 @@ module.exports = {
   authorAvatar: 'avatar.png', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
   authorDescription: `K-Sato yade`,
-  siteUrl: 'https://k-sato.github.io/',
-  disqusSiteUrl: 'https://k-sato-blog',
+  siteUrl: 'https://k-sato-blog.netlify.com',
+  disqusSiteUrl: 'https://k-sato-blog.netlify.com',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
   pathPrefix: '/k-sato', // Note: it must *not* have a trailing slash.
   siteCover: 'background.jpeg', // file in content/images
@@ -17,7 +17,7 @@ module.exports = {
   display: 'standalone',
   icon: 'content/images/avatar.png',
   postsPerPage: 6,
-  disqusShortname: 'k-sato-blog',
+  disqusShortname: 'k-sato-blog-1',
   headerTitle: 'K-Sato',
   headerLinksIcon: 'avatar.png', //  (leave empty to disable: '')
   headerLinks: [
