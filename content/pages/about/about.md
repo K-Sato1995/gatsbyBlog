@@ -1,39 +1,40 @@
 ---
-title: 'About gatsby-starter-morning-dew'
+title: 'About K-Sato'
+subTitle: 'Dedicated Software-Engineer specializing in Web applicaiton development.'
 slug: about
-cover: ./gatsby-cover.png
 disqus: true
 ---
 
-[![Build Status](https://travis-ci.org/maxpou/gatsby-starter-morning-dew.svg?branch=master)](https://travis-ci.org/maxpou/gatsby-starter-morning-dew) [![Netlify Status](https://api.netlify.com/api/v1/badges/d68027bd-19b5-44fd-a2a3-d1f05fc8201e/deploy-status)](https://app.netlify.com/sites/gatsby-starter-morning-dew/deploys) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![Maintainability](https://api.codeclimate.com/v1/badges/e09f1ac1a5cdb2987a6f/maintainability)](https://codeclimate.com/github/maxpou/gatsby-starter-morning-dew/maintainability) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+# Self Introduction
 
-## gatsby-starter-morning-dew
+People often find me outgoing, upbeat, self-motivated and some of my close friends find me a little goofy. I grew up in a very small and peaceful town and moved to a huge city for college.
 
-A gatsby-starter-morning-dew is a Gatsby theme/starter to build lightning-fast websites!
+In college, I majored in political science and mainly spent my time there studying international political economy and public economics. I also started coding when I was a senior and have been studying programming since then.
 
-[Demo website.](https://maxpou.github.io/gatsby-starter-morning-dew/)
+Though what I learnt in college was academically very interesting, I didn't necessarily consider myself suitable for a politician or economist. I also was not interested in sales or marketing which a lot of my friends in the same department ended up doing after college. So I ended up getting a job as a webdeveloper since I really liked coding and I was really fascinated with the idea of createing something unique and original that didn't exist before.
 
-![screenshot](https://i.imgur.com/Tv4SFqT.png)
+## Interests
 
-## Features
+### Programming💻
 
-- [💜 Gatsby v2](https://www.gatsbyjs.org/) / React 16
-- 🔍 SEO optimized
-- 💌 Write posts/pages in Markdown or [MDX](https://mdxjs.com/)
-  - 🎨 Code syntax highlight
-  - 📚 Multilang support (blog post)
-- 📱 Mobile Friendly (Responsive design)
-- ✨ PWA ready
-  - ✈️ Offline support
-  - 📃 Manifest support
-- [🔧 Fully configurable (see data/siteConfig.js)](./data/siteConfig.js)
-- 💬 Disqus support
-- 💅 css-in-js (with [styled-components](https://www.styled-components.com))
-- 🧙‍♀️ Use it as a starter or [as a theme](https://www.gatsbyjs.org/blog/2018-11-11-introducing-gatsby-themes/)
-- 🔖 Groups post with tags
-- 📊 Google Analytics support
-- 🐦 post preview image generation (Twitter, Facebook)
-- 💎 Developer tools (eslint, prettier)
-- 👷 Travis CI support
+Love coding. Always eager to learn new things.
 
-![Lighthouse scores (locally :bowtie:)](https://lighthouse.now.sh/?perf=100&pwa=100&a11y=100&bp=100&seo=100)
+### Baseball⚾️
+
+I played baseball from 10 years when I was younger. Don't play it anymore but still love to watch games.
+
+### Dogs🐶
+
+Love dogs. My family has a little shiba-inu.
+
+### Trveling🗺
+
+Love to travel. Being able to experience other cultures is such a privilege and it definetly broadens my perspective of the world.
+
+### Languages🌍
+
+I like learning foreign languages. Being able to speak more than 3 different languages has always been my dream.
+
+### Movies🎥
+
+I like all kinds of movies. Especially into SF and Action movies.
