@@ -5,9 +5,9 @@ date: 2019-10-01
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Rails
-description: Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications.
+description: "Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications."
 ---
 # Create author resources  
 

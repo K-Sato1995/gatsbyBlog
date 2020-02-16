@@ -5,9 +5,9 @@ date: 2019-05-09
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Language
-description: Record of my English learning journey.
+description: "Record of my English learning journey."
 ---
 # Introduction
 This is basically a summary of how I've been improving my English ability in my life.

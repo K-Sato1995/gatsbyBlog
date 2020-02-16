@@ -5,11 +5,11 @@ date: 2018-12-15
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - ESLint
   - Javascript
   - Tutorial
-description: This is just a quick guideline to install ESLint in your JS applications. Follow the steps below and install all the necessary packages.
+description: "This is just a quick guideline to install ESLint in your JS applications. Follow the steps below and install all the necessary packages."
 ---
 # Introduction 
 This is just a quick guideline to install `ESLint` in your JS applications.

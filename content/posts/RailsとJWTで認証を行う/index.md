@@ -5,9 +5,9 @@ date: 2019-10-31
 language: japanese
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - JWT
-description: RailsでJWTを使用したトークンベース認証の方法のまとめ。
+description: "RailsでJWTを使用したトークンベース認証の方法のまとめ。"
 ---
 # 方法1 ruby jwt gemを使用して実装
 

@@ -5,9 +5,9 @@ date: 2019-09-27
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Rake
-description: Simple post about rake.
+description: "Simple post about rake."
 ---
 # What is rake 
 

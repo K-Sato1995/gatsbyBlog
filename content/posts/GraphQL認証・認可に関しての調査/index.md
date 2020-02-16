@@ -5,9 +5,9 @@ date: 2019-12-10
 language: japanese
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - GraphQL
-description: GraphQL認証・認可に関しての調査で役立ったリンク集
+description: "GraphQL認証・認可に関しての調査で役立ったリンク集"
 ---
 # 認証系
 

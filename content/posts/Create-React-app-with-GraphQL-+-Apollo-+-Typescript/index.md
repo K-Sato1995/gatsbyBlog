@@ -5,11 +5,11 @@ date: 2019-07-20
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - GraphQL
   - Apollo
   - Typescript
-description: A quick demonstration of how to create a react app in Typescript with GraphQL + Apollo + Typescript + GraphQLCodeGen.
+description: "A quick demonstration of how to create a react app in Typescript with GraphQL + Apollo + Typescript + GraphQLCodeGen."
 ---
 # Installation
 

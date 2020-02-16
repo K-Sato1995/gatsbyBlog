@@ -5,11 +5,11 @@ date: 2019-12-10
 language: japanese
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Rails
   - JWT
   - Firebase
-description: Firebase+React+Railsでの認証の流れまとめ。
+description: "Firebase+React+Railsでの認証の流れまとめ。"
 ---
 # 認証流れ整理
 

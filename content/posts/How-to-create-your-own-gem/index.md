@@ -5,12 +5,12 @@ date: 2018-09-25
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Ruby
   - Gem
   - Rails
   - Tutorial
-description: In this post, I am going to demonstrate how to create and publish your own gem.  I'll create and publish a very simple gem called `spell-generator` and I'll install and use it in my other ruby program.
+description: "In this post, I am going to demonstrate how to create and publish your own gem.  I'll create and publish a very simple gem called `spell-generator` and I'll install and use it in my other ruby program."
 ---
 # Introduction 
  In this post, I am going to demonstrate how to create and publish your own gem.  I'll create and publish a very simple gem called `spell-generator` and I'll install and use it in my other ruby program.

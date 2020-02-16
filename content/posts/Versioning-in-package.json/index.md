@@ -5,9 +5,9 @@ date: 2019-09-12
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - npm
-description: What the f**k are the (~) and (^) in package.json??? Well...You'll find it out here in this post.
+description: "What the f**k are the (~) and (^) in package.json??? Well...You'll find it out here in this post."
 ---
 # Introduction
 npm uses the package.json file to specify the version of a package that your app depends on.

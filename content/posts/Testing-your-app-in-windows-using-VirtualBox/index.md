@@ -5,9 +5,9 @@ date: 2019-06-13
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - VirtualBox
-description: Quick overview of how to use VirtualBox to test your web app in windows.
+description: "Quick overview of how to use VirtualBox to test your web app in windows."
 ---
 # (1) Download VirtualBox
 

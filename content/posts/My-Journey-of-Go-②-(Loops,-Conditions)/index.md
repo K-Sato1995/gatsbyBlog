@@ -5,11 +5,11 @@ date: 2018-09-24
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Go
   - Tutorial
-description:  In this post, I will write about how looping and conditional statements work in Go. For is Go's only looping construct. Basic for loop consists of three parts that are listed below.
-The loop terminates the iteration once the condition evaluates to false`.
+description: " In this post, I will write about how looping and conditional statements work in Go. For is Go's only looping construct. Basic for loop consists of three parts that are listed below.
+The loop terminates the iteration once the condition evaluates to false`."
 ---
 # Overview
  In this post, I will write about how looping and conditional statements work in Go.

@@ -5,10 +5,10 @@ date: 2019-11-04
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - React
   - Tips
-description: Here are some tips about React.js
+description: "Here are some tips about React.js"
 ---
 # Adding Custom Environment Variables
 Note: this feature is available with react-scripts@0.5.0 and higher.

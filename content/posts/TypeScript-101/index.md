@@ -5,9 +5,9 @@ date: 2019-11-11
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - TypeScript
-description: Some important concepts in TypeScrips 
+description: "Some important concepts in TypeScrips "
 ---
 # Types
 

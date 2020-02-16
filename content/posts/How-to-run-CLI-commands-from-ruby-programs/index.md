@@ -5,9 +5,9 @@ date: 2019-07-02
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Ruby
-description: This is how you run CLI commands from Ruby programs.
+description: "This is how you run CLI commands from Ruby programs."
 ---
 # The Ruby System Method
 

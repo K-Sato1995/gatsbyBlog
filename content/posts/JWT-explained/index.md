@@ -5,9 +5,9 @@ date: 2019-10-22
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - JWT
-description: What are JSON web tokens (JWT) and how are they used??
+description: "What are JSON web tokens (JWT) and how are they used??"
 ---
 # How it's used
 

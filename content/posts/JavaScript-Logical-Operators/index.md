@@ -5,9 +5,9 @@ date: 2019-11-14
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Javascript
-description: The post is about what a !(exclamation mark) means in JS
+description: "The post is about what a !(exclamation mark) means in JS"
 ---
 # What an exclamation mark means in JS
 

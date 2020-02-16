@@ -5,10 +5,10 @@ date: 2019-06-07
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - npm
   - package
-description: This is a simple guide about how to create your own npm packages.
+description: "This is a simple guide about how to create your own npm packages."
 ---
 # Introduction
 

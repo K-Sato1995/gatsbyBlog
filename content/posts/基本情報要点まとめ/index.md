@@ -5,9 +5,9 @@ date: 2019-05-21
 language: japanese
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - 基本情報
-description: 基本情報で間違えやすい要点をまとめました。
+description: "基本情報で間違えやすい要点をまとめました。"
 ---
 # テクノロジ(知識系)
 

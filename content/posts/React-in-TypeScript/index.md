@@ -5,10 +5,10 @@ date: 2019-07-20
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - TypeScript
   - React
-description: Things I should keep in mind when I'm creating react apps in Typescript.
+description: "Things I should keep in mind when I'm creating react apps in Typescript."
 ---
 # Types or Interfaces?
 `Interfaces` are different from `types` in TypeScript, but they can be used for very similar things as far as common React uses cases are concerned. Here's a helpful rule of thumb:

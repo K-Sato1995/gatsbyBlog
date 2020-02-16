@@ -5,10 +5,10 @@ date: 2019-09-30
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Ruby
   - Gem
-description: Here is a short post about how to use ruby gems in a single ruby script.
+description: "Here is a short post about how to use ruby gems in a single ruby script."
 ---
 # Simple workaround
 

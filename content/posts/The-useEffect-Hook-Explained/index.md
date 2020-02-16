@@ -5,9 +5,9 @@ date: 2019-11-03
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - hooks
-description: The simplest explanation about the second argument of useEfffect.
+description: "The simplest explanation about the second argument of useEfffect."
 ---
 # The first argument
 The useEffect hook takes two arguments, the first is a function that executes (or gets called) after every render. This function will run when the component mounts, as well as when it updates. 

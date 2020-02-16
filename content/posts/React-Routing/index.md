@@ -5,11 +5,12 @@ date: 2018-11-10
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - React
   - react-routing-dom
   - Tutorial
-description: In this post, I am going to talk about how to implement routing in your react applications with [react-router-dom](https://www.npmjs.com/package/react-router-dom).  I will explain how to implement routing as well as passing data around in your components. (I expect you to have react-development-environment on your computer as a prerequisite.)
+description: "In this post, I am going to talk about how to implement routing in your react applications with [react-router-dom](https://www.npmjs.com/package/react-router-dom).  I will explain how to implement routing as well as passing data around in your components. (I expect you to have react-development-environment on your computer as a prerequisite.)
+"
 ---
 # Introduction
 In this post, I am going to talk about how to implement `routing` in your react applications with [react-router-dom](https://www.npmjs.com/package/react-router-dom).    

@@ -5,9 +5,9 @@ date: 2020-01-28
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - React
-description: Just a short post about how to install pollyfill in react apps.
+description: "Just a short post about how to install pollyfill in react apps."
 ---
 # Installation
 

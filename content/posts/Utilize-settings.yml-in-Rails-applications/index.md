@@ -5,10 +5,10 @@ date: 2019-07-04
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Rails
   - Gem
-description: Utilize settings.yml in Rails applications by using a gem called settingslogic.
+description: "Utilize settings.yml in Rails applications by using a gem called settingslogic."
 ---
 # Installation
 Add the following line to your Gemfile and run `bundle install`.

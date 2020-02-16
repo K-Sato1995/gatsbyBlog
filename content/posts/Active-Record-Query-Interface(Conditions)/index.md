@@ -5,10 +5,10 @@ date: 2019-02-08
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - ActiveRecord
   - Rails
-description: This is a pure copy&paste of a part from Active Record Query Interface — Ruby on Rails Guides. The guide is very thorough and super informative.
+description: "This is a pure copy&paste of a part from Active Record Query Interface — Ruby on Rails Guides. The guide is very thorough and super informative."
 ---
 ## Introduction
 

@@ -5,9 +5,9 @@ date: 2019-11-02
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Javascript
-description: A simple explanation about async and await in Javascript.
+description: "A simple explanation about async and await in Javascript."
 ---
 # Async 
 

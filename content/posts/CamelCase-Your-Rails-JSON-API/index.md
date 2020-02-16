@@ -5,9 +5,9 @@ date: 2020-01-28
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Rails
-description: Here is how to make your rails app respond with camel-cased keys.
+description: "Here is how to make your rails app respond with camel-cased keys."
 ---
 # Installation
 

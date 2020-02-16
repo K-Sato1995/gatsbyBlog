@@ -5,11 +5,11 @@ date: 2018-12-16
 language: japanese
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Redux
   - React
   - Tutorial
-description: ReactJSが扱うUIのstate(状態)を管理をするためのフレームワークです。この記事ではReduxの基本概念を実際にどの様に用いられるのかコードと共に紹介・説明します。また、Reactと共に用いる方法も紹介します。
+description: "ReactJSが扱うUIのstate(状態)を管理をするためのフレームワークです。この記事ではReduxの基本概念を実際にどの様に用いられるのかコードと共に紹介・説明します。また、Reactと共に用いる方法も紹介します。"
 ---
 # Introduction
 

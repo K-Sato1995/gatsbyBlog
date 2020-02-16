@@ -5,9 +5,9 @@ date: 2020-01-30
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Chrome
-description: Here are some useful short cut keys you can use on Chrome.
+description: "Here are some useful short cut keys you can use on Chrome."
 ---
 # Short cut keys
 ![image](https://user-images.githubusercontent.com/32632542/73416303-d56b0d80-4357-11ea-96d2-83803ae46090.png)

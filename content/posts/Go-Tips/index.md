@@ -5,10 +5,10 @@ date: 2019-05-11
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Go
   - Tips
-description: Here are some tips I picked up while I was learning the Go language.
+description: "Here are some tips I picked up while I was learning the Go language."
 ---
 # Unreferenced package
 

@@ -5,10 +5,10 @@ date: 2018-12-17
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - GraphQL
-description: One of the projects that I involved with at work used GraphQl and I spent a decent amount of time learning the basic concept of the tool and how to actually use it in applications. I am writing this post so that I can retain my knowledge of the technology and use it in my personal projects in the future.
-This post will mainly focus on the basic concept of `GraphQL` and how to use it on the front-end of your application.
+description: "One of the projects that I involved with at work used GraphQl and I spent a decent amount of time learning the basic concept of the tool and how to actually use it in applications. I am writing this post so that I can retain my knowledge of the technology and use it in my personal projects in the future.
+This post will mainly focus on the basic concept of `GraphQL` and how to use it on the front-end of your application."
 ---
 # Introduction
 One of the projects that I was involved in at work used GraphQl and I spent a decent amount of time learning the basic concept of it and how to actually use it in web-applications.   

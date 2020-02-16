@@ -5,10 +5,10 @@ date: 2019-12-09
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - JavaScript
   - Tips
-description: Here are some tips about JavaScript I learned while I was working on some projects.
+description: "Here are some tips about JavaScript I learned while I was working on some projects."
 ---
 # Tips Related to JS/TS Syntax
 

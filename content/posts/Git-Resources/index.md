@@ -5,9 +5,9 @@ date: 2019-07-22
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Git
-description: Collection of posts about Git I found on the internet. The posts are either in Japanese or English
+description: "Collection of posts about Git I found on the internet. The posts are either in Japanese or English"
 ---
 # Dealing With Merge Conflicts 
 - [Dealing With Merge Conflicts](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts)

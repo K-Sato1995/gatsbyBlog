@@ -5,9 +5,9 @@ date: 2019-03-12
 language: japanese
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - ComputerScience
-description:  コンピュータ内でのデータの表され方から、データ構造(Data Structure), アルゴリズム(Algorithm)の基礎までまとめました。
+description: " コンピュータ内でのデータの表され方から、データ構造(Data Structure), アルゴリズム(Algorithm)の基礎までまとめました。"
 ---
 # 情報の表現
 

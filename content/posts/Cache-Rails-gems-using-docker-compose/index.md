@@ -5,9 +5,9 @@ date: 2019-05-28
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Docker
-description: How to cache gems so that you don't have to run docker-compose build over and over again
+description: "How to cache gems so that you don't have to run docker-compose build over and over again"
 ---
 # Introduction
 Let's suppose you have a `docker-compose.yml` like the one below.

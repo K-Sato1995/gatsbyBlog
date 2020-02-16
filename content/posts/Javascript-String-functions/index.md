@@ -5,10 +5,11 @@ date: 2019-06-27
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Javascript
-description: Here are the basic string functions in Javascript
+description: "Here are the basic string functions in Javascript
 
+"
 ---
 # String functions
 

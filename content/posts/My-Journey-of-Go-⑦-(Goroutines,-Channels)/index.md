@@ -5,11 +5,12 @@ date: 2018-10-09
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Go
   - Tutorial
-description:  This post is about goroutines and channels. This is the last post of  My Journey of Go and might have been the hardest one to write about since I was not familiar with the concepts at all. A goroutine is a lightweight thread managed by the Go runtime. You can declare a goroutine by adding the keyword go before a function or method invocation like the code below.
+description: " This post is about goroutines and channels. This is the last post of  My Journey of Go and might have been the hardest one to write about since I was not familiar with the concepts at all. A goroutine is a lightweight thread managed by the Go runtime. You can declare a goroutine by adding the keyword go before a function or method invocation like the code below.
 
+"
 ---
 # Introduction
  This post is about `goroutines` and `channels`. This is the last post of  `My Journey of Go` and might have been the hardest one to write about since I was not familiar with the concepts at all.

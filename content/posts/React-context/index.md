@@ -5,10 +5,10 @@ date: 2019-10-23
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Hooks
   - React
-description: A simple explanation about how the context works in React and how to use context with useContext hook.
+description: "A simple explanation about how the context works in React and how to use context with useContext hook."
 ---
 # What is react context
 

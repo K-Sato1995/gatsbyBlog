@@ -5,11 +5,11 @@ date: 2019-11-07
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - React
   - Firebase
   - Hooks
-description: Simple guideline about how to implement a simple authentication with React and Firebase.
+description: "Simple guideline about how to implement a simple authentication with React and Firebase."
 ---
 # Set up Firebase
 

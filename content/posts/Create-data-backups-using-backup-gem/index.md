@@ -5,9 +5,9 @@ date: 2019-06-26
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Backup
-description: How to create data backups with rails using backup gem.
+description: "How to create data backups with rails using backup gem."
 ---
 # Create a backup script
 

@@ -5,9 +5,9 @@ date: 2019-09-02
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - rvm
-description: Here is a list of frequently used rvm commands.
+description: "Here is a list of frequently used rvm commands."
 ---
 # Frequently used commands 
 

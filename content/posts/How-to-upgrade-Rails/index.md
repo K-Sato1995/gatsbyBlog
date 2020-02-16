@@ -5,9 +5,9 @@ date: 2019-09-19
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Rails
-description: Simple steps to follow to upgrade Rails in your application.
+description: "Simple steps to follow to upgrade Rails in your application."
 ---
 # Steps
 1. Read the official [upgrade guide](https://edgeguides.rubyonrails.org/upgrading_ruby_on_rails.html)

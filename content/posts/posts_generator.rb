@@ -48,9 +48,9 @@ def create_header(post, f, index)
   f.puts "language: #{post[:language]}"
   f.puts 'cover: ./cover.png'
   f.puts 'generate-card: false'
-  f.puts 'tags: '
+  f.puts 'tags:'
   inline_tags(find_tags(index), f)
-  f.puts "description: #{post[:introduction]}"
+  f.puts "description: \"#{post[:introduction]}\""
   f.puts '---'
 end
 

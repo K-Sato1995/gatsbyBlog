@@ -5,9 +5,9 @@ date: 2019-05-19
 language: japanese
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Language
-description: This is a list of English words I am trying to memorize or familiarize myself with.
+description: "This is a list of English words I am trying to memorize or familiarize myself with."
 ---
 # Introduction
 

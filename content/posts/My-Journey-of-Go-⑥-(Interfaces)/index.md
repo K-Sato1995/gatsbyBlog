@@ -5,10 +5,11 @@ date: 2018-10-08
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Go
   - Tutorial
-description: In this post, I'll explain how interfaces work in Go.  In Go, an interface is a set of method signatures. A variable of an interface type can hold any value that implements those methods. Any type that provides the methods named in an interface is treated as an implementation of that interface. No explicit declaration is required.
+description: "In this post, I'll explain how interfaces work in Go.  In Go, an interface is a set of method signatures. A variable of an interface type can hold any value that implements those methods. Any type that provides the methods named in an interface is treated as an implementation of that interface. No explicit declaration is required.
+"
 ---
 # Introduction
  In this post, I'll explain how `interfaces` work in Go.

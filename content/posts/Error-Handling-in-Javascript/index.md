@@ -5,10 +5,10 @@ date: 2019-06-21
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Javascript
   - Exception
-description: Simple introduction of Error Handling in Javascript.
+description: "Simple introduction of Error Handling in Javascript."
 ---
 # Basic Syntax
 

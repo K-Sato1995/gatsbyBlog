@@ -5,11 +5,12 @@ date: 2018-09-17
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - API
   - Ruby
   - Tutorial
-description: Here is a simple guideline to create a simple API with RoR5. In this post, I'll create a simple blog like application that users can read, create, update and delete posts on.
+description: "Here is a simple guideline to create a simple API with RoR5. In this post, I'll create a simple blog like application that users can read, create, update and delete posts on.
+"
 ---
 # Overview
  Here is a simple guideline to create a simple API with RoR5. In this post, I'll create a simple blog like application that users can read, create, update and delete posts on.

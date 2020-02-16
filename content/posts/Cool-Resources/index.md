@@ -5,9 +5,9 @@ date: 2019-07-31
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Documents
-description: Cool Resources I stumbled upon on the internet.
+description: "Cool Resources I stumbled upon on the internet."
 ---
 # Ruby 
 - [Ruby, !! operator (a/k/a the double-bang) - Stack Overflow](https://stackoverflow.com/questions/3994033/ruby-operator-a-k-a-the-double-bang)

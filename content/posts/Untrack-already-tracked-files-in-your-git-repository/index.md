@@ -5,9 +5,9 @@ date: 2019-07-22
 language: english
 cover: ./cover.png
 generate-card: false
-tags: 
+tags:
   - Git
-description: Simple steps to follow to untrack files that are already committed to your remote git repository.
+description: "Simple steps to follow to untrack files that are already committed to your remote git repository."
 ---
 # Commit all your changes
 Before proceeding, make sure all your changes are committed, including your `.gitignore` file.
