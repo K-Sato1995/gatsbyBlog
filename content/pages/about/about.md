@@ -5,7 +5,7 @@ slug: about
 disqus: true
 ---
 
-# Self Introduction
+# Self Introduction🐶
 
 People often find me outgoing, upbeat, self-motivated and some of my close friends find me a little goofy. I grew up in a very small and peaceful town and moved to a huge city for college.
 

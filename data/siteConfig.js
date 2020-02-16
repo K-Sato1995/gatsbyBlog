@@ -35,8 +35,8 @@ module.exports = {
     },
   ],
   websiteHost: {
-    name: 'GitHub',
-    url: 'https://github.com',
+    name: 'Netlify',
+    url: 'https://www.netlify.com/',
   },
   footerLinks: [
     {
@@ -61,15 +61,15 @@ module.exports = {
       links: [
         {
           label: 'GitHub',
-          url: '',
+          url: 'https://github.com/K-Sato1995',
         },
         {
-          label: 'Website',
-          url: '',
+          label: 'Dev.to',
+          url: 'https://dev.to/k_penguin_sato',
         },
         {
-          label: 'Twitter',
-          url: '',
+          label: 'Qiita',
+          url: 'https://qiita.com/k-penguin-sato',
         },
       ],
     },
