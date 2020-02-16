@@ -1,12 +1,13 @@
 ---
 title: "Rspec resources"
-description: Useful resources for writing RSpec.
 slug: rspec-resources
 date: 2019-08-26
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Rspec
+description: Useful resources for writing RSpec.
 ---
 # Test private methods 
 - [3 ways of testing private methods in Rails - Mix & Go](https://mixandgo.com/learn/3-ways-of-testing-private-methods-in-rails)

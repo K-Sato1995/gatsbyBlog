@@ -1,12 +1,13 @@
 ---
 title: "基本情報要点まとめ"
-description: 基本情報で間違えやすい要点をまとめました。
 slug: 基本情報要点まとめ
 date: 2019-05-21
 language: japanese
 cover: ./cover.png
+generate-card: false
 tags: 
   - 基本情報
+description: 基本情報で間違えやすい要点をまとめました。
 ---
 # テクノロジ(知識系)
 

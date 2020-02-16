@@ -1,12 +1,13 @@
 ---
 title: "RailsとJWTで認証を行う"
-description: RailsでJWTを使用したトークンベース認証の方法のまとめ。
 slug: rails-jwt
 date: 2019-10-31
 language: japanese
 cover: ./cover.png
+generate-card: false
 tags: 
   - JWT
+description: RailsでJWTを使用したトークンベース認証の方法のまとめ。
 ---
 # 方法1 ruby jwt gemを使用して実装
 

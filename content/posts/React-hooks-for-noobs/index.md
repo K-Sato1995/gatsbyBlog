@@ -1,13 +1,14 @@
 ---
 title: "React hooks for noobs"
-description: React16.8 introduced a new feature called hooks.  Hooks would change how you build react applications rather drastically. Here is my take to explain what they are.
 slug: react-hooks-for-noobs
 date: 2019-03-07
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - React
   - Hooks
+description: React16.8 introduced a new feature called hooks.  Hooks would change how you build react applications rather drastically. Here is my take to explain what they are.
 ---
 # Introduction
 `Hooks` are a new feature introduced in React16.8.

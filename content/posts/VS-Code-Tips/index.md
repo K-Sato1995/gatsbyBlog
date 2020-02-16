@@ -1,12 +1,13 @@
 ---
 title: "VS Code Tips"
-description: Here are some useful short cut keys you can use on VS code
 slug: vs-code-tips
 date: 2019-12-03
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - VScode
+description: Here are some useful short cut keys you can use on VS code
 ---
 # Short cut keys
 - `command` + `shift` + `p` : Look up shortcut keys.

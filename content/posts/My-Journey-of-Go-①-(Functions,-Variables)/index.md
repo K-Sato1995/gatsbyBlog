@@ -1,13 +1,14 @@
 ---
 title: "My Journey of Go ① (Functions, Variables)"
-description: My Journey of Go is a collection of posts about what I learned from A Tour of Go. I made this series to solidify my knowledge about Go language.
 slug: my-journey-of-go-functions-variables
 date: 2018-09-23
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Go
   - Tutorial
+description: My Journey of Go is a collection of posts about what I learned from A Tour of Go. I made this series to solidify my knowledge about Go language.
 ---
 # What is 'My Journey of Go' for?
  `My Journey of Go` is a collection of posts about what I learned from [A Tour of Go](https://tour.golang.org/list). A Tour of Go is a fantastic place for all people to start their journey of Go programming language from.

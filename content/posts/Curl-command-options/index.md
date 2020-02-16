@@ -1,13 +1,14 @@
 ---
 title: "Curl command options "
-description: List of options you can use with the curl command.
 slug: curl-command-options
 date: 2019-12-02
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Curl
   - Linux
+description: List of options you can use with the curl command.
 ---
 # Add headers
 You can use `-H` to add headers to your request.

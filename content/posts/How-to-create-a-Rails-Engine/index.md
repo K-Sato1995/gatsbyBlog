@@ -1,12 +1,13 @@
 ---
 title: " How to create a Rails Engine "
-description: The post is about how to create a rails engine.
 slug: how-to-create-a-rails-engine
 date: 2019-07-03
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Rails
+description: The post is about how to create a rails engine.
 ---
 # What are engines 
 `Rails Engines` can be considered miniature applications that provide the functionality to their host applications. 

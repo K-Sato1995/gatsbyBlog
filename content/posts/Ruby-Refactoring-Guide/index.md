@@ -1,13 +1,14 @@
 ---
 title: "Ruby Refactoring Guide"
-description: When I am trying to refactor code base in my personal projects or projects at work, I often forget how I did refactor similar code before. So I listed some useful refactoring methods to follow in this post. 
 slug: ruby-refactoring-guide
 date: 2019-03-21
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Ruby
   - Tips
+description: When I am trying to refactor code base in my personal projects or projects at work, I often forget how I did refactor similar code before. So I listed some useful refactoring methods to follow in this post. 
 ---
 # Common Refactoring approaches
 

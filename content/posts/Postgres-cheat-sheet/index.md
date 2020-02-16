@@ -1,11 +1,12 @@
 ---
 title: "Postgres cheat sheet"
-description: Here is a list of frequently used Postgres commands.
 slug: postgres-cheat-sheet
 date: 2019-09-04
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
+description: Here is a list of frequently used Postgres commands.
 ---
 # Frequently used commands
 

@@ -1,14 +1,15 @@
 ---
 title: "Firebase+React+Railsでの認証の流れ"
-description: Firebase+React+Railsでの認証の流れまとめ。
 slug: firebase-react-rails
 date: 2019-12-10
 language: japanese
 cover: ./cover.png
+generate-card: false
 tags: 
   - Rails
   - JWT
   - Firebase
+description: Firebase+React+Railsでの認証の流れまとめ。
 ---
 # 認証流れ整理
 

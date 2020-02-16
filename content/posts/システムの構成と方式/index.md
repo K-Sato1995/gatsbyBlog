@@ -1,11 +1,12 @@
 ---
 title: "システムの構成と方式"
-description: システムの構成や方式に関して簡単にまとめました。
 slug: システムの構成と方式
 date: 2019-05-14
 language: japanese
 cover: ./cover.png
+generate-card: false
 tags: 
+description: システムの構成や方式に関して簡単にまとめました。
 ---
 # システムの構成と方式
 

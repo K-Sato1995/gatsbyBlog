@@ -1,12 +1,13 @@
 ---
 title: "JavaScript Logical Operators"
-description: The post is about what a !(exclamation mark) means in JS
 slug: javascript-logical-operators
 date: 2019-11-14
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Javascript
+description: The post is about what a !(exclamation mark) means in JS
 ---
 # What an exclamation mark means in JS
 

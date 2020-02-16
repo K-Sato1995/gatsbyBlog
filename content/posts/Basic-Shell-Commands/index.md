@@ -1,12 +1,13 @@
 ---
 title: "Basic Shell Commands"
-description:  I made a list of Linux commands that, I think, are important and frequently used. The main purpose of this post is to memorize basic Linux commands and make myself more familiar with other commands I don't often use. I would keep adding more commands.
 slug: basic-shell-commands
 date: 2018-10-06
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Shell
+description:  I made a list of Linux commands that, I think, are important and frequently used. The main purpose of this post is to memorize basic Linux commands and make myself more familiar with other commands I don't often use. I would keep adding more commands.
 ---
 # Introduction
 

@@ -1,13 +1,14 @@
 ---
 title: "GraphQL Ruby(Class-based API)"
-description:  In the other post about GraphQL Basics(1), I focused on how to utilize GraphQl on the front-side of a web application. In this post, I'll mainly talk about how to use the tool on your back-end(in this case Ruby on Rails). 
 slug: graphql-ruby-class-based-api
 date: 2018-12-18
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - GraphQL
   - Tutorial
+description:  In the other post about GraphQL Basics(1), I focused on how to utilize GraphQl on the front-side of a web application. In this post, I'll mainly talk about how to use the tool on your back-end(in this case Ruby on Rails). 
 ---
 # Introduction
  In the [previous post]([K-Blog](https://k-blog0130.herokuapp.com/en/posts/64)) about `GraphQL`, I focused on how to utilize `GraphQl` on the front-side of a web application.   

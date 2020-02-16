@@ -1,12 +1,13 @@
 ---
 title: "Rvm cheat sheet"
-description: Here is a list of frequently used rvm commands.
 slug: rvm-cheat-sheet
 date: 2019-09-02
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - rvm
+description: Here is a list of frequently used rvm commands.
 ---
 # Frequently used commands 
 

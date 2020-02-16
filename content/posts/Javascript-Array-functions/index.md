@@ -1,12 +1,13 @@
 ---
 title: "Javascript Array functions"
-description: Here are the basic array functions
 slug: javascript-array-functions
 date: 2019-06-21
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Javascript
+description: Here are the basic array functions
 ---
 # Introduction
 Here are some of the most fundamental JS array functions.

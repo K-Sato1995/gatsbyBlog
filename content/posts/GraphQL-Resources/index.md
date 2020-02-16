@@ -1,12 +1,13 @@
 ---
 title: "GraphQL Resources "
-description: Here are some resources and tips for understanding graphql better.
 slug: graphql-resources
 date: 2019-10-12
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - graphql
+description: Here are some resources and tips for understanding graphql better.
 ---
 # Enum type 
 

@@ -1,13 +1,14 @@
 ---
 title: "Understanding Linux Permissions"
-description: Understanding how permissions work in Linux system.
 slug: understanding-linux-permissions
 date: 2019-05-14
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Linux
   - Shell
+description: Understanding how permissions work in Linux system.
 ---
 # Introduction
 

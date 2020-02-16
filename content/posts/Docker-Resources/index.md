@@ -1,12 +1,13 @@
 ---
 title: "Docker Resources"
-description: I listed awesome learning resources for Docker in this post. I'll keep adding more and more resources as I learn more about Docker. 
 slug: docker-resources
 date: 2019-03-07
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Docker
+description: I listed awesome learning resources for Docker in this post. I'll keep adding more and more resources as I learn more about Docker. 
 ---
 # Great Resources
 

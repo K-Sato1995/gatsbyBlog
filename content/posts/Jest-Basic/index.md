@@ -1,13 +1,14 @@
 ---
 title: "Jest Basic"
-description: This is an introduction of Jest.
 slug: jest-basic
 date: 2019-06-21
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Test
   - Jest
+description: This is an introduction of Jest.
 ---
 # Jest Basic 
 Jest is a JavaScript unit testing framework built by Facebook.

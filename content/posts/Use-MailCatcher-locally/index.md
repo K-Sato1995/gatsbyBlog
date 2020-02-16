@@ -1,13 +1,14 @@
 ---
 title: "Use MailCatcher locally"
-description: Here is a simple guideline about how to use MailCatcher locally.
 slug: use-mailcatcher-locally
 date: 2019-11-06
 language: english
 cover: ./cover.png
+generate-card: false
 tags: 
   - Mail
   - Rails
+description: Here is a simple guideline about how to use MailCatcher locally.
 ---
 # Install MailCatcher locally 
 
