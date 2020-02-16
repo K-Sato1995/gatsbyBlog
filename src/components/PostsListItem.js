@@ -34,7 +34,7 @@ const PostHeader = styled.header`
   padding: 1em 0;
 `
 
-const Excerpt = styled.p`
+const Dscription = styled.p`
   line-height: 1.45;
   padding-bottom: 0.5em;
 `
@@ -52,7 +52,7 @@ const FooterLine = styled.div`
 `
 
 const PostsListItem = props => {
-  const { title, excerpt, slug, language, tags, timeToRead } = props
+  const { title, slug, description, language, tags, timeToRead } = props
   const { defaultLang } = useSiteMetadata()
 
   return (
@@ -66,7 +66,7 @@ const PostsListItem = props => {
         </h2>
       </PostHeader>
       <section>
-        <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
+        <Dscription>{description}</Dscription>
       </section>
       <footer>
         <FooterLine>

@@ -11,7 +11,7 @@ class PostsList extends React.Component {
         {posts.map(post => {
           const props = {
             title: post.node.frontmatter.title,
-            excerpt: post.node.excerpt,
+            description: post.node.frontmatter.description,
             slug: post.node.frontmatter.slug,
             timeToRead: post.node.timeToRead,
             language: post.node.frontmatter.language || 'fr',
