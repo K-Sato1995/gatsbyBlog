@@ -1,5 +1,5 @@
 ---
-title: English vocabulary
+title: "English vocabulary"
 description: This is a list of English words I am trying to memorize or familiarize myself with.
 slug: english-vocabulary
 date: 2019-05-19

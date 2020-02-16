@@ -1,5 +1,5 @@
 ---
-title: Utilize settings.yml in Rails applications
+title: "Utilize settings.yml in Rails applications"
 description: Utilize settings.yml in Rails applications by using a gem called settingslogic.
 slug: utilize-settings-yml-in-rails-applications
 date: 2019-07-04

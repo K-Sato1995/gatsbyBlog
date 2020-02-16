@@ -1,5 +1,5 @@
 ---
-title: Javascript Array functions
+title: "Javascript Array functions"
 description: Here are the basic array functions
 slug: javascript-array-functions
 date: 2019-06-21

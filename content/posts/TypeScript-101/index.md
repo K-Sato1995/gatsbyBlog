@@ -1,5 +1,5 @@
 ---
-title: TypeScript 101
+title: "TypeScript 101"
 description: Some important concepts in TypeScrips 
 slug: typescript-101
 date: 2019-11-11

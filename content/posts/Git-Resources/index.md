@@ -1,5 +1,5 @@
 ---
-title: Git Resources
+title: "Git Resources"
 description: Collection of posts about Git I found on the internet. The posts are either in Japanese or English
 slug: git-resources
 date: 2019-07-22

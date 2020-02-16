@@ -1,5 +1,5 @@
 ---
-title: React tips
+title: "React tips"
 description: Here are some tips about React.js
 slug: react-tips
 date: 2019-11-04

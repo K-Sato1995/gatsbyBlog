@@ -1,5 +1,5 @@
 ---
-title: JWT explained
+title: "JWT explained"
 description: What are JSON web tokens (JWT) and how are they used??
 slug: jwt-explained
 date: 2019-10-22

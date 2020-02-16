@@ -1,5 +1,5 @@
 ---
-title: How to create your own npm packages
+title: "How to create your own npm packages"
 description: This is a simple guide about how to create your own npm packages.
 slug: how-to-create-your-own-npm-packages
 date: 2019-06-07

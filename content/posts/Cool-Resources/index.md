@@ -1,5 +1,5 @@
 ---
-title: Cool Resources 
+title: "Cool Resources "
 description: Cool Resources I stumbled upon on the internet.
 slug: cool-resources
 date: 2019-07-31

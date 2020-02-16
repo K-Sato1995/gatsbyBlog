@@ -1,5 +1,5 @@
 ---
-title: Go Tips
+title: "Go Tips"
 description: Here are some tips I picked up while I was learning the Go language.
 slug: go-tips
 date: 2019-05-11

@@ -1,5 +1,5 @@
 ---
-title: JavaScript Logical Operators
+title: "JavaScript Logical Operators"
 description: The post is about what a !(exclamation mark) means in JS
 slug: javascript-logical-operators
 date: 2019-11-14

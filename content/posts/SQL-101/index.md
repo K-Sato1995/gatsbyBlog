@@ -1,5 +1,5 @@
 ---
-title: SQL 101
+title: "SQL 101"
 description: SQL stands for Structured Query Language. It is used to communicate with a database which means every programmer who uses a database should at least know a thing or two about this language. I've made a list of very basic commands of SQL in this post. (This post is still in progress.)
 slug: sql-101
 date: 2019-01-19

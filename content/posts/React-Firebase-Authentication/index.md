@@ -1,5 +1,5 @@
 ---
-title: React Firebase Authentication 
+title: "React Firebase Authentication "
 description: Simple guideline about how to implement a simple authentication with React and Firebase.
 slug: react-firebase-authentication
 date: 2019-11-07

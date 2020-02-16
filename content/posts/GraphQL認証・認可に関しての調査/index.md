@@ -1,5 +1,5 @@
 ---
-title: GraphQL認証・認可に関しての調査
+title: "GraphQL認証・認可に関しての調査"
 description: GraphQL認証・認可に関しての調査で役立ったリンク集
 slug: graphql
 date: 2019-12-10

@@ -1,5 +1,5 @@
 ---
-title: Make your react app compatible with IE
+title: "Make your react app compatible with IE"
 description: Just a short post about how to install pollyfill in react apps.
 slug: make-your-react-app-compatible-with-ie
 date: 2020-01-28

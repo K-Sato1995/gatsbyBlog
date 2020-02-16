@@ -1,5 +1,5 @@
 ---
-title: CamelCase Your Rails JSON API 
+title: "CamelCase Your Rails JSON API "
 description: Here is how to make your rails app respond with camel-cased keys.
 slug: camelcase-your-rails-json-api
 date: 2020-01-28

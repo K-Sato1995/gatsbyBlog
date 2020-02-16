@@ -1,5 +1,5 @@
 ---
-title: Create data backups using backup gem 
+title: "Create data backups using backup gem "
 description: How to create data backups with rails using backup gem.
 slug: create-data-backups-using-backup-gem
 date: 2019-06-26

@@ -1,5 +1,5 @@
 ---
-title: Devise Token Auth
+title: "Devise Token Auth"
 description: Here are some resources about a rails gem 'Devise Token Auth'.
 slug: devise-token-auth
 date: 2019-12-10

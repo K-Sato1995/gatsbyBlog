@@ -1,5 +1,5 @@
 ---
-title: Rbenv cheatsheets
+title: "Rbenv cheatsheets"
 description: Here is a list of frequently used rbenv commands.
 slug: rbenv-cheatsheets
 date: 2019-09-02

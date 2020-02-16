@@ -1,5 +1,5 @@
 ---
-title: Creating a Database Diagram with rails-erd
+title: "Creating a Database Diagram with rails-erd"
 description: Quick post about how to create a ER chart with a rails gem.
 slug: creating-a-database-diagram-with-rails-erd
 date: 2019-07-17

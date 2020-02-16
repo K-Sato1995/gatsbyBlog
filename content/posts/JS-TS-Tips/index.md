@@ -1,5 +1,5 @@
 ---
-title: JS-TS Tips
+title: "JS-TS Tips"
 description: Here are some tips about JavaScript I learned while I was working on some projects.
 slug: js-ts-tips
 date: 2019-12-09

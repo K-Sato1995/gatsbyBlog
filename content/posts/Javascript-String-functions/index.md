@@ -1,5 +1,5 @@
 ---
-title: Javascript String functions
+title: "Javascript String functions"
 description: Here are the basic string functions in Javascript
 
 slug: javascript-string-functions

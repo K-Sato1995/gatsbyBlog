@@ -1,5 +1,5 @@
 ---
-title: Rspec resources
+title: "Rspec resources"
 description: Useful resources for writing RSpec.
 slug: rspec-resources
 date: 2019-08-26

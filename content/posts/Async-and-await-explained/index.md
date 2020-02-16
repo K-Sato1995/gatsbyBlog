@@ -1,5 +1,5 @@
 ---
-title: Async and await explained
+title: "Async and await explained"
 description: A simple explanation about async and await in Javascript.
 slug: async-and-await-explained
 date: 2019-11-02

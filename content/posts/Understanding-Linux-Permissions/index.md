@@ -1,5 +1,5 @@
 ---
-title: Understanding Linux Permissions
+title: "Understanding Linux Permissions"
 description: Understanding how permissions work in Linux system.
 slug: understanding-linux-permissions
 date: 2019-05-14

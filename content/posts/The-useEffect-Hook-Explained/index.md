@@ -1,5 +1,5 @@
 ---
-title: The useEffect Hook Explained
+title: "The useEffect Hook Explained"
 description: The simplest explanation about the second argument of useEfffect.
 slug: the-useeffect-hook-explained
 date: 2019-11-03

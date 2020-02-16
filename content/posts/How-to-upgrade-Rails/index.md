@@ -1,5 +1,5 @@
 ---
-title: How to upgrade Rails
+title: "How to upgrade Rails"
 description: Simple steps to follow to upgrade Rails in your application.
 slug: how-to-upgrade-rails
 date: 2019-09-19

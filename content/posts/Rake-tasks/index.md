@@ -1,5 +1,5 @@
 ---
-title: Rake tasks 
+title: "Rake tasks "
 description: Simple post about rake.
 slug: rake-tasks
 date: 2019-09-27

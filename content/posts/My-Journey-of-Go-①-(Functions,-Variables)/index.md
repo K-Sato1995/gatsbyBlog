@@ -1,5 +1,5 @@
 ---
-title: My Journey of Go ① (Functions, Variables)
+title: "My Journey of Go ① (Functions, Variables)"
 description: My Journey of Go is a collection of posts about what I learned from A Tour of Go. I made this series to solidify my knowledge about Go language.
 slug: my-journey-of-go-functions-variables
 date: 2018-09-23

@@ -1,5 +1,5 @@
 ---
-title: Use MailCatcher locally
+title: "Use MailCatcher locally"
 description: Here is a simple guideline about how to use MailCatcher locally.
 slug: use-mailcatcher-locally
 date: 2019-11-06

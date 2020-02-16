@@ -1,5 +1,5 @@
 ---
-title: Cache Rails gems using docker-compose
+title: "Cache Rails gems using docker-compose"
 description: How to cache gems so that you don't have to run docker-compose build over and over again
 slug: cache-rails-gems-using-docker-compose
 date: 2019-05-28

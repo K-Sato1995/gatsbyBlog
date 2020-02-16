@@ -1,5 +1,5 @@
 ---
-title: Contributing to a GitHub project
+title: "Contributing to a GitHub project"
 description: This is a simple guide for beginners to make a Pull Request and contribute to a GitHub project. If you have never contributed any OSS project on GitHub, this guide might be useful to make your first PR(PullRequest).
 slug: contributing-to-a-github-project
 date: 2018-11-01

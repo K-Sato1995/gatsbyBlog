@@ -1,5 +1,5 @@
 ---
-title: Go Resources
+title: "Go Resources"
 description: Some cool resources for learning Go.
 slug: go-resources
 date: 2019-09-12

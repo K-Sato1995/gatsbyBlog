@@ -1,5 +1,5 @@
 ---
-title: Firebase+React+Railsでの認証の流れ
+title: "Firebase+React+Railsでの認証の流れ"
 description: Firebase+React+Railsでの認証の流れまとめ。
 slug: firebase-react-rails
 date: 2019-12-10

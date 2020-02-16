@@ -1,5 +1,5 @@
 ---
-title: Chrome short cut keys for mac
+title: "Chrome short cut keys for mac"
 description: Here are some useful short cut keys you can use on Chrome.
 slug: chrome-short-cut-keys-for-mac
 date: 2020-01-30

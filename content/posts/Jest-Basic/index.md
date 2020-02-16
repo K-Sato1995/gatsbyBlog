@@ -1,5 +1,5 @@
 ---
-title: Jest Basic
+title: "Jest Basic"
 description: This is an introduction of Jest.
 slug: jest-basic
 date: 2019-06-21

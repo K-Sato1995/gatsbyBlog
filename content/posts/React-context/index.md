@@ -1,5 +1,5 @@
 ---
-title:  React context 
+title: " React context "
 description: A simple explanation about how the context works in React and how to use context with useContext hook.
 slug: react-context
 date: 2019-10-23

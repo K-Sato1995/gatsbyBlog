@@ -42,7 +42,7 @@ end
 
 def create_header(post, f, index)
   f.puts '---'
-  f.puts "title: #{post[:title]}"
+  f.puts "title: \"#{post[:title]}\""
   f.puts "description: #{post[:introduction]}"
   f.puts "slug: #{slug(post[:title])}"
   f.puts "date: #{parse_date(post[:created_at])}"

@@ -1,5 +1,5 @@
 ---
-title:  Implement authentication from scratch
+title: " Implement authentication from scratch"
 description: Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications.
 slug: implement-authentication-from-scratch
 date: 2019-10-01

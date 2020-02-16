@@ -1,5 +1,5 @@
 ---
-title: Postgres cheat sheet
+title: "Postgres cheat sheet"
 description: Here is a list of frequently used Postgres commands.
 slug: postgres-cheat-sheet
 date: 2019-09-04

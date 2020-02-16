@@ -1,5 +1,5 @@
 ---
-title: VS Code Tips
+title: "VS Code Tips"
 description: Here are some useful short cut keys you can use on VS code
 slug: vs-code-tips
 date: 2019-12-03

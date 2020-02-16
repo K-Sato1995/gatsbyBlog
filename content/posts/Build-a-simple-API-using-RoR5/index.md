@@ -1,5 +1,5 @@
 ---
-title: Build a simple API using RoR5
+title: "Build a simple API using RoR5"
 description: Here is a simple guideline to create a simple API with RoR5. In this post, I'll create a simple blog like application that users can read, create, update and delete posts on.
 slug: build-a-simple-api-using-ror5
 date: 2018-09-17

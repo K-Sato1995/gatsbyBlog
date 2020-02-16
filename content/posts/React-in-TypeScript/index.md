@@ -1,5 +1,5 @@
 ---
-title: React in TypeScript
+title: "React in TypeScript"
 description: Things I should keep in mind when I'm creating react apps in Typescript.
 slug: react-in-typescript
 date: 2019-07-20

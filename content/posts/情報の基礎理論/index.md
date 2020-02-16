@@ -1,5 +1,5 @@
 ---
-title: 情報の基礎理論
+title: "情報の基礎理論"
 description:  コンピュータ内でのデータの表され方から、データ構造(Data Structure), アルゴリズム(Algorithm)の基礎までまとめました。
 slug: 情報の基礎理論
 date: 2019-03-12

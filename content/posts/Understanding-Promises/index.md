@@ -1,5 +1,5 @@
 ---
-title: Understanding Promises
+title: "Understanding Promises"
 description: Understand how promises work.
 slug: understanding-promises
 date: 2019-06-17

@@ -1,5 +1,5 @@
 ---
-title: How to run CLI commands from ruby programs
+title: "How to run CLI commands from ruby programs"
 description: This is how you run CLI commands from Ruby programs.
 slug: how-to-run-cli-commands-from-ruby-programs
 date: 2019-07-02

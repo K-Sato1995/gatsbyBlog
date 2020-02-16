@@ -1,5 +1,5 @@
 ---
-title: How to use ruby gems in a single ruby script 
+title: "How to use ruby gems in a single ruby script "
 description: Here is a short post about how to use ruby gems in a single ruby script.
 slug: how-to-use-ruby-gems-in-a-single-ruby-script
 date: 2019-09-30

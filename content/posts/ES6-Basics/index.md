@@ -1,5 +1,5 @@
 ---
-title: ES6 Basics
+title: "ES6 Basics"
 description: Some new features were introduced in ES6. I will cover some of the basic features of them in this post. If you are new to ES6 syntax or new to javascript language, this post might be useful to understand the basic syntax of the language.
 slug: es6-basics
 date: 2018-10-12

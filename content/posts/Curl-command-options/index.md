@@ -1,5 +1,5 @@
 ---
-title: Curl command options 
+title: "Curl command options "
 description: List of options you can use with the curl command.
 slug: curl-command-options
 date: 2019-12-02

@@ -1,5 +1,5 @@
 ---
-title: Error Handling in Javascript
+title: "Error Handling in Javascript"
 description: Simple introduction of Error Handling in Javascript.
 slug: error-handling-in-javascript
 date: 2019-06-21

@@ -1,5 +1,5 @@
 ---
-title: Ruby Exception handling
+title: "Ruby Exception handling"
 description: Explaining how to handle exceptions in Ruby.
 slug: ruby-exception-handling
 date: 2019-05-21

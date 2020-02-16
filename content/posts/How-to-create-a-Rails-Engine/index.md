@@ -1,5 +1,5 @@
 ---
-title:  How to create a Rails Engine 
+title: " How to create a Rails Engine "
 description: The post is about how to create a rails engine.
 slug: how-to-create-a-rails-engine
 date: 2019-07-03

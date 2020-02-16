@@ -1,5 +1,5 @@
 ---
-title: RailsとJWTで認証を行う
+title: "RailsとJWTで認証を行う"
 description: RailsでJWTを使用したトークンベース認証の方法のまとめ。
 slug: rails-jwt
 date: 2019-10-31

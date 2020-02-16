@@ -1,5 +1,5 @@
 ---
-title: GraphQL Resources 
+title: "GraphQL Resources "
 description: Here are some resources and tips for understanding graphql better.
 slug: graphql-resources
 date: 2019-10-12
