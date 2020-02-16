@@ -13,7 +13,7 @@ In college, I majored in political science and mainly spent my time there studyi
 
 Though what I learnt in college was academically very interesting, I didn't necessarily consider myself suitable for a politician or economist. I also was not interested in sales or marketing which a lot of my friends in the same department ended up doing after college. So I ended up getting a job as a webdeveloper since I really liked coding and I was really fascinated with the idea of createing something unique and original that didn't exist before.
 
-## Interests
+# Interests
 
 ### Programming💻
 
