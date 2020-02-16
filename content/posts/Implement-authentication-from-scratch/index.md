@@ -3,10 +3,9 @@ title: " Implement authentication from scratch"
 slug: implement-authentication-from-scratch
 date: 2019-10-01
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Rails
+published: true
 description: "Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications."
 ---
 # Create author resources  

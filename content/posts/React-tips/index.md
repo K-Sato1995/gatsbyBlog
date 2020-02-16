@@ -3,11 +3,10 @@ title: "React tips"
 slug: react-tips
 date: 2019-11-04
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - React
   - Tips
+published: true
 description: "Here are some tips about React.js"
 ---
 # Adding Custom Environment Variables

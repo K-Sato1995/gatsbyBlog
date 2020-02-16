@@ -3,10 +3,9 @@ title: "情報の基礎理論"
 slug: 情報の基礎理論
 date: 2019-03-12
 language: japanese
-cover: ./cover.png
-generate-card: false
 tags:
   - ComputerScience
+published: true
 description: " コンピュータ内でのデータの表され方から、データ構造(Data Structure), アルゴリズム(Algorithm)の基礎までまとめました。"
 ---
 # 情報の表現

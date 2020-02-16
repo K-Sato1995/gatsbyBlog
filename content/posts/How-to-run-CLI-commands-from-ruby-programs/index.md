@@ -3,10 +3,9 @@ title: "How to run CLI commands from ruby programs"
 slug: how-to-run-cli-commands-from-ruby-programs
 date: 2019-07-02
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Ruby
+published: true
 description: "This is how you run CLI commands from Ruby programs."
 ---
 # The Ruby System Method

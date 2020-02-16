@@ -3,11 +3,10 @@ title: "Understanding Linux Permissions"
 slug: understanding-linux-permissions
 date: 2019-05-14
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Linux
   - Shell
+published: true
 description: "Understanding how permissions work in Linux system."
 ---
 # Introduction

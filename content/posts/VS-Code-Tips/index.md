@@ -3,10 +3,9 @@ title: "VS Code Tips"
 slug: vs-code-tips
 date: 2019-12-03
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - VScode
+published: true
 description: "Here are some useful short cut keys you can use on VS code"
 ---
 # Short cut keys

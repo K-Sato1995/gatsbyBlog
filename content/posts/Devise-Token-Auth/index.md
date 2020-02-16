@@ -3,11 +3,10 @@ title: "Devise Token Auth"
 slug: devise-token-auth
 date: 2019-12-10
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Gem
   - DeviseTokenAuth
+published: true
 description: "Here are some resources about a rails gem 'Devise Token Auth'."
 ---
 # What the tokens are used for 

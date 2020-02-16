@@ -3,10 +3,9 @@ title: "Creating a Database Diagram with rails-erd"
 slug: creating-a-database-diagram-with-rails-erd
 date: 2019-07-17
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Documents
+published: true
 description: "Quick post about how to create a ER chart with a rails gem."
 ---
 # Add rails-erd

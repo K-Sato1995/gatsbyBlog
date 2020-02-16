@@ -3,11 +3,10 @@ title: "My Journey of Go ③ (Pointers, Structures)"
 slug: my-journey-of-go-pointers-structures
 date: 2018-09-26
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Go
   - Tutorial
+published: true
 description: "In this post, I'll mainly explain what pointers and structures are.  Pointers and Structures can be very hard concepts to grasp for people who previously only learned script languages like Ruby, Python and so on. In brief, a pointer is a value which points to the memory address of another value. A pointer can be declared using the `*` followed by the type of the stored value in Go.  The variable pointer1 is a pointer to an `int` and `pointer2` is a pointer to a `string` in the following code."
 ---
 # Overview

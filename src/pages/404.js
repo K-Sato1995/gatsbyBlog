@@ -36,7 +36,7 @@ const NotFoundPage = props => {
         sort: { fields: [frontmatter___date], order: DESC }
         filter: {
           fileAbsolutePath: { regex: "//content/posts//" }
-          frontmatter: { published: { ne: false }, unlisted: { ne: true } }
+          frontmatter: { published: { ne: false } }
         }
         limit: 5
       ) {

@@ -3,11 +3,10 @@ title: "My Journey of Go ① (Functions, Variables)"
 slug: my-journey-of-go-functions-variables
 date: 2018-09-23
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Go
   - Tutorial
+published: true
 description: "My Journey of Go is a collection of posts about what I learned from A Tour of Go. I made this series to solidify my knowledge about Go language."
 ---
 # What is 'My Journey of Go' for?

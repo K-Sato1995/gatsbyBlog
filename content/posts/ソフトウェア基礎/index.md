@@ -3,10 +3,9 @@ title: "ソフトウェア基礎"
 slug: ソフトウェア基礎
 date: 2019-02-27
 language: japanese
-cover: ./cover.png
-generate-card: false
 tags:
   - Software
+published: true
 description: "ソフトウェアとは何かから始まり、ソフトウェアの構成、実行時にはコンピュータはどのように命令を処理しているのか等々、ソフトウェアの基本に関してまとめました。"
 ---
 # ソフトウェアと OSS

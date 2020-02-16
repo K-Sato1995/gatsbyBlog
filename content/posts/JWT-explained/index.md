@@ -3,10 +3,9 @@ title: "JWT explained"
 slug: jwt-explained
 date: 2019-10-22
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - JWT
+published: true
 description: "What are JSON web tokens (JWT) and how are they used??"
 ---
 # How it's used

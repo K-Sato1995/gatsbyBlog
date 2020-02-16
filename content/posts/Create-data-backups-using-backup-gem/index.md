@@ -3,10 +3,9 @@ title: "Create data backups using backup gem "
 slug: create-data-backups-using-backup-gem
 date: 2019-06-26
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Backup
+published: true
 description: "How to create data backups with rails using backup gem."
 ---
 # Create a backup script

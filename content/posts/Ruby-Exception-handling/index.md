@@ -3,11 +3,10 @@ title: "Ruby Exception handling"
 slug: ruby-exception-handling
 date: 2019-05-21
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Ruby
   - Exception
+published: true
 description: "Explaining how to handle exceptions in Ruby."
 ---
 # Basic Syntax

@@ -3,10 +3,9 @@ title: "Rspec resources"
 slug: rspec-resources
 date: 2019-08-26
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Rspec
+published: true
 description: "Useful resources for writing RSpec."
 ---
 # Test private methods 

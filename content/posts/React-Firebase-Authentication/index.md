@@ -3,12 +3,11 @@ title: "React Firebase Authentication "
 slug: react-firebase-authentication
 date: 2019-11-07
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - React
   - Firebase
   - Hooks
+published: true
 description: "Simple guideline about how to implement a simple authentication with React and Firebase."
 ---
 # Set up Firebase

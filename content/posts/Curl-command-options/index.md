@@ -3,11 +3,10 @@ title: "Curl command options "
 slug: curl-command-options
 date: 2019-12-02
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Curl
   - Linux
+published: true
 description: "List of options you can use with the curl command."
 ---
 # Add headers

@@ -3,10 +3,9 @@ title: "Javascript Array functions"
 slug: javascript-array-functions
 date: 2019-06-21
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Javascript
+published: true
 description: "Here are the basic array functions"
 ---
 # Introduction

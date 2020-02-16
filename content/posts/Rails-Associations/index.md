@@ -3,11 +3,10 @@ title: "Rails Associations"
 slug: rails-associations
 date: 2019-01-21
 language: japanese
-cover: ./cover.png
-generate-card: false
 tags:
   - Rails
   - Associations
+published: true
 description: "Ruby on Railsでよく使用される5つのアソーシエーションに関してまとめました。各アソーシエーション毎に何を意味するのか、また、どんなメソッドを使用する事で関連した要素を作成出来るのかまとめました。"
 ---
 # Associations

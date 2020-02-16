@@ -3,11 +3,10 @@ title: "Active Record Query Interface(Conditions)"
 slug: active-record-query-interface-conditions
 date: 2019-02-08
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - ActiveRecord
   - Rails
+published: true
 description: "This is a pure copy&paste of a part from Active Record Query Interface — Ruby on Rails Guides. The guide is very thorough and super informative."
 ---
 ## Introduction

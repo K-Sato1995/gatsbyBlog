@@ -3,10 +3,9 @@ title: "Go Resources"
 slug: go-resources
 date: 2019-09-12
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Go
+published: true
 description: "Some cool resources for learning Go."
 ---
 # Introduction

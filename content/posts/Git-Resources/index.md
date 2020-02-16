@@ -3,10 +3,9 @@ title: "Git Resources"
 slug: git-resources
 date: 2019-07-22
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Git
+published: true
 description: "Collection of posts about Git I found on the internet. The posts are either in Japanese or English"
 ---
 # Dealing With Merge Conflicts 

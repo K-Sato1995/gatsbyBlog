@@ -3,10 +3,9 @@ title: "Async and await explained"
 slug: async-and-await-explained
 date: 2019-11-02
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Javascript
+published: true
 description: "A simple explanation about async and await in Javascript."
 ---
 # Async 

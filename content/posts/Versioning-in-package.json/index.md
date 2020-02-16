@@ -3,10 +3,9 @@ title: "Versioning in package.json "
 slug: versioning-in-package-json
 date: 2019-09-12
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - npm
+published: true
 description: "What the f**k are the (~) and (^) in package.json??? Well...You'll find it out here in this post."
 ---
 # Introduction

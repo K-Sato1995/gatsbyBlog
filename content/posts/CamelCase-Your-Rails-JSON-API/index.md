@@ -3,10 +3,9 @@ title: "CamelCase Your Rails JSON API "
 slug: camelcase-your-rails-json-api
 date: 2020-01-28
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Rails
+published: true
 description: "Here is how to make your rails app respond with camel-cased keys."
 ---
 # Installation

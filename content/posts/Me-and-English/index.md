@@ -3,10 +3,9 @@ title: "Me and English"
 slug: me-and-english
 date: 2019-05-09
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Language
+published: true
 description: "Record of my English learning journey."
 ---
 # Introduction

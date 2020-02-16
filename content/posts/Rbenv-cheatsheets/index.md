@@ -3,10 +3,9 @@ title: "Rbenv cheatsheets"
 slug: rbenv-cheatsheets
 date: 2019-09-02
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - rbenv
+published: true
 description: "Here is a list of frequently used rbenv commands."
 ---
 # Frequently used Commands 

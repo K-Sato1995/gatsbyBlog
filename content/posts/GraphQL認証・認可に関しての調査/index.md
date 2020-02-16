@@ -3,10 +3,9 @@ title: "GraphQL認証・認可に関しての調査"
 slug: graphql
 date: 2019-12-10
 language: japanese
-cover: ./cover.png
-generate-card: false
 tags:
   - GraphQL
+published: true
 description: "GraphQL認証・認可に関しての調査で役立ったリンク集"
 ---
 # 認証系

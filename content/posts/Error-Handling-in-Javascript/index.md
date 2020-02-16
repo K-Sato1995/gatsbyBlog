@@ -3,11 +3,10 @@ title: "Error Handling in Javascript"
 slug: error-handling-in-javascript
 date: 2019-06-21
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Javascript
   - Exception
+published: true
 description: "Simple introduction of Error Handling in Javascript."
 ---
 # Basic Syntax

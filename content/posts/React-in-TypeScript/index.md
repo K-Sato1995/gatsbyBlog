@@ -3,11 +3,10 @@ title: "React in TypeScript"
 slug: react-in-typescript
 date: 2019-07-20
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - TypeScript
   - React
+published: true
 description: "Things I should keep in mind when I'm creating react apps in Typescript."
 ---
 # Types or Interfaces?

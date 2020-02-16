@@ -3,11 +3,10 @@ title: "Go Tips"
 slug: go-tips
 date: 2019-05-11
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Go
   - Tips
+published: true
 description: "Here are some tips I picked up while I was learning the Go language."
 ---
 # Unreferenced package

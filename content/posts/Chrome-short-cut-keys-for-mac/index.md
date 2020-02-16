@@ -3,10 +3,9 @@ title: "Chrome short cut keys for mac"
 slug: chrome-short-cut-keys-for-mac
 date: 2020-01-30
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Chrome
+published: true
 description: "Here are some useful short cut keys you can use on Chrome."
 ---
 # Short cut keys

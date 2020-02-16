@@ -3,10 +3,9 @@ title: "Rake tasks "
 slug: rake-tasks
 date: 2019-09-27
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Rake
+published: true
 description: "Simple post about rake."
 ---
 # What is rake 

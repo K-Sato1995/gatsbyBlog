@@ -3,10 +3,9 @@ title: "Untrack already tracked files in your git repository"
 slug: untrack-already-tracked-files-in-your-git-repository
 date: 2019-07-22
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Git
+published: true
 description: "Simple steps to follow to untrack files that are already committed to your remote git repository."
 ---
 # Commit all your changes

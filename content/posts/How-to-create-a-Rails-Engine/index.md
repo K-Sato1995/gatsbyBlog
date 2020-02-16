@@ -3,10 +3,9 @@ title: " How to create a Rails Engine "
 slug: how-to-create-a-rails-engine
 date: 2019-07-03
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Rails
+published: true
 description: "The post is about how to create a rails engine."
 ---
 # What are engines 

@@ -3,10 +3,9 @@ title: "Javascript String functions"
 slug: javascript-string-functions
 date: 2019-06-27
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Javascript
+published: true
 description: "Here are the basic string functions in Javascript
 
 "

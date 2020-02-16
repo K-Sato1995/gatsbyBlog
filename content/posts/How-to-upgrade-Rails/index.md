@@ -3,10 +3,9 @@ title: "How to upgrade Rails"
 slug: how-to-upgrade-rails
 date: 2019-09-19
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Rails
+published: true
 description: "Simple steps to follow to upgrade Rails in your application."
 ---
 # Steps

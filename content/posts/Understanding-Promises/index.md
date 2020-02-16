@@ -3,10 +3,9 @@ title: "Understanding Promises"
 slug: understanding-promises
 date: 2019-06-17
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Promise
+published: true
 description: "Understand how promises work."
 ---
 # What is a promise?

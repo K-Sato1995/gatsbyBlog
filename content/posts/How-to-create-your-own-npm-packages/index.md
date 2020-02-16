@@ -3,11 +3,10 @@ title: "How to create your own npm packages"
 slug: how-to-create-your-own-npm-packages
 date: 2019-06-07
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - npm
   - package
+published: true
 description: "This is a simple guide about how to create your own npm packages."
 ---
 # Introduction

@@ -3,10 +3,9 @@ title: "Cool Resources "
 slug: cool-resources
 date: 2019-07-31
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - Documents
+published: true
 description: "Cool Resources I stumbled upon on the internet."
 ---
 # Ruby 

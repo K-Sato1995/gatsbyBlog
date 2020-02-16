@@ -3,10 +3,9 @@ title: "The useEffect Hook Explained"
 slug: the-useeffect-hook-explained
 date: 2019-11-03
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - hooks
+published: true
 description: "The simplest explanation about the second argument of useEfffect."
 ---
 # The first argument

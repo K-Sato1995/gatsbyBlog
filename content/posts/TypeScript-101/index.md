@@ -3,10 +3,9 @@ title: "TypeScript 101"
 slug: typescript-101
 date: 2019-11-11
 language: english
-cover: ./cover.png
-generate-card: false
 tags:
   - TypeScript
+published: true
 description: "Some important concepts in TypeScrips "
 ---
 # Types
