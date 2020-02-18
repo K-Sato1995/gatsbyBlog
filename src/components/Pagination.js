@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { colors } from '../tokens'
 
@@ -21,11 +20,12 @@ const PaginationWrapper = styled.nav`
   }
 `
 
-const PageBtn = styled(Link)`
+const PageBtn = styled.button`
   border-radius: 3px;
   background-color: ${colors.primary};
   border: 1px solid ${colors.primary};
   color: ${colors.textLightest};
+  cursor: pointer;
   padding: 8px 20px;
   min-width: 130px;
 
@@ -38,6 +38,10 @@ const PageBtn = styled(Link)`
   @media (max-width: 564px) {
     margin-top: 10px;
     width: 100%;
+  }
+
+  &:focus {
+    outline: 0;
   }
 `
 
@@ -87,23 +91,22 @@ const PageInfo = styled.span`
 
 class Pagination extends React.Component {
   render() {
-    const { currentPage, nbPages } = this.props
-    const previousUrl = currentPage === 2 ? '/' : `/pages/${currentPage - 1}`
+    const { currentPage, totalPageNumber, nextPage, previousPage } = this.props
 
     return (
       <PaginationWrapper>
         {currentPage !== 1 ? (
-          <PreviousBtn to={previousUrl}>‹ Newer posts</PreviousBtn>
+          <PreviousBtn onClick={previousPage}>‹ Newer posts</PreviousBtn>
         ) : (
           <Spacer className="previous" />
         )}
 
         <PageInfo>
-          Page {currentPage} of {nbPages}
+          Page {currentPage} of {totalPageNumber}
         </PageInfo>
 
-        {currentPage < nbPages ? (
-          <NextBtn to={`/pages/${currentPage + 1}`}>Older posts ›</NextBtn>
+        {currentPage < totalPageNumber ? (
+          <NextBtn onClick={nextPage}>Older posts ›</NextBtn>
         ) : (
           <Spacer className="next" />
         )}

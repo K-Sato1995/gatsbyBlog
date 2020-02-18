@@ -9,9 +9,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   )
   const PageTemplate = require.resolve('./src/templates/page.js')
   const PostsBytagTemplate = require.resolve('./src/templates/tags.js')
-  const ListPostsTemplate = require.resolve(
-    './src/templates/blog-list-template.js'
-  )
 
   const allMarkdownQuery = await graphql(`
     {
@@ -41,69 +38,41 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panic(allMarkdownQuery.errors)
   }
 
-  const postPerPageQuery = await graphql(`
-    {
-      site {
-        siteMetadata {
-          postsPerPage
-        }
-      }
-    }
-  `)
-
+  // All markdonw files under content dir including about.md and experience.md.
   const markdownFiles = allMarkdownQuery.data.allMarkdown.edges
 
-  const posts = markdownFiles.filter(item =>
-    item.node.fileAbsolutePath.includes('/content/posts/')
-  )
+  // Markdown files under /content/posts/.
+  markdownFiles
+    .filter(item => item.node.fileAbsolutePath.includes('/content/posts/'))
+    .forEach((post, index, posts) => {
+      const previous = index === posts.length - 1 ? null : posts[index + 1].node
+      const next = index === 0 ? null : posts[index - 1].node
 
-  // generate paginated post list
-  const postsPerPage = postPerPageQuery.data.site.siteMetadata.postsPerPage
-  const nbPages = Math.ceil(posts.length / postsPerPage)
-
-  Array.from({ length: nbPages }).forEach((_, i) => {
-    createPage({
-      path: i === 0 ? `/` : `/pages/${i + 1}`,
-      component: ListPostsTemplate,
-      context: {
-        limit: postsPerPage,
-        skip: i * postsPerPage,
-        currentPage: i + 1,
-        nbPages: nbPages,
-      },
-    })
-  })
-
-  // generate blog posts
-  posts.forEach((post, index, posts) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
-
-    createPage({
-      path: post.node.frontmatter.slug,
-      component: BlogPostTemplate,
-      context: {
-        slug: post.node.frontmatter.slug,
-        previous,
-        next,
-      },
-    })
-
-    // generate post share images (dev only)
-    if (process.env.gatsby_executing_command.includes('develop')) {
       createPage({
-        path: `${post.node.frontmatter.slug}/image_share`,
-        component: BlogPostShareImage,
+        path: post.node.frontmatter.slug,
+        component: BlogPostTemplate,
         context: {
           slug: post.node.frontmatter.slug,
-          width: 440,
-          height: 220,
+          previous,
+          next,
         },
       })
-    }
-  })
+
+      if (process.env.gatsby_executing_command.includes('develop')) {
+        createPage({
+          path: `${post.node.frontmatter.slug}/image_share`,
+          component: BlogPostShareImage,
+          context: {
+            slug: post.node.frontmatter.slug,
+            width: 440,
+            height: 220,
+          },
+        })
+      }
+    })
 
   // generate pages
+  // (= createing pages from md files under /content/pages)
   markdownFiles
     .filter(item => item.node.fileAbsolutePath.includes('/content/pages/'))
     .forEach(page => {
