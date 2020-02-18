@@ -16,6 +16,7 @@ const BlogIndex = ({ data, location }) => {
     post.node.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
   )
   const handleChange = e => {
+    e.preventDefault()
     setSearchTerm(e.target.value)
   }
   const [currentPage, setCurrentPage] = useState(1)
