@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { graphql } from 'gatsby'
-
 import Layout from '../components/layout'
 import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
@@ -10,8 +9,15 @@ import SEO from '../components/SEO'
 
 const BlogIndex = ({ data, location }) => {
   const { title, description } = data.site.siteMetadata
-  const posts = data.posts.edges
+  const [searchTerm, setSearchTerm] = useState('')
 
+  const posts = data.posts.edges
+  const filterdPosts = posts.filter(post =>
+    post.node.frontmatter.title.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+  const handleChange = e => {
+    setSearchTerm(e.target.value)
+  }
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(6)
   // The index of the last post on the page.
@@ -19,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
   // The index of the first post on the page.
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   // Total page number
-  const totalPageNumber = Math.ceil(posts.length / postsPerPage)
+  const totalPageNumber = Math.ceil(filterdPosts.length / postsPerPage)
 
   const scrollToTop = () =>
     window.scrollTo({
@@ -44,7 +50,9 @@ const BlogIndex = ({ data, location }) => {
         <PostsList
           indexOfFirstPost={indexOfFirstPost}
           indexOfLastPost={indexOfLastPost}
-          posts={posts}
+          posts={filterdPosts}
+          searchTerm={searchTerm}
+          handleChange={handleChange}
         />
       </Wrapper>
 

@@ -2,7 +2,13 @@ import React, { useState, useEffect, Fragment } from 'react'
 import styled from 'styled-components'
 import PostsListItem from './PostsListItem'
 
-const PostsList = ({ posts, indexOfFirstPost, indexOfLastPost }) => {
+const PostsList = ({
+  posts,
+  indexOfFirstPost,
+  indexOfLastPost,
+  searchTerm,
+  handleChange,
+}) => {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
 
   const SearchBox = styled.div`
@@ -30,11 +36,11 @@ const PostsList = ({ posts, indexOfFirstPost, indexOfLastPost }) => {
   return (
     <Fragment>
       <SearchBox>
-        {/* <Input
+        <Input
           placeholder="Type here to filter posts"
           value={searchTerm}
           onChange={handleChange}
-        /> */}
+        />
       </SearchBox>
       {currentPosts.map(post => {
         const props = {

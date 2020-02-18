@@ -102,7 +102,9 @@ class Pagination extends React.Component {
         )}
 
         <PageInfo>
-          Page {currentPage} of {totalPageNumber}
+          {totalPageNumber === 0
+            ? ''
+            : `Page ${currentPage} of ${totalPageNumber}`}
         </PageInfo>
 
         {currentPage < totalPageNumber ? (
