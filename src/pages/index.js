@@ -11,9 +11,9 @@ import SEO from '../components/SEO'
 const BlogIndex = ({ data, location }) => {
   const { title, description } = data.site.siteMetadata
   const posts = data.posts.edges
+
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(6)
-
   // The index of the last post on the page.
   const indexOfLastPost = currentPage * postsPerPage
   // The index of the first post on the page.
