@@ -1,4 +1,3 @@
-import { CATEGORIES } from './constants'
 const { createFilePath } = require('gatsby-source-filesystem')
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -138,7 +137,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   // generate Categories
-  CATEGORIES.forEach(uniqCategory => {
+  const categories = [
+    'Ruby',
+    'Go',
+    'Javascript',
+    'React',
+    'Rails',
+    'Others',
+    'Life',
+  ]
+
+  categories.forEach(uniqCategory => {
     createPage({
       path: `categories/${uniqCategory}`,
       component: PostsBycategoryTemplate,
