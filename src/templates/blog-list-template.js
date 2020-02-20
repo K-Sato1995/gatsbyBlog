@@ -1,11 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import { CATEGORIES } from '../constants'
 import Layout from '../components/layout'
 import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import PostsList from '../components/PostsList'
 import Pagination from '../components/Pagination'
+import CategoryList from '../components/CategoryList'
 import SEO from '../components/SEO'
 
 class BlogList extends React.Component {
@@ -20,6 +21,7 @@ class BlogList extends React.Component {
         <Hero title={title} subTitle={description} />
 
         <Wrapper>
+          <CategoryList categories={CATEGORIES} />
           <PostsList posts={posts} />
         </Wrapper>
 

@@ -10,6 +10,7 @@ import { Bull, ReadingTime } from './Commons'
 const Post = styled.article`
   border-bottom: 1px solid rgba(214, 209, 230, 0.5);
   padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
 `
 
 const ReadPost = styled(Link)`

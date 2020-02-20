@@ -10,7 +10,8 @@ import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 
 const PageTitle = styled.h1`
-  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(214, 209, 230, 0.5);
+  padding-bottom: 1.3rem;
 `
 
 class Tags extends React.Component {

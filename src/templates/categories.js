@@ -10,12 +10,13 @@ import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 
 const PageTitle = styled.h1`
-  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(214, 209, 230, 0.5);
+  padding-bottom: 1.3rem;
 `
 
 class Categories extends React.Component {
   render() {
-    const pageTitle = `#${this.props.pageContext.category}`
+    const pageTitle = `${this.props.pageContext.category}`
     const posts = get(this, 'props.data.posts.edges')
 
     return (
@@ -25,7 +26,7 @@ class Categories extends React.Component {
 
         <Wrapper>
           <PageTitle>
-            Posts categorised as {this.props.pageContext.category}
+            Posts categorized as {this.props.pageContext.category}
           </PageTitle>
           <PostsList posts={posts} />
         </Wrapper>
