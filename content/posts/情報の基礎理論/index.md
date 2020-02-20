@@ -3,6 +3,7 @@ title: "情報の基礎理論"
 slug: 情報の基礎理論
 date: 2019-03-12
 language: japanese
+category: Others
 tags:
   - ComputerScience
 published: true

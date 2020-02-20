@@ -3,6 +3,7 @@ title: "システムの構成と方式"
 slug: システムの構成と方式
 date: 2019-05-14
 language: japanese
+category: Others
 tags:
 published: true
 description: "システムの構成や方式に関して簡単にまとめました。"

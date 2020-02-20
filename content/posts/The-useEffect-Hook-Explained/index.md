@@ -3,6 +3,7 @@ title: "The useEffect Hook Explained"
 slug: the-useeffect-hook-explained
 date: 2019-11-03
 language: english
+category: React
 tags:
   - hooks
 published: true

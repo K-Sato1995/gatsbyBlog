@@ -3,6 +3,7 @@ title: "ハードウェア基礎"
 slug: ハードウェア基礎
 date: 2019-02-24
 language: japanese
+category: Others
 tags:
   - Hardware
 published: true

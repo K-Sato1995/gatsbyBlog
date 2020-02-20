@@ -3,6 +3,7 @@ title: "Firebase+React+Railsでの認証の流れ"
 slug: firebase-react-rails
 date: 2019-12-10
 language: japanese
+category: Rails
 tags:
   - Rails
   - JWT

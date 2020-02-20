@@ -3,6 +3,7 @@ title: "GraphQL認証・認可に関しての調査"
 slug: graphql
 date: 2019-12-10
 language: japanese
+category: Rails
 tags:
   - GraphQL
 published: true

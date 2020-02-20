@@ -3,6 +3,7 @@ title: "Use MailCatcher locally"
 slug: use-mailcatcher-locally
 date: 2019-11-06
 language: english
+category: Rails
 tags:
   - Mail
   - Rails

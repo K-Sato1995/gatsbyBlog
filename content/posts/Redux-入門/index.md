@@ -3,6 +3,7 @@ title: "Redux 入門 "
 slug: redux
 date: 2018-12-16
 language: japanese
+category: React
 tags:
   - Redux
   - React

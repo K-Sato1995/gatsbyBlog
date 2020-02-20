@@ -3,6 +3,7 @@ title: "Cool Resources "
 slug: cool-resources
 date: 2019-07-31
 language: english
+category: Others
 tags:
   - Documents
 published: true

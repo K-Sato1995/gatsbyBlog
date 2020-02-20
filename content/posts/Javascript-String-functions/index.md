@@ -3,6 +3,7 @@ title: "Javascript String functions"
 slug: javascript-string-functions
 date: 2019-06-27
 language: english
+category: Javascript
 tags:
   - Javascript
 published: true

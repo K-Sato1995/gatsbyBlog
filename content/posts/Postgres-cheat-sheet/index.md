@@ -3,6 +3,7 @@ title: "Postgres cheat sheet"
 slug: postgres-cheat-sheet
 date: 2019-09-04
 language: english
+category: Others
 tags:
 published: true
 description: "Here is a list of frequently used Postgres commands."

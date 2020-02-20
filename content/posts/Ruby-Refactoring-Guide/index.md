@@ -3,6 +3,7 @@ title: "Ruby Refactoring Guide"
 slug: ruby-refactoring-guide
 date: 2019-03-21
 language: english
+category: Ruby
 tags:
   - Ruby
   - Tips

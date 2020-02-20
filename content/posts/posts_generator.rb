@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'json'
 require 'httparty'
 require 'date'
@@ -11,6 +13,14 @@ response = HTTParty.get(url, format: :plain)
 DATA = JSON.parse(response, symbolize_names: true)
 
 posts_array = DATA[:data][:posts]
+
+def find_category(c_id)
+  categories_array = DATA[:data][:categories]
+
+  categories_array.each do |category|
+    return category[:name] if c_id == category[:id]
+  end
+end
 
 def find_tags(index)
   post_tags_array = DATA[:data][:post_tags]
@@ -37,7 +47,7 @@ def slug(string)
 end
 
 def parse_date(date_string)
-  DateTime.parse(date_string).strftime("%Y-%m-%d")
+  DateTime.parse(date_string).strftime('%Y-%m-%d')
 end
 
 def create_header(post, f, index)
@@ -46,6 +56,7 @@ def create_header(post, f, index)
   f.puts "slug: #{slug(post[:title])}"
   f.puts "date: #{parse_date(post[:created_at])}"
   f.puts "language: #{post[:language]}"
+  f.puts "category: #{find_category(post[:category_id])}"
   f.puts 'tags:'
   inline_tags(find_tags(index), f)
   f.puts 'published: true'

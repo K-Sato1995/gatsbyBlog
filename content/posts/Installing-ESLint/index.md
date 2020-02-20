@@ -3,6 +3,7 @@ title: "Installing ESLint"
 slug: installing-eslint
 date: 2018-12-15
 language: english
+category: Javascript
 tags:
   - ESLint
   - Javascript

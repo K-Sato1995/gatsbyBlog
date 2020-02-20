@@ -3,6 +3,7 @@ title: "Devise Token Auth"
 slug: devise-token-auth
 date: 2019-12-10
 language: english
+category: Rails
 tags:
   - Gem
   - DeviseTokenAuth

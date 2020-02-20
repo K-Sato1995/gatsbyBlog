@@ -3,6 +3,7 @@ title: "Rails Associations"
 slug: rails-associations
 date: 2019-01-21
 language: japanese
+category: Rails
 tags:
   - Rails
   - Associations

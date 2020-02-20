@@ -3,6 +3,7 @@ title: "Make your react app compatible with IE"
 slug: make-your-react-app-compatible-with-ie
 date: 2020-01-28
 language: english
+category: React
 tags:
   - React
 published: true

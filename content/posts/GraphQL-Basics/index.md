@@ -3,6 +3,7 @@ title: "GraphQL Basics"
 slug: graphql-basics
 date: 2018-12-17
 language: english
+category: Others
 tags:
   - GraphQL
 published: true

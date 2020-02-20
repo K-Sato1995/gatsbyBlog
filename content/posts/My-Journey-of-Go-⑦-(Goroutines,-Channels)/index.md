@@ -3,6 +3,7 @@ title: "My Journey of Go ⑦ (Goroutines, Channels)"
 slug: my-journey-of-go-goroutines-channels
 date: 2018-10-09
 language: english
+category: Go
 tags:
   - Go
   - Tutorial

@@ -3,6 +3,7 @@ title: " Implement authentication from scratch"
 slug: implement-authentication-from-scratch
 date: 2019-10-01
 language: english
+category: Rails
 tags:
   - Rails
 published: true

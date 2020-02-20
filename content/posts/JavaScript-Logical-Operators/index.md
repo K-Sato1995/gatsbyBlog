@@ -3,6 +3,7 @@ title: "JavaScript Logical Operators"
 slug: javascript-logical-operators
 date: 2019-11-14
 language: english
+category: Javascript
 tags:
   - Javascript
 published: true

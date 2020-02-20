@@ -3,6 +3,7 @@ title: "English vocabulary"
 slug: english-vocabulary
 date: 2019-05-19
 language: japanese
+category: Others
 tags:
   - Language
 published: true

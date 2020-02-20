@@ -3,6 +3,7 @@ title: "TypeScript 101"
 slug: typescript-101
 date: 2019-11-11
 language: english
+category: Javascript
 tags:
   - TypeScript
 published: true

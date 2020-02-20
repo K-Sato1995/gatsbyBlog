@@ -3,6 +3,7 @@ title: "Rspec Basics ③ (Useful Gems)"
 slug: rspec-basics-useful-gems
 date: 2018-09-21
 language: english
+category: Ruby
 tags:
   - Rails
   - Ruby

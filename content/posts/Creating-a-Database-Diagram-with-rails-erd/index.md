@@ -3,6 +3,7 @@ title: "Creating a Database Diagram with rails-erd"
 slug: creating-a-database-diagram-with-rails-erd
 date: 2019-07-17
 language: english
+category: Rails
 tags:
   - Documents
 published: true

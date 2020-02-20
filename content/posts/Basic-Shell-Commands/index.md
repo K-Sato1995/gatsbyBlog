@@ -3,6 +3,7 @@ title: "Basic Shell Commands"
 slug: basic-shell-commands
 date: 2018-10-06
 language: english
+category: Others
 tags:
   - Shell
 published: true

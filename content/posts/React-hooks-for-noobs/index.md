@@ -3,6 +3,7 @@ title: "React hooks for noobs"
 slug: react-hooks-for-noobs
 date: 2019-03-07
 language: english
+category: React
 tags:
   - React
   - Hooks

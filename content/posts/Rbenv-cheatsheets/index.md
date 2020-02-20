@@ -3,6 +3,7 @@ title: "Rbenv cheatsheets"
 slug: rbenv-cheatsheets
 date: 2019-09-02
 language: english
+category: Ruby
 tags:
   - rbenv
 published: true

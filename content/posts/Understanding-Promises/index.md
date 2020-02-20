@@ -3,6 +3,7 @@ title: "Understanding Promises"
 slug: understanding-promises
 date: 2019-06-17
 language: english
+category: Javascript
 tags:
   - Promise
 published: true

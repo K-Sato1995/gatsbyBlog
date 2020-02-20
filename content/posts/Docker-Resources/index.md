@@ -3,6 +3,7 @@ title: "Docker Resources"
 slug: docker-resources
 date: 2019-03-07
 language: english
+category: Others
 tags:
   - Docker
 published: true

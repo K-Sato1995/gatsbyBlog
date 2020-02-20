@@ -3,6 +3,7 @@ title: "React Firebase Authentication "
 slug: react-firebase-authentication
 date: 2019-11-07
 language: english
+category: React
 tags:
   - React
   - Firebase

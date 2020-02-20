@@ -3,6 +3,7 @@ title: "Network基礎"
 slug: network
 date: 2019-02-19
 language: japanese
+category: Others
 tags:
   - Network
 published: true

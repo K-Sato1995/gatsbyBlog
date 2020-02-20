@@ -3,6 +3,7 @@ title: "Web-Application-Database servers"
 slug: web-application-database-servers
 date: 2019-02-27
 language: english
+category: Others
 tags:
   - Server
 published: true

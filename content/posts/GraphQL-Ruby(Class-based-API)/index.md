@@ -3,6 +3,7 @@ title: "GraphQL Ruby(Class-based API)"
 slug: graphql-ruby-class-based-api
 date: 2018-12-18
 language: english
+category: Others
 tags:
   - GraphQL
   - Tutorial

@@ -3,6 +3,7 @@ title: "Git Resources"
 slug: git-resources
 date: 2019-07-22
 language: english
+category: Others
 tags:
   - Git
 published: true

@@ -9,6 +9,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   )
   const PageTemplate = require.resolve('./src/templates/page.js')
   const PostsBytagTemplate = require.resolve('./src/templates/tags.js')
+  const PostsBycategoryTemplate = require.resolve(
+    './src/templates/categories.js'
+  )
   const ListPostsTemplate = require.resolve(
     './src/templates/blog-list-template.js'
   )
@@ -26,6 +29,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             frontmatter {
               title
               slug
+              category
               tags
               language
             }
@@ -132,6 +136,26 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       })
     })
+
+  const categories = [
+    'Ruby',
+    'Go',
+    'Javascript',
+    'React',
+    'Rails',
+    'Others',
+    'Life',
+  ]
+  // generate Categories
+  categories.forEach(uniqCategory => {
+    createPage({
+      path: `categories/${uniqCategory}`,
+      component: PostsBycategoryTemplate,
+      context: {
+        category: uniqCategory,
+      },
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

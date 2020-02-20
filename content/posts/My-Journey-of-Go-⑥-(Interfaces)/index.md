@@ -3,6 +3,7 @@ title: "My Journey of Go ⑥ (Interfaces)"
 slug: my-journey-of-go-interfaces
 date: 2018-10-08
 language: english
+category: Go
 tags:
   - Go
   - Tutorial

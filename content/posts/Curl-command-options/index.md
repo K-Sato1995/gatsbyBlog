@@ -3,6 +3,7 @@ title: "Curl command options "
 slug: curl-command-options
 date: 2019-12-02
 language: english
+category: Others
 tags:
   - Curl
   - Linux

@@ -3,6 +3,7 @@ title: "基本情報要点まとめ"
 slug: 基本情報要点まとめ
 date: 2019-05-21
 language: japanese
+category: Others
 tags:
   - 基本情報
 published: true

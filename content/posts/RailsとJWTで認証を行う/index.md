@@ -3,6 +3,7 @@ title: "RailsとJWTで認証を行う"
 slug: rails-jwt
 date: 2019-10-31
 language: japanese
+category: Rails
 tags:
   - JWT
 published: true

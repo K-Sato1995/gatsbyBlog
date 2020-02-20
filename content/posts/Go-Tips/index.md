@@ -3,6 +3,7 @@ title: "Go Tips"
 slug: go-tips
 date: 2019-05-11
 language: english
+category: Go
 tags:
   - Go
   - Tips

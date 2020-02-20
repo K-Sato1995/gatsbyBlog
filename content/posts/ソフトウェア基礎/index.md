@@ -3,6 +3,7 @@ title: "ソフトウェア基礎"
 slug: ソフトウェア基礎
 date: 2019-02-27
 language: japanese
+category: Others
 tags:
   - Software
 published: true

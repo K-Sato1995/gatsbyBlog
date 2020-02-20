@@ -3,6 +3,7 @@ title: "Go Resources"
 slug: go-resources
 date: 2019-09-12
 language: english
+category: Go
 tags:
   - Go
 published: true

@@ -3,6 +3,7 @@ title: "Create data backups using backup gem "
 slug: create-data-backups-using-backup-gem
 date: 2019-06-26
 language: english
+category: Rails
 tags:
   - Backup
 published: true
