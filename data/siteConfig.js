@@ -22,10 +22,6 @@ module.exports = {
   headerLinksIcon: 'avatar.png', //  (leave empty to disable: '')
   headerLinks: [
     {
-      label: 'Blog',
-      url: '/',
-    },
-    {
       label: 'About',
       url: '/about',
     },
