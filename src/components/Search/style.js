@@ -24,7 +24,6 @@ const ResultsWrapper = styled.div`
     background: #fffeff;
     border-radius: 3px;
     box-shadow: rgba(20, 20, 20, 0.2) 1px 1px 20px;
-    width: 800px;
     width: 520px;
     top: 70px;
     right: calc((100vw - 800px) / 2);
@@ -48,6 +47,8 @@ const ResultsWrapper = styled.div`
   ul {
     max-height: 210px;
     overflow-y: scroll;
+    padding-left: 0em;
+    margin: 0em 0px 0px;
     li {
       list-style: none;
       a {
