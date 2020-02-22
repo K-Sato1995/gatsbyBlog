@@ -143,8 +143,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     'Javascript',
     'React',
     'Rails',
-    'Others',
     'Life',
+    'Others',
   ]
 
   categories.forEach(uniqCategory => {
