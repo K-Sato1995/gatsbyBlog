@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import { ResultsWrapper } from './style'
+import TextHighlighter from './highlight'
 
 const SearchResults = props => {
   const { searchTerm, isFocused } = props
@@ -81,7 +82,9 @@ const SearchResults = props => {
           {results.map(result => {
             return (
               <li key={result.slug}>
-                <Link to={`/${result.slug}/`}>{result.title}</Link>
+                <Link to={`/${result.slug}/`}>
+                  <TextHighlighter str={result.title} includes={searchTerm} />
+                </Link>
               </li>
             )
           })}
