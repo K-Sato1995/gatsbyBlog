@@ -4,8 +4,8 @@ const CATEGORIES = [
   'Javascript',
   'React',
   'Rails',
-  'Others',
   'Life',
+  'Others',
 ]
 
 export { CATEGORIES }
