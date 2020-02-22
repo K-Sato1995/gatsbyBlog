@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import useSiteMetadata from '../hooks/use-site-config'
 import { colors, media } from '../tokens'
 import useSiteImages from '../hooks/use-site-images'
+import Search from './Search'
 
 const HeaderWrapper = styled.header`
   top: 0;
@@ -29,7 +30,7 @@ const HeaderNav = styled.nav`
   height: 60px;
   display: flex;
   flex-direction: row;
-  max-width: 770px;
+  max-width: 800px;
   z-index: 1000;
   justify-content: space-between;
   overflow-x: auto;
@@ -221,6 +222,7 @@ const Header = () => {
         </HeaderLinkTitle>
         <HeaderLinksContainer>
           <HeaderLinks headerLinks={headerLinks} />
+          <Search />
         </HeaderLinksContainer>
         <MobileHeader headerLinks={headerLinks} />
       </HeaderNav>

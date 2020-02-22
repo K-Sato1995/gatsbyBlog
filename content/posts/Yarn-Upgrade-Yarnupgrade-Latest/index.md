@@ -1,6 +1,6 @@
 ---
-title: 'Web-Application-Database servers'
-slug: web-application-database-servers
+title: 'Yarn Upgrade and Yarnupgrade-Latest'
+slug: yarn-upgrade-yarnupgrade-latest
 date: 2019-02-27
 language: english
 tags:
