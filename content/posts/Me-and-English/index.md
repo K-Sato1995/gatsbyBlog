@@ -52,7 +52,7 @@ On the other hand, what seemed really exciting and interesting was doing backpac
 To put it simply, the trip was absolutely eye-opening and life-changing. Surviving in a foreign country and meeting many people from different countries taught me how important English is and how exciting and different my life would be like if I could speak English fluently. Experiencing different cultures made me realize how narrow-minded and ignorant I was.
 After the trip, I was determined to work on my English and decided to go to the Philippines for studying English.
 
-# 21(Gap Year)
+# 20 to 21(Gap Year)
 
 I took a year off from college to study English in the Philippines. I worked at a cram school in my country for about 4 months to make some money for the tuition fees. And I studied at a language school in the Philipines for approximately 7 months.
 
@@ -75,3 +75,7 @@ My typical day in the Philipines was like the following.
 As you can see above, it was pretty intense. On top of that, we could not leave the school on weekdays and we had a curfew on the weekends. The crazy thing was that if you break rules, you could get expelled from the school. And there actually were some students who got kicked out of the school due to the series of violations of the rules. in hindsight, it was like a prison.
 
 Thanks to the intense curriculum and my resolute determination, I improved my English ability significantly after 7months. There were times I almost gave up because I could not feel any progress despite all the effort I was putting into studying the language. But I never did. I think it's because of the friends who studied together and supported me. I could not tell them this then but I really want to thank them for supporting, inspiring and motivating me. I could not achieve what I accomplished without them.
+
+# 21 to 22(College junior)
+
+# 22 to 23(College senior)
