@@ -52,7 +52,8 @@ On the other hand, what seemed really exciting and interesting was doing backpac
 To put it simply, the trip was absolutely eye-opening and life-changing. Surviving in a foreign country and meeting many people from different countries taught me how important English is and how exciting and different my life would be like if I could speak English fluently. Experiencing different cultures made me realize how narrow-minded and ignorant I was.
 After the trip, I was determined to work on my English and decided to go to the Philippines for studying English.
 
-21(Gap Year)
+# 21(Gap Year)
+
 I took a year off from college to study English in the Philippines. I worked at a cram school in my country for about 4 months to make some money for the tuition fees. And I studied at a language school in the Philipines for approximately 7 months.
 
 My typical day in the Philipines was like the following.
