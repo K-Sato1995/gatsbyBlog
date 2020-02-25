@@ -72,3 +72,5 @@ My typical day in the Philipines was like the following.
 ```
 
 As you can see above, it was pretty intense. On top of that, we could not leave the school on weekdays and we had a curfew on the weekends. The crazy thing was that if you break rules, you could get expelled from the school. And there actually were some students who got kicked out of the school due to the series of violations of the rules. in hindsight, it was like a prison.
+
+Thanks to the intense curriculum and my resolute determination, I improved my English ability significantly after 7months. There were times I almost gave up because I could not feel any progress despite all the effort I was putting into studying the language. But I never did. I think it's because of the friends who studied together and supported me. I could not tell them this then but I really want to thank them for supporting, inspiring and motivating me. I could not achieve what I accomplished without them.
