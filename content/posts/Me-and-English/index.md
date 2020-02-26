@@ -16,7 +16,7 @@ This is basically a summary of how I've been improving my English ability in my 
 
 # 0 to 12 years old (Born to Elementary school)
 
-No expose to the language at all.
+No exposure to the language at all.
 
 # 13 to 16 years old(Middle school to High school junior year)
 
