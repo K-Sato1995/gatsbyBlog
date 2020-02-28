@@ -1,36 +1,42 @@
 ---
-title: "Git Resources"
-slug: git-resources
+title: 'Git Tips'
+slug: git-tips
 date: 2019-07-22
 language: english
 category: Others
 tags:
   - Git
 published: true
-description: "Collection of posts about Git I found on the internet. The posts are either in Japanese or English"
+description: 'Some useful tips about Git with related articles. The listed articles are either in Japanese or English'
 ---
-# Dealing With Merge Conflicts 
+
+# Dealing With Merge Conflicts
+
 - [Dealing With Merge Conflicts](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts)
 
-# git push の取り消し方法 
-- [git push の取り消し方法 | WWWクリエイターズ](http://www-creators.com/archives/2020)
+# git push の取り消し方法
+
+- [git push の取り消し方法 | WWW クリエイターズ](http://www-creators.com/archives/2020)
 
 # Put commits together
+
 - [Squash All Commits Related to a Single Issue into a Single Commit · todotxt/todo.txt-android Wiki · GitHub](https://github.com/todotxt/todo.txt-android/wiki/squash-all-commits-related-to-a-single-issue-into-a-single-commit)
 - [rebase -i でコミットをまとめる - Qiita](https://qiita.com/takke/items/3400b55becfd72769214)
-- [他人のコミットをgit merge --squashするべきでないのではという話 - Qiita](https://qiita.com/pshiko/items/1e9acd114b7e85884866)
+- [他人のコミットを git merge --squash するべきでないのではという話 - Qiita](https://qiita.com/pshiko/items/1e9acd114b7e85884866)
 
 ```
 $ git rebase -i HEAD~4
 ```
 
 # Check out remote branch onto your local pc
-- [リモートのgitブランチをローカルにチェックアウトする - setoya-blog](https://www.setoya-blog.com/entry/2012/11/04/132746)
+
+- [リモートの git ブランチをローカルにチェックアウトする - setoya-blog](https://www.setoya-blog.com/entry/2012/11/04/132746)
 
 ```
 $ git checkout -b other_branch origin/other_branch
 ```
-# Git Command Aliases 
+
+# Git Command Aliases
 
 ```
 git config --global alias.co checkout
@@ -52,7 +58,7 @@ git rm -r --cached directory/
 - [Untrack already tracked files in your git repository](https://k-sato1995.github.io/blog/untrack-already-tracked-files-in-your-git-repository)
 - [Git: Removing already tracked files](https://clubmate.fi/git-removing-files-from-the-staging-area-and-the-tree/)
 
-# Git Reset 
+# Git Reset
 
 ```
 --soft: uncommit changes, changes are left staged (index).
@@ -60,24 +66,24 @@ git rm -r --cached directory/
 --mixed (default): uncommit + unstage changes, changes are left in working tree.
 ```
 
+# Git Tags
 
-# Git Tags 
 - [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
 ```
 # Show all tags
 $ git tag
-# Create a tag 
+# Create a tag
 $ git tag -a v1.4 -m "my version 1.4"
-# Create a tag with a specific commit hash 
+# Create a tag with a specific commit hash
 $  git tag -a v1.2 9fceb02 -m 'my version 0.1.0'
-# Show the tag data along with the commit that was tagged 
+# Show the tag data along with the commit that was tagged
 $ git show v1.4
 # Sharing a tag
 $ git push origin v1.5
-# Sharing tags 
+# Sharing tags
 $ git push origin --tags
-# Deleting tags 
+# Deleting tags
 $ git tag -d v1.4
 # Delete a remote tag
 $ git push origin --delete <tagname>
@@ -105,9 +111,8 @@ $ git add . && git reset -- vendor/*
 # Remove all untracked directories and files
 
 ```
-git clean -n 
+git clean -n
 git clean -df // use -f if you just wanna delete untracked files.
 ```
 
 - [Remove all untracked files](https://koukia.ca/how-to-remove-local-untracked-files-from-the-current-git-branch-571c6ce9b6b1)
-
