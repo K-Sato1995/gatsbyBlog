@@ -63,6 +63,7 @@ disqus: true
 - [The Modern JavaScript Tutorial](https://github.com/javascript-tutorial/en.javascript.info/graphs/contributors)
 - [Docker Documentation](https://github.com/docker/docker.github.io)
 - [Rails Guide(JP)](https://github.com/yasslab/railsguides.jp)
+- [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth)
 
 # CERTIFICATIONS🏅
 
