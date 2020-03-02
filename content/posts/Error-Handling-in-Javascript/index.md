@@ -1,5 +1,5 @@
 ---
-title: "Error Handling in Javascript"
+title: 'Error Handling in Javascript'
 slug: error-handling-in-javascript
 date: 2019-06-21
 language: english
@@ -8,8 +8,9 @@ tags:
   - Javascript
   - Exception
 published: true
-description: "Simple introduction of Error Handling in Javascript."
+description: 'Simple introduction of Error Handling in Javascript.'
 ---
+
 # Basic Syntax
 
 The `try/catch/finally` statement handles some or all of the errors that may occur in a block of code, while still running code.

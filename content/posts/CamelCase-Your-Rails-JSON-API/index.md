@@ -1,5 +1,5 @@
 ---
-title: "CamelCase Your Rails JSON API "
+title: 'CamelCase Your Rails JSON API '
 slug: camelcase-your-rails-json-api
 date: 2020-01-28
 language: english
@@ -7,8 +7,9 @@ category: Rails
 tags:
   - Rails
 published: true
-description: "Here is how to make your rails app respond with camel-cased keys."
+description: 'Here is how to make your rails app respond with camel-cased keys.'
 ---
+
 # Installation
 
 Add the gem to your Gemfile and run `bundle install`.
@@ -33,6 +34,7 @@ Include a `Key-Inflection` header with values of `camel`, `dash`, `snake` or `pa
  }
 ```
 
-# Resources 
+# Resources
+
 - [olive_branch gem](https://github.com/vigetlabs/olive_branch)
 - [CamelCase Your Rails JSON API With OliveBranch](https://www.viget.com/articles/introducing-olivebranch/)

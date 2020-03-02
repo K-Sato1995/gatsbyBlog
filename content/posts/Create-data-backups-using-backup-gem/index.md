@@ -1,5 +1,5 @@
 ---
-title: "Create data backups using backup gem "
+title: 'Create data backups using backup gem '
 slug: create-data-backups-using-backup-gem
 date: 2019-06-26
 language: english
@@ -7,8 +7,9 @@ category: Rails
 tags:
   - Backup
 published: true
-description: "How to create data backups with rails using backup gem."
+description: 'How to create data backups with rails using backup gem.'
 ---
+
 # Create a backup script
 
 The command below will generate a folder in your user's home directory called Backup.
@@ -21,8 +22,8 @@ $ backup generate:model --trigger my_backup --databases="postgresql"
 
 The model file you just created would be located in `~/Backup/models/my_backup.rb`
 
-
 # Setup your Backup script
+
 In order to perform a backup job, you’ll need to update the generated model file.
 
 ```
@@ -79,7 +80,8 @@ The command below will load the main configuration file, located by default at `
 ```
 $ backup perform --trigger my_backup
 ```
-When completed, you will find your backup in the `Storage` path you specified. 
+
+When completed, you will find your backup in the `Storage` path you specified.
 
 You can also specify a config file like the code below.
 
@@ -87,7 +89,8 @@ You can also specify a config file like the code below.
 backup perform --trigger db_backup --config-file './config.rb'
 ```
 
-# References 
+# References
+
 - [Overview · Backup Documentation](http://backup.github.io/backup/v4/)
 - [Hourly Production Server Database And File Backups | GoRails](https://gorails.com/guides/hourly-production-server-database-and-file-backups)
 - [How to import an SQL file using the command line in MySQL? - Stack Overflow](https://stackoverflow.com/questions/17666249/how-to-import-an-sql-file-using-the-command-line-in-mysql)
