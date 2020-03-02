@@ -1,5 +1,5 @@
 ---
-title: "Docker Resources"
+title: 'Docker Resources'
 slug: docker-resources
 date: 2019-03-07
 language: english
@@ -9,6 +9,7 @@ tags:
 published: true
 description: "I listed awesome learning resources for Docker in this post. I'll keep adding more and more resources as I learn more about Docker. "
 ---
+
 # Great Resources
 
 # Great introductory posts about Docker
@@ -41,7 +42,7 @@ description: "I listed awesome learning resources for Docker in this post. I'll 
 - `docker attach` – Attaches to a running container
 - `docker commit` – Creates a new image from a container’s changes
 - `docker rmi -f $(docker images -q)` – Delete all the existing images on your system. (`-f` is the `force` option.)
--  `docker image rm [OPTIONS] IMAGE [IMAGE...]`  - Delete specific images.
+- `docker image rm [OPTIONS] IMAGE [IMAGE...]` - Delete specific images.
 - `docker prune` - Remove unused data
 
 - [A Guide to Docker Commands with Examples](https://afourtech.com/guide-docker-commands-examples/)
@@ -85,7 +86,7 @@ description: "I listed awesome learning resources for Docker in this post. I'll 
 
 ```yml
 ports:
-  - "4000:80"
+  - '4000:80'
 ```
 
 means you are mapping your **machine’s port 4000** to the **container’s published port 80**.
@@ -153,9 +154,8 @@ volumes: mysql:
 
 - [docker-compose up for only certain containers](https://stackoverflow.com/questions/30233105/docker-compose-up-for-only-certain-containers)
 
+## Syntax of RUN in Dockerfile
 
-
-## Syntax of RUN in Dockerfile 
 In the shell form you can use a `\ (backslash)` to continue a single `RUN` instruction onto the next line. For example, consider these two lines.
 
 ```sh
@@ -168,11 +168,12 @@ Together they are equivalent to this single line:
 ```sh
 RUN /bin/bash -c 'source $HOME/.bashrc; echo $HOME'
 ```
+
 - [Dockerfile reference (RUN)](https://docs.docker.com/engine/reference/builder/#run)
 
 ## Using attach
 
-Use docker attach to attach your terminal’s standard input, output, and error (or any combination of the three) to a running container using the container’s ID or name. 
+Use docker attach to attach your terminal’s standard input, output, and error (or any combination of the three) to a running container using the container’s ID or name.
 
 ```
 $ docker attach <container_name/container_id>
@@ -180,6 +181,7 @@ $(docker-compose ps -q your-service)
 ```
 
 ## Mount node_modules
+
 I'll leave an answer I found on StackOverflow here.
 
 > This happens because you have added your worker directory as a volume to your docker-compose.yml, as the volume is not mounted during the build.
@@ -190,17 +192,17 @@ I'll leave an answer I found on StackOverflow here.
 
 ```yml
 redis:
-    image: redis
+  image: redis
 worker:
-    build: ./worker
-    command: npm start
-    ports:
-        - "9730:9730"
-    volumes:
-        - worker/:/worker/
-        - /worker/node_modules
-    links:
-        - redis
+  build: ./worker
+  command: npm start
+  ports:
+    - '9730:9730'
+  volumes:
+    - worker/:/worker/
+    - /worker/node_modules
+  links:
+    - redis
 ```
 
 > I'm not entirely certain whether this imposes any issues for the portability of the image, but as it seems you are primarily using docker to provide a runtime environment, this should not be an issue.
@@ -211,29 +213,30 @@ worker:
 
 ```
 // Show the existing containers
-$ docker-compose ps 
+$ docker-compose ps
 
 // Execute the command the below with the container's name you want to run the shell commands in.
 $ docker exec -i -t CONTAINER_NAME /bin/sh
 ```
 
-# Use binding pry in a docker container 
+# Use binding pry in a docker container
 
 - [Using pry-rails with Docker · GitHub](https://gist.github.com/briankung/ebfb567d149209d2d308576a6a34e5d8)
 
-# Get into a running container 
+# Get into a running container
 
 ```
 $ docker-compose run container-name bash
 ```
 
-# Edit files in a docker container 
+# Edit files in a docker container
 
 ```
 $ docker exec -u 0 -it <container_name> bash
 $ apt-get update
 $ apt-get install vim // Install the editor
 ```
+
 Or use the following Dockerfile:
 
 ```

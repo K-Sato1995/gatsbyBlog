@@ -1,5 +1,5 @@
 ---
-title: "Firebase+React+Railsでの認証の流れ"
+title: 'Firebase+React+Railsでの認証の流れ'
 slug: firebase-react-rails
 date: 2019-12-10
 language: japanese
@@ -9,8 +9,9 @@ tags:
   - JWT
   - Firebase
 published: true
-description: "Firebase+React+Railsでの認証の流れまとめ。"
+description: 'Firebase+React+Railsでの認証の流れまとめ。'
 ---
+
 # 認証流れ整理
 
 ```
@@ -23,17 +24,18 @@ description: "Firebase+React+Railsでの認証の流れまとめ。"
 →
 (4) RailsでTokenの検証(受け取ったTokenが変更されてないか検証)
 (JWTのヘッダー、ペイロードが改変されていると、発行元Firebaseの署名と不一致になる)
-= 
+=
 !!! Tokenが正しい秘密鍵から作られているか公開鍵で検証(この場合はFirebaseの秘密鍵から作られたTokenか、Firebaseの公開鍵から検証) !!
 ```
 
-# Firebaseから受け取るトークンの検証
-RubyはFirebaseの公式AdminSDKが存在しないので、下記の記事内のような方法でトークンの検証を行う。
+# Firebase から受け取るトークンの検証
+
+Ruby は Firebase の公式 AdminSDK が存在しないので、下記の記事内のような方法でトークンの検証を行う。
 記事を見ればわかるが、トークンの検証方法自体はそこまで複雑ではない。
 
-[RubyでFirebaseのidトークンを認証に使ってみる - Qiita](https://qiita.com/otakky/items/b7582202f5cde8f2dd21)
+[Ruby で Firebase の id トークンを認証に使ってみる - Qiita](https://qiita.com/otakky/items/b7582202f5cde8f2dd21)
 
-ちなみに公式AdminSDK(Node)の認証箇所は下記。
+ちなみに公式 AdminSDK(Node)の認証箇所は下記。
 
 https://github.com/firebase/firebase-admin-node/blob/master/src/auth/auth.ts
 
@@ -134,5 +136,5 @@ end
 
 # 参考
 
-- [Nuxt.js + GraphQL + Ruby on Railsで作ったアプリにJWT認証を追加する方法 - Qiita](https://qiita.com/Y_uuu/items/96f85682625fb5f35760)
-- [RubyでFirebaseのidトークンを認証に使ってみる - Qiita](https://qiita.com/otakky/items/b7582202f5cde8f2dd21)
+- [Nuxt.js + GraphQL + Ruby on Rails で作ったアプリに JWT 認証を追加する方法 - Qiita](https://qiita.com/Y_uuu/items/96f85682625fb5f35760)
+- [Ruby で Firebase の id トークンを認証に使ってみる - Qiita](https://qiita.com/otakky/items/b7582202f5cde8f2dd21)

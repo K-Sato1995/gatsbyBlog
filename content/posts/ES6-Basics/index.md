@@ -1,5 +1,5 @@
 ---
-title: "ES6 Basics"
+title: 'ES6 Basics'
 slug: es6-basics
 date: 2018-10-12
 language: english
@@ -8,8 +8,9 @@ tags:
   - ES6
   - Javascript
 published: true
-description: "Some new features were introduced in ES6. I will cover some of the basic features of them in this post. If you are new to ES6 syntax or new to javascript language, this post might be useful to understand the basic syntax of the language."
+description: 'Some new features were introduced in ES6. I will cover some of the basic features of them in this post. If you are new to ES6 syntax or new to javascript language, this post might be useful to understand the basic syntax of the language.'
 ---
+
 # Introduction
 
 Some new features were introduced in ES6. I will cover some of the basic features of them in this post.
@@ -23,13 +24,13 @@ You can use `var`, `let` or `const` to declare a variable.
 Variables declared with `let` can not be redeclared. But you can reassingn a new value.
 
 ```javascript
-let name = "John";
-console.log(name); //=> John
+let name = 'John'
+console.log(name) //=> John
 
-name = "Mike";
-console.log(name); //=> Mike
+name = 'Mike'
+console.log(name) //=> Mike
 
-let name = "Nick"; //=> SyntaxError: redeclaration of let name
+let name = 'Nick' //=> SyntaxError: redeclaration of let name
 ```
 
 ## Const
@@ -37,12 +38,12 @@ let name = "Nick"; //=> SyntaxError: redeclaration of let name
 Variables declared with `const` can not be redeclared. And you can not reassingn a new value.
 
 ```javascript
-const name = "John";
-console.log(name); //=> John
+const name = 'John'
+console.log(name) //=> John
 
-name = "Mike"; //=> TypeError: invalid assignment to const `name'
+name = 'Mike' //=> TypeError: invalid assignment to const `name'
 
-const name = "Nick"; //=> SyntaxError: redeclaration of let name
+const name = 'Nick' //=> SyntaxError: redeclaration of let name
 ```
 
 # The scope of let and const
@@ -52,43 +53,43 @@ The `let` and `const` statements declare block scope local variables unlike `var
 **Example of var**
 
 ```javascript
-var x = 10;
-console.log(x); //=>10
+var x = 10
+console.log(x) //=>10
 
 {
-  var x = 5;
-  console.log(x); //=>5
+  var x = 5
+  console.log(x) //=>5
 }
 
-console.log(x); //=> 5
+console.log(x) //=> 5
 ```
 
 **Example of let**
 
 ```javascript
-let x = 10;
-console.log(x); //=>10
+let x = 10
+console.log(x) //=>10
 
 {
-  let x = 5;
-  console.log(x); //=>5
+  let x = 5
+  console.log(x) //=>5
 }
 
-console.log(x); //=> 10
+console.log(x) //=> 10
 ```
 
 **Example of const**
 
 ```javascript
-const x = 10;
-console.log(x); //=> 10
+const x = 10
+console.log(x) //=> 10
 
 {
-  const x = 5;
-  console.log(x); //=> 5
+  const x = 5
+  console.log(x) //=> 5
 }
 
-console.log(x); //=> 10
+console.log(x) //=> 10
 ```
 
 # String Interpolation
@@ -96,9 +97,9 @@ console.log(x); //=> 10
 You can use `template literals` to read the value of a variable in a string.
 
 ```javascript
-let name = "Mike";
+let name = 'Mike'
 
-console.log(`I am ${name}`); //=> I am Mike
+console.log(`I am ${name}`) //=> I am Mike
 ```
 
 # Arrow function
@@ -109,20 +110,20 @@ console.log(`I am ${name}`); //=> I am Mike
 
 ```javascript
 function greeting(name) {
-  console.log("Hello" + " " + name);
+  console.log('Hello' + ' ' + name)
 }
 
-greeting("Mike"); //=>Hello Mike
+greeting('Mike') //=>Hello Mike
 ```
 
 **ES6 style function**
 
 ```javascript
 const greeting = name => {
-  console.log(`Hello ${name}`);
-};
+  console.log(`Hello ${name}`)
+}
 
-greeting("Mike"); //=> Hello Mike
+greeting('Mike') //=> Hello Mike
 ```
 
 # Default parameters
@@ -131,10 +132,10 @@ You can assign the default value to an argument.
 
 ```javascript
 const add = (x, y = 10) => {
-  console.log(x + y);
-};
+  console.log(x + y)
+}
 
-add(5); //=> 15
+add(5) //=> 15
 ```
 
 # Class Expression
@@ -144,17 +145,17 @@ The class expressiong is syntactical sugar over JavaScript's existing prototype-
 ```javascript
 class Car {
   constructor(name) {
-    this.name = name;
+    this.name = name
   }
 
   displayinfo() {
-    console.log(this.name);
+    console.log(this.name)
   }
 }
 
-const car1 = new Car("Honda");
+const car1 = new Car('Honda')
 
-car1.displayinfo(); //=> Honda
+car1.displayinfo() //=> Honda
 ```
 
 # Class Inheritance
@@ -164,23 +165,23 @@ Classes can extend one another using `extends`.
 ```javascript
 class Car {
   constructor(name) {
-    this.name = name;
+    this.name = name
   }
 
   displayinfo(name) {
-    console.log(this.name);
+    console.log(this.name)
   }
 }
 
 class Track extends Car {
   constructor(name) {
-    super();
-    this.name = name;
+    super()
+    this.name = name
   }
 }
 
-track1 = new Track("TL");
-track1.displayinfo(); //=> TL
+track1 = new Track('TL')
+track1.displayinfo() //=> TL
 ```
 
 # Spread Operator
@@ -190,26 +191,26 @@ Here are some usages of the `spread operator`.
 ## Spread an array
 
 ```javascript
-const arr = [2, 3];
+const arr = [2, 3]
 
-console.log(...arr); //=> 2, 3
+console.log(...arr) //=> 2, 3
 ```
 
 ## Combine arrays
 
 ```javascript
-const arr = [2, 3];
-const arr2 = [1, ...arr, 4, 5];
+const arr = [2, 3]
+const arr2 = [1, ...arr, 4, 5]
 
-console.log(arr2); //=> Array(5) [ 1, 2, 3, 4, 5 ]
+console.log(arr2) //=> Array(5) [ 1, 2, 3, 4, 5 ]
 ```
 
 ## Get multiple arguments as an array
 
 ```javascript
 const arr = (arg1, ...args) => {
-  console.log(arg1, args);
-};
+  console.log(arg1, args)
+}
 
-arr(1, 2, 3, 4, 5); //=> 1 Array(4) [ 2, 3, 4, 5 ]
+arr(1, 2, 3, 4, 5) //=> 1 Array(4) [ 2, 3, 4, 5 ]
 ```

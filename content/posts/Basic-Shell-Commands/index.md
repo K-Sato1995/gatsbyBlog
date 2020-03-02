@@ -1,5 +1,5 @@
 ---
-title: "Basic Shell Commands"
+title: 'Basic Shell Commands'
 slug: basic-shell-commands
 date: 2018-10-06
 language: english
@@ -9,6 +9,7 @@ tags:
 published: true
 description: " I made a list of Linux commands that, I think, are important and frequently used. The main purpose of this post is to memorize basic Linux commands and make myself more familiar with other commands I don't often use. I would keep adding more commands."
 ---
+
 # Introduction
 
 I made a list of Linux commands that, I think, are important and frequently used. The main purpose of this post is to memorize basic Linux commands and make myself more familiar with other commands I don't often use. I would keep adding more commands.
@@ -221,7 +222,7 @@ $ echo [option(s)] [string(s)]
 
 ## printf
 
-The `printf` command in Linux is used to display the given string, number or any other format specifier on the terminal window. 
+The `printf` command in Linux is used to display the given string, number or any other format specifier on the terminal window.
 
 ```console
 $ printf "%s\n" "Hello, World!"
@@ -283,7 +284,6 @@ It prints the variables of the current environment. It can be used to print a li
 $ env [OPTION]... [-] [NAME=VALUE]... [COMMAND [ARG]...]
 ```
 
-
 # Text Processing
 
 ## diff
@@ -302,7 +302,7 @@ The `cmp` command in Linux/UNIX is used to compare the two files byte by byte an
 $ cmp file1.txt file2.txt
 ```
 
-# Networking commands 
+# Networking commands
 
 ## ping
 
@@ -340,6 +340,7 @@ $ curl [options / URLs]
 ```console
 $ curl -d "name=k-sato&email=e@example.com" -X POST URL
 ```
+
 [Great article about this command](https://www.tecmint.com/linux-curl-command-examples/)
 
 ## ifconfig

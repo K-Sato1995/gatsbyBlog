@@ -1,5 +1,5 @@
 ---
-title: "Contributing to a GitHub project"
+title: 'Contributing to a GitHub project'
 slug: contributing-to-a-github-project
 date: 2018-11-01
 language: english
@@ -9,8 +9,9 @@ tags:
   - Tutorial
   - GitHub
 published: true
-description: "This is a simple guide for beginners to make a Pull Request and contribute to a GitHub project. If you have never contributed any OSS project on GitHub, this guide might be useful to make your first PR(PullRequest)."
+description: 'This is a simple guide for beginners to make a Pull Request and contribute to a GitHub project. If you have never contributed any OSS project on GitHub, this guide might be useful to make your first PR(PullRequest).'
 ---
+
 # Introduction
 
 This is a simple guide for beginners to make a Pull Request and contribute to a GitHub project.
@@ -32,6 +33,7 @@ $ git clone git@github.com:AccountName/NameOfTheProject.git
 ```console
 $ git remote add upstream git@github.com:AccountName/NameOfTheProject.git
 ```
+
 (4) Make sure your origin is upto date with the upstream and create your feature branch.
 
 ```

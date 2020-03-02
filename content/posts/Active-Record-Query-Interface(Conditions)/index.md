@@ -1,5 +1,5 @@
 ---
-title: "Active Record Query Interface(Conditions)"
+title: 'Active Record Query Interface(Conditions)'
 slug: active-record-query-interface-conditions
 date: 2019-02-08
 language: english
@@ -8,8 +8,9 @@ tags:
   - ActiveRecord
   - Rails
 published: true
-description: "This is a pure copy&paste of a part from Active Record Query Interface — Ruby on Rails Guides. The guide is very thorough and super informative."
+description: 'This is a pure copy&paste of a part from Active Record Query Interface — Ruby on Rails Guides. The guide is very thorough and super informative.'
 ---
+
 ## Introduction
 
 This is a pure copy&paste of a part from [Active Record Query Interface — Ruby on Rails Guides](https://guides.rubyonrails.org/active_record_querying.html#conditions). The guide is very thorough and super informative.

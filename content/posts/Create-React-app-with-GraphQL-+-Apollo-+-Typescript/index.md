@@ -1,5 +1,5 @@
 ---
-title: "Create React app with GraphQL + Apollo + Typescript"
+title: 'Create React app with GraphQL + Apollo + Typescript'
 slug: create-react-app-with-graphql-apollo-typescript
 date: 2019-07-20
 language: english
@@ -9,8 +9,9 @@ tags:
   - Apollo
   - Typescript
 published: true
-description: "A quick demonstration of how to create a react app in Typescript with GraphQL + Apollo + Typescript + GraphQLCodeGen."
+description: 'A quick demonstration of how to create a react app in Typescript with GraphQL + Apollo + Typescript + GraphQLCodeGen.'
 ---
+
 # Installation
 
 ## Run create-react-app
@@ -51,24 +52,24 @@ overwrite: true
 schema:
   - http://localhost:3000/graphql:
 documents:
-  - "./graphql/queries/*.graphql"
-  - "./graphql/mutations/*.graphql"
+  - './graphql/queries/*.graphql'
+  - './graphql/mutations/*.graphql'
 generates:
   ./src/generated/graphql.ts:
     plugins:
-      - "typescript"
-      - "typescript-operations"
-      - "typescript-react-apollo"
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-react-apollo'
     config:
       withComponent: false
       withHOC: false
       withHooks: true
   ./graphql/schema.json:
     plugins:
-      - "introspection"
+      - 'introspection'
 ```
 
-Run the command below 
+Run the command below
 
 ```bash
 $ npm run generate
@@ -93,7 +94,6 @@ You have to create `client/graphql/queries/` and `client/graphql/mutations` in y
 
 - [ruby on rails - ActionController::InvalidAuthenticityToken - Stack Overflow](https://stackoverflow.com/questions/3364492/actioncontrollerinvalidauthenticitytoken)
 
-
 # Implementation
 
 ## Create a client
@@ -102,24 +102,24 @@ Create a client in `middleware/index.ts`.
 
 ```tsx
 // middleware/index.ts
-import ApolloClient from "apollo-boost";
+import ApolloClient from 'apollo-boost'
 
 const client = new ApolloClient({
-  uri: "http://localhost:3000/graphql"
-});
+  uri: 'http://localhost:3000/graphql',
+})
 ```
 
 ### Wrap your app with ApolloClient
 
 ```tsx
 // client/src/index.tsx
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./Components/App";
-import { ApolloProvider } from "react-apollo";
-import { ApolloProvider as ApolloHooksProvider } from "react-apollo-hooks";
-import { client } from "./middleware";
-import * as serviceWorker from "./serviceWorker";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './Components/App'
+import { ApolloProvider } from 'react-apollo'
+import { ApolloProvider as ApolloHooksProvider } from 'react-apollo-hooks'
+import { client } from './middleware'
+import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(
   <ApolloProvider client={client}>
@@ -127,9 +127,9 @@ ReactDOM.render(
       <App />/
     </ApolloHooksProvider>
   </ApolloProvider>,
-  document.getElementById("root")
-);
-serviceWorker.unregister();
+  document.getElementById('root')
+)
+serviceWorker.unregister()
 ```
 
 ## Add Queries
@@ -149,7 +149,7 @@ query issues {
 }
 ```
 
-and run 
+and run
 
 ```
 $ npm run generate
@@ -158,32 +158,32 @@ $ npm run generate
 ## Use generated functions
 
 ```tsx
-import React from "react";
-import { useIssuesQuery } from "../../generated/graphql";
+import React from 'react'
+import { useIssuesQuery } from '../../generated/graphql'
 interface IssueProps {
-  title: string;
+  title: string
 }
 
 const Issue = ({ title }: IssueProps) => {
-  const { data, error, loading } = useIssuesQuery();
+  const { data, error, loading } = useIssuesQuery()
 
-  if (loading) return <div>Fetching</div>;
-  if (error) return <div>Error</div>;
-  if (!data) return <div>Data not found</div>;
+  if (loading) return <div>Fetching</div>
+  if (error) return <div>Error</div>
+  if (!data) return <div>Data not found</div>
 
   return (
     <div>
       {console.log(data)}
       <h1>{title}</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Issue;
+export default Issue
 ```
 
 # References
+
 - [Get started - Apollo Docs](https://www.apollographql.com/docs/react/essentials/get-started/)
 - [GraphQL Code Generator · Generate code from your GraphQL schema with a single function call](https://graphql-code-generator.com/)
 - [client_ts/codegen.yml at master · K-Sato1995/client_ts · GitHub](https://github.com/K-Sato1995/client_ts/blob/master/codegen.yml)
-
