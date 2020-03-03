@@ -1,5 +1,5 @@
 ---
-title: "Go Tips"
+title: 'Go Tips'
 slug: go-tips
 date: 2019-05-11
 language: english
@@ -8,8 +8,9 @@ tags:
   - Go
   - Tips
 published: true
-description: "Here are some tips I picked up while I was learning the Go language."
+description: 'Here are some tips I picked up while I was learning the Go language.'
 ---
+
 # Unreferenced package
 
 You can keep unused packages below without causing any error by adding `_` to the packages.

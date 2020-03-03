@@ -1,5 +1,5 @@
 ---
-title: "GraphQL Ruby(Class-based API)"
+title: 'GraphQL Ruby(Class-based API)'
 slug: graphql-ruby-class-based-api
 date: 2018-12-18
 language: english
@@ -10,30 +10,37 @@ tags:
 published: true
 description: " In the other post about GraphQL Basics(1), I focused on how to utilize GraphQl on the front-side of a web application. In this post, I'll mainly talk about how to use the tool on your back-end(in this case Ruby on Rails). "
 ---
+
 # Introduction
- In the [previous post]([K-Blog](https://k-blog0130.herokuapp.com/en/posts/64)) about `GraphQL`, I focused on how to utilize `GraphQl` on the front-side of a web application.   
- In this post, I'll mainly talk about how to use it on your back-end(in this case Ruby on Rails). 
- 
+
+In the [previous post](<[K-Blog](https://k-blog0130.herokuapp.com/en/posts/64)>) about `GraphQL`, I focused on how to utilize `GraphQl` on the front-side of a web application.  
+ In this post, I'll mainly talk about how to use it on your back-end(in this case Ruby on Rails).
+
 # Basic concepts
- Let's cover some of the very fundamental concepts of `GraphQL`
+
+Let's cover some of the very fundamental concepts of `GraphQL`
 
 ## Schema
+
 The schema defines the server’s API.  
 It provides the point of contact between the server and the client. You have to create one for queries and another for mutations.
 
 ## Type
-The shape of everything composing the schema.   
+
+The shape of everything composing the schema.  
 Each type has a set of `fields` which defines the data and the types of each field.
 
 ## Resolver
-Resolvers are `functions` that the GraphQL server uses to execute fetching(`queries`) or mutating(`mutations`) the data.   
+
+Resolvers are `functions` that the GraphQL server uses to execute fetching(`queries`) or mutating(`mutations`) the data.  
 Each field of your GraphQL types needs a corresponding resolver function.
 
-For more information about the basic concepts of GraphQL,  Check the [official guide](https://graphql.org/learn/queries/).  
+For more information about the basic concepts of GraphQL, Check the [official guide](https://graphql.org/learn/queries/).
 
 # GraphQL with Ruby on Rails
+
 In this section, I'll walk you through how to use GraphQL in your rails applications using [GraphQL Ruby](http://graphql-ruby.org/).  
-We will create a very simple api which users can get, create, update and delete posts.    
+We will create a very simple api which users can get, create, update and delete posts.  
 You can check the source code [here](https://github.com/K-Sato1995/GraphqlApi)
 
 ## Installation
@@ -43,8 +50,9 @@ Simply, add `graphql` and `graphql-rail` to your `Gemfile`.
 ```ruby
 # Gemfile
 gem 'graphql'
-gem 'graphiql-rails' 
+gem 'graphiql-rails'
 ```
+
 If you want to use graphiql-rails for your api only rails application, add the following line to your `config/application.rb`.
 
 ```ruby
@@ -52,7 +60,7 @@ If you want to use graphiql-rails for your api only rails application, add the f
 require "sprockets/railtie"
 ```
 
-After adding the gems and the line, run the commands below. The second command will create the `app/graphql` folder.    
+After adding the gems and the line, run the commands below. The second command will create the `app/graphql` folder.  
 All the graphql related files will be held under this directory.
 
 ```console
@@ -61,6 +69,7 @@ $ rails generate graphql:install
 ```
 
 ## Queries
+
 In `GraphQL`, `Queries` are used to fetch data and `Mutations` are used to create, update and delete data.
 In this section, we will focus on the `queries`.
 
@@ -70,6 +79,7 @@ Create a model `post` and run `rake db:migrate`.
 $ rails g model Post title:string description:text
 $ rake db:migrate
 ```
+
 Create some data on `rails console`.
 
 ```console
@@ -84,6 +94,7 @@ If you run the command below, it will automatically create `Post Type` for you.
 ```
 $ rails g graphql:object Post id:ID! title:String! description:String!
 ```
+
 The command above will generate this.
 
 ```ruby
@@ -96,9 +107,11 @@ module Types
   end
 end
 ```
+
 If you want to know the details about `Class-based` system, read [official graphql-ruby document.](http://graphql-ruby.org/schema/class_based_api.html#classes).
 
 ## Query Resolver
+
 The type is now defined, but the server still doesn’t know how to handle it. We use `resolvers` for executing the `queries`.  
 All GraphQL queries start from a root type called `Query`. When you previously ran `rails g graphql:install`, it created the root query type in `app/graphql/types/query_type.rb` for you.  
 With the code below, you can retrieve all posts and each specific post using its unique id.
@@ -122,8 +135,8 @@ module Types
 end
 ```
 
-
 ### Testing with GraphiQL
+
 Add the following code to your `routes.rb`.
 
 ```ruby
@@ -132,10 +145,11 @@ Rails.application.routes.draw do
 
   if Rails.env.development?
     # add the url of your end-point to graphql_path.
-    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql" 
+    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
   end
 end
 ```
+
 You can test your progress using `http://localhost:3000/graphiql` after you start your rails server with `rails s`.  
 If you want to get all the posts, send the query below.
 
@@ -197,6 +211,7 @@ If you want to get a specific post, send the query below.
 }
 
 ```
+
 ## Mutations
 
 All GraphQL mutations start from a root type called `Mutation`.
@@ -215,15 +230,18 @@ module Types
 end
 ```
 
-### Mutation Create 
+### Mutation Create
+
 Run the command below to generate a mutation for creating a post.
 
 ```console
 $ rails g graphql:mutation CreatePost
-``` 
-The command above will do the folliwing two things.  
+```
+
+The command above will do the folliwing two things.
+
 - (1) Create `graphql/mutations/create_post.rb`.
-- (2) Add ` field :createPost, mutation: Mutations::CreatePost` to `graphql/types/mutations_type.rb`.
+- (2) Add `field :createPost, mutation: Mutations::CreatePost` to `graphql/types/mutations_type.rb`.
 
 ```ruby
 # (1) Create graphql/mutations/create_post.rb.
@@ -244,7 +262,7 @@ module Mutations
 end
 ```
 
-```ruby 
+```ruby
 # (2) Add  field :createPost, mutation: Mutations::CreatePost to graphql/types/mutations_type.rb.
 # app/graphql/types/mutation_type.rb
 module Types
@@ -254,7 +272,7 @@ module Types
 end
 ```
 
-__This part is optional!!!__    
+**This part is optional!!!**  
 You can create `graphql/mutations/base_mutation.rb` and make `graphql/mutations/create_post.rb` inherit from it.
 
 ```ruby
@@ -305,9 +323,11 @@ module Mutations
   end
 end
 ```
+
 That's it! Now you are ready to create a post!.
 
 ### Testing with GraphiQL
+
 You can test your progress using [GraphQL](http://localhost:3000/graphiql) after you start your rails server.
 Make a request like the code below and check the result.
 
@@ -321,7 +341,7 @@ mutation {
   ){
     post {
       id
-      title 
+      title
       description
     }
   }
@@ -340,12 +360,15 @@ mutation {
   }
 }
 ```
+
 ### Mutation Update
+
 Run the code below to generate a mutation for updating a post.
 
 ```console
 $ rails g graphql:mutation UpdatePost
 ```
+
 Modify `/graphql/mutations/update_post.rb` like the code below. It is very similar to the code in `/graphql/mutations/create_post.rb`. The only significant difference is that it requires `id` as an argument to update a specific post.
 
 ```ruby
@@ -373,6 +396,7 @@ end
 ```
 
 ### Testing with GraphiQL
+
 Make a request like the code below and check the result.
 
 ```
@@ -386,7 +410,7 @@ mutation {
   ){
     post {
       id
-      title 
+      title
       description
     }
   }
@@ -407,6 +431,7 @@ mutation {
 ```
 
 ### Mutation Delete
+
 Do pretty much the same as you did to create `create` and `update` mutations.
 Run the command below and modify the generated file.
 
@@ -438,7 +463,9 @@ module Mutations
   end
 end
 ```
+
 ### Testing with GraphiQL
+
 Make a request like the code below and check the result.
 
 ```
@@ -450,7 +477,7 @@ mutation {
   ){
     post {
       id
-      title 
+      title
       description
     }
   }
@@ -473,6 +500,7 @@ mutation {
 ```
 
 ## Connection fields(1)
+
 Once you understand how `types`, `queries` and `mutations` work, it is easy to work with associations.
 Let's make it able to retrieve comments that are posted on each post with the corresponding post.
 First, create the comment model and set up the `has_many` association with the Post model and create some data to check the query later on.
@@ -481,7 +509,7 @@ First, create the comment model and set up the `has_many` association with the P
 $ rails g model Comment content:string post:references
 ```
 
-```ruby 
+```ruby
 # app/models/comment.rb
 class Comment < ApplicationRecord
   belongs_to :post
@@ -512,6 +540,7 @@ Secondly, Create the comment type by running the command below.
 ```console
 $ rails g graphql:object Comment id:ID! content:String!
 ```
+
 The command will create a file which looks like the code below.
 
 ```ruby
@@ -525,6 +554,7 @@ module Types
   end
 end
 ```
+
 Lastly, add the comments field to post type.
 
 ```ruby
@@ -536,11 +566,13 @@ module Types
     field :id, Int, null: false
     field :title, String, null: false
     field :description, String, null: false
-    field :comments, [Types::CommentType], null: false 
+    field :comments, [Types::CommentType], null: false
   end
 end
 ```
+
 ### Testing with GraphiQL
+
 Make a request like the code below and check the result.
 
 ```
@@ -575,12 +607,14 @@ Make a request like the code below and check the result.
 ```
 
 ## Connection fields(2)
+
 Let's make it able to create a new comment.
 First things first, run the command below to create `CreateComment` mutation and add that to `/graphql/types/mutation_type.rb`.
 
 ```console
 $ rails g graphql:mutation CreateComment
 ```
+
 Next, add `field :post, Types::PostType, null: false` to `app/graphql/types/comment_type.rb`.
 
 ```ruby
@@ -623,6 +657,7 @@ end
 ```
 
 ### Testing with GraphiQL
+
 Make a request like the code below and check the result.
 
 ```
@@ -676,7 +711,8 @@ mutation {
 ```
 
 # Utilizing resolvers directory
-First, Create ` app/graphql/resolvers/` and create `app/graphql/resolvers/base_resolver.rb`.
+
+First, Create `app/graphql/resolvers/` and create `app/graphql/resolvers/base_resolver.rb`.
 
 ```ruby
 module Resolvers
@@ -685,7 +721,7 @@ module Resolvers
 end
 ```
 
-Secondly, create  `app/graphql/resolvers/query_type` and also create `posts_resolver.rb` and `post_resolver.rb` under the directory.
+Secondly, create `app/graphql/resolvers/query_type` and also create `posts_resolver.rb` and `post_resolver.rb` under the directory.
 
 ```
 -- graphql
@@ -745,6 +781,7 @@ end
 ```
 
 # References
+
 - [Building a GraphQL Server with Ruby Backend Tutorial](https://www.howtographql.com/graphql-ruby/0-introduction/)
 - [A Guide to GraphQL in Plain English – freeCodeCamp.org](https://medium.freecodecamp.org/a-beginners-guide-to-graphql-60e43b0a41f5)
 - [GraphQL Ruby](http://graphql-ruby.org/)

@@ -10,12 +10,15 @@ published: true
 description: "One of the projects that I involved with at work used GraphQl and I spent a decent amount of time learning the basic concept of the tool and how to actually use it in applications. I am writing this post so that I can retain my knowledge of the technology and use it in my personal projects in the future.
 This post will mainly focus on the basic concept of `GraphQL` and how to use it on the front-end of your application."
 ---
+
 # Introduction
-One of the projects that I was involved in at work used GraphQl and I spent a decent amount of time learning the basic concept of it and how to actually use it in web-applications.   
+
+One of the projects that I was involved in at work used GraphQl and I spent a decent amount of time learning the basic concept of it and how to actually use it in web-applications.  
 I am writing this post to retain and solidify my knowledge about the technology.  
 This post will mainly focus on the basic concept of `GraphQL` and how to utilize it on the front-end of web-applications.
 
 ## Basic concept
+
 GraphQL allows the client to specify exactly what it needs, avoiding over‐fetching and under‐fetching of data.
 GraphQL has two types of operations which are `Query` and `Mutation`.
 
@@ -48,7 +51,7 @@ The query above returns a response like below.
 
 ## GraphQL is just a query language specification
 
-GraphQL is just a query language specification. Meaning, all the operations, arguments tha may be passed, and all the fields that may be used in the selection set have to be defined in __your GraphQL server__.
+GraphQL is just a query language specification. Meaning, all the operations, arguments tha may be passed, and all the fields that may be used in the selection set have to be defined in **your GraphQL server**.
 
 One of the principles that drives GraphQL specification is `strong-typing`.
 
@@ -57,16 +60,17 @@ Every GraphQL server defines an application‐specific `type` system.(everything
 
 That means that your selection set can query fields of Scalar type which are primitive types like `Int`, `Float`, `String`, `Boolean` and `ID`.
 
-
 ## Variables
+
 If you want to reduce repetitions on our query statements, you can use `variables`.  
 For instace, both `(id:1)` and `(client_id:1)` represent the same thing in the code below.
+
 ```
 {
   client(id:1) {
     name
   }
-  
+
   products(client_id:1) {
     price
     quontity
@@ -77,7 +81,8 @@ For instace, both `(id:1)` and `(client_id:1)` represent the same thing in the c
   }
 }
 ```
- You can reduce the repetition by using the variables like the code below.
+
+You can reduce the repetition by using the variables like the code below.
 
 ```
 query ($clientId: Int!) {
@@ -106,6 +111,7 @@ query ($clientId: Int! = "1") {
 ```
 
 ## Mutations
+
 GraphQL uses `mutations` to create, update and delete data.
 
 ```
@@ -120,6 +126,7 @@ mutation {
   }
 }
 ```
+
 We passed the arguments we wanted the new record to be saved with and, finally, our selection set is defining which fields we want to return after the record is created.
 The query above would create a record like the code below.
 
@@ -178,6 +185,7 @@ mutation {
 ```
 
 ## Introspection
+
 A great feature of GraphQL is the ability to query its own schema, allowing you to view many of its details like which query and mutation operations are available, which arguments they accept and even which available fields we can query.
 
 For `queries`.
@@ -211,4 +219,5 @@ For `mutations`.
 ```
 
 ## References
+
 - [OK GROW! - GraphQL Basics](https://www.okgrow.com/posts/graphql-basics)
