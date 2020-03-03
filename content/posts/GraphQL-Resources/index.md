@@ -1,5 +1,5 @@
 ---
-title: "GraphQL Resources "
+title: 'GraphQL Resources '
 slug: graphql-resources
 date: 2019-10-12
 language: english
@@ -7,15 +7,17 @@ category: Others
 tags:
   - graphql
 published: true
-description: "Here are some resources and tips for understanding graphql better."
+description: 'Here are some resources and tips for understanding graphql better.'
 ---
-# Enum type 
+
+# Enum type
 
 - [GraphalAPI](https://github.com/K-Sato1995/GraphqlApi/blob/master/app/graphql/types/post_status.rb)
 
-# Union Type 
+# Union Type
+
 A union type is a set of object types that may appear in the same spot.
-That means the spot only returns one object, in this case, either `AudioClilp` or `VideoClip`. 
+That means the spot only returns one object, in this case, either `AudioClilp` or `VideoClip`.
 
 ```ruby
 module Types
@@ -68,6 +70,7 @@ end
 - [GraphQL: Union vs. Interface - Artsy Engineering](https://artsy.github.io/blog/2019/01/14/graphql-union-vs-interface/)
 
 # Interface
+
 Interfaces are a good choice whenever a set of objects are used interchangeably, and they have several significant fields in common. When they don’t have fields in common, use a Union instead.
 
 ```graphql
@@ -92,6 +95,7 @@ type Individual implements Customer {
 - [GraphQL: Union vs. Interface - Artsy Engineering](https://artsy.github.io/blog/2019/01/14/graphql-union-vs-interface/)
 
 # Fragments
+
 A GraphQL fragment is a shared piece of query logic.
 
 ```
@@ -111,11 +115,13 @@ query GetPerson {
 - [Using fragments - Client (React) - Apollo GraphQL Docs](https://www.apollographql.com/docs/react/data/fragments/)
 
 # Connection_type
+
 Connection will help you paginate through the list of comments connected to the post with 4 default arguments (first, last, after and before) in the query, whereas field here would return a basic list of CommentType.
 
 - [Difference between field and connection in Graphql ruby? - Stack Overflow](https://stackoverflow.com/questions/44601890/difference-between-field-and-connection-in-graphql-ruby)
 
-# Relays 
+# Relays
+
 A Facebook page contains several elements and React components, which have different data requirements. GraphQL allows to list all the data we need to generate a page in a single top level query. So we save network from sending multiple requests by querying the data we need in a single round-trip.
 
 - [GraphQL and Relay: what are they and why do they matter? - By](https://hackernoon.com/graphql-and-relay-what-are-they-and-why-do-they-matter-d8dfcc3ce2ac)

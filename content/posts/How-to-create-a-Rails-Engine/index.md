@@ -1,5 +1,5 @@
 ---
-title: " How to create a Rails Engine "
+title: ' How to create a Rails Engine '
 slug: how-to-create-a-rails-engine
 date: 2019-07-03
 language: english
@@ -7,14 +7,17 @@ category: Rails
 tags:
   - Rails
 published: true
-description: "The post is about how to create a rails engine."
+description: 'The post is about how to create a rails engine.'
 ---
-# What are engines 
-`Rails Engines` can be considered miniature applications that provide the functionality to their host applications. 
+
+# What are engines
+
+`Rails Engines` can be considered miniature applications that provide the functionality to their host applications.
 
 # Generate an engine
 
 ## Generate the foundation of the engine
+
 Run the command below to generate an engine called `blorph`.
 
 > The `--mountable` option tells the generator that you want to create a "mountable" and namespace-isolated engine.
@@ -41,6 +44,7 @@ $ rails g controller
 # Hooking into Applications
 
 ## Mounting the engine
+
 It is as easy as installing a gem in your application.
 Simply, add the engine to your Gemfile and run `bundle install`.
 
