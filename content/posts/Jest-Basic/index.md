@@ -1,5 +1,5 @@
 ---
-title: "Jest Basic"
+title: 'Jest Basic'
 slug: jest-basic
 date: 2019-06-21
 language: english
@@ -8,12 +8,14 @@ tags:
   - Test
   - Jest
 published: true
-description: "This is an introduction of Jest."
+description: 'This is an introduction of Jest.'
 ---
-# Jest Basic 
+
+# Jest Basic
+
 Jest is a JavaScript unit testing framework built by Facebook.
 
-# Directory Structure 
+# Directory Structure
 
 ```
 - myProgram.js
@@ -21,18 +23,20 @@ Jest is a JavaScript unit testing framework built by Facebook.
    - myProgram-test.js
 ```
 
-# Basic Syntax 
+# Basic Syntax
 
 Each test file looks something like this:
 
 ```javascript
-const MathModule = require('../myMath');   // 1
+const MathModule = require('../myMath') // 1
 
-describe('my math module', () => {         // 2
-  it('adds two numbers', () => {           // 3
+describe('my math module', () => {
+  // 2
+  it('adds two numbers', () => {
+    // 3
     // Your testing code goes here
-  });
-});
+  })
+})
 ```
 
 - `describe` defines a set of tests.
@@ -47,45 +51,47 @@ $ jest
 # Assertions
 
 ```javascript
-expect(value).toBe(something);
+expect(value).toBe(something)
 ```
 
 ## Useful matchers
 
-- `toBe`:  compare 2 values using `===` operator.
+- `toBe`: compare 2 values using `===` operator.
 
 ```javascript
-expect(2).toBe(2);   // OK
+expect(2).toBe(2) // OK
 ```
 
 - `toEqual`: recursively compares two values.
 
 ```javascript
-expect({}).toEqual({});  // OK
+expect({}).toEqual({}) // OK
 ```
 
 - `toContain`: makes sure the array has the given item.
 
 ```javascript
-expect([1, 2, 3]).toContain(1); // OK
+expect([1, 2, 3]).toContain(1) // OK
 ```
 
 - `toThrow`: checks if the given function throws an error.
 
 ```javascript
-expect(() => { undefined() }).toThrow(); // OK
+expect(() => {
+  undefined()
+}).toThrow() // OK
 ```
 
 - `not`: useful to inverse the expectation.
 
 ```javascript
-expect(2).not.toBe(4); // OK
+expect(2).not.toBe(4) // OK
 ```
 
 You can see other matchers [here](https://jestjs.io/docs/en/api).
 
-
 # Async tests
+
 JavaScript relies on callbacks in many cases and Jest supports testing asynchronous code.
 
 ```javascript
@@ -109,17 +115,19 @@ If you need to add some setup/teardown logic, use `beforeEach`/`afterEach` and `
 ```javascript
 describe('my math module', () => {
   beforeAll(() => {
-    console.log('This is executed before the test suite');
-  });
+    console.log('This is executed before the test suite')
+  })
 
   beforeEach(() => {
-    console.log('This is executed before each testcase');
-  });
+    console.log('This is executed before each testcase')
+  })
 
   it('adds two numbers', () => {
-    expect(() => { undefined() }).toThrow()
-  });
-});
+    expect(() => {
+      undefined()
+    }).toThrow()
+  })
+})
 ```
 
 # Create mock functions
@@ -127,10 +135,11 @@ describe('my math module', () => {
 `jest.fn` creates a mock function.
 
 ```
-const add = jest.fn() //=> returns an empty function 
+const add = jest.fn() //=> returns an empty function
 
 const num = jest.fn(() => 3) //=> returns 3
 ```
+
 # Jest commands
 
 ## Run one file
@@ -147,14 +156,13 @@ src/components/__tests__/main/index.js
 
 - [javascript - Run only ONE test with Jest - Stack Overflow](https://stackoverflow.com/questions/44446626/run-only-one-test-with-jest)
 
-
 ## Run all tests
 
 ```
 $ ./node_modules/.bin/jest
 ```
 
-## Create Coverage Report 
+## Create Coverage Report
 
 ```
 $ ./node_modules/.bin/jest --coverage
@@ -163,11 +171,12 @@ $ ./node_modules/.bin/jest --coverage
 ## Display individual test results
 
 ```
-$ ./node_modules/.bin/jest --verbose 
+$ ./node_modules/.bin/jest --verbose
 ```
 
 # Test with Enzyme
-`Enzyme` is a JavaScript Testing utility for React that makes it easier to test your React Components' output. 
+
+`Enzyme` is a JavaScript Testing utility for React that makes it easier to test your React Components' output.
 
 ## Set up
 
@@ -175,14 +184,14 @@ $ ./node_modules/.bin/jest --verbose
 npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
 ```
 
-create `src/setupTests.js` file. 
+create `src/setupTests.js` file.
 If you don't create this file, you have to define the code below in each test file.
 
 ```javascript
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { configure } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 ```
 
 You also have to create `.babelrc` and paste the code below.
@@ -263,6 +272,7 @@ The output would be something like this.
 ## beforeEach and setUp function
 
 The code below is referenced from [here](https://github.com/K-Sato1995/jest-react-practice/blob/master/src/components/__tests__/Footer/index.js)
+
 ```
 import React from "react";
 import { shallow } from "enzyme";
@@ -293,7 +303,7 @@ describe("Footer Component", () => {
 });
 ```
 
-## Simulate events 
+## Simulate events
 
 You can simulate events using `simulate` like the code below.
 
@@ -308,9 +318,11 @@ describe("Button Component", () => {
   });
 });
 ```
+
 More about this topic, check [here](https://airbnb.io/enzyme/docs/api/ReactWrapper/simulate.html).
 
-# References 
+# References
+
 - [jest + React test example created by me](https://github.com/K-Sato1995/jest-react-practice)
 - [jestbasics](http://frantic.im/jestbasics/)
 - [Jest](https://jestjs.io/docs/en/getting-started.html)

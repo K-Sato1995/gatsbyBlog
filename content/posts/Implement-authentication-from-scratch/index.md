@@ -1,5 +1,5 @@
 ---
-title: " Implement authentication from scratch"
+title: ' Implement authentication from scratch'
 slug: implement-authentication-from-scratch
 date: 2019-10-01
 language: english
@@ -7,9 +7,10 @@ category: Rails
 tags:
   - Rails
 published: true
-description: "Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications."
+description: 'Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications.'
 ---
-# Create author resources  
+
+# Create author resources
 
 Run the commands below.
 
@@ -20,7 +21,8 @@ $ rails generate migration add_index_to_authors_email // Add index
 $ rake db:migrate
 ```
 
-# Set validations 
+# Set validations
+
 Add validations for `name` and `email`.
 
 ```ruby
@@ -38,8 +40,8 @@ end
 You'll have your users put the password and its confirmatin in the form and send them as hashed values. (Hash values can not be decrypted even though they got intercepted by a third party during the transmission.)
 You check if the sent hashed value matches the hashed password stored in the db. And if it dose, you allow your user to log in to the application.
 
-
 ## Add has secure password
+
 It's quite easy to setup in rails. Simply put `has_secure_password` in Author model.(Also add the minimum length of each password.)
 
 ```ruby
@@ -58,7 +60,7 @@ end
 - Lets you use password and password_confirmation params and validations for them.
 - Lets you use `authenticate` method.
 
-### Add bcrypt gem 
+### Add bcrypt gem
 
 Add `gem 'bcrypt'` to your Gemfile and run `bundle install`.
 
@@ -66,7 +68,7 @@ Add `gem 'bcrypt'` to your Gemfile and run `bundle install`.
 gem 'bcrypt'
 ```
 
-## Check if it's working correctly 
+## Check if it's working correctly
 
 Run the commands in the rails console to see if you can use the `authenticate` method.
 The `authenticate` method returns false if the given password was wrong and returns the author object if the given password was correct.
@@ -74,9 +76,9 @@ The `authenticate` method returns false if the given password was wrong and retu
 ```ruby
 $ Author.create(name:"test", email:"test@email.com", password:"000000")
 $ Author.first.authenticate('test')
-//=> false 
+//=> false
 $ Author.first.authenticate('000000')
-//=> 
+//=>
 #<Author:0x0000560ee2e0a1b8
  id: 1,
  name: "test",
@@ -86,10 +88,9 @@ $ Author.first.authenticate('000000')
  updated_at: Mon, 30 Sep 2019 08:40:11 UTC +00:00>
 ```
 
-# Sign up functionality 
+# Sign up functionality
 
 Let's start from setting up the routes for users to sign up.
-
 
 ```ruby
 Rails.application.routes.draw do
@@ -97,7 +98,6 @@ Rails.application.routes.draw do
   get  '/signup',  to: 'authors#new'
   post '/signup',  to: 'authors#create'
 ```
-
 
 Add the code below to the author controller.
 
@@ -169,9 +169,9 @@ Lastly, create a sign up page and show page for each user under `views/authors/`
 `HTTP` is a stateless protocol. So we use sessions to maintain the user state.
 The `new` action is used to put informatin for a new session and `create` actioin is used to actually create a new session. And the `destroy` action is used to delete a session.
 
-## Set up routes 
-Set up routes for `sessions`.
+## Set up routes
 
+Set up routes for `sessions`.
 
 ```ruby
 Rails.application.routes.draw do
@@ -186,7 +186,7 @@ Rails.application.routes.draw do
 end
 ```
 
-## Create a session controller 
+## Create a session controller
 
 ```
 $ rails generate controller Sessions
@@ -248,7 +248,6 @@ end
 ```
 
 ## Remember me functionality
-
 
 First of all, add a column called `remember_digest` to `Author`.
 
@@ -398,7 +397,7 @@ class AuthorsController < ApplicationController
   ##
     Other code
   ##
-  
+
   private
 
   def author_params

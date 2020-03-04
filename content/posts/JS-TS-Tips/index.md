@@ -1,5 +1,5 @@
 ---
-title: "JS-TS Tips"
+title: 'JS-TS Tips'
 slug: js-ts-tips
 date: 2019-12-09
 language: english
@@ -8,47 +8,51 @@ tags:
   - JavaScript
   - Tips
 published: true
-description: "Here are some tips about JavaScript I learned while I was working on some projects."
+description: 'Here are some tips about JavaScript I learned while I was working on some projects.'
 ---
+
 # Tips Related to JS/TS Syntax
 
 ## Only use let if necessary
+
 Using let could cause unnecessary complexity in your code.
 What's the difference between them?
 
 - Variables declared with `let` can not be redeclared. But you can reassign a new value.
 
 ```js
-let name = "John";
-console.log(name); //=> John
+let name = 'John'
+console.log(name) //=> John
 
-name = "Mike";
-console.log(name); //=> Mike
+name = 'Mike'
+console.log(name) //=> Mike
 
-let name = "Nick"; //=> SyntaxError: redeclaration of let name
+let name = 'Nick' //=> SyntaxError: redeclaration of let name
 ```
+
 - Variables declared with `const` can not be redeclared. And you can not reassign a new value.
 
 ```js
-const name = "John";
-console.log(name); //=> John
+const name = 'John'
+console.log(name) //=> John
 
-name = "Mike"; //=> TypeError: invalid assignment to const `name'
+name = 'Mike' //=> TypeError: invalid assignment to const `name'
 
-const name = "Nick"; //=> SyntaxError: redeclaration of let name
+const name = 'Nick' //=> SyntaxError: redeclaration of let name
 ```
 
-## Use Early Return 
+## Use Early Return
 
 ```js
-if (condition) return;
+if (condition) return
 ```
 
 ## Object Destructuring
+
 Here are some examples.
 
 ```js
-const { created_at: createdAt, password_updated_at : passwordUpdatedAt } = user
+const { created_at: createdAt, password_updated_at: passwordUpdatedAt } = user
 ```
 
 ```js
@@ -61,13 +65,15 @@ const test = ({a, b, c}) => {
 ## Make your function more succinct
 
 ```js
-() => { return hoge }
+;() => {
+  return hoge
+}
 ```
 
 can be writte n as:
 
 ```js
-() => hoge
+;() => hoge
 ```
 
 ## Use filter to remove empty strings from an array
@@ -114,42 +120,47 @@ if (!user) {
 
 ## 可変長引数
 
-TSでは可変長引数の部分の型は配列にします。次の例では`...bar`に`number[]`型が付いているため、2番目以降の引数は全て数値でなければいけません。
+TS では可変長引数の部分の型は配列にします。次の例では`...bar`に`number[]`型が付いているため、2 番目以降の引数は全て数値でなければいけません。
 
 ```typescript
-const func = (foo: string, ...bar: number[]) => bar;
+const func = (foo: string, ...bar: number[]) => bar
 
-func('foo');
-func('bar', 1, 2, 3);
-// エラー: Argument of type '"hey"' is not assignable to parameter of type 'number'. 
-func('baz', 'hey', 2, 3);
+func('foo')
+func('bar', 1, 2, 3)
+// エラー: Argument of type '"hey"' is not assignable to parameter of type 'number'.
+func('baz', 'hey', 2, 3)
 ```
 
 ## インデックスシグネチャ
+
 オブジェクト型には実は今まで紹介した他にも記法があります。その一つがインデックスシグネチャです。
 
 ```typescript
 interface MyObj {
-  [key: string] : number;
+  [key: string]: number
 }
 
-const obj: MyObj = {};
+const obj: MyObj = {}
 
-const num: number = obj.foo;
-const num2: number = obj.bar;
+const num: number = obj.foo
+const num2: number = obj.bar
 ```
 
 ## 関数シグネチャ
+
 実は、オブジェクト型の記法で関数型を表現する方法があります。
 
 ```typescript
 interface Func {
-  (arg: number): void;
+  (arg: number): void
 }
 
-const f: Func = (arg: number)=> { console.log(arg); };
+const f: Func = (arg: number) => {
+  console.log(arg)
+}
 ```
 
 ## Resources
-- [TS型の入門] (https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a)
-- [TS型の初級](https://qiita.com/uhyo/items/da21e2b3c10c8a03952f)
+
+- [TS 型の入門](https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a)
+- [TS 型の初級](https://qiita.com/uhyo/items/da21e2b3c10c8a03952f)

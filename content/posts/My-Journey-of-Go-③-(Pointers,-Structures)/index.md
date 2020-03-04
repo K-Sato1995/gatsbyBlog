@@ -1,5 +1,5 @@
 ---
-title: "My Journey of Go ③ (Pointers, Structures)"
+title: 'My Journey of Go ③ (Pointers, Structures)'
 slug: my-journey-of-go-pointers-structures
 date: 2018-09-26
 language: english
@@ -10,13 +10,16 @@ tags:
 published: true
 description: "In this post, I'll mainly explain what pointers and structures are.  Pointers and Structures can be very hard concepts to grasp for people who previously only learned script languages like Ruby, Python and so on. In brief, a pointer is a value which points to the memory address of another value. A pointer can be declared using the `*` followed by the type of the stored value in Go.  The variable pointer1 is a pointer to an `int` and `pointer2` is a pointer to a `string` in the following code."
 ---
+
 # Overview
- In this post, I'll mainly explain what `pointers` and `structures` are.  `Pointers` and `Structures` can be very hard concepts to grasp for people who previously only learned script languages like `Ruby`, `Python` and so on.
+
+In this post, I'll mainly explain what `pointers` and `structures` are. `Pointers` and `Structures` can be very hard concepts to grasp for people who previously only learned script languages like `Ruby`, `Python` and so on.
 
 # Pointers
 
 ### How to declare a pointer
- In brief, a `pointer` is a value which points to the memory address of another value. A `pointer` can be declared using the `*` followed by the type of the stored value in Go.      
+
+In brief, a `pointer` is a value which points to the memory address of another value. A `pointer` can be declared using the `*` followed by the type of the stored value in Go.  
 The variable `pointer1` is a pointer to an `int` type value and `pointer2` is a pointer to a `string` type value in the following code.
 
 ```go
@@ -33,7 +36,8 @@ func main() {
 ```
 
 ### How to retrieve the memory address of a variable
- In Go, you can use the `&` operator to retrieve the memory address of a variable. In the following code, `&str` represents the memory address of the variable `str`.
+
+In Go, you can use the `&` operator to retrieve the memory address of a variable. In the following code, `&str` represents the memory address of the variable `str`.
 
 ```go
 package main
@@ -47,7 +51,8 @@ func main() {
 ```
 
 ### How to use pointers
- You can assign the memory address of a variable to a `pointer` just like the code below.
+
+You can assign the memory address of a variable to a `pointer` just like the code below.
 
 ```go
 package main
@@ -68,7 +73,7 @@ func main() {
 }
 ```
 
- You can also declare a `pointer` more succinctly like the following code.
+You can also declare a `pointer` more succinctly like the following code.
 
 ```go
 package main
@@ -83,7 +88,7 @@ func main() {
 }
 ```
 
- `pointer1` and `pointer3` can only store the memory address of `int` type values and `pointer2` can only store the memory address of a `string` type value respectively.
+`pointer1` and `pointer3` can only store the memory address of `int` type values and `pointer2` can only store the memory address of a `string` type value respectively.
 
 ```go
 package main
@@ -99,7 +104,8 @@ func main() {
 ```
 
 ### Accessing the value of a variable through its pointer
- The `*` operator denotes the pointer's underlying value. By using this feature, you can set, read and change the value of a variable through its pointer.
+
+The `*` operator denotes the pointer's underlying value. By using this feature, you can set, read and change the value of a variable through its pointer.
 
 ```go
 package main
@@ -119,9 +125,11 @@ func main() {
 ```
 
 # Structs
- The concept of `structs` in Go is kind of similar to the concept of `classes` in object-oriented programming languages. A `struct` is a typed collection of fields. They’re useful for grouping data together to form records.
+
+The concept of `structs` in Go is kind of similar to the concept of `classes` in object-oriented programming languages. A `struct` is a typed collection of fields. They’re useful for grouping data together to form records.
 
 ### How to declare a struct
+
 You can declare a `struct` using the `type` and `struct` keywords.
 
 ```go
@@ -134,13 +142,16 @@ type person struct {
   age int
 }
 ```
- In the example above, `person` struct contains `first_name` and `age` as its `fields`.
+
+In the example above, `person` struct contains `first_name` and `age` as its `fields`.
 
 ### Different ways of Struct Instantiation
- There are multiple ways to instantiate a `struct`, I'll demonstrate the following 4 methods here.
 
-####  The `var` keyword and Dot Notation
- A `struct` uses a `.` to access the values stored in fields.
+There are multiple ways to instantiate a `struct`, I'll demonstrate the following 4 methods here.
+
+#### The `var` keyword and Dot Notation
+
+A `struct` uses a `.` to access the values stored in fields.
 
 ```go
 package main
@@ -161,8 +172,9 @@ func main() {
 }
 ```
 
-####  The `var` keyword and `:=` operator
- The following 2 sets of code illustrates struct instantiation using `var` and `:=`.
+#### The `var` keyword and `:=` operator
+
+The following 2 sets of code illustrates struct instantiation using `var` and `:=`.
 
 ```go
 package main
@@ -181,7 +193,7 @@ func main() {
 }
 ```
 
- You can also explicitly refer to a field and assign a value to it.
+You can also explicitly refer to a field and assign a value to it.
 
 ```go
 package main
@@ -201,7 +213,8 @@ func main() {
 ```
 
 #### Using the `new` keyword
- The following code shows struct instantiation using the `new` keyword.
+
+The following code shows struct instantiation using the `new` keyword.
 
 ```go
 package main
@@ -224,7 +237,8 @@ func main() {
 ```
 
 ### Structs and Pointers
- `Struct fields` can be accessed through a struct pointer.
+
+`Struct fields` can be accessed through a struct pointer.
 
 ```go
 package main
@@ -246,11 +260,14 @@ func main() {
   fmt.Println(mike) //=> {Mike 20}
 }
 ```
+
 # Methods
- As I mentioned earlier, Go does not have `classes`. However, you can define methods on struct types.    
+
+As I mentioned earlier, Go does not have `classes`. However, you can define methods on struct types.  
  A `method` is a function with a special `receiver` argument.
 
 ### How to define a method
+
 You can declare a method like the following code snippet.
 
 ```go
@@ -259,7 +276,7 @@ func(receiver receiver_type) name_of_function(arg) type_of_return_value {
 }
 ```
 
- In the example below, `intro` method has a `receiver` of type `person` named named `one_person`.
+In the example below, `intro` method has a `receiver` of type `person` named named `one_person`.
 
 ```go
 package main
@@ -272,7 +289,7 @@ type person struct {
 }
 
 func(one_person person) intro(arg string) string {
-    return "Hello I'm" + " " + one_person.first_name + " " + arg     
+    return "Hello I'm" + " " + one_person.first_name + " " + arg
 }
 
 func main() {
@@ -282,8 +299,9 @@ func main() {
 ```
 
 ### Pointer receivers
- You can declare `methods` with pointer receivers. This means the `receiver_type` has the literal syntax `*Type` for some type `Type`.    
- There are several differences between `pointer receivers` and normal `value reveivers`.  One circumstance you should use `pointer receivers` over `value receivers` is when you want to change the state of the `receiver` in a method.    
+
+You can declare `methods` with pointer receivers. This means the `receiver_type` has the literal syntax `*Type` for some type `Type`.  
+ There are several differences between `pointer receivers` and normal `value reveivers`. One circumstance you should use `pointer receivers` over `value receivers` is when you want to change the state of the `receiver` in a method.  
  With `pointer receivers`, you can modify(read/write) the `receiver` in a method just like the code below.
 
 ```go
@@ -316,10 +334,12 @@ func main() {
     fmt.Println(num_one) //=> {10 20}
 }
 ```
- As you can see in the code above, The method `stay()` does not change the values of `Num` struct. On the other hand, The method `modify()` changes the values of `Num` struct.    
+
+As you can see in the code above, The method `stay()` does not change the values of `Num` struct. On the other hand, The method `modify()` changes the values of `Num` struct.  
  If you want to know more about the differences of `pointer receivers` from `value receivers`, you can check [here](https://flaviocopes.com/golang-methods-receivers/)
 
 # Type Embedding
+
 Go does not provide the typical, type-driven notion of sub-classing, but it does have the ability to “borrow” pieces of an implementation by embedding types within a struct or interface.
 
 ```go
