@@ -1,5 +1,5 @@
 ---
-title: "Javascript Array functions"
+title: 'Javascript Array functions'
 slug: javascript-array-functions
 date: 2019-06-21
 language: english
@@ -7,9 +7,11 @@ category: Javascript
 tags:
   - Javascript
 published: true
-description: "Here are the basic array functions"
+description: 'Here are the basic array functions'
 ---
+
 # Introduction
+
 Here are some of the most fundamental JS array functions.
 Assume the code below was declared at the top level in the following examples.
 

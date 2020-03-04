@@ -11,6 +11,7 @@ description: "Here are the basic string functions in Javascript
 
 "
 ---
+
 # String functions
 
 Here are some of the most fundamental JS string functions.
@@ -85,12 +86,14 @@ console.log(s2);
 ```
 
 ## substring()
+
 Extracts a part of a string and returns a new string.
 
 ```JS
 let s2 = string.substring(0, 3); ///=> str
 console.log(s2);
 ```
+
 # Transforming a string
 
 ## split()

@@ -11,11 +11,14 @@ published: true
 description: " In this post, I will write about how looping and conditional statements work in Go. For is Go's only looping construct. Basic for loop consists of three parts that are listed below.
 The loop terminates the iteration once the condition evaluates to false`."
 ---
+
 # Overview
- In this post, I will write about how looping and conditional statements work in Go.
+
+In this post, I will write about how looping and conditional statements work in Go.
 
 # For
- `For` is Go's only looping construct. Basic `for loop` consists of three parts that are listed below.
+
+`For` is Go's only looping construct. Basic `for loop` consists of three parts that are listed below.
 
 - `init statement`: It is executed before the first iteration. (It is often used to define a variable that can only be used in the scope of the `for` statement.)
 
@@ -23,7 +26,7 @@ The loop terminates the iteration once the condition evaluates to false`."
 
 - `post statement`: It is executed at the end of every iteration.
 
- The basic syntax of Go's `for loop` looks like this.
+The basic syntax of Go's `for loop` looks like this.
 
 ```go
   for init statement; condition; post statement {
@@ -65,7 +68,7 @@ func main() {
 }
 ```
 
- If you omit the `condition`, it loops infinitely.
+If you omit the `condition`, it loops infinitely.
 
 ```go
 package main
@@ -77,7 +80,8 @@ func main() {
 ```
 
 # If
-  The basic syntax of Go's `if` statement is similar to its `for` statement.
+
+The basic syntax of Go's `if` statement is similar to its `for` statement.
 
 ```go
 package main
@@ -99,7 +103,7 @@ func if_statement(arg int) string{
 }
 ```
 
- Just like the `for` statement, `if` statement can start with a short statement that is executed before the condition.
+Just like the `for` statement, `if` statement can start with a short statement that is executed before the condition.
 
 ```go
 package main
@@ -121,6 +125,7 @@ func main() {
 ```
 
 # Switch
+
 A `switch` statement is a shorter way to write a sequence of `if - else` statements. A `switch` statement only runs the first case that meets the condition, not all the cases that follow.
 
 ```go
@@ -143,7 +148,7 @@ func main(){
 }
 ```
 
- You can also use the `init statement` with a `switch` statement.
+You can also use the `init statement` with a `switch` statement.
 
 ```go
 package main
@@ -188,7 +193,8 @@ func main() {
 ```
 
 # Defer
- A `defer` statement defers the execution of a function until the surrounding function returns.  
+
+A `defer` statement defers the execution of a function until the surrounding function returns.  
  For instance, `fmt.Println("Hello")` is excuted after `fmt.Println("World")` due to the `differ` statement that was given in the example below.
 
 ```go
@@ -205,7 +211,7 @@ func main(){
 }
 ```
 
- Deferred function calls are executed in `last-in-first-out` order. That means the first function that is given `defer` would be excuted lastly.
+Deferred function calls are executed in `last-in-first-out` order. That means the first function that is given `defer` would be excuted lastly.
 
 ```go
 package main
