@@ -1,5 +1,5 @@
 ---
-title: "Utilize settings.yml in Rails applications"
+title: 'Utilize settings.yml in Rails applications'
 slug: utilize-settings-yml-in-rails-applications
 date: 2019-07-04
 language: english
@@ -8,9 +8,11 @@ tags:
   - Rails
   - Gem
 published: true
-description: "Utilize settings.yml in Rails applications by using a gem called settingslogic."
+description: 'Utilize settings.yml in Rails applications by using a gem called settingslogic.'
 ---
+
 # Installation
+
 Add the following line to your Gemfile and run `bundle install`.
 
 ```
@@ -18,6 +20,7 @@ gem `settingslogic`
 ```
 
 # Define Your Class
+
 Add the code below to `config/initializers/settings.rb`.
 
 ```ruby
@@ -29,6 +32,7 @@ end
 ```
 
 # Create your settings
+
 You can start writing settings in `config/settings.yml` since you set an absolute path to `settings.yml`.
 You can write settings like the code below.
 
@@ -53,9 +57,10 @@ production:
 ```
 
 # Access your settings
+
 You can access your settings like the code below.
 
-````
+```
 >> Rails.env
 => "development"
 
@@ -70,6 +75,8 @@ You can access your settings like the code below.
 
 >> Settings.awesome_setting
 => "Did you know 5 + 5 = 10?"
-````
+```
+
 # References
+
 - [GitHub - binarylogic/settingslogic: A simple and straightforward settings solution that uses an ERB enabled YAML file and a singleton design pattern.](https://github.com/binarylogic/settingslogic)
