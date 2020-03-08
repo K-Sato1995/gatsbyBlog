@@ -11,32 +11,39 @@ published: true
 description: "In this post, I'll explain how interfaces work in Go.  In Go, an interface is a set of method signatures. A variable of an interface type can hold any value that implements those methods. Any type that provides the methods named in an interface is treated as an implementation of that interface. No explicit declaration is required.
 "
 ---
+
 # Introduction
- In this post, I'll explain how `interfaces` work in Go.
+
+In this post, I'll explain how `interfaces` work in Go.
 
 # Interfaces in Go
- In Go, an `interface` is a set of method signatures. A variable of interface type can hold any value that implements those methods.
+
+In Go, an `interface` is a set of method signatures. A variable of interface type can hold any value that implements those methods.
 
 # Basics
- You can declare an `interface` like the following code. It is basically just a list of methods.
+
+You can declare an `interface` like the following code. It is basically just a list of methods.
 
 ```go
 type NAME_OF_INTERFACE interface {
-    method_name1(return_type1)    
+    method_name1(return_type1)
     method_name2(return_type2)
     ..........
     method_namex(return_typex)
 }
 ```
- Any type that provides the methods named in an interface is treated as an implementation of that interface. No explicit declaration is required.
+
+Any type that provides the methods named in an interface is treated as an implementation of that interface. No explicit declaration is required.
 
 # The empty interface
- The interface type that does not specify any method is known as the `empty interface`. It can be defined as the following code.
+
+The interface type that does not specify any method is known as the `empty interface`. It can be defined as the following code.
 
 ```go
 interface {}
 ```
- A variable of empty interface type can hold values of any type.
+
+A variable of empty interface type can hold values of any type.
 
 ```go
 package main
@@ -57,11 +64,13 @@ func main(){
 ```
 
 # Interface values
- A `interface value` is represented as a pair of a __concrete value__ and a __dynamic type__.
+
+A `interface value` is represented as a pair of a **concrete value** and a **dynamic type**.
 
 ```go
 [Value, Type]
 ```
+
 You can use `%v` to print the concrete value and `%T` to print the dynamic type.
 
 ```go
@@ -83,12 +92,14 @@ func main(){
 ```
 
 # Type assertions
+
 A `type assertion` provides access to an interface value's underlying concrete value.
 
 ```go
 concrete_value := Interface_value.(TYPE)
 ```
- This statement above asserts that `Interface_value` holds the concrete type `TYPE` and assigns the underlying `TYPE` value to `variable`.  
+
+This statement above asserts that `Interface_value` holds the concrete type `TYPE` and assigns the underlying `TYPE` value to `variable`.  
  To check whether an interface value holds a specific type, a `type assertion` can return two values. the `underlying value` and a `boolean value` that reports whether the assertion succeeded.
 
 ```go
@@ -115,7 +126,8 @@ func main(){
 ```
 
 # Type switches
- A `type switch` is a construct that permits several type assertions in series.  
+
+A `type switch` is a construct that permits several type assertions in series.  
  You can declare a `type switch` like the following code.
 
 ```go
@@ -129,7 +141,7 @@ switch v := x.(type) {
 }
 ```
 
- In the follwing code, the switch statement tests whether the interface value `i` holds a value of type `int` or `string`. In each of the `int` and `string` cases, the variable `v` will be of type `int` or `string` respectively and hold the value held by `i`.  
+In the follwing code, the switch statement tests whether the interface value `i` holds a value of type `int` or `string`. In each of the `int` and `string` cases, the variable `v` will be of type `int` or `string` respectively and hold the value held by `i`.  
  In the default case (where there is no match), the variable `v` is of the same interface type and value as `i`.
 
 ```go
@@ -156,7 +168,8 @@ func main() {
 ```
 
 # Implementing interfaces
- `Interfaces` can be implemented as methods on structs like the following code.
+
+`Interfaces` can be implemented as methods on structs like the following code.
 
 ```go
 package main
