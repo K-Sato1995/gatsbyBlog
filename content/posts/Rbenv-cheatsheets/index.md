@@ -1,5 +1,5 @@
 ---
-title: "Rbenv cheatsheets"
+title: 'Rbenv cheatsheets'
 slug: rbenv-cheatsheets
 date: 2019-09-02
 language: english
@@ -7,9 +7,10 @@ category: Ruby
 tags:
   - rbenv
 published: true
-description: "Here is a list of frequently used rbenv commands."
+description: 'Here is a list of frequently used rbenv commands.'
 ---
-# Frequently used Commands 
+
+# Frequently used Commands
 
 ```ruby
 # Install rbenv
@@ -50,7 +51,6 @@ $ rbenv rehash
 # invoke when you run the given command
 $ rbenv which irb
 ```
-
 
 # References
 
