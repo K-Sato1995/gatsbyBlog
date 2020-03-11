@@ -12,21 +12,25 @@ published: true
 description: "In this post, I am going to talk about how to implement routing in your react applications with [react-router-dom](https://www.npmjs.com/package/react-router-dom).  I will explain how to implement routing as well as passing data around in your components. (I expect you to have react-development-environment on your computer as a prerequisite.)
 "
 ---
+
 # Introduction
-In this post, I am going to talk about how to implement `routing` in your react applications with [react-router-dom](https://www.npmjs.com/package/react-router-dom).    
+
+In this post, I am going to talk about how to implement `routing` in your react applications with [react-router-dom](https://www.npmjs.com/package/react-router-dom).  
 I will explain how to implement routing as well as passing data around in your components. (I expect you to have react-development-environment on your computer as a prerequisite.)
 
 ![output.gif](https://qiita-image-store.s3.amazonaws.com/0/258219/99114ff7-f968-f469-2912-44a08a0d6af1.gif)
 
 # Install react-router-dom
- You can install `react-router-dom` by running the command below.
+
+You can install `react-router-dom` by running the command below.
 
 ```console
 $ npm install react-router-dom
 ```
 
 # Setting up the links
- First and foremost, import `Link` from `react-router-dom` and create links that are connected with designated paths.  
+
+First and foremost, import `Link` from `react-router-dom` and create links that are connected with designated paths.  
  For instance, if a user clicks `Home` in the code below, the user will be transferred to '/' page and if a user clicks `About`, the user will be sent to `/About` page.
 
 ```JS
@@ -48,9 +52,10 @@ export default Navbar;
 ```
 
 # Setting up Router and Route
- All you gotta do to connect one page to another in your react app is connecting the paths and components using `Router` and `Route`.
 
-__There really are only two things you should keep in your mind.__
+All you gotta do to connect one page to another in your react app is connecting the paths and components using `Router` and `Route`.
+
+**There really are only two things you should keep in your mind.**
 
 - `Routes` must be defined in `Routers`.
 - Write the path and the corresponding component in each `Route`
@@ -82,7 +87,8 @@ export default App;
 ```
 
 # Passing data with props
- You can accomplish this very easily by writing `Route` element like the code below.
+
+You can accomplish this very easily by writing `Route` element like the code below.
 
 ```JS
 class App extends Component {
@@ -103,7 +109,8 @@ class App extends Component {
 
 export default App;
 ```
- You can get the data in `About` component like the code below.
+
+You can get the data in `About` component like the code below.
 
 ```JS
 import React from 'react'

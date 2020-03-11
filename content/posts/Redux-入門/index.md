@@ -1,5 +1,5 @@
 ---
-title: "Redux 入門 "
+title: 'Redux 入門 '
 slug: redux
 date: 2018-12-16
 language: japanese
@@ -9,41 +9,50 @@ tags:
   - React
   - Tutorial
 published: true
-description: "ReactJSが扱うUIのstate(状態)を管理をするためのフレームワークです。この記事ではReduxの基本概念を実際にどの様に用いられるのかコードと共に紹介・説明します。また、Reactと共に用いる方法も紹介します。"
+description: 'ReactJSが扱うUIのstate(状態)を管理をするためのフレームワークです。この記事ではReduxの基本概念を実際にどの様に用いられるのかコードと共に紹介・説明します。また、Reactと共に用いる方法も紹介します。'
 ---
+
 # Introduction
 
 ## 基本概念
-Reduxは以下の３で成り立つ。
+
+Redux は以下の３で成り立つ。
 
 ### State
+
 `state` はセッターのないモデルのようなもの。
 
 ### Action
+
 `action`を使用する事のみで`state`の内容を変更できる。
-`action`はただのJavascriptのオブジェクト。
+`action`はただの Javascript のオブジェクト。
 
 ### Reducer
+
 `reducer`は`action`と`state`を結びつけるもの。
 `reducer`は`state` `action`を引数に取り、次の`state`の状態を返す単なるファンクション。
 
-## 3つの原則
+## 3 つの原則
 
 ### Single source of truth
+
 アプリのすべての`state`は１つの`store`に集約する。
 
 ### State is read-only
+
 `state`は単純なオブジェクトである`action`を使用してのみでしか変更を行わない。
 
 ### Changes are made with pure functions
+
 `reducer`は純粋なファンクションであり、与えられた値を変更するのではなく、必ず新しい値を返す。
 
 # Basics
 
 ## Actions
+
 `action`は、アプリケーションから`store`にデータを送信する情報のペイロードです。`store.dispatch()`で`store`に送ることが可能。
 
-todoにアイテムを加えるアクションの例
+todo にアイテムを加えるアクションの例
 
 ```JS
 {
@@ -52,12 +61,12 @@ todoにアイテムを加えるアクションの例
 }
 ```
 
-`actions`はJSの単純なオブジェクトで,必ず使用される`action`を示す`type`プロパティをもつ。
-
+`actions`は JS の単純なオブジェクトで,必ず使用される`action`を示す`type`プロパティをもつ。
 
 ## Action Creators
+
 `Action Creators`はその名の通り、`action`を作り出す関数である。
-Reduxでは`Action Creators`は`action`オブジェクトを返す。
+Redux では`Action Creators`は`action`オブジェクトを返す。
 
 ```JS
 function addTodo(text) {
@@ -67,7 +76,9 @@ function addTodo(text) {
   }
 }
 ```
-### その他のactionsCreatorsとVisibilityFilters
+
+### その他の actionsCreators と VisibilityFilters
+
 ```JS
 export function addTodo(text) {
   return { type: ADD_TODO, text }
@@ -90,7 +101,7 @@ export const VisibilityFilters = {
 
 ## Reducers
 
-### Reducers基本
+### Reducers 基本
 
 `Reducers`は`store`に送られた`action`に応じて`state`がどのように変更するのかを示す。
 
@@ -175,7 +186,7 @@ const initialState = {
 console.log(...initialState.todos, 4)
 ```
 
-### 更にactionsを付け加える
+### 更に actions を付け加える
 
 ```JS
 function todoApp(state = initialState, action) {
@@ -200,14 +211,16 @@ function todoApp(state = initialState, action) {
 ```
 
 ## Store
+
 `store`は以下の為に存在する。
+
 - Holds application state;
 - Allows access to state via `getState()`;
 - Allows state to be updated via `dispatch(action)`;
 - Registers listeners via `subscribe(listener)`;
 - Handles unregistering of listeners via the function returned by `subscribe(listener)`
-1つのReduxアプリに関して1つの`store`だけが存在する。
-様々なデータを扱う際には`reducer`を細分化する事で対応する。
+  1 つの Redux アプリに関して 1 つの`store`だけが存在する。
+  様々なデータを扱う際には`reducer`を細分化する事で対応する。
 
 `reducer`があればの`store`の作成は簡単で、以下のようにできる。
 
@@ -219,6 +232,7 @@ const store = createStore(todoApp)
 ```
 
 ### アクションを送る。
+
 以下のようにアプリの`state`の値を獲得したり、変更したりできる。
 
 ```JS
@@ -260,11 +274,12 @@ $ npm install --save react-redux
 
 ## Presentational and Container Componensts
 
-`React`はviewを扱うライブラリであり`Redux`が有する`store`や`Action`の情報と疎結合になっていることが好ましい。
+`React`は view を扱うライブラリであり`Redux`が有する`store`や`Action`の情報と疎結合になっていることが好ましい。
 
 ### Container Components
 
-`Redux`の`store`や`Action`を受け取り`React`コンポーネントの`Props`として渡す役割を担う。(= ReactとReduxの橋渡し。JSXは使用しない。)
+`Redux`の`store`や`Action`を受け取り`React`コンポーネントの`Props`として渡す役割を担う。(= React と Redux の橋渡し。JSX は使用しない。)
 
 ### Presentational Components
-`Redux`依存のない純粋なReactコンポーネント。
+
+`Redux`依存のない純粋な React コンポーネント。
