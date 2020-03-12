@@ -1,5 +1,5 @@
 ---
-title: "Ruby Exception handling"
+title: 'Ruby Exception handling'
 slug: ruby-exception-handling
 date: 2019-05-21
 language: english
@@ -8,15 +8,16 @@ tags:
   - Ruby
   - Exception
 published: true
-description: "Explaining how to handle exceptions in Ruby."
+description: 'Explaining how to handle exceptions in Ruby.'
 ---
+
 # Basic Syntax
 
 The basic syntax of ruby's exception handling looks like this.
 
 ```ruby
-begin 
-  # Code that potentially raises an error  
+begin
+  # Code that potentially raises an error
 rescue => e # variable
   # Excecute if there was any error between begin and rescue.
 end
@@ -25,8 +26,8 @@ end
 ## Example
 
 ```ruby
-begin 
-  raise 
+begin
+  raise
 rescue => e
   p e #=> RuntimeError
 end
@@ -34,18 +35,17 @@ end
 
 # Relevant methods
 
-
-| Method 	| Explanation 	| 
-|---	|---|	
-| Object#class 	|Returns the class of the receiver.  	|  
-| Kernel#raise 	| Raise an error. 	|  	 
-| Exception#backtrace 	  	|Returns the backtrace of the error.  	|
-| Exception#message 	  	|  	Returns the error message.|
+| Method              | Explanation                         |
+| ------------------- | ----------------------------------- |
+| Object#class        | Returns the class of the receiver.  |
+| Kernel#raise        | Raise an error.                     |
+| Exception#backtrace | Returns the backtrace of the error. |
+| Exception#message   | Returns the error message.          |
 
 ## Example
 
 ```ruby
-begin 
+begin
   raise StandardError.new("Message")
 rescue => e
   p e.class #=> StandardError
@@ -55,16 +55,17 @@ end
 ```
 
 # Ensure
+
 You can run something regardless of the existence of any error with `ensure`
 
-## Example 
+## Example
 
 ```ruby
-begin 
+begin
   "no Error"
 rescue => e
   p e.message
-ensure 
+ensure
   p "Ensured" #=> Ensured
 end
 ```
@@ -72,16 +73,17 @@ end
 ## Example2
 
 ```ruby
-begin 
+begin
   raise StandardError.new('error')
 rescue => e
   p e.message #=> error
-ensure 
+ensure
   p "Ensured" #=> Ensured
 end
 ```
 
 # retry
+
 Literally `re-try` the execution.
 
 ## Example
@@ -102,6 +104,7 @@ end
 ```
 
 # Rescue modifier
+
 You can write `begin ~ rescue` in one sentence just like `if ~ end` in Ruby.
 
 ## Example
@@ -116,10 +119,10 @@ You don't need to write `begin and end` to do exception handling in methods.
 
 ## Example
 
-``` ruby
+```ruby
 def method
  raise 'error'
- rescue => e 
+ rescue => e
   p e.message #=> error
  ensure
   p 'ensured' #=> ensured
@@ -132,7 +135,7 @@ method #=> "error"
 You can write rescue multiple times for each corresponding error.
 
 ```ruby
-begin 
+begin
   rescue Exception1, Exception2 => e
   # For Exception1 or Exception2
   rescue Exception3 => e
@@ -142,13 +145,12 @@ begin
 end
 ```
 
-
 ## Example
 
 ```ruby
-begin 
+begin
   raise StandardError
-  rescue StandardError, RangeError   
+  rescue StandardError, RangeError
     p 'Standard or Ranage Error'
   rescue RuntimeError
     p 'Runtime Error'
@@ -181,14 +183,14 @@ end
 ```
 
 (3) Add custom data attributes to your exception
- 
- ```ruby
+
+```ruby
 class CustomError < StandardError
-  attr_reader :atr
-  def initialize(msg="My Error", atr="atrribute")
-    @atr = atr
-    super(msg)
-  end
+ attr_reader :atr
+ def initialize(msg="My Error", atr="atrribute")
+   @atr = atr
+   super(msg)
+ end
 end
 ```
 
@@ -214,5 +216,6 @@ end
 ```
 
 # References
+
 - [【Ruby】例外処理 - Qiita](https://qiita.com/tsubasakat/items/6825bcefcad26da3471b)
 - [Custom exceptions in Ruby - Honeybadger Developer Blog](https://www.honeybadger.io/blog/ruby-custom-exceptions/)
