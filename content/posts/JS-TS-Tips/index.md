@@ -116,6 +116,16 @@ if (!user) {
 
 [TypeScript Type vs Interface](https://www.educba.com/typescript-type-vs-interface/)
 
+## Use a variable for a key in a JavaScript object literal?
+
+You can use a variable as a key in object with the brackets notation.
+
+```js
+var obj = {
+  [key]: value,
+}
+```
+
 # TS Types
 
 ## 可変長引数
