@@ -1,5 +1,5 @@
 ---
-title: "Testing your app in windows using VirtualBox"
+title: 'Testing your app in windows using VirtualBox'
 slug: testing-your-app-in-windows-using-virtualbox
 date: 2019-06-13
 language: english
@@ -7,8 +7,9 @@ category: Others
 tags:
   - VirtualBox
 published: true
-description: "Quick overview of how to use VirtualBox to test your web app in windows."
+description: 'Quick overview of how to use VirtualBox to test your web app in windows.'
 ---
+
 # (1) Download VirtualBox
 
 You can download VirtualBox by following the instructions in the link below.
@@ -32,7 +33,7 @@ Use `cmd` and `i` to import the downloaded folder.
 
 ![image](https://user-images.githubusercontent.com/32632542/59407216-89c91b00-8deb-11e9-84d0-e1cf1695e0e5.png)
 
-Click the folder icon and select `IE -Win7.ovf` and click  `open`.
+Click the folder icon and select `IE -Win7.ovf` and click `open`.
 
 ![image](https://user-images.githubusercontent.com/32632542/59407249-a36a6280-8deb-11e9-80e6-f0ce9da0358a.png)
 
@@ -80,7 +81,8 @@ Check `http://localhost:3000/` on the virtual machine if you can access to the s
 - shift + right click: Open the cli at the directory you clicked.
 - Notepad file: Open the file with Notepad.
 
-# References 
+# References
+
 - [How to use windons in VirtualBox](https://www.youtube.com/watch?v=NIauwnXqQr8)
 - [How To Use VirtualBox - Complete Step by Step Tutorial](https://www.youtube.com/watch?v=Eno4l6pKQHc)
 - [Chapter First Steps](https://www.virtualbox.org/manual/ch01.html#features-overview)
