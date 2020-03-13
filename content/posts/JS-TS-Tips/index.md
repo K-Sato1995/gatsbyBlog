@@ -70,7 +70,7 @@ const test = ({a, b, c}) => {
 }
 ```
 
-can be writte n as:
+can be written as:
 
 ```js
 ;() => hoge
