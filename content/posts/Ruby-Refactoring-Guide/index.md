@@ -1,5 +1,5 @@
 ---
-title: "Ruby Refactoring Guide"
+title: 'Ruby Refactoring Guide'
 slug: ruby-refactoring-guide
 date: 2019-03-21
 language: english
@@ -8,8 +8,9 @@ tags:
   - Ruby
   - Tips
 published: true
-description: "When I am trying to refactor code base in my personal projects or projects at work, I often forget how I did refactor similar code before. So I listed some useful refactoring methods to follow in this post. "
+description: 'When I am trying to refactor code base in my personal projects or projects at work, I often forget how I did refactor similar code before. So I listed some useful refactoring methods to follow in this post. '
 ---
+
 # Common Refactoring approaches
 
 ## Extract Method
@@ -455,6 +456,7 @@ end
 # Small Tips
 
 ## super
+
 The `super` method calls the parent class method.
 
 ```ruby
@@ -476,7 +478,7 @@ B.new.test #=> A B
 
 - [What is `super` in Ruby? - Stack Overflow](https://stackoverflow.com/questions/31019009/what-is-super-in-ruby)
 
-# Safe navigation operator 
+# Safe navigation operator
 
 If you want to be safe and not risk a nil error, you would write something like the following:
 
