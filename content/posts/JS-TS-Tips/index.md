@@ -16,7 +16,11 @@ description: 'Here are some tips about JavaScript I learned while I was working 
 ## Only use let if necessary
 
 Using let could cause unnecessary complexity in your code.
-What's the difference between `let` and `const`?
+But the important thing is that you understand the differences of `let`, `const` and `var` and use them appropriately based on what you are trying to do.
+
+Here are the diffenreces between `let` and `const`.
+
+### let
 
 - Variables declared with `let` can not be redeclared. But you can reassign a new value.
 
@@ -29,6 +33,8 @@ console.log(name) //=> Mike
 
 let name = 'Nick' //=> SyntaxError: redeclaration of let name
 ```
+
+### const
 
 - Variables declared with `const` can not be redeclared and you can not reassign a new value.
 
