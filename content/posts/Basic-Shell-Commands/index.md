@@ -12,7 +12,7 @@ description: " I made a list of Linux commands that, I think, are important and 
 
 # Introduction
 
-I made a list of Linux commands that, I think, are important and frequently used. The main purpose of this post is to memorize basic Linux commands and make myself more familiar with other commands I don't often use. I would keep adding more commands.
+I made a list of Linux commands that, I think, are important and frequently used. The main purpose of this post is to memorize basic Linux commands and make myself more familiar with other commands I don't often use. I would keep adding more commands as the time gose by.
 
 # Navigating the Filesystem
 
