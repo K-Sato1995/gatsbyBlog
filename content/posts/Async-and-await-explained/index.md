@@ -39,7 +39,7 @@ async function myAsync() {
     setTimeout(() => resolve('done!'), 1000)
   })
 
-  let result = await promise // wait until the promise resolves (*)
+  let result = await promise // wait until the promise resolves
 
   alert(result) // "done!"
 }
@@ -55,7 +55,7 @@ myAsync()
 const request = async () => {
   const response = await fetch('endpoint_url')
   const json = await response.json()
-  console.log(json)
+  return json
 }
 ```
 
@@ -67,19 +67,18 @@ const fetchData = async () => {
     alert(error)
   })
   if (response) {
-    console.log(response)
+    return response
   }
 }
 ```
 
 ## Example3
 
-```
-async function getUserAsync(name)
-{
-  let response = await fetch(`https://api.github.com/users/${name}`);
+```js
+async function getUserAsync(name) {
+  let response = await fetch(`https://api.github.com/users/${name}`)
   let data = await response.json()
-  return data;
+  return data
 }
 ```
 
