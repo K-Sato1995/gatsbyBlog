@@ -207,6 +207,22 @@ export default CreateUser
 
 - [TypeScript and React: Events](https://fettblog.eu/typescript-react/events/)
 
+# React onClick - pass event with parameter
+
+If you want to pass `e`(event) as a paramter in an input, you can do so like the following example.
+
+```js
+function clickMe(event, someParameter){
+     //do with event
+}
+<button onClick={(e) => {
+     this.clickMe(e, someParameter)
+}}>Click Me!</button>
+And in your function:
+```
+
+- [React onClick - pass event with parameter](https://stackoverflow.com/questions/42597602/react-onclick-pass-event-with-parameter)
+
 # References
 
 - [GitHub - typescript-cheatsheets/react-typescript-cheatsheet: Cheatsheets for experienced React developers getting started with TypeScript](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#section-1-setup)
