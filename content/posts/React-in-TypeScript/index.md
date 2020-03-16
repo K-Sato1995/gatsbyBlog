@@ -223,6 +223,16 @@ And in your function:
 
 - [React onClick - pass event with parameter](https://stackoverflow.com/questions/42597602/react-onclick-pass-event-with-parameter)
 
+# Typescript input onchange event.target.value
+
+You can use `React.ChangeEvent<HTMLInputElement>`.
+
+```js
+onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const newValue = e.target.value
+}
+```
+
 # References
 
 - [GitHub - typescript-cheatsheets/react-typescript-cheatsheet: Cheatsheets for experienced React developers getting started with TypeScript](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet#section-1-setup)
