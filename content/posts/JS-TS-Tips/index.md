@@ -112,16 +112,6 @@ if (!user) {
 }
 ```
 
-## Differences between interfaces and types in TypeScript
-
-- TypeScript Type declaration can introduce a name for any kind of type including primitive, union or intersection type. Interface declaration always introduced the named object type.
-- The syntax for Type can be written as ‘type ABC = {a: number; b: number;}’. The syntax for interface can be written as ‘interface ABC = {a: number; b: number;}’.
-- In TypeScript, type does not create a new name for instance. In TypeScript, an interface can create the new name that can be used everywhere.
-- Type does not have a functionality of extending. An interface can extend multiple interfaces and class as well.
-- Type is mainly used when a union or tuple type needs to be used. In typescript, sometimes developers cannot express some of the shapes with an interface.
-
-[TypeScript Type vs Interface](https://www.educba.com/typescript-type-vs-interface/)
-
 ## Use a variable for a key in a JavaScript object literal?
 
 You can use a variable as a key in object with the brackets notation.
@@ -132,7 +122,7 @@ var obj = {
 }
 ```
 
-# Conditionally setting a variable
+## Conditionally setting a variable
 
 You don't need to write an extra if-statement if you use this solution.
 
@@ -149,7 +139,7 @@ if (user.preferred_timezone) {
 }
 ```
 
-# Format number as currency
+## Format number as currency
 
 ```js
 number.toLocaleString('en-GB', {
@@ -166,6 +156,16 @@ number.toLocaleString('ja-JP', {
 - [An Awesome Way to Format Numbers in JavaScript](https://dev.to/sudo_kaizen/using-tolocalestring-for-number-objects-in-javascript-1bfh)
 
 # TS Types
+
+## Differences between interfaces and types in TypeScript
+
+- TypeScript Type declaration can introduce a name for any kind of type including primitive, union or intersection type. Interface declaration always introduced the named object type.
+- The syntax for Type can be written as ‘type ABC = {a: number; b: number;}’. The syntax for interface can be written as ‘interface ABC = {a: number; b: number;}’.
+- In TypeScript, type does not create a new name for instance. In TypeScript, an interface can create the new name that can be used everywhere.
+- Type does not have a functionality of extending. An interface can extend multiple interfaces and class as well.
+- Type is mainly used when a union or tuple type needs to be used. In typescript, sometimes developers cannot express some of the shapes with an interface.
+
+[TypeScript Type vs Interface](https://www.educba.com/typescript-type-vs-interface/)
 
 ## 可変長引数
 
