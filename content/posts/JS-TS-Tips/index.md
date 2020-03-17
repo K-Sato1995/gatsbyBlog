@@ -132,6 +132,22 @@ var obj = {
 }
 ```
 
+# Format number as currency
+
+```js
+number.toLocaleString('en-GB', {
+  style: 'currency',
+  currency: 'GBP',
+})
+
+number.toLocaleString('ja-JP', {
+  style: 'currency',
+  currency: 'JPY',
+})
+```
+
+- [An Awesome Way to Format Numbers in JavaScript](https://dev.to/sudo_kaizen/using-tolocalestring-for-number-objects-in-javascript-1bfh)
+
 # TS Types
 
 ## 可変長引数
