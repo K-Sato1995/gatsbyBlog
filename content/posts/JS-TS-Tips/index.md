@@ -132,6 +132,23 @@ var obj = {
 }
 ```
 
+# Conditionally setting a variable
+
+You don't need to write an extra if-statement if you use this solution.
+
+```js
+const timezone = user.preferred_timezone || 'America/New_York'
+```
+
+The code above looks much cleaner compared to the one below.
+
+```js
+let timezone = 'America/New_York'
+if (user.preferred_timezone) {
+  timezone = user.preferred_timezone
+}
+```
+
 # Format number as currency
 
 ```js
