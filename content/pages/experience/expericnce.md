@@ -52,6 +52,7 @@ disqus: true
 
 ## Softwares
 
+- [graphql-autotest](https://github.com/bitjourney/graphql-autotest)
 - [clamav-client(ruby)](https://github.com/franckverrot/clamav-client)
 - [spy_rb](https://github.com/jbodah/spy_rb)
 - [Boostnote](https://github.com/BoostIO/Boostnote)
