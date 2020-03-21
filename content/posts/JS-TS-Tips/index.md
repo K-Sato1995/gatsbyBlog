@@ -16,7 +16,7 @@ description: 'Here are some tips about JavaScript I learned while I was working 
 ## Only use let if necessary
 
 Using let could cause unnecessary complexity in your code.
-But the important thing is that you understand the differences of `let`, `const` and `var` and use them appropriately based on what you are trying to do.
+That said, the important thing is that you understand the differences of `let`, `const` and `var` and use them appropriately based on what you are trying to do.
 
 Here are the diffenreces between `let` and `const`.
 
@@ -49,13 +49,15 @@ const name = 'Nick' //=> SyntaxError: redeclaration of let name
 
 ## Use Early Return
 
+Use an `early return` to clean up your code.
+
 ```js
 if (condition) return
 ```
 
 ## Object Destructuring
 
-Here are some examples.
+`Object Destructinrg` is another way to clean up your code and make it easier for other people to understand and read.
 
 ```js
 const { created_at: createdAt, password_updated_at: passwordUpdatedAt } = user
@@ -104,7 +106,7 @@ available && addToCart()
 
 ## Logical Operators
 
-!var: Returns false if its single operand can be converted to true; otherwise, returns true.
+`!var`: Returns false if its single operand can be converted to true; otherwise, returns true.
 
 ```js
 if (!user) {
