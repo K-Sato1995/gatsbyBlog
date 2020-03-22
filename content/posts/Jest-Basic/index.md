@@ -17,6 +17,8 @@ Jest is a JavaScript unit testing framework built by Facebook.
 
 # Directory Structure
 
+The directory structure for testing would looks something like the following.
+
 ```
 - myProgram.js
 - __tests__
