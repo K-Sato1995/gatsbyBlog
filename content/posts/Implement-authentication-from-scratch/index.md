@@ -10,6 +10,8 @@ published: true
 description: 'Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications.'
 ---
 
+Here is how you can implement the authentication functionality in your rails application without using any gem.
+
 # Create author resources
 
 Run the commands below.
@@ -37,12 +39,12 @@ end
 
 # Add secure password to Author
 
-You'll have your users put the password and its confirmatin in the form and send them as hashed values. (Hash values can not be decrypted even though they got intercepted by a third party during the transmission.)
-You check if the sent hashed value matches the hashed password stored in the db. And if it dose, you allow your user to log in to the application.
+You'll have your users put the password and its confirmation in the form and send them as hashed values. (Hash values can not be decrypted even though they got intercepted by a third party during the transmission.)
+You check if the sent hashed value matches the hashed password stored in the DB. And if it does, you allow your user to log in to the application.
 
-## Add has secure password
+## Add has_secure_password
 
-It's quite easy to setup in rails. Simply put `has_secure_password` in Author model.(Also add the minimum length of each password.)
+It's quite easy to set up in rails. Simply put `has_secure_password` in the Author model. (Also add the minimum length of each password.)
 
 ```ruby
 class Author < ApplicationRecord
@@ -56,9 +58,9 @@ end
 
 `has_secure_password`
 
-- Enables you to store hased password in your db as password_digest
+- Enables you to store the hashed password in your DB as password_digest
 - Lets you use password and password_confirmation params and validations for them.
-- Lets you use `authenticate` method.
+- Lets you use the `authenticate` method.
 
 ### Add bcrypt gem
 
@@ -90,7 +92,7 @@ $ Author.first.authenticate('000000')
 
 # Sign up functionality
 
-Let's start from setting up the routes for users to sign up.
+Let's start by setting up the routes for users to sign up.
 
 ```ruby
 Rails.application.routes.draw do
@@ -129,7 +131,7 @@ class AuthorsController < ApplicationController
 end
 ```
 
-Lastly, create a sign up page and show page for each user under `views/authors/`.
+Lastly, create a signup page and show page for each user under `views/authors/`.
 
 ```ruby
 # views/authors/show.html.erb
@@ -167,7 +169,7 @@ Lastly, create a sign up page and show page for each user under `views/authors/`
 # Sign in/out
 
 `HTTP` is a stateless protocol. So we use sessions to maintain the user state.
-The `new` action is used to put informatin for a new session and `create` actioin is used to actually create a new session. And the `destroy` action is used to delete a session.
+The `new` action is used to put information for a new session and `create` action is used to actually create a new session. And the `destroy` action is used to delete a session.
 
 ## Set up routes
 
@@ -255,7 +257,7 @@ First of all, add a column called `remember_digest` to `Author`.
  $ rails generate migration add_remember_digest_to_users remember_digest:string
 ```
 
-Update code in Author model. Each method has its description in the code.
+Update code in the Author model. Each method has its description in the code.
 
 ```ruby
 class Author < ApplicationRecord
@@ -369,7 +371,7 @@ class SessionsController < ApplicationController
 end
 ```
 
-Lastly add `remember_me` check box in the view.
+Lastly, add `remember_me` checkbox in the view.
 
 ```ruby
 <div class="login-form">
@@ -388,7 +390,7 @@ Lastly add `remember_me` check box in the view.
 
 # Authorization
 
-Add the mothos to the author controller.
+Add the following methods to the author controller.
 
 ```ruby
 class AuthorsController < ApplicationController
@@ -418,7 +420,7 @@ class AuthorsController < ApplicationController
 end
 ```
 
-Add the method to the session helper.
+Add the `current_author?` method to the session helper.
 
 ```ruby
 module SessionsHelper
@@ -427,6 +429,8 @@ module SessionsHelper
   end
 end
 ```
+
+That's it! Now you should have a simple authentication functionality on your rails app!
 
 # References
 
