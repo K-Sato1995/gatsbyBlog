@@ -136,7 +136,7 @@ describe('my math module', () => {
 
 `jest.fn` creates a mock function.
 
-```
+```javascript
 const add = jest.fn() //=> returns an empty function
 
 const num = jest.fn(() => 3) //=> returns 3
@@ -146,7 +146,7 @@ const num = jest.fn(() => 3) //=> returns 3
 
 ## Run one file
 
-```
+```bash
 $ ./node_modules/.bin/jest --watch
 ```
 
@@ -160,19 +160,19 @@ src/components/__tests__/main/index.js
 
 ## Run all tests
 
-```
+```bash
 $ ./node_modules/.bin/jest
 ```
 
 ## Create Coverage Report
 
-```
+```bash
 $ ./node_modules/.bin/jest --coverage
 ```
 
 ## Display individual test results
 
-```
+```bash
 $ ./node_modules/.bin/jest --verbose
 ```
 
@@ -182,7 +182,7 @@ $ ./node_modules/.bin/jest --verbose
 
 ## Set up
 
-```
+```bash
 npm install --save-dev enzyme enzyme-adapter-react-16 react-test-renderer
 ```
 
@@ -198,7 +198,7 @@ configure({ adapter: new Adapter() })
 
 You also have to create `.babelrc` and paste the code below.
 
-```
+```javascript
 {
   "presets": [
     [
@@ -217,57 +217,55 @@ You also have to create `.babelrc` and paste the code below.
 if you want to test the `<App />` component, you can extend our `App.test.js` file by adding the following.
 The `shallow()` will test the provided component and ignores any child components that may be present in the component tree thereafter. if we had a `<Header />` and `<Footer />` component within `<App />` for example, they would be ignored in this test.
 
-```
-import React from 'react';
-import { shallow } from 'enzyme';
-import App from './App';
+```javascript
+import React from 'react'
+import { shallow } from 'enzyme'
+import App from './App'
 
 describe('First React component test with Enzyme', () => {
-   it('renders without crashing', () => {
-      shallow(<App />);
-    });
-});
+  it('renders without crashing', () => {
+    shallow(<App />)
+  })
+})
 ```
 
 ## Find nodes
 
 You can find a class called `headerComponet` from shallow copied `Header` like the code below.
 
-```
-describe("Header Component", () => {
-  it("should render without errors", () => {
-    const component = shallow(<Header />);
-    const wrapper = component.find(".headerComponent");
+```javascript
+describe('Header Component', () => {
+  it('should render without errors', () => {
+    const component = shallow(<Header />)
+    const wrapper = component.find('.headerComponent')
 
-    expect(wrapper.length).toBe(1);
-  });
-});
+    expect(wrapper.length).toBe(1)
+  })
+})
 ```
 
 ## Debug components
 
 You can use `debug()` like the code below.
 
-```
-configure({ adapter: new Adapter() });
+```javascript
+configure({ adapter: new Adapter() })
 
-describe("It should render without errors", () => {
-  it("should render without errors", () => {
-    const component = shallow(<Header />);
-    const wrapper = component.find(".headerComponent");
+describe('It should render without errors', () => {
+  it('should render without errors', () => {
+    const component = shallow(<Header />)
+    const wrapper = component.find('.headerComponent')
 
-    console.log(component.debug());
-  });
-});
+    console.log(component.debug())
+  })
+})
 ```
 
 The output would be something like this.
 
-```
+```javascript
 <header className="headerComponent">
-     <h1>
-        Header!!
-     </h1>
+  <h1>Header!!</h1>
 </header>
 ```
 
@@ -275,50 +273,50 @@ The output would be something like this.
 
 The code below is referenced from [here](https://github.com/K-Sato1995/jest-react-practice/blob/master/src/components/__tests__/Footer/index.js)
 
-```
-import React from "react";
-import { shallow } from "enzyme";
-import Footer from "../../Footer";
-import { configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+```javascript
+import React from 'react'
+import { shallow } from 'enzyme'
+import Footer from '../../Footer'
+import { configure } from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
 
-configure({ adapter: new Adapter() });
+configure({ adapter: new Adapter() })
 
 // props = {} means that the empty {} would be passed to props if nothing is passed to props.
 
 const setUp = (props = {}) => {
-  const component = shallow(<Footer {...props} />);
-  return component;
-};
+  const component = shallow(<Footer {...props} />)
+  return component
+}
 
-describe("Footer Component", () => {
-  let component;
+describe('Footer Component', () => {
+  let component
 
   beforeEach(() => {
-    component = setUp();
-  });
+    component = setUp()
+  })
 
-  it("should render without errors", () => {
-    const wrapper = component.find(".footerComponent");
-    expect(wrapper.length).toBe(1);
-  });
-});
+  it('should render without errors', () => {
+    const wrapper = component.find('.footerComponent')
+    expect(wrapper.length).toBe(1)
+  })
+})
 ```
 
 ## Simulate events
 
 You can simulate events using `simulate` like the code below.
 
-```
-describe("Button Component", () => {
-  it("should simulate click event", () => {
-    const component = setUp();
-    expect(component.find(".click-0").length).toBe(0);
+```javascript
+describe('Button Component', () => {
+  it('should simulate click event', () => {
+    const component = setUp()
+    expect(component.find('.click-0').length).toBe(0)
     // simulate click event and increment the number!!!
-    component.find("a").simulate("click");
-    expect(component.find(".clicks-1").length).toBe(1);
-  });
-});
+    component.find('a').simulate('click')
+    expect(component.find('.clicks-1').length).toBe(1)
+  })
+})
 ```
 
 More about this topic, check [here](https://airbnb.io/enzyme/docs/api/ReactWrapper/simulate.html).
