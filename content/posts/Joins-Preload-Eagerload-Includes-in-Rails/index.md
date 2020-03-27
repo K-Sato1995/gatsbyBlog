@@ -55,10 +55,6 @@ SELECT "posts"."id" AS t0_r0, "posts"."title" AS t0_r1, "posts"."description" AS
 
 # Includes
 
-If
-下記のどれかを満たす場合は eager_load と同じ挙動(LEFT JOIN)を行い、
-そうでなければ preload と同じ挙動(クエリを分けて実行)をする。
-
 The `includes` method works like `eager_load` if you have a `where` or `order` clause that references a relationship. Otherwise, it works like `preload`.
 
 ```ruby
