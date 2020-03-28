@@ -29,7 +29,7 @@ myAsync().then(response => {
 
 # Await
 
-The await operator is used to wait for a Promise. It can be used inside an Async block only. The keyword Await makes JavaScript wait until the promise returns a result.
+The `await` operator is used to wait for a `promise`. It can be used inside an `async` block only. The keyword `await` makes JavaScript wait until the `promise` returns a result.
 
 ## Example
 

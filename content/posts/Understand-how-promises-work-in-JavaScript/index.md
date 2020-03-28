@@ -1,18 +1,18 @@
 ---
-title: 'Understanding Promises'
-slug: understanding-promises
+title: 'Understand how promises work in JavaScript'
+slug: understand-how-promises-work-in-javaScript
 date: 2019-06-17
 language: english
 category: Javascript
 tags:
   - Promise
 published: true
-description: 'Understand how promises work.'
+description: 'I wrote this post to understand how promises work in JavaScript.'
 ---
 
 # What is a promise?
 
-A `promise` is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+A `promise` is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: `fulfilled`, `rejected`, or `pending`. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
 
 # How to use it
 
@@ -127,7 +127,7 @@ The call .catch(f) is a complete analog of .then(null, f), it’s just a shortha
 
 Just like there’s a `finally` clause in a regular `try {...} catch {...}`, there’s finally in promises.
 
-The call `.finally(f)` is similar to `.then(f, f)` in the sense that it always runs when the promise is settled: be it resolve or reject.
+The call `.finally(f)` is similar to `.then(f, f)` in the sense that it **always** runs when the promise is settled: be it resolve or reject.
 
 `finally` is a good handler for performing cleanup, e.g. stopping our loading indicators, as they are not needed anymore, no matter what the outcome is.
 
@@ -168,7 +168,6 @@ new Promise((resolve, reject) => {
 ```
 
 That’s very convenient because `finally` is not meant to process a `promise` result. So it passes it through.
-We’ll talk more about promise chaining and result-passing between handlers in the next chapter.
 
 # References
 
