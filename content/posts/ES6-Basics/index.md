@@ -8,12 +8,8 @@ tags:
   - ES6
   - Javascript
 published: true
-description: 'Some new features were introduced in ES6. I will cover some of the basic features of them in this post. If you are new to ES6 syntax or new to javascript language, this post might be useful to understand the basic syntax of the language.'
+description: 'Some new features were introduced in ES6. I will cover some of the most fundemental ones in this post.'
 ---
-
-# Introduction
-
-Some new features were introduced in ES6. I will cover some of the basic features of them in this post.
 
 # Variable declaration with const and let
 
