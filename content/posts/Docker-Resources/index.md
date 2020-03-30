@@ -7,7 +7,7 @@ category: Others
 tags:
   - Docker
 published: true
-description: "I listed awesome learning resources for Docker in this post. I'll keep adding more and more resources as I learn more about Docker. "
+description: "I listed the resources I used to learn Docker. I'll keep adding more and more resources as I learn more about it. "
 ---
 
 # Great Resources

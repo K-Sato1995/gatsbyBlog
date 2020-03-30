@@ -1,5 +1,5 @@
 ---
-title: "GraphQL Basics"
+title: 'GraphQL Basics'
 slug: graphql-basics
 date: 2018-12-17
 language: english
@@ -7,8 +7,7 @@ category: Others
 tags:
   - GraphQL
 published: true
-description: "One of the projects that I involved with at work used GraphQl and I spent a decent amount of time learning the basic concept of the tool and how to actually use it in applications. I am writing this post so that I can retain my knowledge of the technology and use it in my personal projects in the future.
-This post will mainly focus on the basic concept of `GraphQL` and how to use it on the front-end of your application."
+description: 'This post mainly focuses on the basic concept of GraphQL and how to use it on the front-end'
 ---
 
 # Introduction
