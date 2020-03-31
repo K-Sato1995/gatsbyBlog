@@ -157,6 +157,22 @@ number.toLocaleString('ja-JP', {
 
 - [An Awesome Way to Format Numbers in JavaScript](https://dev.to/sudo_kaizen/using-tolocalestring-for-number-objects-in-javascript-1bfh)
 
+## Check both null and undefined
+
+You can check both null and undefined in one hit with `==`.
+
+```ts
+if (x == null)
+```
+
+If you use `===`, it will only be true for values set to null and won't evaluate as true for undefined variables.
+
+```ts
+if (x === null)
+```
+
+- [Is there a way to check for both `null` and `undefined`?](https://stackoverflow.com/questions/28975896/is-there-a-way-to-check-for-both-null-and-undefined)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript

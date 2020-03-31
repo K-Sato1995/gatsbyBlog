@@ -9,7 +9,7 @@ tags:
   - Javascript
   - Tutorial
 published: true
-description: 'This is just a quick guideline to install ESLint in your JS applications. Follow the steps below and install all the necessary packages.'
+description: 'This is just a quick guideline to install ESLint in your JS applications.'
 ---
 
 # Introduction

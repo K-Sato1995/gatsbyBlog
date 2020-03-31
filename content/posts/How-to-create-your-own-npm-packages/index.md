@@ -1,5 +1,5 @@
 ---
-title: "How to create your own npm packages"
+title: 'How to create your own npm packages'
 slug: how-to-create-your-own-npm-packages
 date: 2019-06-07
 language: english
@@ -8,8 +8,9 @@ tags:
   - npm
   - package
 published: true
-description: "This is a simple guide about how to create your own npm packages."
+description: 'This is a simple guide about how to create your own npm package.'
 ---
+
 # Introduction
 
 # Creating your package
@@ -29,22 +30,23 @@ npm init
 # Create the entry point
 touch index.js
 ```
+
 # Write some code
 
 Whatever you put in `module.exports` is what would be available for importing when others install the package.
 
 ```js
-const Test = "Test";
+const Test = 'Test'
 function Sum(a, b) {
-  return a + b;
+  return a + b
 }
 
-module.exports = { Test, Sum };
+module.exports = { Test, Sum }
 ```
 
 # Publish it
 
-Simply, run 
+Simply, run
 
 ```
 npm publish
@@ -52,10 +54,10 @@ npm publish
 
 # Extra stuff
 
-Get  badges at [Shields.io: Quality metadata badges for open source projects](https://shields.io/)
+Get badges at [Shields.io: Quality metadata badges for open source projects](https://shields.io/)
 
 # Test your package locally
- 
+
 ```shell
 npm install /absolute/path/yourPackage
 ```
@@ -75,6 +77,7 @@ Or you can create `index.html` like below and test it out there.
 ```
 
 # Creating react components as a package
+
 Use `create-react-library`.
 
 - [GitHub - transitive-bullshit/create-react-library: ⚡CLI for easily creating reusable react libraries.](https://github.com/transitive-bullshit/create-react-library/)
@@ -86,7 +89,9 @@ Use `create-react-library`.
 /node_modules
 /example/node_modules
 ```
+
 # Passing props
+
 You can pass props like the code below.
 
 ```
@@ -98,6 +103,7 @@ You can pass props like the code below.
 // To access the defined porps.
 this.props.markdownText
 ```
+
 # References
 
 - [How to make a beautiful, tiny npm package and publish it](https://www.freecodecamp.org/news/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78/)
