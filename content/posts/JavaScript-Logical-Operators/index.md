@@ -10,20 +10,18 @@ published: true
 description: 'The post is about what a !(exclamation mark) means in JS'
 ---
 
-# What an exclamation mark means in JS
-
-Here is the meaning of a ! (exclamation mark) in JS.
+# What an exclamation mark means in JS/TS
 
 ```
 !var: Returns false if its single operand can be converted to true; otherwise, returns true.
 ```
 
-That means if `var` is either `null` or `false`, the result of `!var` would be `true`.
+That means if `var` is either `null`, `false` or `undefined`, the result of `!var` would be `true`.
 And if `var` is something else, the result of `!var` is `false`.
 
 Here is an example.
 
-When the variable is not `null` or `false`, it does not execute the code in the condition.
+When the variable is not `null`, `false` or `undefined`, it does not execute the code in the condition.
 
 ```js
 var user = { name: 'K-Sato', age: 23 }
@@ -33,7 +31,7 @@ if (!user) {
 }
 ```
 
-But if the variable is `null` or `false`, the code gets executed.
+But if the variable is `null`, `false` or `undefined`, the code in the condition gets executed.
 
 ```js
 var user = null
