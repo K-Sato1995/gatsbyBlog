@@ -8,7 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: 'My Journey of Go is a collection of posts about what I learned from A Tour of Go. I made this series to solidify my knowledge about Go language.'
+description: 'My Journey of Go is a collection of posts about what I learned from A Tour of Go. I made this series to solidify my knowledge of Go language.'
 ---
 
 # What is 'My Journey of Go' for?

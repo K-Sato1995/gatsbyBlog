@@ -1,5 +1,5 @@
 ---
-title: "My Journey of Go ⑤ (Maps, Ranges)"
+title: 'My Journey of Go ⑤ (Maps, Ranges)'
 slug: my-journey-of-go-maps-ranges
 date: 2018-09-30
 language: english
@@ -8,8 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: "A map is an unordered collection of key-value pairs, where each key is unique. Maps in Go are sometimes called hashes or dictionaries in other programming languages.  You can initialize a map using the built-in make() function. The make() function returns a map of the given type, initialized and ready for use. Keys and corresponding values  can be added to a map like the code below.
-"
+description: 'The post is about how maps and ranges work in Go.'
 ---
 
 # Maps
