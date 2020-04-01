@@ -1,5 +1,5 @@
 ---
-title: "My Journey of Go ⑥ (Interfaces)"
+title: 'My Journey of Go ⑥ (Interfaces)'
 slug: my-journey-of-go-interfaces
 date: 2018-10-08
 language: english
@@ -8,8 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: "In this post, I'll explain how interfaces work in Go.  In Go, an interface is a set of method signatures. A variable of an interface type can hold any value that implements those methods. Any type that provides the methods named in an interface is treated as an implementation of that interface. No explicit declaration is required.
-"
+description: 'The post focuses on Interfaces in Go.'
 ---
 
 # Introduction

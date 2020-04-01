@@ -1,5 +1,5 @@
 ---
-title: "My Journey of Go ④ (Arrays, Slices)"
+title: 'My Journey of Go ④ (Arrays, Slices)'
 slug: my-journey-of-go-arrays-slices
 date: 2018-09-30
 language: english
@@ -8,8 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: "The concepts and usages of Arrays and Slices have been quite confusing to me since I started learning Go. This is finally time for me to really understand how they work in Go and the differences between these two.  In Go,  an array is a numbered sequence of elements of a single type with a fixed length(You can not resize arrays in Go). There are several ways to declare an array in Go. Here are some examples.
-"
+description: 'The post focuses on Arrays and Slices in Go.'
 ---
 
 # Introduction

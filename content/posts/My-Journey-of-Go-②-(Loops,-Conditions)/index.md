@@ -1,5 +1,5 @@
 ---
-title: "My Journey of Go ② (Loops, Conditions)"
+title: 'My Journey of Go ② (Loops, Conditions)'
 slug: my-journey-of-go-loops-conditions
 date: 2018-09-24
 language: english
@@ -8,8 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: " In this post, I will write about how looping and conditional statements work in Go. For is Go's only looping construct. Basic for loop consists of three parts that are listed below.
-The loop terminates the iteration once the condition evaluates to false`."
+description: 'The post focuses on how looping and conditional statements work in Go.'
 ---
 
 # Overview

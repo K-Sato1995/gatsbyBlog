@@ -8,7 +8,7 @@ tags:
   - Test
   - Jest
 published: true
-description: 'This is an introduction of Jest.'
+description: 'I wrote this post to learn how to use Jest.'
 ---
 
 # Jest Basic
