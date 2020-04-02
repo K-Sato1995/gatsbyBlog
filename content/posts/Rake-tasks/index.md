@@ -1,5 +1,5 @@
 ---
-title: "Rake tasks "
+title: 'Rake tasks '
 slug: rake-tasks
 date: 2019-09-27
 language: english
@@ -7,9 +7,10 @@ category: Ruby
 tags:
   - Rake
 published: true
-description: "Simple post about rake."
+description: 'The post explains how to create and run rake commands.'
 ---
-# What is rake 
+
+# What is rake
 
 `Rake` is a task runner.
 
@@ -26,7 +27,7 @@ namespace :greet do
 end
 ```
 
-You can put this code inside a file named `Rakefile`, or if you’re using Rails, you can save this under     `lib/tasks/apple.rake`.
+You can put this code inside a file named `Rakefile`, or if you’re using Rails, you can save this under `lib/tasks/apple.rake`.
 
 To run this task:
 
@@ -34,8 +35,8 @@ To run this task:
 $ rake greet:hello
 ```
 
-
 # Dependent Tasks
+
 Rake allows you to define a list of other tasks that must run before the current task.
 
 Example:
@@ -57,7 +58,7 @@ Run this task first
 Should put this after :first
 ```
 
-# Execute something after migration 
+# Execute something after migration
 
 ```ruby
 namespace :db do
@@ -75,6 +76,7 @@ end
 - [Adding a post execution hook to the rails db:migrate task (Example)](https://coderwall.com/p/qhdhgw/adding-a-post-execution-hook-to-the-rails-db-migrate-task)
 
 # References
+
 - [What is Rake in Ruby & How to Use it - RubyGuides](https://www.rubyguides.com/2019/02/ruby-rake/)
 - [Using Rake to Automate Tasks - Field Notes](https://www.stuartellis.name/articles/rake/)
 - [What the heck is Rake? - Craft Academy - Medium](https://medium.com/craft-academy/what-the-heck-is-rake-b44d4210922b)

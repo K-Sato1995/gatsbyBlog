@@ -1,5 +1,5 @@
 ---
-title: "React Routing"
+title: 'React Routing'
 slug: react-routing
 date: 2018-11-10
 language: english
@@ -9,8 +9,7 @@ tags:
   - react-routing-dom
   - Tutorial
 published: true
-description: "In this post, I am going to talk about how to implement routing in your react applications with [react-router-dom](https://www.npmjs.com/package/react-router-dom).  I will explain how to implement routing as well as passing data around in your components. (I expect you to have react-development-environment on your computer as a prerequisite.)
-"
+description: 'The post explains how to implement routing in React applications as well as passing data around in the components. '
 ---
 
 # Introduction
