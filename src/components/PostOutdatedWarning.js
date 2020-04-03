@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const WarningBody = styled.div`
-  background-color: #ffdc4e;
+  background-color: #ffe79a;
   color: #533f03;
   padding: 16px;
 `
@@ -19,7 +19,8 @@ const PostOutdatedWarning = props => {
   if (year >= 1) {
     return (
       <WarningBody>
-        This article was posted over {filer}. The information might be outdated.
+        ⚠️ This article was posted over {filer}. The information might be
+        outdated. ⚠️
       </WarningBody>
     )
   }
