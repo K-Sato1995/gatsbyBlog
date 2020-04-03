@@ -5,7 +5,7 @@ module.exports = {
   twitterUsername: '_k-sato',
   authorAvatar: 'avatar.png', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
-  authorDescription: `I am a web-developer based somewhere on earth. I primarily use Ruby, TypeScript and JavaScript at work. RoR and React are my go-to Frameworks. Sometimes I play with Go language.`,
+  authorDescription: `I am a web-developer based somewhere on earth. I primarily code in Ruby, TypeScript and JavaScript at work. RoR and React are my go-to Frameworks. Sometimes I play with Go language.`,
   siteUrl: 'https://k-sato-blog.netlify.com',
   disqusSiteUrl: 'https://k-sato-blog.netlify.com',
   // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
