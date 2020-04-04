@@ -3,7 +3,7 @@ title: 'Versioning in package.json '
 slug: versioning-in-package-json
 date: 2019-09-12
 language: english
-category: Javascript
+category: JavaScript
 tags:
   - npm
 published: true

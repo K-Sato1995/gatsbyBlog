@@ -102,9 +102,9 @@ description: 'Cool Resources I stumbled upon on the internet.'
 - [JWT Auth in Rails, From Scratch](https://www.thegreatcodeadventure.com/jwt-auth-in-rails-from-scratch/)
 - [JWT Authentication with Rails + Ember Part I: Rails Knock](https://www.thegreatcodeadventure.com/jwt-authentication-with-rails-ember-part-i-rails-knock/)
 
-# Javascript
+# JavaScript
 
-- [Cal-HeatMap : Javascript calendar heatmap for time series data](https://cal-heatmap.com/)
+- [Cal-HeatMap : JavaScript calendar heatmap for time series data](https://cal-heatmap.com/)
 - [GitHub - DrkSephy/es6-cheatsheet: ES2015 [ES6] cheatsheet containing tips, tricks, best practices and code snippets](https://github.com/DrkSephy/es6-cheatsheet)
 - [Using CSS animations - CSS: Cascading Style Sheets \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 - [How to make a beautiful, tiny npm package and publish it](https://medium.freecodecamp.org/how-to-make-a-beautiful-tiny-npm-package-and-publish-it-2881d4307f78)

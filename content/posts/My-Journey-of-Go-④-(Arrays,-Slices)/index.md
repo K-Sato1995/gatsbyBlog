@@ -42,9 +42,9 @@ func main(){
   var arr [3]string
   arr[0] = "Go"
   arr[1] = "Ruby"
-  arr[2] = "Javascript"
+  arr[2] = "JavaScript"
 
-  fmt.Println(arr) //=> [Go Ruby Javascript]
+  fmt.Println(arr) //=> [Go Ruby JavaScript]
 }
 ```
 
@@ -56,9 +56,9 @@ package main
 import "fmt"
 
 func main(){
-  var arr [3]string = [3]string { "Go", "Ruby", "Javascript"}
+  var arr [3]string = [3]string { "Go", "Ruby", "JavaScript"}
 
-  fmt.Println(arr) //=> [Go Ruby Javascript]
+  fmt.Println(arr) //=> [Go Ruby JavaScript]
 }
 ```
 
@@ -70,9 +70,9 @@ package main
 import "fmt"
 
 func main(){
-  arr3 := [...]string { "Go", "Ruby", "Javascript" }
+  arr3 := [...]string { "Go", "Ruby", "JavaScript" }
 
-  fmt.Println(arr3) //=> [Go Ruby Javascript]
+  fmt.Println(arr3) //=> [Go Ruby JavaScript]
 }
 ```
 
@@ -183,7 +183,7 @@ package main
 import "fmt"
 
 func main(){
-  arry := [...]string { "Go", "Ruby", "Javascript" }
+  arry := [...]string { "Go", "Ruby", "JavaScript" }
 
   slice := arry[:]
 
@@ -191,8 +191,8 @@ func main(){
 
   slice[0] = "Python"
 
-  fmt.Println(slice) //=> [Python Ruby Javascript]
-  fmt.Println(arry) //=> [Python Ruby Javascript]
+  fmt.Println(slice) //=> [Python Ruby JavaScript]
+  fmt.Println(arry) //=> [Python Ruby JavaScript]
 }
 ```
 
@@ -211,7 +211,7 @@ package main
 import "fmt"
 
 func main(){
-  arry := [...]string { "Go", "Ruby", "Javascript" }
+  arry := [...]string { "Go", "Ruby", "JavaScript" }
 
   slice := arry[:1]
 
@@ -236,12 +236,12 @@ package main
 import "fmt"
 
 func main(){
-  arry := [...]string { "Go", "Ruby", "Javascript" }
+  arry := [...]string { "Go", "Ruby", "JavaScript" }
 
   slice := arry[:]
   var new_slice = append(slice, "Java", "Swift", "C")
 
-  fmt.Println(new_slice) //=> [[Go Ruby Javascript Java Swift C]
+  fmt.Println(new_slice) //=> [[Go Ruby JavaScript Java Swift C]
 }
 ```
 

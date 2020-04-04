@@ -1,14 +1,14 @@
 ---
-title: 'Error Handling in Javascript'
+title: 'Error Handling in JavaScript'
 slug: error-handling-in-javascript
 date: 2019-06-21
 language: english
-category: Javascript
+category: JavaScript
 tags:
-  - Javascript
+  - JavaScript
   - Exception
 published: true
-description: 'Simple introduction of Error Handling in Javascript.'
+description: 'Simple introduction of Error Handling in JavaScript.'
 ---
 
 # Basic Syntax

@@ -25,7 +25,7 @@ Redux は以下の３で成り立つ。
 ### Action
 
 `action`を使用する事のみで`state`の内容を変更できる。
-`action`はただの Javascript のオブジェクト。
+`action`はただの JavaScript のオブジェクト。
 
 ### Reducer
 

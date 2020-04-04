@@ -3,9 +3,9 @@ title: 'JavaScript Logical Operators'
 slug: javascript-logical-operators
 date: 2019-11-14
 language: english
-category: Javascript
+category: JavaScript
 tags:
-  - Javascript
+  - JavaScript
 published: true
 description: 'The post is about what a !(exclamation mark) means in JS'
 ---

@@ -140,7 +140,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const categories = [
     'Ruby',
     'Go',
-    'Javascript',
+    'JavaScript',
+    'TypeScript',
     'React',
     'Rails',
     'Life',

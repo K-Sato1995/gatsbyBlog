@@ -1,13 +1,13 @@
 ---
-title: 'Javascript String functions'
+title: 'JavaScript String functions'
 slug: javascript-string-functions
 date: 2019-06-27
 language: english
-category: Javascript
+category: JavaScript
 tags:
-  - Javascript
+  - JavaScript
 published: true
-description: 'Here are the basic string functions in Javascript'
+description: 'Here are the basic string functions in JavaScript'
 ---
 
 # String functions

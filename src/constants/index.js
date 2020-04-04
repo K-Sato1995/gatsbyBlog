@@ -1,7 +1,8 @@
 const CATEGORIES = [
   'Ruby',
   'Go',
-  'Javascript',
+  'JavaScript',
+  'TypeScript',
   'React',
   'Rails',
   'Life',

@@ -1,11 +1,11 @@
 ---
-title: 'Javascript Array functions'
+title: 'JavaScript Array functions'
 slug: javascript-array-functions
 date: 2019-06-21
 language: english
-category: Javascript
+category: JavaScript
 tags:
-  - Javascript
+  - JavaScript
 published: true
 description: 'Here are the basic array functions'
 ---

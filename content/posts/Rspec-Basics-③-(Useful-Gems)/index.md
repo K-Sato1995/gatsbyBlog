@@ -110,8 +110,8 @@ end
 Whichever strategy you use, it's possible to override the defined attributes by passing a hash.
 
 ```Ruby
-post = build(:post, title: 'Javascript')
-post.title #=> Javascript
+post = build(:post, title: 'JavaScript')
+post.title #=> JavaScript
 ```
 
 For more information regarding `factory_bot_rails`, you can check [here](https://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md)
