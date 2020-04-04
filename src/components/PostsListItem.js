@@ -9,26 +9,8 @@ import { Bull, ReadingTime } from './Commons'
 
 const Post = styled.article`
   border-bottom: 1px solid rgba(214, 209, 230, 0.5);
-  padding-bottom: 1.25rem;
+  padding-bottom: 2.25rem;
   padding-top: 1.25rem;
-`
-
-const ReadPost = styled(Link)`
-  display: block;
-  font-size: 0.75rem;
-  margin-top: 1rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  line-height: 2;
-  color: ${colors.primary};
-
-  &:hover {
-    background-color: ${colors.primaryAlpha};
-    border-radius: 0.25rem;
-    color: ${colors.textLightest};
-  }
 `
 
 const PostHeader = styled.header`
@@ -75,9 +57,6 @@ const PostsListItem = props => {
           <Bull />
           <TagList tags={tags} />
         </FooterLine>
-        <ReadPost to={`/${slug}`} aria-label={`View ${title} article`}>
-          Read post ›
-        </ReadPost>
       </footer>
     </Post>
   )
