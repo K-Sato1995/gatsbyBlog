@@ -8,23 +8,27 @@ import PostOutdatedWarning from './PostOutdatedWarning'
 const ContentBody = styled.div`
   line-height: 1.6;
   & > h1 {
-    padding-top: 3rem;
-    margin-top: 3rem;
+    padding-top: 2.2rem;
+    padding-bottom: 0.2em;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #ececec;
     font-size: 1.5em;
-    border-top: 1px solid #ececec;
   }
 
   & > h2 {
-    padding-top: 3rem;
+    padding-top: 2.2rem;
+    margin-bottom: 1.5rem;
     font-size: 1.3em;
   }
 
   & > h3 {
-    padding-top: 3rem;
+    padding-top: 2.2rem;
+    margin-bottom: 1.5rem;
   }
 
   & > p {
-    margin: 1em 0 0 0;
+    // margin: 1em 0 0 0;
+    line-height: 1.9;
   }
 
   & a {
