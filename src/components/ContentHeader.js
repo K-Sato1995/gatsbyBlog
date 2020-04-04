@@ -7,7 +7,6 @@ import { colors } from '../tokens'
 import { Bull } from './Commons'
 
 const Header = styled.header`
-  margin-bottom: 2rem;
   color: ${colors.textLight};
   font-size: 0.9em;
 `

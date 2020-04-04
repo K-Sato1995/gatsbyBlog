@@ -3,9 +3,12 @@ import styled from 'styled-components'
 import Emoji from './Emoji'
 
 const WarningBody = styled.div`
-  background-color: #ffe79a;
-  color: #533f03;
+  margin-top: 2rem;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+  border-left: 5px solid #ffd200;
   padding: 16px;
+  border-radius: 0 8px 8px 0;
 `
 
 const PostOutdatedWarning = props => {
