@@ -17,7 +17,7 @@ In this post, I will break down three main `servers` that are used for web-appli
 > A `Web server` is a program that uses HTTP (Hypertext Transfer Protocol) to serve the static files to users, in response to their requests.  
 > [What is Web server? - Definition from WhatIs.com](https://whatis.techtarget.com/definition/Web-server)
 
-If a web server gets a request to serve a static HTML, CSS of Javascript file, it just returns the requested file.  
+If a web server gets a request to serve a static HTML, CSS of JavaScript file, it just returns the requested file.  
 But what happens if a web server gets a request that has to be processed dynamically?  
 That's when an application server comes in.
 

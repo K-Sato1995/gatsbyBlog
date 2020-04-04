@@ -3,10 +3,10 @@ title: 'Installing ESLint'
 slug: installing-eslint
 date: 2018-12-15
 language: english
-category: Javascript
+category: JavaScript
 tags:
   - ESLint
-  - Javascript
+  - JavaScript
   - Tutorial
 published: true
 description: 'This is just a quick guideline to install ESLint in your JS applications.'

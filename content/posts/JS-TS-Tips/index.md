@@ -3,9 +3,10 @@ title: 'JS-TS Tips'
 slug: js-ts-tips
 date: 2019-12-09
 language: english
-category: Javascript
+category: TypeScript
 tags:
   - JavaScript
+  - TypeScript
   - Tips
 published: true
 description: 'Here are some tips about JavaScript I learned while I was working on some projects.'

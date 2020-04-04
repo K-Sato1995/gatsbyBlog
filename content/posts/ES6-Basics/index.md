@@ -3,10 +3,10 @@ title: 'ES6 Basics'
 slug: es6-basics
 date: 2018-10-12
 language: english
-category: Javascript
+category: JavaScript
 tags:
   - ES6
-  - Javascript
+  - JavaScript
 published: true
 description: 'Some new features were introduced in ES6. I will cover some of the most fundemental ones in this post.'
 ---

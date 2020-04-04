@@ -51,7 +51,7 @@ func main(){
 }
 ```
 
-`init` and `post` statements can be omitted. When those statements are omitted, Go's `for loop` behaves like the `while loop` of Javascript/Java/C.
+`init` and `post` statements can be omitted. When those statements are omitted, Go's `for loop` behaves like the `while loop` of JavaScript/Java/C.
 
 ```go
 package main

@@ -12,7 +12,7 @@ const Wrapper = styled.main.attrs({
   background-color: ${colors.backgroundArticle};
   margin: 0px auto 30px auto;
   top: 30px;
-  padding: 50px;
+  padding: 35px 50px 50px 50px;
   box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
 
   @media (max-width: 780px) {

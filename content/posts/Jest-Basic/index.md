@@ -3,7 +3,7 @@ title: 'Jest Basic'
 slug: jest-basic
 date: 2019-06-21
 language: english
-category: Javascript
+category: JavaScript
 tags:
   - Test
   - Jest

@@ -3,9 +3,9 @@ title: '【TypeScript】Genericsを理解する'
 slug: typescript-generics
 date: 2020-01-30
 language: japanese
-category: Javascript
+category: TypeScript
 tags:
-  - TypeScript
+  - Generics
 published: true
 description: 'TypeScript におけるGeneric(ジェネリック)とは何かサンプルコードと共に簡単にまとめました。'
 ---
