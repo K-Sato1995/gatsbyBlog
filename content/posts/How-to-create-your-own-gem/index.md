@@ -13,10 +13,6 @@ published: true
 description: "In this post, I am going to demonstrate how to create and publish your own gem.  I'll create and publish a very simple gem called spell-generator and I'll install and use it in my other ruby program."
 ---
 
-# Introduction
-
-In this post, I am going to demonstrate how to create and publish your own gem. I'll create and publish a very simple gem called `spell-generator` and I'll install and use it in my other ruby program.
-
 # Create your first gem
 
 You can generate foundations of your gem by running the command below. It will generate basic files and directories that you need to start developing your gem. It is sort of like running `rails new` command to create a RoR application.
