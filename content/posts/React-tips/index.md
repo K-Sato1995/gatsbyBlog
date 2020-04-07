@@ -77,3 +77,19 @@ You can put all the functionalities, logics and designs you need for a component
 # Use utilities for shared logic
 
 Create `utilities.ts/js` to store functions used in multiple files.
+
+# onClick - pass event as a parameter
+
+You can pass the event as a parameter like the code below.
+
+```ts
+<button
+  onClick={e => {
+    func(e, someParameter)
+  }}
+>
+  Click Me!
+</button>
+```
+
+- [React onClick - pass event with parameter](https://stackoverflow.com/questions/42597602/react-onclick-pass-event-with-parameter)
