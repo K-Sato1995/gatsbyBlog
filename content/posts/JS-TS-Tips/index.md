@@ -174,6 +174,19 @@ if (x === null)
 
 - [Is there a way to check for both `null` and `undefined`?](https://stackoverflow.com/questions/28975896/is-there-a-way-to-check-for-both-null-and-undefined)
 
+## Extract certain properties from an object
+
+You can do this by using Object Destructuring and Property Shorthand.
+
+```js
+const object = { a: 5, b: 6, c: 7 }
+const picked = (({ a, c }) => ({ a, c }))(object)
+
+console.log(picked) // { a: 5, c: 7 }
+```
+
+- [How to get a subset of a javascript object's properties](https://stackoverflow.com/questions/17781472/how-to-get-a-subset-of-a-javascript-objects-properties)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
