@@ -185,7 +185,23 @@ const picked = (({ a, c }) => ({ a, c }))(object)
 console.log(picked) // { a: 5, c: 7 }
 ```
 
+or
+
+```ts
+interface ISpecific {
+  name: string
+}
+
+const someObject = {
+  name: 'Fenton',
+  age: 21,
+}
+
+let { age, ...subset } = someObject
+```
+
 - [How to get a subset of a javascript object's properties](https://stackoverflow.com/questions/17781472/how-to-get-a-subset-of-a-javascript-objects-properties)
+- [TypeScript - extract interface members only - possible?](https://stackoverflow.com/questions/50839597/typescript-extract-interface-members-only-possible)
 
 # TS Types
 
