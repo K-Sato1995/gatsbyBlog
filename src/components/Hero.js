@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import useSiteMetadata from '../hooks/use-site-config'
 import useSiteImages from '../hooks/use-site-images'
 import { colors } from '../tokens'
+import Particles from './Particles'
 
 const HeroContainer = styled.div`
   position: relative;
@@ -47,6 +48,7 @@ const Hero = props => {
         backgroundImage: `url("")`,
       }}
     >
+      <Particles />
       <TitleContainer>
         <HeroTitle>{props.title}</HeroTitle>
         {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
