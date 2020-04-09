@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import useSiteMetadata from '../hooks/use-site-config'
-import useSiteImages from '../hooks/use-site-images'
 import { colors } from '../tokens'
-import Particles from './Particles'
+import Particles from './Particles/index'
 
 const HeroContainer = styled.div`
   position: relative;
@@ -38,16 +36,8 @@ const HeroSubTitle = styled.h2`
 `
 
 const Hero = props => {
-  const { siteCover } = useSiteMetadata()
-  const { fluid } = useSiteImages(siteCover)
-  const heroImg = props.heroImg || fluid.src
-
   return (
-    <HeroContainer
-      style={{
-        backgroundImage: `url("")`,
-      }}
-    >
+    <HeroContainer>
       <Particles />
       <TitleContainer>
         <HeroTitle>{props.title}</HeroTitle>
