@@ -64,6 +64,7 @@
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
+    "react-particles-js": "^3.0.3",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
