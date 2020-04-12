@@ -7,6 +7,7 @@ category: TypeScript
 tags:
   - TypeScript
 published: true
+pinned: true
 description: 'I wrote this post to understand how classes work in TypeScript. The post contains simple explanation of the basic syntax of a class in TypeScript, Inheretance, access modifiers, readonly modifier and abstract classes.'
 ---
 
