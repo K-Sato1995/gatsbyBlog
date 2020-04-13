@@ -6,6 +6,7 @@ language: japanese
 category: Others
 tags:
   - CleanArchitecture
+  - Book Review
 published: true
 description: 'クリーンアーキテクチャの日本語版を読んだので、読んだ際に取ったメモ(本の内容で大切かなと自分で思った箇所のまとめ)'
 ---
