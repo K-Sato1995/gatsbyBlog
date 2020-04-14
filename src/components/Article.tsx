@@ -17,25 +17,23 @@ const ArticleFooter = styled.footer`
   padding: 3rem 0 0;
   border-top: 1px solid #ececec;
 `
+interface Props {
+  post: Post
+}
 
-class Article extends React.Component {
-  render() {
-    const { post } = this.props
-
-    return (
-      <ArticleWrapper>
-        <Content
-          content={post.body}
-          date={post.frontmatter.date}
-          tags={post.frontmatter.tags}
-          translations={post.frontmatter.translations}
-        />
-        <ArticleFooter>
-          <Bio />
-        </ArticleFooter>
-      </ArticleWrapper>
-    )
-  }
+const Article = ({ post }: Props) => {
+  return (
+    <ArticleWrapper>
+      <Content
+        content={post.body}
+        date={post.frontmatter.date}
+        tags={post.frontmatter.tags}
+      />
+      <ArticleFooter>
+        <Bio />
+      </ArticleFooter>
+    </ArticleWrapper>
+  )
 }
 
 export default Article
