@@ -10,6 +10,7 @@ module.exports = {
   },
   pathPrefix: config.pathPrefix,
   plugins: [
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
