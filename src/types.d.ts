@@ -7,5 +7,6 @@ interface Post {
     slug: string
     language: string
     tags: string[]
+    pinned?: boolean
   }
 }
