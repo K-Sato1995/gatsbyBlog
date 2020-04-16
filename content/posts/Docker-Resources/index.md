@@ -247,3 +247,11 @@ RUN ["apt-get", "install", "-y", "vim"]
 ```
 
 - [How to run vi on docker container?](https://stackoverflow.com/questions/30853247/how-do-i-edit-a-file-after-i-shell-to-a-docker-container)
+
+# Restore dump in your mysql db container
+
+```bash
+$ docker exec -i [mysql_container_name] mysql -u[username] -p[password] [DB name] < [path/to/sql/file]
+```
+
+- [How to import database in MySQL in Docker?](https://gist.github.com/geraldvillorente/4c60e7fdb5562f443f16ad2bbe4235ce)
