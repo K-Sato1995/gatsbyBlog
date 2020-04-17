@@ -7,6 +7,9 @@ import PostOutdatedWarning from './PostOutdatedWarning'
 
 const ContentBody = styled.div`
   line-height: 1.6;
+  p {
+    white-space: pre-line;
+  }
   & > h1 {
     padding-top: 2.2rem;
     padding-bottom: 0.2em;
