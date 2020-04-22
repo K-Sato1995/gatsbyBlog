@@ -226,6 +226,8 @@ arr.concat(obj1)
 console.log(newArray)
 ```
 
+- [How to add an object to an array](https://stackoverflow.com/questions/6254050/how-to-add-an-object-to-an-array)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
