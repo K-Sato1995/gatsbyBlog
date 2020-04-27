@@ -115,7 +115,7 @@ if (!user) {
 }
 ```
 
-## Use a variable for a key in a JavaScript object literal?
+## Use a variable for a key in a JavaScript object literal
 
 You can use a variable as a key in object with the brackets notation.
 
@@ -202,6 +202,55 @@ let { age, ...subset } = someObject
 
 - [How to get a subset of a javascript object's properties](https://stackoverflow.com/questions/17781472/how-to-get-a-subset-of-a-javascript-objects-properties)
 - [TypeScript - extract interface members only - possible?](https://stackoverflow.com/questions/50839597/typescript-extract-interface-members-only-possible)
+
+## Add object to an array
+
+```ts
+interface Obj {
+  name: string
+}
+
+const arr: Obj[] = []
+
+const obj1 = { name: 'K-Sato' }
+
+const newArray = [...arr, obj1]
+console.log(newArray) //=> [{{ name: "K-Sato" }}]
+```
+
+or
+
+```ts
+arr.concat(obj1)
+
+console.log(newArray)
+```
+
+- [How to add an object to an array](https://stackoverflow.com/questions/6254050/how-to-add-an-object-to-an-array)
+
+## Lookup Tables
+
+```ts
+const howIsBoo = (state) => {
+  if (state === ‘HUNGRY’) return 'WANTS FOOD';
+  if (state === ‘SAD’) return 'CRYING';
+  if (state === ‘HAPPY’) return 'LAUGHING'
+  return 'SLEEPING'
+}
+```
+
+The code above can be made more efficient by using Objects.
+
+```ts
+const booFeelsTable = {
+  HUNGRY: 'WANTS FOOD',
+  SAD: 'CRYING',
+  HAPPY: 'LAUGHING',
+}
+const howIsBoo = state => booFeelsTable[state] || 'SLEEPING'
+```
+
+- [Javascript Patterns ](https://medium.com/@omwri/javascript-patterns-lookup-tables-26bbaf693e24)
 
 # TS Types
 
