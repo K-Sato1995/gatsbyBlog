@@ -228,6 +228,30 @@ console.log(newArray)
 
 - [How to add an object to an array](https://stackoverflow.com/questions/6254050/how-to-add-an-object-to-an-array)
 
+## Lookup Tables
+
+```ts
+const howIsBoo = (state) => {
+  if (state === ‘HUNGRY’) return 'WANTS FOOD';
+  if (state === ‘SAD’) return 'CRYING';
+  if (state === ‘HAPPY’) return 'LAUGHING'
+  return 'SLEEPING'
+}
+```
+
+The code above can be made more efficient by using Objects.
+
+```ts
+const booFeelsTable = {
+  HUNGRY: 'WANTS FOOD',
+  SAD: 'CRYING',
+  HAPPY: 'LAUGHING',
+}
+const howIsBoo = state => booFeelsTable[state] || 'SLEEPING'
+```
+
+- [Javascript Patterns ](https://medium.com/@omwri/javascript-patterns-lookup-tables-26bbaf693e24)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
