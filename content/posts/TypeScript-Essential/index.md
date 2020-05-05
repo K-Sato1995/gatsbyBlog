@@ -1,3 +1,16 @@
+---
+title: 'TypeScript Essential'
+slug: typeScript-essential
+date: 2020-05-03
+language: english
+category: TypeScript
+tags:
+  - TypeScript
+published: true
+pinned: true
+description: 'This is a post for me to solidify the basic knowledge about Typescript I learnt from TypeScript Handbook'
+---
+
 # About this post
 
 This is a post for me to solidify the basic knowledge about Typescript I learnt from [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html).
