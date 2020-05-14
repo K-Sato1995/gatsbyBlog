@@ -186,3 +186,73 @@ func main() {
 }
 
 ```
+
+# String interpolation
+
+```go
+// import format
+import ( "fmt" )
+date := fmt.Sprintf("%d-%d-%d", year, month, day)
+time := fmt.Sprintf("%d:%d:%d", hour, minute, second)
+datetime := fmt.Sprintf("%s,%s", date, time)
+```
+
+# Convert strings into a slice
+
+Use `strings.Split`.
+
+```go
+fmt.Printf("%#v\n", strings.Split("abc", "")) //=> []string{"t", "e", "s", "t"}
+```
+
+# Convert an array to a string
+
+You can concatenate an array of strings using `strings.Join`.
+
+```go
+package main
+
+import (
+  "fmt"
+	"strings"
+)
+
+func main() {
+  str := []string { "Go", "Ruby"}
+
+  fmt.Println(strings.Join(str, "/")) //=> Go/Ruby
+}
+```
+
+# To Lower/UpperCase
+
+```go
+fmt.Println(strings.ToLower("STR")) //=> str
+fmt.Println(strings.ToUpper("str")) ///=> STR
+```
+
+# Convert ints (or any data type) into strings
+
+You should look to use packages like strconv or functions like fmt.Sprintf. For example, here is an example using strconv.Itoa to convert an integer into a string.
+
+```go
+package main
+
+import (
+  "fmt"
+	"strings"
+  "strconv"
+)
+
+func main() {
+  i := 123
+  array := []string { "A", "B" }
+  fmt.Println(strconv.Itoa(i)) //=> 123
+  fmt.Println(returnString(array)) //=> The array becomes a string. [A B]
+}
+
+
+func returnString(arr []string) string{
+  return fmt.Sprintf("The array becomes a string. %v", arr)
+}
+```
