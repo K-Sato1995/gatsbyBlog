@@ -7,7 +7,6 @@ category: TypeScript
 tags:
   - TypeScript
 published: true
-pinned: true
 description: 'This is a post for me to solidify the basic knowledge about Typescript I learnt from TypeScript Handbook'
 ---
 
