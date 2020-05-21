@@ -8,6 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
+pinned: true
 description: 'The post is about how pointers and structures work in Go.'
 ---
 
