@@ -9,7 +9,7 @@ tags:
   - Tutorial
 published: true
 pinned: true
-description: 'The post is about how pointers and structures work in Go.'
+description: "This is one of my posts about my journey of the Go programming language. In this post, I'll talk about what pointers and structures are in Go and how you can use them when you are writing Go."
 ---
 
 # Overview
