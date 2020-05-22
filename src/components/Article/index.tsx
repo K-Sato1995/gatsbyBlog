@@ -1,21 +1,21 @@
 import React from 'react'
 import Bio from '../Bio'
 import Content from '../Content'
-import useSiteMetadata from '../../hooks/use-site-config'
 import { ArticleWrapper, ArticleFooter } from './styles'
 
 interface Props {
   post: Post
+  tite: string
 }
 
-const Article = ({ post }: Props) => {
-  const { postsBaseUrl } = useSiteMetadata()
+const Article = ({ post, title }: Props) => {
   return (
     <ArticleWrapper>
       <Content
         content={post.body}
         date={post.frontmatter.date}
         tags={post.frontmatter.tags}
+        title={title}
       />
       <ArticleFooter>
         <Bio />

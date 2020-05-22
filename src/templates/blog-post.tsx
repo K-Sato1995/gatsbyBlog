@@ -27,7 +27,7 @@ const BlogPostTemplate = ({ data, location }: Props) => {
       <Hero title={post.frontmatter.title} />
 
       <Wrapper>
-        <Article post={post} />
+        <Article post={post} title={post.frontmatter.title} />
       </Wrapper>
 
       <Wrapper>

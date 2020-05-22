@@ -8,14 +8,15 @@ interface Props {
   content: string
   date: Date
   tags: string[]
+  title: string
 }
 
-const Content = ({ content, date, tags }: Props) => {
+const Content = ({ content, date, tags, title }: Props) => {
   return (
     <section>
       {(tags || date) && (
         <>
-          <ContentHeader date={date} tags={tags} />
+          <ContentHeader date={date} tags={tags} title={title} />
         </>
       )}
 

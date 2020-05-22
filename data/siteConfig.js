@@ -21,7 +21,7 @@ module.exports = {
   headerTitle: 'K-Sato',
   headerLinksIcon: 'avatar.png', //  (leave empty to disable: '')
   postsBaseUrl:
-    'https://github.com/K-Sato1995/gatsbyBlog/tree/master/content/posts',
+    'https://github.com/K-Sato1995/gatsbyBlog/edit/master/content/posts',
   headerLinks: [
     {
       label: 'About',
