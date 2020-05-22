@@ -1,3 +1,5 @@
+declare module 'gatsby-plugin-mdx/mdx-renderer'
+
 interface Post {
   excerpt?: string
   body: string

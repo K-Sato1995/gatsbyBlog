@@ -1,27 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
-import Bio from './Bio'
-import Content from './Content'
+import Bio from '../Bio'
+import Content from '../Content'
+import useSiteMetadata from '../../hooks/use-site-config'
+import { ArticleWrapper, ArticleFooter } from './styles'
 
-const ArticleWrapper = styled.article`
-  padding: 0 30px 30px;
-
-  @media only screen and (max-width: 500px) {
-    padding: 0;
-  }
-`
-
-const ArticleFooter = styled.footer`
-  position: relative;
-  margin: 6rem 0 0;
-  padding: 3rem 0 0;
-  border-top: 1px solid #ececec;
-`
 interface Props {
   post: Post
 }
 
 const Article = ({ post }: Props) => {
+  const { postsBaseUrl } = useSiteMetadata()
   return (
     <ArticleWrapper>
       <Content
