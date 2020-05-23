@@ -1,9 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
-import ContentHeader from './ContentHeader'
-import { colors } from '../tokens'
-import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
-import PostOutdatedWarning from './PostOutdatedWarning'
+import { colors } from '../../tokens'
 
 const ContentBody = styled.div`
   line-height: 1.6;
@@ -162,28 +158,4 @@ const ContentBody = styled.div`
   }
 `
 
-class Content extends React.Component {
-  render() {
-    const { content, date, tags, translations } = this.props
-    return (
-      <section>
-        {(tags || date || translations) && (
-          <>
-            <ContentHeader
-              date={date}
-              tags={tags}
-              translations={translations}
-            />
-          </>
-        )}
-
-        <ContentBody>
-          <PostOutdatedWarning date={date} />
-          <MDXRenderer>{content}</MDXRenderer>
-        </ContentBody>
-      </section>
-    )
-  }
-}
-
-export default Content
+export { ContentBody }

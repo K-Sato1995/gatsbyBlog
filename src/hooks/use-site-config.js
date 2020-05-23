@@ -18,6 +18,7 @@ const useSiteMetadata = () => {
           defaultLang
           headerTitle
           headerLinksIcon
+          postsBaseUrl
           headerLinks {
             label
             url

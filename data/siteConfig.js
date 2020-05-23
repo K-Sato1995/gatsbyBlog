@@ -20,6 +20,8 @@ module.exports = {
   disqusShortname: 'k-sato-blog-1',
   headerTitle: 'K-Sato',
   headerLinksIcon: 'avatar.png', //  (leave empty to disable: '')
+  postsBaseUrl:
+    'https://github.com/K-Sato1995/gatsbyBlog/edit/master/content/posts',
   headerLinks: [
     {
       label: 'About',
