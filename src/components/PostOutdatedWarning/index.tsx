@@ -1,20 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
-import Emoji from './Emoji'
+import Emoji from '../Emoji'
+import { WarningBody } from './styles'
 
-const WarningBody = styled.div`
-  margin-top: 2rem;
-  box-sizing: border-box;
-  background-color: #f7f7f7;
-  border-left: 5px solid #ffd200;
-  padding: 16px;
-  border-radius: 0 8px 8px 0;
-`
+interface Props {
+  date: Date
+}
 
-const PostOutdatedWarning = props => {
-  const { date } = props
-  const today = new Date()
-  const postedDate = !date ? new Date() : new Date(date) // For about and experience pages
+const PostOutdatedWarning = ({ date }: Props) => {
+  const today: any = new Date()
+  const postedDate: any = !date ? new Date() : new Date(date) // For about and experience pages
   const msDay = 60 * 60 * 24 * 1000
   const gapDays = Math.round(Math.abs(today - postedDate) / msDay)
   const year = Math.floor(gapDays / 365)
