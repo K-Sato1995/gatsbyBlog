@@ -1,4 +1,3 @@
-import React, { Fragment } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
@@ -27,25 +26,4 @@ const CategoryListItem = styled(Link)`
     color: #3972f4;
   }
 `
-
-class CategoryList extends React.Component {
-  render() {
-    const { categories } = this.props
-
-    return (
-      <CategoryContainer>
-        {categories.map((category, i) => {
-          return (
-            <Fragment key={`category-list-${i}`}>
-              <CategoryListItem to={`/categories/${category}`}>
-                {category}
-              </CategoryListItem>
-            </Fragment>
-          )
-        })}
-      </CategoryContainer>
-    )
-  }
-}
-
-export default CategoryList
+export { CategoryContainer, CategoryListItem }
