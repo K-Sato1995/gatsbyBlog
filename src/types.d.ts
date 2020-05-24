@@ -22,3 +22,8 @@ type Categories =
   | 'Rails'
   | 'Life'
   | 'Others'
+
+type HeaderLink = {
+  label: string
+  url: string
+}
