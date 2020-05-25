@@ -9,6 +9,7 @@ import {
   HeaderNav,
   HeaderLinksContainer,
   HeaderLink,
+  HeaderExternalLink,
   HeaderLinkTitle,
   HeaderLinkTitleContent,
   HeaderImage,
@@ -77,6 +78,12 @@ const Header = () => {
         </HeaderLinkTitle>
         <HeaderLinksContainer>
           <HeaderLinks headerLinks={headerLinks} />
+          <HeaderExternalLink
+            href="https://github.com/K-Sato1995/gatsbyBlog/issues"
+            target="_blank"
+          >
+            Submit Issues📝
+          </HeaderExternalLink>
           <Search />
         </HeaderLinksContainer>
         <MobileHeader headerLinks={headerLinks} />

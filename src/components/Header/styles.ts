@@ -58,6 +58,22 @@ const HeaderLink = styled(Link)`
   }
 `
 
+const HeaderExternalLink = styled.a`
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: ${colors.textLightest};
+  border: 0;
+  margin: 0;
+  padding: 8px 10px;
+
+  min-width: 42px;
+  z-index: 10;
+  & + & {
+    margin-left: 0.7rem;
+  }
+`
+
 const HeaderLinkTitle = styled(HeaderLink)`
   padding-left: 0;
 `
@@ -166,6 +182,7 @@ export {
   HeaderNav,
   HeaderLinksContainer,
   HeaderLink,
+  HeaderExternalLink,
   HeaderLinkTitle,
   HeaderLinkTitleContent,
   HeaderImage,
