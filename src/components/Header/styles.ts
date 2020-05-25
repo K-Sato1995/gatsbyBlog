@@ -1,12 +1,6 @@
-/* eslint-disable react-hooks/rules-of-hooks */
-
-import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
-import useSiteMetadata from '../hooks/use-site-config'
-import { colors, media } from '../tokens'
-import useSiteImages from '../hooks/use-site-images'
-import Search from './Search'
+import { colors, media } from '../../tokens'
 
 const HeaderWrapper = styled.header`
   top: 0;
@@ -49,6 +43,22 @@ const HeaderLinksContainer = styled.div`
 `
 
 const HeaderLink = styled(Link)`
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: ${colors.textLightest};
+  border: 0;
+  margin: 0;
+  padding: 8px 10px;
+
+  min-width: 42px;
+  z-index: 10;
+  & + & {
+    margin-left: 0.7rem;
+  }
+`
+
+const HeaderExternalLink = styled.a`
   position: relative;
   display: flex;
   align-items: center;
@@ -107,18 +117,6 @@ const MobileNav = styled.nav`
     margin: 10px 0 !important;
   }
 `
-
-const HeaderLinks = ({ headerLinks }) => {
-  return headerLinks.map((headerLink, i) => (
-    <HeaderLink
-      to={headerLink.url}
-      key={`header-link-${i}`}
-      aria-label={`View ${headerLink.label} page`}
-    >
-      {headerLink.label}
-    </HeaderLink>
-  ))
-}
 
 const BurgerButton = styled.button`
   z-index: 30;
@@ -179,55 +177,17 @@ const BurgerContent = styled.div`
   }
 `
 
-const MobileHeader = ({ headerLinks }) => {
-  const [isToggledOn, setToggle] = useState(false)
-  const toggle = () => setToggle(!isToggledOn)
-
-  return (
-    <>
-      <BurgerButton
-        onClick={toggle}
-        aria-label={`${isToggledOn ? 'close menu' : 'open menu'}`}
-      >
-        <BurgerContent isToggledOn={isToggledOn} />
-      </BurgerButton>
-      {isToggledOn && (
-        <MobilePanel>
-          <MobileNav>
-            <HeaderLinks headerLinks={headerLinks} />
-          </MobileNav>
-        </MobilePanel>
-      )}
-    </>
-  )
+export {
+  HeaderWrapper,
+  HeaderNav,
+  HeaderLinksContainer,
+  HeaderLink,
+  HeaderExternalLink,
+  HeaderLinkTitle,
+  HeaderLinkTitleContent,
+  HeaderImage,
+  MobilePanel,
+  MobileNav,
+  BurgerButton,
+  BurgerContent,
 }
-
-const Header = () => {
-  const {
-    headerLinks,
-    siteTitle,
-    headerTitle,
-    headerLinksIcon,
-  } = useSiteMetadata()
-  const iconSrc = headerLinksIcon
-    ? useSiteImages(headerLinksIcon).fluid.src
-    : null
-
-  return (
-    <HeaderWrapper>
-      <HeaderNav>
-        <HeaderLinkTitle to={`/`} aria-label={`View home page`}>
-          {iconSrc && <HeaderImage src={iconSrc} alt={siteTitle} />}
-          <HeaderLinkTitleContent>{headerTitle}</HeaderLinkTitleContent>
-        </HeaderLinkTitle>
-        <HeaderLinksContainer>
-          <HeaderLinks headerLinks={headerLinks} />
-          <Search />
-        </HeaderLinksContainer>
-        <MobileHeader headerLinks={headerLinks} />
-      </HeaderNav>
-    </HeaderWrapper>
-  )
-}
-
-export default Header

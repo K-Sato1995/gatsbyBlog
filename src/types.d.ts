@@ -12,3 +12,18 @@ interface Post {
     pinned?: boolean
   }
 }
+
+type Categories =
+  | 'Ruby'
+  | 'Go'
+  | 'JavaScript'
+  | 'TypeScript'
+  | 'React'
+  | 'Rails'
+  | 'Life'
+  | 'Others'
+
+type HeaderLink = {
+  label: string
+  url: string
+}
