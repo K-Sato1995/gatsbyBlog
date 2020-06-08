@@ -275,6 +275,16 @@ function isNumber(num: number): boolean {
 }
 ```
 
+## URL type
+
+URL is a typescript "built-in" feature in TypeScript.
+
+```ts
+const url: URL = new URL(`https://urlExample.com`)
+```
+
+- [Typescript: What is type URL?](https://stackoverflow.com/questions/38197096/typescript-what-is-type-url)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
