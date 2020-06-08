@@ -252,6 +252,39 @@ const howIsBoo = state => booFeelsTable[state] || 'SLEEPING'
 
 - [Javascript Patterns ](https://medium.com/@omwri/javascript-patterns-lookup-tables-26bbaf693e24)
 
+## Naked boolean value
+
+Usually a lot of naked true/false in code is considered a smell.
+
+For instance, the code below
+
+```ts
+function isNumber(num: number): boolean {
+  if (typeof num === 'number') {
+    return true
+  }
+  return false
+}
+```
+
+can be written as the code below.
+
+```ts
+function isNumber(num: number): boolean {
+  return typeof num === 'number'
+}
+```
+
+## URL type
+
+URL is a typescript "built-in" feature in TypeScript.
+
+```ts
+const url: URL = new URL(`https://urlExample.com`)
+```
+
+- [Typescript: What is type URL?](https://stackoverflow.com/questions/38197096/typescript-what-is-type-url)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
