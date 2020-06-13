@@ -275,6 +275,43 @@ function isNumber(num: number): boolean {
 }
 ```
 
+## Wrapper Class
+
+You can make the code below more expressive without extending the native number prototype by using a wrapper class.
+
+```ts
+function isLeapYear(year: number): boolean {
+  return year % 4 === 0 && (year % 400 === 0 || year % 100 !== 0)
+}
+
+export default isLeapYear
+```
+
+```ts
+class Year {
+  dividend: number
+
+  constructor(dividend: number) {
+    this.dividend = dividend
+  }
+
+  isDivisibleBy(divisor: number): boolean {
+    return this.dividend % divisor === 0
+  }
+}
+
+function isLeapYear(num: number): boolean {
+  const year: Year = new Year(num)
+
+  return (
+    year.isDivisibleBy(4) &&
+    (year.isDivisibleBy(400) || !year.isDivisibleBy(100))
+  )
+}
+
+export default isLeapYear
+```
+
 ## URL type
 
 URL is a typescript "built-in" feature in TypeScript.
