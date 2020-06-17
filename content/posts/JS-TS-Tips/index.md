@@ -322,6 +322,23 @@ const url: URL = new URL(`https://urlExample.com`)
 
 - [Typescript: What is type URL?](https://stackoverflow.com/questions/38197096/typescript-what-is-type-url)
 
+## Rename & Destructure Variables
+
+You can rename a destructre variabele like the code below.
+
+```ts
+const data = {
+  data1: 'data1',
+  data2: 'data2',
+}
+
+const { data1: oldData, data2: newData } = data
+
+console.log(oldData, newData)
+```
+
+- [Rename & Destructure Variables in ES6](https://wesbos.com/destructuring-renaming)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
