@@ -16,8 +16,7 @@ disqus: true
 
 ## DIAMOND MEDIA Co.,Ltd. (2019/10 ~ present)
 
-- Developing an ipaas.
-- Using RoR on the back-end and React.js written in TypeScript on the front-end. Also using GraphQL for our api.
+- Developing the frontend of the application using React(TS) and apollo-client. Used Atomic Desgin Methodology for the component structure and used jest for testing.
 
 ## Ruby Development Inc. (2018/04 ~ 2019/10)
 
@@ -73,5 +72,5 @@ disqus: true
 
 # EDUCATION🏫
 
-- Meiji University (Bachelor’s Degree in Politics)
+- Meiji University (Bachelor’s Degree in Political Science and Economics)
 - TECH::CAMP (Web Development)
