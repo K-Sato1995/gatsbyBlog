@@ -339,6 +339,22 @@ console.log(oldData, newData)
 
 - [Rename & Destructure Variables in ES6](https://wesbos.com/destructuring-renaming)
 
+## Use incudes for multiple conditions
+
+```js
+if (x === 'a' || x === 'b' || x === 'c' || x === 'd' || x === 'e') {
+  console.log('ok')
+}
+```
+
+Can be written as the code below using `includes`.
+
+```js
+if (['a', 'b', 'c', 'd', 'e'].includes(x)) {
+  console.log('ok')
+}
+```
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript

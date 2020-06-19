@@ -21,7 +21,7 @@ Love coding. Always eager to learn new things.
 
 ### Baseball⚾️
 
-I played baseball from 10 years when I was younger. Don't play it anymore but still love to watch games.
+I played baseball for 10 years when I was younger. Don't play it anymore but still love to watch games.
 
 ### Dogs🐶
 
@@ -38,3 +38,7 @@ I like learning foreign languages. Being able to speak more than 3 different lan
 ### Movies🎥
 
 I like all kinds of movies. Especially into SF and Action movies.
+
+### Books📖
+
+Haven't had a lot of time to read books lately. But I always liked reading novels and autobiographies.
