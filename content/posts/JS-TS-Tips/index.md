@@ -17,7 +17,7 @@ description: 'Here are some tips about JavaScript I learned while I was working 
 ## Only use let if necessary
 
 Using let could cause unnecessary complexity in your code.
-That said, the important thing is that you understand the differences of `let`, `const` and `var` and use them appropriately based on what you are trying to do.
+That said, the important thing is you understand the differences of `let`, `const` and `var` and use them appropriately.
 
 Here are the diffenreces between `let` and `const`.
 
