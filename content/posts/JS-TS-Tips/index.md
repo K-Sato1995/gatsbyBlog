@@ -353,6 +353,19 @@ if (['a', 'b', 'c', 'd', 'e'].includes(x)) {
 }
 ```
 
+## Use ... to convert a string into an array
+
+```js
+const str = 'kitty'
+var newArr = str.split('') // ['k', 'i', 't', 't', 'y'];
+```
+
+can be written as
+
+```js
+const newArr = [...str] // ['k', 'i', 't', 't', 'y'];
+```
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
