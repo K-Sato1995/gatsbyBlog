@@ -11,24 +11,22 @@ published: true
 description: 'This is a simple guide about how to create your own npm package.'
 ---
 
-# Introduction
-
 # Creating your package
 
 Simply Follow the code below.
 
 ```
 # Create the project directory
-mkdir samplePackage
+$ mkdir samplePackage
 
 # Change into the project directory
-cd samplePackage
+$ cd samplePackage
 
 # Initialise an NPM package(It would create th package.json for you)
-npm init
+$ npm init
 
 # Create the entry point
-touch index.js
+$ touch index.js
 ```
 
 # Write some code
@@ -49,7 +47,7 @@ module.exports = { Test, Sum }
 Simply, run
 
 ```
-npm publish
+$ npm publish
 ```
 
 # Extra stuff
@@ -88,6 +86,14 @@ Use `create-react-library`.
 .gitignore
 /node_modules
 /example/node_modules
+```
+
+## Use the latest version of your package locally
+
+Make sure to run the command below to use the the latest version of your package locally.
+
+```
+$ yarn build
 ```
 
 # Passing props

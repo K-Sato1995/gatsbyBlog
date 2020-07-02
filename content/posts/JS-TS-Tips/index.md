@@ -17,9 +17,7 @@ description: 'Here are some tips about JavaScript I learned while I was working 
 ## Only use let if necessary
 
 Using let could cause unnecessary complexity in your code.
-That said, the important thing is that you understand the differences of `let`, `const` and `var` and use them appropriately based on what you are trying to do.
-
-Here are the diffenreces between `let` and `const`.
+That said, the important thing is you understand the differences between `let`, `const` and `var` and use them appropriately.
 
 ### let
 
@@ -50,7 +48,7 @@ const name = 'Nick' //=> SyntaxError: redeclaration of let name
 
 ## Use Early Return
 
-Use an `early return` to clean up your code.
+Use `early return`s to clean up your code.
 
 ```js
 if (condition) return
@@ -58,7 +56,7 @@ if (condition) return
 
 ## Object Destructuring
 
-`Object Destructinrg` is another way to clean up your code and make it easier for other people to understand and read.
+`Object Destructinrg` is another way to clean up your code.
 
 ```js
 const { created_at: createdAt, password_updated_at: passwordUpdatedAt } = user
@@ -353,6 +351,19 @@ Can be written as the code below using `includes`.
 if (['a', 'b', 'c', 'd', 'e'].includes(x)) {
   console.log('ok')
 }
+```
+
+## Use ... to convert a string into an array
+
+```js
+const str = 'kitty'
+var newArr = str.split('') // ['k', 'i', 't', 't', 'y'];
+```
+
+can be written as
+
+```js
+const newArr = [...str] // ['k', 'i', 't', 't', 'y'];
 ```
 
 # TS Types
