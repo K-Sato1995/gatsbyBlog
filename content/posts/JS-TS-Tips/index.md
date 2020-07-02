@@ -366,6 +366,26 @@ can be written as
 const newArr = [...str] // ['k', 'i', 't', 't', 'y'];
 ```
 
+## do something N times
+
+I'll list 2 examples here.
+
+```ts
+// create an array
+const array: number[] = [...Array(numberOfnestedHeadings)]
+
+// Iterate it with forEach
+array.forEach((_: any) => console.log('do something'))
+```
+
+```ts
+Array.from(Array(3)).forEach((x, i) => {
+  console.log('do something')
+})
+```
+
+- [do <something> N times (declarative syntax)](https://stackoverflow.com/questions/10993824/do-something-n-times-declarative-syntax)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
