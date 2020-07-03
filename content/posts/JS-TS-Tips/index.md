@@ -386,6 +386,20 @@ Array.from(Array(3)).forEach((x, i) => {
 
 - [do <something> N times (declarative syntax)](https://stackoverflow.com/questions/10993824/do-something-n-times-declarative-syntax)
 
+## Use a variable in a regular expression?
+
+You can construct a new RegExp object like the code below.s
+
+```js
+var replace = 'regex'
+var re = new RegExp(replace, 'g')
+'mystring'.replace(re, 'newstring')
+```
+
+If you need to use an expression like `/\/word\:\w*$/`, be sure to escape your backslashes: `new RegExp( '\\/word\\:\\w*$' )`.
+
+- [How do you use a variable in a regular expression?](https://stackoverflow.com/questions/494035/how-do-you-use-a-variable-in-a-regular-expression)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
