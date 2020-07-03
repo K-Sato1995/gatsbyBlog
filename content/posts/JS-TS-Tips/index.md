@@ -366,6 +366,40 @@ can be written as
 const newArr = [...str] // ['k', 'i', 't', 't', 'y'];
 ```
 
+## do something N times
+
+I'll list 2 examples here.
+
+```ts
+// create an array
+const array: number[] = [...Array(numberOfnestedHeadings)]
+
+// Iterate it with forEach
+array.forEach((_: any) => console.log('do something'))
+```
+
+```ts
+Array.from(Array(3)).forEach((x, i) => {
+  console.log('do something')
+})
+```
+
+- [do <something> N times (declarative syntax)](https://stackoverflow.com/questions/10993824/do-something-n-times-declarative-syntax)
+
+## Use a variable in a regular expressions
+
+You can construct a new RegExp object like the code below.s
+
+```js
+var replace = 'regex'
+var re = new RegExp(replace, 'g')
+'mystring'.replace(re, 'newstring')
+```
+
+If you need to use an expression like `/\/word\:\w*$/`, be sure to escape your backslashes: `new RegExp( '\\/word\\:\\w*$' )`.
+
+- [How do you use a variable in a regular expression?](https://stackoverflow.com/questions/494035/how-do-you-use-a-variable-in-a-regular-expression)
+
 # TS Types
 
 ## Differences between interfaces and types in TypeScript
