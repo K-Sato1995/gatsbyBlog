@@ -14,8 +14,6 @@ description: 'This is a post for me to solidify the basic knowledge about Typesc
 
 This is a post for me to solidify the basic knowledge about Typescript I learnt from [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html).
 
-**Everything you see here can be found in [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/basic-types.html) with more detailed explanations.**
-
 # Basic types
 
 ## Tuple
@@ -161,3 +159,60 @@ myArray = ['Bob', 'Fred']
 
 let myStr: string = myArray[0]
 ```
+
+## Differences between interfaces and types in TypeScript
+
+- TypeScript Type declaration can introduce a name for any kind of type including primitive, union or intersection type. Interface declaration always introduced the named object type.
+- The syntax for Type can be written as ‘type ABC = {a: number; b: number;}’. The syntax for interface can be written as ‘interface ABC = {a: number; b: number;}’.
+- In TypeScript, type does not create a new name for instance. In TypeScript, an interface can create the new name that can be used everywhere.
+- Type does not have a functionality of extending. An interface can extend multiple interfaces and class as well.
+- Type is mainly used when a union or tuple type needs to be used. In typescript, sometimes developers cannot express some of the shapes with an interface.
+
+[TypeScript Type vs Interface](https://www.educba.com/typescript-type-vs-interface/)
+
+## 可変長引数
+
+TS では可変長引数の部分の型は配列にします。次の例では`...bar`に`number[]`型が付いているため、2 番目以降の引数は全て数値でなければいけません。
+
+```typescript
+const func = (foo: string, ...bar: number[]) => bar
+
+func('foo')
+func('bar', 1, 2, 3)
+// エラー: Argument of type '"hey"' is not assignable to parameter of type 'number'.
+func('baz', 'hey', 2, 3)
+```
+
+## インデックスシグネチャ
+
+オブジェクト型には実は今まで紹介した他にも記法があります。その一つがインデックスシグネチャです。
+
+```typescript
+interface MyObj {
+  [key: string]: number
+}
+
+const obj: MyObj = {}
+
+const num: number = obj.foo
+const num2: number = obj.bar
+```
+
+## 関数シグネチャ
+
+実は、オブジェクト型の記法で関数型を表現する方法があります。
+
+```typescript
+interface Func {
+  (arg: number): void
+}
+
+const f: Func = (arg: number) => {
+  console.log(arg)
+}
+```
+
+## Resources
+
+- [TS 型の入門](https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a)
+- [TS 型の初級](https://qiita.com/uhyo/items/da21e2b3c10c8a03952f)

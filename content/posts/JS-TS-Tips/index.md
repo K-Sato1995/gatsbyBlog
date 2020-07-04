@@ -12,14 +12,12 @@ published: true
 description: 'Here are some tips about JavaScript I learned while I was working on some projects.'
 ---
 
-# Tips Related to JS/TS Syntax
-
-## Only use let if necessary
+# Only use let if necessary
 
 Using let could cause unnecessary complexity in your code.
 That said, the important thing is you understand the differences between `let`, `const` and `var` and use them appropriately.
 
-### let
+## let
 
 - Variables declared with `let` can not be redeclared. But you can reassign a new value.
 
@@ -33,7 +31,7 @@ console.log(name) //=> Mike
 let name = 'Nick' //=> SyntaxError: redeclaration of let name
 ```
 
-### const
+## const
 
 - Variables declared with `const` can not be redeclared and you can not reassign a new value.
 
@@ -46,7 +44,7 @@ name = 'Mike' //=> TypeError: invalid assignment to const `name'
 const name = 'Nick' //=> SyntaxError: redeclaration of let name
 ```
 
-## Use Early Return
+# Use Early Return
 
 Use `early return`s to clean up your code.
 
@@ -54,7 +52,7 @@ Use `early return`s to clean up your code.
 if (condition) return
 ```
 
-## Object Destructuring
+# Object Destructuring
 
 `Object Destructinrg` is another way to clean up your code.
 
@@ -69,7 +67,7 @@ const test = ({a, b, c}) => {
 }
 ```
 
-## Make your function more succinct
+# Make your function more succinct
 
 ```js
 ;() => {
@@ -83,13 +81,13 @@ can be written as:
 ;() => hoge
 ```
 
-## Use filter to remove empty strings from an array
+# Use filter to remove empty strings from an array
 
 ```js
 .filter(string => string)
 ```
 
-## Short Circuit Conditionals
+# Short Circuit Conditionals
 
 ```js
 if (available) {
@@ -103,7 +101,7 @@ Can be written as:
 available && addToCart()
 ```
 
-## Logical Operators
+# Logical Operators
 
 `!var`: Returns false if its single operand can be converted to true; otherwise, returns true.
 
@@ -113,7 +111,7 @@ if (!user) {
 }
 ```
 
-## Use a variable for a key in a JavaScript object literal
+# Use a variable for a key in a JavaScript object literal
 
 You can use a variable as a key in object with the brackets notation.
 
@@ -123,7 +121,7 @@ var obj = {
 }
 ```
 
-## Conditionally setting a variable
+# Conditionally setting a variable
 
 You don't need to write an extra if-statement if you use this solution.
 
@@ -140,7 +138,7 @@ if (user.preferred_timezone) {
 }
 ```
 
-## Format number as currency
+# Format number as currency
 
 ```js
 number.toLocaleString('en-GB', {
@@ -156,7 +154,7 @@ number.toLocaleString('ja-JP', {
 
 - [An Awesome Way to Format Numbers in JavaScript](https://dev.to/sudo_kaizen/using-tolocalestring-for-number-objects-in-javascript-1bfh)
 
-## Check both null and undefined
+# Check both null and undefined
 
 You can check both null and undefined in one hit with `==`.
 
@@ -172,7 +170,7 @@ if (x === null)
 
 - [Is there a way to check for both `null` and `undefined`?](https://stackoverflow.com/questions/28975896/is-there-a-way-to-check-for-both-null-and-undefined)
 
-## Extract certain properties from an object
+# Extract certain properties from an object
 
 You can do this by using Object Destructuring and Property Shorthand.
 
@@ -201,7 +199,7 @@ let { age, ...subset } = someObject
 - [How to get a subset of a javascript object's properties](https://stackoverflow.com/questions/17781472/how-to-get-a-subset-of-a-javascript-objects-properties)
 - [TypeScript - extract interface members only - possible?](https://stackoverflow.com/questions/50839597/typescript-extract-interface-members-only-possible)
 
-## Add object to an array
+# Add object to an array
 
 ```ts
 interface Obj {
@@ -226,7 +224,7 @@ console.log(newArray)
 
 - [How to add an object to an array](https://stackoverflow.com/questions/6254050/how-to-add-an-object-to-an-array)
 
-## Lookup Tables
+# Lookup Tables
 
 ```ts
 const howIsBoo = (state) => {
@@ -250,7 +248,7 @@ const howIsBoo = state => booFeelsTable[state] || 'SLEEPING'
 
 - [Javascript Patterns ](https://medium.com/@omwri/javascript-patterns-lookup-tables-26bbaf693e24)
 
-## Naked boolean value
+# Naked boolean value
 
 Usually a lot of naked true/false in code is considered a smell.
 
@@ -273,7 +271,7 @@ function isNumber(num: number): boolean {
 }
 ```
 
-## Wrapper Class
+# Wrapper Class
 
 You can make the code below more expressive without extending the native number prototype by using a wrapper class.
 
@@ -310,7 +308,7 @@ function isLeapYear(num: number): boolean {
 export default isLeapYear
 ```
 
-## URL type
+# URL type
 
 URL is a typescript "built-in" feature in TypeScript.
 
@@ -320,7 +318,7 @@ const url: URL = new URL(`https://urlExample.com`)
 
 - [Typescript: What is type URL?](https://stackoverflow.com/questions/38197096/typescript-what-is-type-url)
 
-## Rename & Destructure Variables
+# Rename & Destructure Variables
 
 You can rename a destructre variabele like the code below.
 
@@ -337,7 +335,7 @@ console.log(oldData, newData)
 
 - [Rename & Destructure Variables in ES6](https://wesbos.com/destructuring-renaming)
 
-## Use incudes for multiple conditions
+# Use incudes for multiple conditions
 
 ```js
 if (x === 'a' || x === 'b' || x === 'c' || x === 'd' || x === 'e') {
@@ -353,7 +351,7 @@ if (['a', 'b', 'c', 'd', 'e'].includes(x)) {
 }
 ```
 
-## Use ... to convert a string into an array
+# Use ... to convert a string into an array
 
 ```js
 const str = 'kitty'
@@ -366,7 +364,7 @@ can be written as
 const newArr = [...str] // ['k', 'i', 't', 't', 'y'];
 ```
 
-## do something N times
+# do something N times
 
 I'll list 2 examples here.
 
@@ -386,7 +384,7 @@ Array.from(Array(3)).forEach((x, i) => {
 
 - [do <something> N times (declarative syntax)](https://stackoverflow.com/questions/10993824/do-something-n-times-declarative-syntax)
 
-## Use a variable in a regular expressions
+# Use a variable in a regular expressions
 
 You can construct a new RegExp object like the code below.s
 
@@ -399,62 +397,3 @@ var re = new RegExp(replace, 'g')
 If you need to use an expression like `/\/word\:\w*$/`, be sure to escape your backslashes: `new RegExp( '\\/word\\:\\w*$' )`.
 
 - [How do you use a variable in a regular expression?](https://stackoverflow.com/questions/494035/how-do-you-use-a-variable-in-a-regular-expression)
-
-# TS Types
-
-## Differences between interfaces and types in TypeScript
-
-- TypeScript Type declaration can introduce a name for any kind of type including primitive, union or intersection type. Interface declaration always introduced the named object type.
-- The syntax for Type can be written as ‘type ABC = {a: number; b: number;}’. The syntax for interface can be written as ‘interface ABC = {a: number; b: number;}’.
-- In TypeScript, type does not create a new name for instance. In TypeScript, an interface can create the new name that can be used everywhere.
-- Type does not have a functionality of extending. An interface can extend multiple interfaces and class as well.
-- Type is mainly used when a union or tuple type needs to be used. In typescript, sometimes developers cannot express some of the shapes with an interface.
-
-[TypeScript Type vs Interface](https://www.educba.com/typescript-type-vs-interface/)
-
-## 可変長引数
-
-TS では可変長引数の部分の型は配列にします。次の例では`...bar`に`number[]`型が付いているため、2 番目以降の引数は全て数値でなければいけません。
-
-```typescript
-const func = (foo: string, ...bar: number[]) => bar
-
-func('foo')
-func('bar', 1, 2, 3)
-// エラー: Argument of type '"hey"' is not assignable to parameter of type 'number'.
-func('baz', 'hey', 2, 3)
-```
-
-## インデックスシグネチャ
-
-オブジェクト型には実は今まで紹介した他にも記法があります。その一つがインデックスシグネチャです。
-
-```typescript
-interface MyObj {
-  [key: string]: number
-}
-
-const obj: MyObj = {}
-
-const num: number = obj.foo
-const num2: number = obj.bar
-```
-
-## 関数シグネチャ
-
-実は、オブジェクト型の記法で関数型を表現する方法があります。
-
-```typescript
-interface Func {
-  (arg: number): void
-}
-
-const f: Func = (arg: number) => {
-  console.log(arg)
-}
-```
-
-## Resources
-
-- [TS 型の入門](https://qiita.com/uhyo/items/e2fdef2d3236b9bfe74a)
-- [TS 型の初級](https://qiita.com/uhyo/items/da21e2b3c10c8a03952f)
