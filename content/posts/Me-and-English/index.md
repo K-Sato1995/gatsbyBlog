@@ -20,23 +20,23 @@ No exposure to the language at all.
 
 # 13 to 16 years old(Middle school to High school junior year)
 
-In middle school, English was one of the mandatory subjects. I hated it and, of course, I sucked at it.
-I still remember the time I made my mom so shocked because I couldn't spell the word 'really'. Looking back on it now, I don't know why I couldn't spell the word but for some reason, the word seemed incredibly complicated to me back then. My mother forced me to join a cram school after that.
+In middle school, English was one of the mandatory subjects. I hated it and naturally I sucked at it.
+I still remember the time I made my mom so shocked because I couldn't spell the word 'really'. Looking back on it now, I don't know why I couldn't spell the word . But for some reason, the word seemed incredibly complicated to me back then. My mother forced me to join a cram school after that.
 
 # 17 years old(Highschool senior year)
 
-In my country, College is a big deal. They say your whole life depends on it. I didn't think so but I saw a chance of getting out of my `nothing ever happens` type of hometown.
+In my country, college is a big deal. They say your whole life depends on it. I didn't think so but I saw a chance of getting out of my `nothing ever happens` type of hometown.
 So I decided to study insanely hard to get into a good college as if my life had actually depended on it.
 English, of course, was one of the subjects in the examination. I still kind of had this preconception of me never being good at the subject when I first started studying it for the college exam.
-But regardless of how I feel about English, getting a very high score on English test was absolutely crucial to get into my, so called, dream college.
+But regardless of how I felt about English, getting a very high score on English test was absolutely necessary to get into my, so called, dream college.
 Ironically, I got 196 out of 200 which was the highest score of all the subjects in the examination I took. The nearly perfect score I got on English helped me a lot to get into a very prestigious college that I didn't even dream of getting into.
-Although devoting more than 10 hours of every day into studying for roughly a year was indescribably stressful, I was really happy to get into the college and I became a bit confident in my English ability.
+Although devoting more than 10 hours into studying everyday for roughly a year was indescribably stressful, I was really happy to get into the college and I became a bit confident in my English ability.
 At this point, I think I liked English as a subject but not necessarily as a language.
 
 # 18 to 19 (College freshman)
 
-On the first day of college, we had an introduction about classes and stuff. And, to my surprise, taking an English test was scheduled right after the introduction. At that time, my brain was preoccupied with which club I'm going to join, which parties I'm going to that day and so on. So I decided to sleep through the whole test. Of course, I got a very very bad score.
-What I'm trying to say here is that I didn't care about English at all at this point. I completely lost my interest in the language and I just wanted to have fun.
+On the first day of college, we had an introduction about classes and stuff. And, to my surprise, taking an English test was scheduled right after the introduction. At that time, my brain was preoccupied with typical college stuff like which parties I'm going to that day and so on. So I decided to sleep through the whole test. Of course, I got a very very bad score.
+What I'm trying to say here is that I didn't care about English at all at this point. I completely lost my interest in the language and I just wanted to have fun in college.
 
 # 20 (College sophomore)
 
@@ -72,7 +72,7 @@ My typical day in the Philipines was like the following.
 11:30pm - Go to sleep
 ```
 
-As you can see above, it was pretty intense. On top of that, we could not leave the school on weekdays and we had a curfew on the weekends. The crazy thing was that if you break rules, you could get expelled from the school. And there actually were some students who got kicked out of the school due to the series of violations of the rules. in hindsight, it was like a prison.
+As you can see above, it was pretty intense. On top of that, we could not leave the school on weekdays and we had a curfew on the weekends. And they also had some other very strict rules. The crazy thing was that if you break any of those rules, you could get expelled from the school. There actually were some students who got kicked out of the school due to the series of violations of the rules. In hindsight, it was more like a prison than a school.
 
 Thanks to the intense curriculum and my resolute determination, I improved my English ability significantly after 7months. There were times I almost gave up because I could not feel any progress despite all the effort I was putting into studying the language. But I never did. I think it's because of the friends who studied together and supported me. I could not tell them this then but I really want to thank them for supporting, inspiring and motivating me. I could not achieve what I accomplished without them.
 

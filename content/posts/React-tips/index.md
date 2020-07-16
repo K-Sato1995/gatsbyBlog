@@ -93,3 +93,42 @@ You can pass the event as a parameter like the code below.
 ```
 
 - [React onClick - pass event with parameter](https://stackoverflow.com/questions/42597602/react-onclick-pass-event-with-parameter)
+
+# How to skip first run in useEffect
+
+You can do so using `useRef` like the code below.
+
+```jsx
+const { useState, useRef, useEffect } = React
+
+function MyComponent() {
+  const [count, setCount] = useState(0)
+
+  const isFirstRun = useRef(true)
+  useEffect(() => {
+    if (isFirstRun.current) {
+      isFirstRun.current = false
+      return
+    }
+
+    console.log('Effect was run')
+  })
+
+  return (
+    <div>
+      <p>Clicked {count} times</p>
+      <button
+        onClick={() => {
+          setCount(count + 1)
+        }}
+      >
+        Click Me
+      </button>
+    </div>
+  )
+}
+
+ReactDOM.render(<MyComponent />, document.getElementById('app'))
+```
+
+- [skip first run in useEffect](https://stackoverflow.com/questions/53351517/react-hooks-skip-first-run-in-useeffect/53351556)
