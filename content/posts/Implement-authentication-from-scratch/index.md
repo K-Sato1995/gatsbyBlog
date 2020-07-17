@@ -10,9 +10,9 @@ published: true
 description: 'Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications.'
 ---
 
-Here is how you can implement the authentication functionality in your rails application without using any gem.
+Here is how you can implement authentication in your rails application without using any gem.
 
-# Create author resources
+# Create Authr model and controller
 
 Run the commands below.
 
