@@ -5,7 +5,7 @@ import { ArticleWrapper, ArticleFooter } from './styles'
 
 interface Props {
   post: Post
-  tite: string
+  title: string
 }
 
 const Article = ({ post, title }: Props) => {

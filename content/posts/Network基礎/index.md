@@ -37,7 +37,7 @@ TCP/IP プロトコルを使用し、各拠点間のネットワークを結ぶ�
 [4] アプリケーション層 (Application  Layer)
 [3] トランスポート層 (Transport Layer)
 [2] インターネット層 (Internet Layer)
-[1] ネットワークインターフェース (NetworkAccess Layer)
+[1] ネットワークインターフェース (Network Interface Layer)
 ```
 
 # 通信指向型
