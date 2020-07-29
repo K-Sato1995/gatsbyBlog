@@ -255,3 +255,9 @@ $ docker exec -i [mysql_container_name] mysql -u[username] -p[password] [DB name
 ```
 
 - [How to import database in MySQL in Docker?](https://gist.github.com/geraldvillorente/4c60e7fdb5562f443f16ad2bbe4235ce)
+
+# What dose EXPOSE mean in Dockerfile?
+
+The `EXPOSE` instruction exposes the specified port and makes it available only for inter-container communication.
+
+- [Understanding “EXPOSE” in Dockerfile](https://we-are.bookmyshow.com/understanding-expose-in-dockerfile-266938b6a33d)
