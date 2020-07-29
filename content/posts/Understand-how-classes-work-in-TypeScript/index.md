@@ -132,6 +132,18 @@ class SpecialPet extends Pet {
 }
 ```
 
+Or you can use the `private` keyword in the constructor.
+
+```ts
+class Pet {
+  public type: string
+
+  constructor(type: string, private name: string) {
+    this.type = type
+  }
+}
+```
+
 ## Protected
 
 The `protected` members are very much like the ones marked as `private`, except that the `protected` members can be accessed in subclasses.
@@ -157,6 +169,18 @@ class SpecialPet extends Pet {
 
 let goro = new SpecialPet('mammal', 'Goro')
 goro.roar() //=> "Goro!!!!!!!!!"
+```
+
+Or you can use the `protected` keyword in the constructor.
+
+```ts
+class Pet {
+  public type: string
+
+  constructor(type: string, protected name: string) {
+    this.type = type
+  }
+}
 ```
 
 # Readonly modifier
@@ -234,3 +258,4 @@ dog1.shout() //=> OOOOOOO
 
 - [TypeScript Class](https://www.tutorialsteacher.com/typescript/typescript-class)
 - [Classes · TypeScript](https://www.typescriptlang.org/docs/handbook/classes.html#public-private-and-protected-modifiers)
+- [TypeScript Constructor Assignment: public and private Keywords](https://kendaleiv.com/typescript-constructor-assignment-public-and-private-keywords/)
