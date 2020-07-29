@@ -382,7 +382,7 @@ Array.from(Array(3)).forEach((x, i) => {
 })
 ```
 
-- [do <something> N times (declarative syntax)](https://stackoverflow.com/questions/10993824/do-something-n-times-declarative-syntax)
+- [do something N times (declarative syntax)](https://stackoverflow.com/questions/10993824/do-something-n-times-declarative-syntax)
 
 # Use a variable in a regular expressions
 
