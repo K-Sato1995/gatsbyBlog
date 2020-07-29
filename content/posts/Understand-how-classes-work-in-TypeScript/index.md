@@ -258,3 +258,4 @@ dog1.shout() //=> OOOOOOO
 
 - [TypeScript Class](https://www.tutorialsteacher.com/typescript/typescript-class)
 - [Classes · TypeScript](https://www.typescriptlang.org/docs/handbook/classes.html#public-private-and-protected-modifiers)
+- [TypeScript Constructor Assignment: public and private Keywords](https://kendaleiv.com/typescript-constructor-assignment-public-and-private-keywords/)
