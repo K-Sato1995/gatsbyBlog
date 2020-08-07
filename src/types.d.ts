@@ -13,7 +13,7 @@ interface Post {
   }
 }
 
-type Categories =
+type Category =
   | 'Ruby'
   | 'Go'
   | 'JavaScript'

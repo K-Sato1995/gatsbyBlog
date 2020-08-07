@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { CategoryContainer, CategoryListItem } from './styles'
 
 interface Props {
-  categories: Categories[]
+  categories: Category[]
 }
 
 const CategoryList = ({ categories }: Props) => {
