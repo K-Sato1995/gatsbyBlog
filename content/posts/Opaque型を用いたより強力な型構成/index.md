@@ -1,7 +1,7 @@
 ---
 title: 'Opaque型を用いたより強力な型構成'
 slug: use-opaque-type-for-stronger-type-structure
-date: 2019-02-19
+date: 2020-08-07
 language: japanese
 category: TypeScript
 tags:
