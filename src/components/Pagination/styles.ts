@@ -1,7 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby'
 import styled from 'styled-components'
-import { colors } from '../tokens'
+import { colors } from '../../tokens'
+import { Link } from 'gatsby'
 
 const PaginationWrapper = styled.nav`
   display: flex;
@@ -85,31 +84,4 @@ const PageInfo = styled.span`
   }
 `
 
-class Pagination extends React.Component {
-  render() {
-    const { currentPage, nbPages } = this.props
-    const previousUrl = currentPage === 2 ? '/' : `/pages/${currentPage - 1}`
-
-    return (
-      <PaginationWrapper>
-        {currentPage !== 1 ? (
-          <PreviousBtn to={previousUrl}>‹ Newer posts</PreviousBtn>
-        ) : (
-          <Spacer className="previous" />
-        )}
-
-        <PageInfo>
-          Page {currentPage} of {nbPages}
-        </PageInfo>
-
-        {currentPage < nbPages ? (
-          <NextBtn to={`/pages/${currentPage + 1}`}>Older posts ›</NextBtn>
-        ) : (
-          <Spacer className="next" />
-        )}
-      </PaginationWrapper>
-    )
-  }
-}
-
-export default Pagination
+export { PaginationWrapper, PageBtn, PreviousBtn, NextBtn, Spacer, PageInfo }

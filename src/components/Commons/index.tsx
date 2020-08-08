@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 import { Link } from 'gatsby'
-import { colors } from '../tokens'
+import { colors } from '../../tokens'
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -68,10 +68,10 @@ export const Bull = styled.span`
   }
 `
 
-export const ReadingTime = props => {
+export const ReadingTime = ({ min }: { min: number }) => {
   const ReadingTimeContainer = styled.span`
     text-transform: uppercase;
     color: ${colors.postMetadata};
   `
-  return <ReadingTimeContainer>{props.min} min read</ReadingTimeContainer>
+  return <ReadingTimeContainer>{min} min read</ReadingTimeContainer>
 }
