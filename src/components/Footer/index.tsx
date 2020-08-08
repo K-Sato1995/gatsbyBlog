@@ -1,84 +1,22 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
-import useSiteMetadata from '../hooks/use-site-config'
-import { colors } from '../tokens'
+import useSiteMetadata from '../../hooks/use-site-config'
+import { FooterWrapper } from './styles'
 
-const FooterWrapper = styled.footer`
-  text-align: left;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  background-color: ${colors.primary};
-  color: ${colors.textLightest};
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0 auto;
+interface FooterItem {
+  url: string
+  label: string
+}
 
-  & nav {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    max-width: 900px;
-    margin: 0 auto;
-
-    .footer-col {
-      flex: 1 auto;
-      display: inline-flex;
-      flex-direction: column;
-      margin-bottom: 1em;
-      padding-right: 1em;
-    }
-  }
-
-  & a {
-    color: ${colors.textLightest};
-    font-weight: bold;
-
-    &:hover {
-      color: ${colors.textLightestHover};
-      /* border-bottom: 1px dotted ${colors.textLightestHover}; */
-    }
-  }
-
-  .footer-col > p {
-    margin: 0;
-  }
-  .footer-title {
-    margin: 0 0 1rem;
-  }
-
-  .footer-item {
-    padding: 0.25rem 0;
-    color: ${colors.textLightest};
-  }
-
-  .footer-heart {
-    color: ${colors.heartFooter};
-  }
-
-  .footer-item-text {
-    padding: 0.1rem 0;
-    color: ${colors.textLightest};
-  }
-
-  .footer-header {
-    order: 1;
-    margin: 0 0.25rem;
-    margin-right: 0.25rem;
-    padding: 0.25rem;
-  }
-
-  @media (max-width: 564px) {
-    .footer-col:first-child {
-      width: 100%;
-    }
-  }
-`
+interface Column {
+  sectionName: string
+  links: FooterItem[]
+}
 
 const Footer = () => {
   const { authorName, websiteHost, footerLinks } = useSiteMetadata()
 
-  const FooterItem = ({ item }) => {
+  const FooterItem = ({ item }: { item: FooterItem }) => {
     if (item.url.startsWith('/')) {
       return (
         <span className="footer-item">
@@ -97,13 +35,13 @@ const Footer = () => {
     )
   }
 
-  const FooterColumn = ({ column }) => {
+  const FooterColumn = ({ column }: { column: Column }) => {
     return (
       <div className="footer-col">
         <h5 className="footer-title" key={column.sectionName}>
           {column.sectionName}
         </h5>
-        {column.links.map((item, i) => {
+        {column.links.map((item: FooterItem, i: number) => {
           return <FooterItem item={item} key={`footer-column-item-${i}`} />
         })}
       </div>
@@ -146,7 +84,7 @@ const Footer = () => {
             .
           </p>
         </div>
-        {footerLinks.map((column, i) => {
+        {footerLinks.map((column: Column, i: number) => {
           return <FooterColumn column={column} key={`footer-column-${i}`} />
         })}
       </nav>

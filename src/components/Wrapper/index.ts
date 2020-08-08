@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../tokens'
+import { colors } from '../../tokens'
 
 const Wrapper = styled.main.attrs({
   role: 'main',

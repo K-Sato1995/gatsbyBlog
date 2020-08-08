@@ -1,7 +1,5 @@
-import React from 'react'
 import styled from 'styled-components'
-import { colors } from '../tokens'
-import Particles from './Particles/index'
+import { colors } from '../../tokens'
 
 const HeroContainer = styled.div`
   position: relative;
@@ -35,16 +33,4 @@ const HeroSubTitle = styled.h2`
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.85);
 `
 
-const Hero = props => {
-  return (
-    <HeroContainer>
-      <Particles />
-      <TitleContainer>
-        <HeroTitle>{props.title}</HeroTitle>
-        {props.subTitle && <HeroSubTitle>{props.subTitle}</HeroSubTitle>}
-      </TitleContainer>
-    </HeroContainer>
-  )
-}
-
-export default Hero
+export { HeroContainer, TitleContainer, HeroTitle, HeroSubTitle }
