@@ -21,7 +21,7 @@ Love coding. Always eager to learn new things.
 
 ### Baseball⚾️
 
-I played baseball for 10 years when I was younger. Don't play it anymore but still love to watch games.
+Played baseball for 10 years. Don't play it anymore but still love to watch games.
 
 ### Dogs🐶
 
