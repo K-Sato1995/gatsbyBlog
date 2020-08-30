@@ -1,13 +1,11 @@
-/* eslint-disable jsx-a11y/accessible-emoji */
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
+import Layout from '../../components/Layout'
+import Wrapper from '../../components/Wrapper'
+import SEO from '../../components/SEO'
+import RelatedPosts from '../../components/RelatedPosts'
+import { Text } from '../../components/Commons'
 import styled from 'styled-components'
-
-import Layout from '../components/Layout'
-import Wrapper from '../components/Wrapper'
-import SEO from '../components/SEO'
-import RelatedPosts from '../components/RelatedPosts'
-import { Text } from '../components/Commons'
 
 const MainTitle = styled.h1`
   line-height: 1.5;
@@ -29,7 +27,11 @@ const SubTitle = styled.h2`
   margin-top: 44px;
 `
 
-const NotFoundPage = props => {
+interface Props {
+  location: string
+}
+
+const NotFoundPage = ({ location }: Props) => {
   const data = useStaticQuery(graphql`
     query {
       posts: allMdx(
@@ -59,7 +61,7 @@ const NotFoundPage = props => {
   const posts = data.posts.edges
 
   return (
-    <Layout location={props.location} noCover={true}>
+    <Layout location={location} noCover={true}>
       <SEO title="Page Not Found" />
       <Wrapper>
         <MainTitle>404 Page Not Found</MainTitle>

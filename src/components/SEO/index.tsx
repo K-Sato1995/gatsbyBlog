@@ -5,12 +5,12 @@ import useSiteMetadata from '../../hooks/use-site-config'
 
 interface Props {
   title: string
-  cover: any
-  description: string
-  imageShare: any
-  isBlogPost: boolean
-  path: string
-  lang: any
+  cover?: any
+  description?: string
+  imageShare?: any
+  isBlogPost?: boolean
+  path?: string
+  lang?: any
 }
 
 const SEO = ({
