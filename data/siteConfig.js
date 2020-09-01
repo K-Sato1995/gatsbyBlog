@@ -1,6 +1,6 @@
 module.exports = {
-  siteTitle: "K-Sato's Blog",
-  siteDescription: 'I mostly share some tips about programming here.',
+  siteTitle: 'Always eager to learn new things',
+  siteDescription: "K-Sato's Blog",
   authorName: 'K-Sato',
   twitterUsername: '_k-sato',
   authorAvatar: 'avatar.png', // file in content/images
@@ -18,7 +18,7 @@ module.exports = {
   icon: 'content/images/avatar.png',
   postsPerPage: 6,
   disqusShortname: 'k-sato-blog-1',
-  headerTitle: 'K-Sato',
+  headerTitle: "K-Sato' Blog",
   headerLinksIcon: 'avatar.png', //  (leave empty to disable: '')
   postsBaseUrl:
     'https://github.com/K-Sato1995/gatsbyBlog/edit/master/content/posts',

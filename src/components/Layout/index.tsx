@@ -5,14 +5,9 @@ import Header from '../Header'
 import Footer from '../Footer'
 import 'prismjs/themes/prism-tomorrow.css'
 import { GlobalStyle } from '../Commons'
-import { media } from '../../tokens'
 
 const SiteContent = styled.div`
   margin: 0 0;
-
-  @media ${media.medium} {
-    margin: 60px 0;
-  }
 `
 
 const Template = ({ children }: { children: React.ReactNode }) => {

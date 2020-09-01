@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import SearchResults from './SearchResults'
-import { SearchContainer, SearchInput } from './style'
+import { SearchInput, SearchIcon, SearchContainer } from './style'
+import { AiOutlineSearch } from 'react-icons/ai'
 
 const Search = () => {
   const [isFocused, setIsFocused] = useState(false)
@@ -17,9 +18,10 @@ const Search = () => {
 
   return (
     <SearchContainer>
+      <SearchIcon />
       <SearchInput
         type="text"
-        placeholder="Search"
+        placeholder="Search for articles..."
         onFocus={onFocus}
         onBlur={onBlur}
         onChange={onChange}

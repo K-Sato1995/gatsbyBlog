@@ -1,21 +1,34 @@
 import styled from 'styled-components'
+import { AiOutlineSearch } from 'react-icons/ai'
 
 const SearchContainer = styled.div`
-  margin: 15px;
+  position: relative;
 `
 
 const SearchInput = styled.input`
-  padding: 4px 10px;
-  padding-left: 0.6rem;
-  min-width: 42px;
-  border-radius: 4px;
-  outline: none;
+  width: 100%;
+  padding: 20px 32px 21px 59px;
+  background: rgba(255, 255, 255, 0.2);
   border: none;
-  background-color: #2b2c3c;
-  font-size: 0.75rem;
-  color: #ffffff;
+  outline: none;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 18px;
-  font-weight: 300;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+`
+
+const SearchIcon = styled(AiOutlineSearch)`
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  margin-top: -10px;
+  outline: none;
+  cursor: pointer;
 `
 
 const ResultsWrapper = styled.div`
@@ -91,4 +104,4 @@ const ResultsWrapper = styled.div`
   }
 `
 
-export { SearchContainer, SearchInput, ResultsWrapper }
+export { SearchContainer, SearchInput, ResultsWrapper, SearchIcon }

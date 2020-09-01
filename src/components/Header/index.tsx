@@ -2,17 +2,13 @@
 
 import React, { useState } from 'react'
 import useSiteMetadata from '../../hooks/use-site-config'
-import useSiteImages from '../../hooks/use-site-images'
-import Search from '../Search'
 import {
   HeaderWrapper,
   HeaderNav,
   HeaderLinksContainer,
   HeaderLink,
-  HeaderExternalLink,
   HeaderLinkTitle,
   HeaderLinkTitleContent,
-  HeaderImage,
   MobilePanel,
   MobileNav,
   BurgerButton,
@@ -59,32 +55,15 @@ const MobileHeader = ({ headerLinks }: Props) => {
 }
 
 const Header = () => {
-  const {
-    headerLinks,
-    siteTitle,
-    headerTitle,
-    headerLinksIcon,
-  } = useSiteMetadata()
-  const iconSrc = headerLinksIcon
-    ? useSiteImages(headerLinksIcon).fluid.src
-    : null
-
+  const { headerLinks, headerTitle } = useSiteMetadata()
   return (
     <HeaderWrapper>
       <HeaderNav>
         <HeaderLinkTitle to={`/`} aria-label={`View home page`}>
-          {iconSrc && <HeaderImage src={iconSrc} alt={siteTitle} />}
           <HeaderLinkTitleContent>{headerTitle}</HeaderLinkTitleContent>
         </HeaderLinkTitle>
         <HeaderLinksContainer>
           <HeaderLinks headerLinks={headerLinks} />
-          <HeaderExternalLink
-            href="https://github.com/K-Sato1995/gatsbyBlog/issues"
-            target="_blank"
-          >
-            Submit Issues📝
-          </HeaderExternalLink>
-          <Search />
         </HeaderLinksContainer>
         <MobileHeader headerLinks={headerLinks} />
       </HeaderNav>

@@ -1,23 +1,16 @@
 import React from 'react'
-import Particles from '../Particles/index'
-import {
-  HeroContainer,
-  TitleContainer,
-  HeroTitle,
-  HeroSubTitle,
-} from './styles'
+import { HeroContainer, TitleContainer, HeroSubTitle } from './styles'
+import Search from '../Search'
 
 interface Props {
   title: string
-  subTitle: string
 }
-const Hero = ({ title, subTitle }: Props) => {
+const Hero = ({ title }: Props) => {
   return (
     <HeroContainer>
-      <Particles />
       <TitleContainer>
-        <HeroTitle>{title}</HeroTitle>
-        {subTitle && <HeroSubTitle>{subTitle}</HeroSubTitle>}
+        <HeroSubTitle>{title}</HeroSubTitle>
+        <Search />
       </TitleContainer>
     </HeroContainer>
   )
