@@ -21,14 +21,14 @@ interface Props {
   title: string
   slug: string
   description: string
-  category: category
+  category: Category
   language: 'english' | 'japanese'
   tags: string[]
   timeToRead: number
   pinned?: boolean
 }
 
-const PostImage = (data: { category: category }) => {
+const PostImage = (data: { category: Category }) => {
   switch (data.category) {
     case 'Programming':
       return <SvgProgramming />

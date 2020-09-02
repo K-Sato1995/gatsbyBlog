@@ -7,7 +7,7 @@ category: Resources
 tags:
   - CircleCI
 published: true
-description: "Here is a list of the resources I used to learn CircleCI. I'll keep adding more and more resources as I learn more about it."
+description: List of the resources I used to learn CircleCI."
 ---
 
 # Configuration options
