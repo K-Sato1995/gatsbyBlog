@@ -3,16 +3,13 @@ import styled from 'styled-components'
 const Wrapper = styled.main.attrs({
   role: 'main',
 })`
-  max-width: 100%;
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 26px;
-
-  @media (max-width: 780px) {
-    width: 100%;
-    padding: 25px;
-  }
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 40px;
 `
 
 export default Wrapper

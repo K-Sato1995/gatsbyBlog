@@ -15,6 +15,7 @@ const GlobalPageStyle = createGlobalStyle`
 
   body {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
 `
 

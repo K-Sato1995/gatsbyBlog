@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import PostsListItem from '../PostsListItem'
+import { PostListContent } from './styles'
 
 interface Props {
   posts: any
@@ -8,7 +9,7 @@ interface Props {
 
 const PostsList = ({ posts, pinnedPosts }: Props) => {
   return (
-    <Fragment>
+    <PostListContent>
       {pinnedPosts?.map((post: any) => {
         const props = {
           title: post.node.frontmatter.title,
@@ -34,7 +35,7 @@ const PostsList = ({ posts, pinnedPosts }: Props) => {
         }
         return <PostsListItem key={props.slug} {...props} />
       })}
-    </Fragment>
+    </PostListContent>
   )
 }
 export default PostsList

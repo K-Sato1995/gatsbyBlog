@@ -11,6 +11,8 @@ const HeaderWrapper = styled.header`
   z-index: 1000;
   background-color: ${colors.primaryAlpha};
   font-weight: 700;
+  padding-left: 40px;
+  padding-right: 40px;
 `
 
 const HeaderNav = styled.nav`

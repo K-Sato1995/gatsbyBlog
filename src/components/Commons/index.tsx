@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   color: ${colors.text};
   background-color: ${colors.background};
 }

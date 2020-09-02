@@ -9,7 +9,7 @@ const PostBox = styled(Link)`
   background-color: white;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 30px 20px;
+  padding: 30px;
   position: relative;
   z-index: 3;
   text-decoration: none;
@@ -19,12 +19,21 @@ const PostBox = styled(Link)`
   outline: none;
   -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
+
+  @media (max-width: 1023px) {
+    padding: 30px 20px;
+  }
 `
 
 const Collection = styled.div`
   position: relative;
   min-height: 80px;
   padding-left: 150px;
+
+  @media (max-width: 1023px) {
+    padding-left: 80px;
+    min-height: 80px;
+  }
 `
 
 const CollectionLeft = styled.div`
@@ -33,6 +42,11 @@ const CollectionLeft = styled.div`
   top: 0;
   width: 120px;
   height: 100%;
+
+  @media (max-width: 1023px) {
+    width: 60px;
+    height: 60px;
+  }
 `
 
 const CollectionRight = styled.div`

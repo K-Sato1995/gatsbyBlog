@@ -3,7 +3,7 @@ import { colors } from '../../tokens'
 
 const HeroContainer = styled.div`
   background-color: #1f232a;
-  padding: 35px 0;
+  padding: 35px 40px 35px 40px;
 `
 const TitleContainer = styled.div`
   margin-left: auto;
