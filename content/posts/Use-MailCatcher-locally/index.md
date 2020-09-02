@@ -1,16 +1,17 @@
 ---
-title: "Use MailCatcher locally"
+title: 'Use MailCatcher locally'
 slug: use-mailcatcher-locally
 date: 2019-11-06
 language: english
-category: Rails
+category: Programming
 tags:
   - Mail
   - Rails
 published: true
-description: "Here is a simple guideline about how to use MailCatcher locally."
+description: 'Here is a simple guideline about how to use MailCatcher locally.'
 ---
-# Install MailCatcher locally 
+
+# Install MailCatcher locally
 
 No need to add it to Gemfile or anything. Just install it on your local machine.
 
@@ -18,7 +19,7 @@ No need to add it to Gemfile or anything. Just install it on your local machine.
 $ gem install mailcatcher
 ```
 
-# Run MailCatcher locally 
+# Run MailCatcher locally
 
 Simply run the command below.
 
@@ -28,7 +29,7 @@ $ mailcatcher
 
 # Add the settings to your rails app
 
-If you are trying to use MailCatcher with your rails app,  add the following code to `config/environments/development.rb`.
+If you are trying to use MailCatcher with your rails app, add the following code to `config/environments/development.rb`.
 
 ```ruby
 Rails.application.configure do
@@ -38,5 +39,6 @@ Rails.application.configure do
 end
 ```
 
-# References 
+# References
+
 - [MailCatcher](https://mailcatcher.me/)

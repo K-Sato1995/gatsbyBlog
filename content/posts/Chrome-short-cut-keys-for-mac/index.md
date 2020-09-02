@@ -3,7 +3,7 @@ title: 'Chrome short cut keys for mac'
 slug: chrome-short-cut-keys-for-mac
 date: 2020-01-30
 language: english
-category: Others
+category: Memo
 tags:
   - Chrome
 published: true

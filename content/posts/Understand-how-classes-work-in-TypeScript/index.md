@@ -3,7 +3,7 @@ title: 'Understand how classes work in TypeScript'
 slug: Understand-how-classes-work-in-typeScript
 date: 2020-03-27
 language: english
-category: TypeScript
+category: Programming
 tags:
   - TypeScript
 published: true

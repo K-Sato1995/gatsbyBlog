@@ -3,7 +3,7 @@ title: 'GraphQL認証・認可に関しての調査'
 slug: graphql
 date: 2019-12-10
 language: japanese
-category: Rails
+category: Resources
 tags:
   - GraphQL
 published: true
@@ -22,7 +22,7 @@ description: 'GraphQL認証・認可に関しての調査で役立ったリン�
 ## FireBase を使用しての実装
 
 - [Rails+Firebase 認証のサンプルアプリ - Qiita](https://qiita.com/johnslith/items/6f8742b786b50f8dc0ac)
-- [Firebase Authentication with GraphQL and React Client [JavaScript] \| No Programming, No Life!](https://blog.morizyun.com/javascript/typescript-tutorial-firebase-auth-graphql-react.html)
+- [Firebase Authentication with GraphQL and React Client [JavaScript] \| No category: Programming, No Life!](https://blog.morizyun.com/javascript/typescript-tutorial-firebase-auth-graphql-react.html)
 - [Firebase Auth を Nuxt + Rails の自前サービス に導入してみた](https://www.slideshare.net/TomoeTeshima/firebase-auth-nuxt-rails)
 - [Using Firebase Authentication with knock for Rails · HAYDEN LUCKENBACH](https://haydenluckenbach.com/posts/firebase-knock/)
 - [Firebase authentification with Ruby on Rails backend](https://medium.com/@Mpierrax/firebase-authentification-with-ruby-on-rails-backend-a9f7afc4d715)

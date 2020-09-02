@@ -24,9 +24,18 @@ const PostBox = styled(Link)`
 const Collection = styled.div`
   position: relative;
   min-height: 80px;
+  padding-left: 150px;
 `
 
-const CollectionContent = styled.div`
+const CollectionLeft = styled.div`
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+`
+
+const CollectionRight = styled.div`
   font-size: 16px;
   line-height: 1.6;
   color: #565867;
@@ -41,6 +50,17 @@ const CollectionTitle = styled.h2`
   font-weight: 400;
 `
 
+const ImageContainer = styled.div`
+  position: relative;
+  width: 48px;
+  height: 48px;
+  -webkit-transition: stroke 0.1s linear;
+  -o-transition: stroke 0.1s linear;
+  transition: stroke 0.1s linear;
+  top: 50%;
+  left: 50%;
+  margin: -24px 0 0 -24px;
+`
 const CollectionDescription = styled.p`
   font-size: 16px;
   line-height: 1.6;
@@ -62,8 +82,10 @@ export {
   ItemSpace,
   PostBox,
   Collection,
-  CollectionContent,
+  CollectionLeft,
+  CollectionRight,
   CollectionTitle,
   CollectionDescription,
   CollectionFooter,
+  ImageContainer,
 }

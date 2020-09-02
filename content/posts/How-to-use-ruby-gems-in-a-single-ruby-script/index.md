@@ -3,7 +3,7 @@ title: 'How to use ruby gems in a single ruby script '
 slug: how-to-use-ruby-gems-in-a-single-ruby-script
 date: 2019-09-30
 language: english
-category: Ruby
+category: Programming
 tags:
   - Ruby
   - Gem

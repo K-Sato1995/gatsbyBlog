@@ -3,7 +3,7 @@ title: 'My Journey of Go ② (Loops, Conditions)'
 slug: my-journey-of-go-loops-conditions
 date: 2018-09-24
 language: english
-category: Go
+category: Programming
 tags:
   - Go
   - Tutorial

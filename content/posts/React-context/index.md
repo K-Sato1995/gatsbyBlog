@@ -3,7 +3,7 @@ title: ' React context '
 slug: react-context
 date: 2019-10-23
 language: english
-category: React
+category: Programming
 tags:
   - Hooks
   - React

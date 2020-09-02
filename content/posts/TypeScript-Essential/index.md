@@ -3,7 +3,7 @@ title: 'TypeScript Essential'
 slug: typeScript-essential
 date: 2020-05-03
 language: english
-category: TypeScript
+category: Programming
 tags:
   - TypeScript
 published: true

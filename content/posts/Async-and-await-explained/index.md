@@ -3,7 +3,7 @@ title: 'Async and await explained'
 slug: async-and-await-explained
 date: 2019-11-02
 language: english
-category: JavaScript
+category: Programming
 tags:
   - JavaScript
 published: true

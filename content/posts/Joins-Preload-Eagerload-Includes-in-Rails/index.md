@@ -3,7 +3,7 @@ title: 'Joins・Preload・Eager load・Includes in Rails'
 slug: joins-preload-eagerload-includes-in-rails
 date: 2020-03-26
 language: english
-category: Rails
+category: Programming
 tags:
   - ActiveRecord
 published: true

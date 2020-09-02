@@ -3,7 +3,7 @@ title: 'My Journey of Go ⑤ (Maps, Ranges)'
 slug: my-journey-of-go-maps-ranges
 date: 2018-09-30
 language: english
-category: Go
+category: Programming
 tags:
   - Go
   - Tutorial

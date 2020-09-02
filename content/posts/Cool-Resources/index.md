@@ -3,7 +3,7 @@ title: 'Cool Resources '
 slug: cool-resources
 date: 2019-07-31
 language: english
-category: Others
+category: Resources
 tags:
   - Documents
 published: true
@@ -85,7 +85,7 @@ description: 'Cool Resources I stumbled upon on the internet.'
 - [Rails・GraphQL 基礎 - データ更新 & 認証編 - Kei178's blog](https://kei178.me/programming/1527/)
 - [Nuxt.js + GraphQL + Ruby on Rails で作ったアプリに JWT 認証を追加する方法 - Qiita](https://qiita.com/Y_uuu/items/96f85682625fb5f35760)
 - [graphql-2.md · GitHub](https://gist.github.com/wayne5540/d3140186b68a1ba183e0b328a291e1f7)
-- [Firebase Authentication with GraphQL and React Client [JavaScript] \| No Programming, No Life!](https://blog.morizyun.com/javascript/typescript-tutorial-firebase-auth-graphql-react.html)
+- [Firebase Authentication with GraphQL and React Client [JavaScript] \| No category: Programming, No Life!](https://blog.morizyun.com/javascript/typescript-tutorial-firebase-auth-graphql-react.html)
 - [Firebase Auth を Nuxt + Rails の自前サービス に導入してみた](https://www.slideshare.net/TomoeTeshima/firebase-auth-nuxt-rails)
 - [Using Firebase Authentication with knock for Rails · HAYDEN LUCKENBACH](https://haydenluckenbach.com/posts/firebase-knock/)
 - [Ruby で Firebase の id トークンを認証に使ってみる - Qiita](https://qiita.com/otakky/items/b7582202f5cde8f2dd21)
@@ -157,7 +157,7 @@ description: 'Cool Resources I stumbled upon on the internet.'
 
 ## Authentication
 
-- [Building Basic React Authentication - Better Programming - Medium](https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71)
+- [Building Basic React Authentication - Better category: Programming - Medium](https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71)
 
 ## Router stuff
 
@@ -176,7 +176,7 @@ description: 'Cool Resources I stumbled upon on the internet.'
 - [useContext(): a React hook that's an obvious win – Frontend Armory](https://frontarm.com/james-k-nelson/usecontext-react-hook/)
 - [How the useContext Hook Works](https://daveceddia.com/usecontext-hook/)
 - [reactjs - React hooks conditional render - Stack Overflow](https://stackoverflow.com/questions/56836891/react-hooks-conditional-render)
-- [Make a Todo List Using React Hooks!! - AltCampus - Medium](https://medium.com/altcampus/make-a-todo-list-using-react-hooks-d1299fdb7b0)
+- [Make a Todo list Using React Hooks!! - AltCampus - Medium](https://medium.com/altcampus/make-a-todo-list-using-react-hooks-d1299fdb7b0)
 - [setInterval in React Components Using Hooks - Upmostly](https://upmostly.com/tutorials/setinterval-in-react-components-using-hooks)
 - [Build a React Timer Component Using Hooks - Upmostly](https://upmostly.com/tutorials/build-a-react-timer-component-using-hooks)
 
@@ -187,12 +187,12 @@ description: 'Cool Resources I stumbled upon on the internet.'
 - [Gatsby で Google Lighthouse で満点を取るブログを一から作る - Qiita](https://qiita.com/so99ynoodles/items/87e136d09644baac634c)
 - [The End of an Era: Migrating from WordPress to Gatsby – Tania Rascia](https://www.taniarascia.com/migrating-from-wordpress-to-gatsby/)
 
-# Programming Info
+# category: Programming Info
 
 - [How to Write a Git Commit Message](https://chris.beams.io/posts/git-commit/)
-- [Train with Programming Challenges/Kata \| Codewars](https://www.codewars.com)
+- [Train with category: Programming Challenges/Kata \| Codewars](https://www.codewars.com)
 - [coding-interview-university](https://github.com/K-Sato1995/coding-interview-university 'edited')
-- [Programming Interview Questions + Help Getting Job Offers \| Interview Cake](https://www.interviewcake.com/)
+- [category: Programming Interview Questions + Help Getting Job Offers \| Interview Cake](https://www.interviewcake.com/)
 - [Here's How to Prepare for Tech Interviews : cscareerquestions](https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/)
 - [Github Help Wanted](http://github-help-wanted.com/)
 - [The 7 Myths of Learning to Code - DEV Community 👩‍💻👨‍💻](https://dev.to/stephsmithio/the-7-myths-of-learning-to-code-1b2p)
@@ -208,7 +208,7 @@ description: 'Cool Resources I stumbled upon on the internet.'
 
 # GraphQL
 
-- [Codementor - Instant 1-on-1 Mentor for Programming & Design](https://www.codementor.io/karanjaeddy/build-a-to-do-list-api-with-graphql-api-rails-5-part-1-irjt1e7jm
+- [Codementor - Instant 1-on-1 Mentor for category: Programming & Design](https://www.codementor.io/karanjaeddy/build-a-to-do-list-api-with-graphql-api-rails-5-part-1-irjt1e7jm
 - [A Guide to GraphQL in Plain English](https://medium.freecodecamp.org/a-beginners-guide-to-graphql-60e43b0a41f5)
 - [A complete React with GraphQL Tutorial - RWieruch](https://www.robinwieruch.de/react-with-graphql-tutorial/)
 - [4 simple ways to call a GraphQL API - Apollo GraphQL](https://blog.apollographql.com/4-simple-ways-to-call-a-graphql-api-a6807bcdb355)

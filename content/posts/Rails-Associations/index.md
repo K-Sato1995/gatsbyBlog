@@ -1,18 +1,20 @@
 ---
-title: "Rails Associations"
+title: 'Rails Associations'
 slug: rails-associations
 date: 2019-01-21
 language: japanese
-category: Rails
+category: Programming
 tags:
   - Rails
   - Associations
 published: true
-description: "Ruby on Railsでよく使用される5つのアソーシエーションに関してまとめました。各アソーシエーション毎に何を意味するのか、また、どんなメソッドを使用する事で関連した要素を作成出来るのかまとめました。"
+description: 'Ruby on Railsでよく使用される5つのアソーシエーションに関してまとめました。各アソーシエーション毎に何を意味するのか、また、どんなメソッドを使用する事で関連した要素を作成出来るのかまとめました。'
 ---
+
 # Associations
 
-# 本記事で扱うAssociations
+# 本記事で扱う Associations
+
 - One to One
 - One to Many
 - Many to Many(has_many_through)
@@ -22,11 +24,12 @@ description: "Ruby on Railsでよく使用される5つのアソーシエーシ�
 # One to One
 
 `One to One`はモデル同士に「１対１」関係がある事を示す。  
-モデルAの１つのレコードがモデルBの１つのインスタンスを丸ごと所有している。
+モデル A の１つのレコードがモデル B の１つのインスタンスを丸ごと所有している。
 
 例えば、１人のユーザーが１つのプロファイルを持つ場合。
 
 ### 各テーブルのカラム
+
 ```ruby
 # CreateUsers
 class CreateUsers < ActiveRecord::Migration[5.1]
@@ -50,6 +53,7 @@ end
 ```
 
 ### 各モデル
+
 ```ruby
 # app/models/user.rb
 class User < ApplicationRecord
@@ -62,7 +66,7 @@ class Profile < ApplicationRecord
 end
 ```
 
-### One to Oneで頻繁に使用されるメソッド
+### One to One で頻繁に使用されるメソッド
 
 ```ruby
 user.profile :該当ユーザーのプロファイル情報を取得
@@ -73,12 +77,12 @@ user.create_profile :該当ユーザーのプロファイルを作成(DBに保�
 # One to Many
 
 `One-to-Many`は他のモデルとの間に「１対多」の関係がある事を示す。  
-モデルAの１つのレコードが０個以上のモデルBのインスタンスを所有している。
-
+モデル A の１つのレコードが０個以上のモデル B のインスタンスを所有している。
 
 例えば、１人のユーザー(`user`)が複数の投稿(`post`)を持つ場合。
 
 ### 各テーブルのカラム
+
 ```ruby
 # CreateUsers
 class CreateUsers < ActiveRecord::Migration[5.1]
@@ -102,6 +106,7 @@ end
 ```
 
 ### 各モデル
+
 ```ruby
 # app/models/user.rb
 class User < ApplicationRecord
@@ -115,7 +120,7 @@ class Post < ApplicationRecord
 end
 ```
 
-### One to Manyで頻繁に使用されるメソッド
+### One to Many で頻繁に使用されるメソッド
 
 ```ruby
 user.posts :該当ユーザーの全ての投稿を取得。
@@ -127,14 +132,16 @@ post.create_user :ユーザー作成。(DBに保存する)
 ```
 
 # Many to Many(has_many_through)
+
 `Many-to-Many`は他のモデルとの間に「多対多」の関係がある事を示す。  
-モデルAとモデルB共に相互の複数のインスタンスを所有している。  
-`has_many_through`の方式ではモデルC(結合モデル)がモデルAとモデルBを
+モデル A とモデル B 共に相互の複数のインスタンスを所有している。  
+`has_many_through`の方式ではモデル C(結合モデル)がモデル A とモデル B を
 繋ぐ。
 
 例えば、複数の投稿(`post`)が複数のタグ(`tag`)を持つ場合。
 
 ### 各テーブルのカラム
+
 ```ruby
 # CreatePosts(モデルA)
 class CreatePosts < ActiveRecord::Migration[5.1]
@@ -169,6 +176,7 @@ end
 ```
 
 ### 各モデル
+
 ```ruby
 # app/models/post.rb
 class Post < ApplicationRecord
@@ -207,13 +215,15 @@ tag.posts.create({}) :該当タグと結合モデル(tagging)で結びつく投�
 ```
 
 # Many to Many(has_and_belongs_to_many)
+
 `Many-to-Many`は他のモデルとの間に「多対多」の関係がある事を示す。  
-モデルAとモデルB共に相互の複数のインスタンスを所有している。  
-`has_and_belongs_to_many`の方式では１つのJOINテーブルを介してモデルAとモデルBが互いのインスタンスを多数所有し合う。。
+モデル A とモデル B 共に相互の複数のインスタンスを所有している。  
+`has_and_belongs_to_many`の方式では１つの JOIN テーブルを介してモデル A とモデル B が互いのインスタンスを多数所有し合う。。
 
 例えば、複数の投稿(`post`)が複数のタグ(`tag`)を持つ場合。
 
 ### 各テーブルのカラム
+
 ```ruby
 # CreateUsers(モデルA)
 class CreateUsers < ActiveRecord::Migration[5.1]
@@ -246,6 +256,7 @@ end
 ```
 
 ### 各モデル
+
 ```ruby
 # app/models/user.rb
 class User < ApplicationRecord
@@ -260,14 +271,17 @@ end
 ```
 
 ### Many-to-Many(has_and_belongs_to_many)で頻繁に使用されるメソッド
+
 `Many-to-Many(has_many_through)`で頻繁に使用されるメソッドを参照。
 
 # Polymorphic
-`Polymorphic`であるモデルAが他の複数のモデル(B,C,D)に属していることを、1つの関連付けだけで表現することが可能。
+
+`Polymorphic`であるモデル A が他の複数のモデル(B,C,D)に属していることを、1 つの関連付けだけで表現することが可能。
 
 例えば、コメント(`picture`)が投稿(`post`)がとユーザー(`user`)に所属している場合。
 
 ### 各テーブルのカラム
+
 ```ruby
 # CreateUsers(モデルA)
 class CreateUsers < ActiveRecord::Migration[5.1]
@@ -316,6 +330,7 @@ end
 ```
 
 ### 各モデル
+
 ```ruby
 # app/models/user.rb
 class User < ApplicationRecord
@@ -335,7 +350,7 @@ class picture < ApplicationRecord
 end
 ```
 
-### Polymorphicで頻繁に使用されるメソッド
+### Polymorphic で頻繁に使用されるメソッド
 
 ```ruby
 post.pictures :該当投稿の全てコメントを取得。
@@ -348,7 +363,7 @@ post.pictures << picture.new({}) :該当ポストにコメントを関連づけ�
 user.pictures << picture.new({}) :該当ユーザーにコメントを関連づけ。
 ```
 
-以下のようなImageができるイメージ。
+以下のような Image ができるイメージ。
 
 ```ruby
 [
@@ -357,7 +372,8 @@ user.pictures << picture.new({}) :該当ユーザーにコメントを関連づ�
   ]
 ```
 
-# References 
+# References
+
 - [Everything There Is to Know About Associations in Rails - DEV Community 👩‍💻👨‍💻](https://dev.to/neshaz/everything-there-is-to-know-about-associations-in-rails-52ii)
 - [Brush up Your Knowledge of Rails Associations — SitePoint](https://www.sitepoint.com/brush-up-your-knowledge-of-rails-associations/)
 - [Active Record Associations — Ruby on Rails Guides](https://guides.rubyonrails.org/association_basics.html)

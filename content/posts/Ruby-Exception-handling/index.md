@@ -3,7 +3,7 @@ title: 'Ruby Exception handling'
 slug: ruby-exception-handling
 date: 2019-05-21
 language: english
-category: Ruby
+category: Programming
 tags:
   - Ruby
   - Exception

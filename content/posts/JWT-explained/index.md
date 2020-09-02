@@ -3,7 +3,7 @@ title: 'JWT explained'
 slug: jwt-explained
 date: 2019-10-22
 language: english
-category: Others
+category: Memo
 tags:
   - JWT
 published: true

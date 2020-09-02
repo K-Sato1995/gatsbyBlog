@@ -3,7 +3,7 @@ title: 'My Journey of Go ① (Functions, Variables)'
 slug: my-journey-of-go-functions-variables
 date: 2018-09-23
 language: english
-category: Go
+category: Programming
 tags:
   - Go
   - Tutorial

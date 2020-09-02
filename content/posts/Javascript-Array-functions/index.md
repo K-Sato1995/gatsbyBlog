@@ -3,7 +3,7 @@ title: 'JavaScript Array functions'
 slug: javascript-array-functions
 date: 2019-06-21
 language: english
-category: JavaScript
+category: Programming
 tags:
   - JavaScript
 published: true

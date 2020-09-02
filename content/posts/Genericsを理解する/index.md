@@ -3,7 +3,7 @@ title: '【TypeScript】Genericsを理解する'
 slug: typescript-generics
 date: 2020-01-30
 language: japanese
-category: TypeScript
+category: Programming
 tags:
   - Generics
 published: true

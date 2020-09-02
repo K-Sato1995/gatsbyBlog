@@ -3,7 +3,7 @@ title: 'VS Code Tips'
 slug: vs-code-tips
 date: 2019-12-03
 language: english
-category: Others
+category: Resources
 tags:
   - VScode
 published: true

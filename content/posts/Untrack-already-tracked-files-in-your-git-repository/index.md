@@ -3,7 +3,7 @@ title: 'Untrack already tracked files in your git repository'
 slug: untrack-already-tracked-files-in-your-git-repository
 date: 2019-07-22
 language: english
-category: Others
+category: Memo
 tags:
   - Git
 published: true

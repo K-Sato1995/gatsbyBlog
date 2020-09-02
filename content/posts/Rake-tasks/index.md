@@ -3,7 +3,7 @@ title: 'Rake tasks '
 slug: rake-tasks
 date: 2019-09-27
 language: english
-category: Ruby
+category: Programming
 tags:
   - Rake
 published: true

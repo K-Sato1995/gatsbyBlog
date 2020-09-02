@@ -13,15 +13,7 @@ interface Post {
   }
 }
 
-type Category =
-  | 'Ruby'
-  | 'Go'
-  | 'JavaScript'
-  | 'TypeScript'
-  | 'React'
-  | 'Rails'
-  | 'Life'
-  | 'Others'
+type Category = 'Programming' | 'Resources' | 'BookReport' | 'Memo' | 'Life'
 
 type HeaderLink = {
   label: string

@@ -1,12 +1,9 @@
 const CATEGORIES: Category[] = [
-  'Ruby',
-  'Go',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Rails',
+  'Programming',
+  'Resources',
+  'BookReport',
+  'Memo',
   'Life',
-  'Others',
 ]
 
 export { CATEGORIES }

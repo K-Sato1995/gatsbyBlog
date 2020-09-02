@@ -137,16 +137,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   // generate Categories
-  const categories = [
-    'Ruby',
-    'Go',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'Rails',
-    'Life',
-    'Others',
-  ]
+  const categories = ['Programming', 'Resources', 'BookReport', 'Memo', 'Life']
 
   categories.forEach(uniqCategory => {
     createPage({

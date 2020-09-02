@@ -3,7 +3,7 @@ title: 'My Journey of Go ③ (Pointers, Structures)'
 slug: my-journey-of-go-pointers-structures
 date: 2018-09-26
 language: english
-category: Go
+category: Programming
 tags:
   - Go
   - Tutorial

@@ -3,7 +3,7 @@ title: 'Basic Shell Commands'
 slug: basic-shell-commands
 date: 2018-10-06
 language: english
-category: Others
+category: Programming
 tags:
   - Shell
 published: true
@@ -26,7 +26,7 @@ $ pwd
 
 ## ls
 
-The command `ls` stands for `List`. It shows files in the directory you are in. You can see all the hidden files by using the option “-a”.
+The command `ls` stands for `list`. It shows files in the directory you are in. You can see all the hidden files by using the option “-a”.
 You can check other options [here](https://www.rapidtables.com/code/linux/ls.html)
 
 ```console

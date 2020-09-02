@@ -3,7 +3,7 @@ title: 'Ruby Getters and Setters Explained'
 slug: ruby-getters-and-setters-explained
 date: 2018-09-17
 language: english
-category: Ruby
+category: Programming
 tags:
   - Ruby
   - getter-setter

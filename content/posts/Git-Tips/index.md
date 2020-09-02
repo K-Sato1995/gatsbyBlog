@@ -3,7 +3,7 @@ title: 'Git Tips'
 slug: git-tips
 date: 2019-07-22
 language: english
-category: Others
+category: Resources
 tags:
   - Git
 published: true

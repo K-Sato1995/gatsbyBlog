@@ -3,7 +3,7 @@ title: 'React in TypeScript'
 slug: react-in-typescript
 date: 2019-07-20
 language: english
-category: React
+category: Resources
 tags:
   - TypeScript
   - React

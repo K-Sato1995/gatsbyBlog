@@ -3,7 +3,7 @@ title: 'Rbenv cheatsheets'
 slug: rbenv-cheatsheets
 date: 2019-09-02
 language: english
-category: Ruby
+category: Resources
 tags:
   - rbenv
 published: true
@@ -37,7 +37,7 @@ $ rbenv global 2.2.1
 # RBENV_VERSION environment variable in your shell.
 $ rbenv shell 2.2.1
 
-# Lists all Ruby versions known to rbenv
+# lists all Ruby versions known to rbenv
 $ rbenv versions
 
 # Displays the currently active Ruby versions

@@ -59,6 +59,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
+            category
             language
             slug
             pinned
@@ -81,6 +82,7 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            category
             description
             language
             slug

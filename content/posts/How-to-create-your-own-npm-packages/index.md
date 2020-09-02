@@ -3,7 +3,7 @@ title: 'How to create your own npm packages'
 slug: how-to-create-your-own-npm-packages
 date: 2019-06-07
 language: english
-category: JavaScript
+category: Programming
 tags:
   - npm
   - package
