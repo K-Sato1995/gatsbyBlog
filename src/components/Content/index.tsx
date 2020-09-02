@@ -11,12 +11,12 @@ interface Props {
   title: string
 }
 
-const Content = ({ content, date, tags, title }: Props) => {
+const Content = ({ content, date, title }: Props) => {
   return (
     <section>
-      {(tags || date) && (
+      {date && (
         <>
-          <ContentHeader date={date} tags={tags} title={title} />
+          <ContentHeader date={date} />
         </>
       )}
 

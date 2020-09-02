@@ -1,19 +1,13 @@
 import styled from 'styled-components'
-import { colors } from '../../tokens'
 
 const Wrapper = styled.main.attrs({
   role: 'main',
 })`
-  position: relative;
-  border-radius: 5px;
-  width: 80%;
-  max-width: 770px;
-  word-wrap: break-word;
-  background-color: ${colors.backgroundArticle};
-  margin: 0px auto 30px auto;
-  top: 30px;
-  padding: 35px 50px 50px 50px;
-  box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 26px;
 
   @media (max-width: 780px) {
     width: 100%;

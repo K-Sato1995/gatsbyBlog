@@ -22,7 +22,6 @@ class BlogList extends React.Component {
         <Hero title={title} subTitle={description} />
 
         <Wrapper>
-          <CategoryList categories={CATEGORIES} />
           <PostsList posts={posts} pinnedPosts={pinnedPosts} />
         </Wrapper>
 
@@ -60,7 +59,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            tags
             language
             slug
             pinned
@@ -84,7 +82,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            tags
             language
             slug
           }

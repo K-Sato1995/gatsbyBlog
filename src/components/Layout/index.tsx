@@ -8,6 +8,7 @@ import { GlobalStyle } from '../Commons'
 
 const SiteContent = styled.div`
   margin: 0 0;
+  background: #f3f5f7;
 `
 
 const Template = ({ children }: { children: React.ReactNode }) => {
