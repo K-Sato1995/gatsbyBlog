@@ -1,12 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { CATEGORIES } from '../constants'
 import Layout from '../components/Layout'
 import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import PostsList from '../components/PostsList'
 import Pagination from '../components/Pagination'
-import CategoryList from '../components/CategoryList'
 import SEO from '../components/SEO'
 
 class BlogList extends React.Component {

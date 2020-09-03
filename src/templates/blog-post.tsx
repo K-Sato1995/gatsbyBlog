@@ -5,7 +5,6 @@ import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import Article from '../components/Article'
 import SEO from '../components/SEO'
-import Disqus from '../components/Disqus'
 
 interface Props {
   data: { post: Post }

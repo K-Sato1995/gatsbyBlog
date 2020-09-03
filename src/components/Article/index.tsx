@@ -23,7 +23,6 @@ const Article = ({ post, title, slug }: Props) => {
         <ArticleFooter>
           <Bio />
         </ArticleFooter>
-
         <Disqus slug={slug} title={title} />
       </ArticleContent>
     </ArticleContainer>

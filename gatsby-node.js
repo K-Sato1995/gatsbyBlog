@@ -8,10 +8,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     './src/templates/blog-post-share-image.js'
   )
   const PageTemplate = require.resolve('./src/templates/page.js')
-  const PostsBytagTemplate = require.resolve('./src/templates/tags.js')
-  const PostsBycategoryTemplate = require.resolve(
-    './src/templates/categories.js'
-  )
   const ListPostsTemplate = require.resolve(
     './src/templates/blog-list-template.js'
   )
@@ -119,35 +115,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       })
     })
-
-  // generate tags
-  markdownFiles
-    .filter(item => item.node.frontmatter.tags !== null)
-    .reduce(
-      (acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.tags])],
-      []
-    )
-    .forEach(uniqTag => {
-      createPage({
-        path: `tags/${uniqTag}`,
-        component: PostsBytagTemplate,
-        context: {
-          tag: uniqTag,
-        },
-      })
-    })
-  // generate Categories
-  const categories = ['Programming', 'Resources', 'BookReport', 'Memo', 'Life']
-
-  categories.forEach(uniqCategory => {
-    createPage({
-      path: `categories/${uniqCategory}`,
-      component: PostsBycategoryTemplate,
-      context: {
-        category: uniqCategory,
-      },
-    })
-  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

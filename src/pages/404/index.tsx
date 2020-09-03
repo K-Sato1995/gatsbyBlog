@@ -1,9 +1,7 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper'
 import SEO from '../../components/SEO'
-import RelatedPosts from '../../components/RelatedPosts'
 import { Text } from '../../components/Commons'
 import styled from 'styled-components'
 
@@ -20,46 +18,11 @@ const Ghost = styled.span`
   font-size: 7rem;
 `
 
-const SubTitle = styled.h2`
-  padding-top: 40px;
-  line-height: 1.2;
-  border-top: 1px solid #ececec;
-  margin-top: 44px;
-`
-
 interface Props {
   location: string
 }
 
 const NotFoundPage = ({ location }: Props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      posts: allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-        filter: {
-          fileAbsolutePath: { regex: "//content/posts//" }
-          frontmatter: { published: { ne: false } }
-        }
-        limit: 5
-      ) {
-        edges {
-          node {
-            excerpt
-            frontmatter {
-              date(formatString: "DD MMMM, YYYY")
-              title
-              tags
-              language
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const posts = data.posts.edges
-
   return (
     <Layout location={location} noCover={true}>
       <SEO title="Page Not Found" />
@@ -72,10 +35,6 @@ const NotFoundPage = ({ location }: Props) => {
           Looks like you've followed a broken link or entered a URL that doesn't
           exist on this site.
         </Text>
-
-        <SubTitle>Recent Posts</SubTitle>
-
-        <RelatedPosts posts={posts} />
       </Wrapper>
     </Layout>
   )

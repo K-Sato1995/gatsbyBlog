@@ -11,11 +11,13 @@ import {
   CollectionFooter,
   ImageContainer,
 } from './styles'
-import SvgProgramming from '../Svgs/SvgProgramming'
-import SvgList from '../Svgs/SvgList'
-import SvgLife from '../Svgs/SvgLife'
-import SvgMemo from '../Svgs/SvgMemo'
-import SvgBookReport from '../Svgs/SvgBookReport'
+import {
+  SvgProgramming,
+  SvgList,
+  SvgLife,
+  SvgMemo,
+  SvgBookReport,
+} from '../Svgs'
 
 interface Props {
   title: string
