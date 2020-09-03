@@ -30,7 +30,7 @@ export default {
   heartFooter: 'red',
   links: colors.yellow,
   backgroundSelection: colors.yellow,
-  highlight_code_oneline: '#fff9d9',
+  highlight_code_oneline: '#EEEEEC',
   highlight_code_bg: colors.yellow,
   highlight_code_marker: colors.yellow,
   highlight_code_linebg: '#022a4b',

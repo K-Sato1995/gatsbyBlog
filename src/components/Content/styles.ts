@@ -31,8 +31,8 @@ const ContentBody = styled.div`
   }
 
   & a {
-    box-shadow: 0 2px 0 0 ${colors.links};
-
+    color: #007db5;
+    text-decoration: underline;
     &:hover {
       filter: brightness(150%);
       box-shadow: none;
@@ -132,8 +132,10 @@ const ContentBody = styled.div`
   & em > code.language-text,
   & strong > code.language-text {
     background: ${colors.highlight_code_oneline};
-    color: #222222cc;
+    color: #eb6f6f;
     padding: 0 3px;
+    padding: 0.2em 0.4em;
+    font-weight: 600;
     font-size: 0.94em;
     border-radius: 0.3rem;
     word-wrap: break-word;
