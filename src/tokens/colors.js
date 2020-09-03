@@ -25,7 +25,7 @@ export default {
   primary: '#1F232A',
   primaryAlpha: `#1F232A`,
   text: colors.grey500,
-  background: '#f4f8fb',
+  background: '#f3f5f7',
   backgroundArticle: colors.white,
   heartFooter: 'red',
   links: colors.yellow,

@@ -13,18 +13,11 @@ interface Props {
 
 const Content = ({ content, date, title }: Props) => {
   return (
-    <section>
-      {date && (
-        <>
-          <ContentHeader date={date} />
-        </>
-      )}
-
-      <ContentBody>
-        <PostOutdatedWarning date={date} />
-        <MDXRenderer>{content}</MDXRenderer>
-      </ContentBody>
-    </section>
+    <ContentBody>
+      <ContentHeader date={date} />
+      <PostOutdatedWarning date={date} />
+      <MDXRenderer>{content}</MDXRenderer>
+    </ContentBody>
   )
 }
 

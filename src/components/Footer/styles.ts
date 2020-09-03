@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 
 const FooterWrapper = styled.footer`
   padding: 40px 0;
+  margin-top: 35px;
   text-align: left;
   font-size: 14px;
   flex-shrink: 0;

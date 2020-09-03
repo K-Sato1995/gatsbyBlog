@@ -27,11 +27,11 @@ const BlogPostTemplate = ({ data, location }: Props) => {
       <Hero title={post.frontmatter.title} />
 
       <Wrapper>
-        <Article post={post} title={post.frontmatter.title} />
-      </Wrapper>
-
-      <Wrapper>
-        <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
+        <Article
+          post={post}
+          title={post.frontmatter.title}
+          slug={post.frontmatter.slug}
+        />
       </Wrapper>
     </Layout>
   )
