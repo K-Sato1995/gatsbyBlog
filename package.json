@@ -31,9 +31,6 @@
     "start": "gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
-  "bin": {
-    "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
