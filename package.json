@@ -34,6 +34,38 @@
   "bin": {
     "generatePostPreviewImages": "./scripts/generatePostPreviewImages.js"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "rules": {
+      "react/prop-types": "off",
+      "prettier/prettier": [
+        "error"
+      ]
+    }
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
