@@ -5,11 +5,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const BlogPostTemplate = require.resolve('./src/templates/blog-post.tsx')
   const BlogPostShareImage = require.resolve(
-    './src/templates/blog-post-share-image.js'
+    './src/templates/blog-post-share-image.js',
   )
-  const PageTemplate = require.resolve('./src/templates/page.js')
+  const PageTemplate = require.resolve('./src/templates/page.tsx')
   const ListPostsTemplate = require.resolve(
-    './src/templates/blog-list-template.js'
+    './src/templates/blog-list-template.js',
   )
 
   const allMarkdownQuery = await graphql(`
@@ -54,7 +54,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const markdownFiles = allMarkdownQuery.data.allMarkdown.edges
 
   const posts = markdownFiles.filter(item =>
-    item.node.fileAbsolutePath.includes('/content/posts/')
+    item.node.fileAbsolutePath.includes('/content/posts/'),
   )
 
   // generate paginated post list

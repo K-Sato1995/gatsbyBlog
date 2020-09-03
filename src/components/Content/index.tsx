@@ -7,11 +7,9 @@ import { ContentBody } from './styles'
 interface Props {
   content: string
   date: Date
-  tags: string[]
-  title: string
 }
 
-const Content = ({ content, date, title }: Props) => {
+const Content = ({ content, date }: Props) => {
   return (
     <ContentBody>
       <ContentHeader date={date} />
