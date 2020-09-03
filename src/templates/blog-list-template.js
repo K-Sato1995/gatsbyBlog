@@ -9,7 +9,7 @@ import SEO from '../components/SEO'
 
 class BlogList extends React.Component {
   render() {
-    const { title, description } = this.props.data.site.siteMetadata
+    const { subTitle } = this.props.data.site.siteMetadata
     const posts = this.props.data.posts.edges
     const pinnedPosts = this.props.data.pinnedPosts.edges
     const { pageContext } = this.props
@@ -17,7 +17,7 @@ class BlogList extends React.Component {
     return (
       <Layout location={this.props.location}>
         <SEO />
-        <Hero title={title} subTitle={description} />
+        <Hero title={subTitle} />
 
         <Wrapper>
           <PostsList posts={posts} pinnedPosts={pinnedPosts} />
@@ -39,6 +39,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        subTitle
         description
       }
     }

@@ -4,6 +4,7 @@ const config = require('./data/siteConfig')
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
+    subTitle: config.siteSubTitle,
     author: config.authorName,
     description: config.siteDescription,
     ...config,

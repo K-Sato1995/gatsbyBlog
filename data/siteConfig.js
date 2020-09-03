@@ -1,6 +1,7 @@
 module.exports = {
-  siteTitle: 'Always eager to learn new things',
-  siteDescription: "K-Sato's Blog",
+  siteTitle: "K-Sato's Blog",
+  siteSubTitle: 'Always eager to learn new things',
+  siteDescription: "This is K-Sato's Blog",
   authorName: 'K-Sato',
   twitterUsername: '_k-sato',
   authorAvatar: 'avatar.png', // file in content/images
@@ -36,40 +37,4 @@ module.exports = {
     name: 'Netlify',
     url: 'https://www.netlify.com/',
   },
-  footerLinks: [
-    {
-      sectionName: 'Explore',
-      links: [
-        {
-          label: 'Blog',
-          url: '/',
-        },
-        {
-          label: 'About',
-          url: '/about',
-        },
-        {
-          label: 'Experience',
-          url: '/experience',
-        },
-      ],
-    },
-    {
-      sectionName: 'Follow the author',
-      links: [
-        {
-          label: 'GitHub',
-          url: 'https://github.com/K-Sato1995',
-        },
-        {
-          label: 'Dev.to',
-          url: 'https://dev.to/k_penguin_sato',
-        },
-        {
-          label: 'Qiita',
-          url: 'https://qiita.com/k-penguin-sato',
-        },
-      ],
-    },
-  ],
 }

@@ -6,6 +6,7 @@ const useSiteMetadata = () => {
       site {
         siteMetadata {
           siteTitle
+          siteSubTitle
           siteUrl
           siteCover
           authorName
@@ -26,13 +27,6 @@ const useSiteMetadata = () => {
           websiteHost {
             name
             url
-          }
-          footerLinks {
-            sectionName
-            links {
-              label
-              url
-            }
           }
         }
       }
