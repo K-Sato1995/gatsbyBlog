@@ -3,7 +3,7 @@ title: 'Cache Rails gems using docker-compose'
 slug: cache-rails-gems-using-docker-compose
 date: 2019-05-28
 language: english
-category: Others
+category: Programming
 tags:
   - Docker
 published: true

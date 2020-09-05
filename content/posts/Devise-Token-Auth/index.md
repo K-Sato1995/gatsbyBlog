@@ -3,7 +3,7 @@ title: 'Devise Token Auth'
 slug: devise-token-auth
 date: 2019-12-10
 language: english
-category: Rails
+category: Memo
 tags:
   - Gem
   - DeviseTokenAuth
@@ -53,7 +53,7 @@ Models that include the `DeviseTokenAuth::Concerns::User concern` will have acce
 
 # Use it with React
 
-- [Building Basic React Authentication - Better Programming - Medium](https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71)
+- [Building Basic React Authentication - Better category: Programming - Medium](https://medium.com/better-programming/building-basic-react-authentication-e20a574d5e71)
 - [useAuth \| useHooks](https://usehooks.com/useAuth/)
 - [CRUD React-Native & RoR backend with Devise Auth Token](https://medium.com/@eth3rnit3/crud-react-native-ror-backend-with-devise-auth-token-4407cac3aa0b)
 - [Great example on GitHub (1)](https://github.com/Skezey/react-context-auth)

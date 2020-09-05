@@ -3,7 +3,7 @@ title: 'Rspec resources'
 slug: rspec-resources
 date: 2019-08-26
 language: english
-category: Ruby
+category: Resources
 tags:
   - Rspec
 published: true

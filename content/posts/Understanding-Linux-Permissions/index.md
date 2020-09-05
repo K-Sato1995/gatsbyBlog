@@ -3,7 +3,7 @@ title: 'Understanding Linux Permissions'
 slug: understanding-linux-permissions
 date: 2019-05-14
 language: english
-category: Others
+category: Memo
 tags:
   - Linux
   - Shell

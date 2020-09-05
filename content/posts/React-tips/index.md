@@ -3,7 +3,7 @@ title: 'React tips'
 slug: react-tips
 date: 2019-11-04
 language: english
-category: React
+category: Resources
 tags:
   - React
   - Tips

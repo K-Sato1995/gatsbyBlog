@@ -3,7 +3,7 @@ title: 'How to create your own gem'
 slug: how-to-create-your-own-gem
 date: 2018-09-25
 language: english
-category: Ruby
+category: Programming
 tags:
   - Ruby
   - Gem

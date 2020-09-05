@@ -3,7 +3,7 @@ title: 'GraphQL Resources '
 slug: graphql-resources
 date: 2019-10-12
 language: english
-category: Others
+category: Resources
 tags:
   - graphql
 published: true

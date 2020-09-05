@@ -3,7 +3,7 @@ title: 'Build a simple API using RoR5'
 slug: build-a-simple-api-using-ror5
 date: 2018-09-17
 language: english
-category: Rails
+category: Programming
 tags:
   - API
   - Ruby

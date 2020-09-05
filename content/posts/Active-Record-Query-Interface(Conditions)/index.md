@@ -3,7 +3,7 @@ title: 'Active Record Query Interface(Conditions)'
 slug: active-record-query-interface-conditions
 date: 2019-02-08
 language: english
-category: Rails
+category: Programming
 tags:
   - ActiveRecord
   - Rails

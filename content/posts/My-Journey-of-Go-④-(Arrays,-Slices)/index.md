@@ -3,7 +3,7 @@ title: 'My Journey of Go ④ (Arrays, Slices)'
 slug: my-journey-of-go-arrays-slices
 date: 2018-09-30
 language: english
-category: Go
+category: Programming
 tags:
   - Go
   - Tutorial

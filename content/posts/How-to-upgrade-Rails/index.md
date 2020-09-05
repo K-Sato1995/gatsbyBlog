@@ -3,7 +3,7 @@ title: 'How to upgrade Rails'
 slug: how-to-upgrade-rails
 date: 2019-09-19
 language: english
-category: Rails
+category: Programming
 tags:
   - Rails
 published: true

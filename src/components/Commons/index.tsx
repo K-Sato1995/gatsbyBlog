@@ -12,7 +12,8 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   color: ${colors.text};
   background-color: ${colors.background};
 }
@@ -40,10 +41,6 @@ ol {
   padding-left: 2em;
   margin: 1em 0 0 0;
 }
-
-*::selection {
-  background-color: ${colors.backgroundSelection};
-}
 `
 export const StyledLink = styled(Link)`
   box-shadow: 0 2px 0 0 ${colors.links};
@@ -70,7 +67,6 @@ export const Bull = styled.span`
 
 export const ReadingTime = ({ min }: { min: number }) => {
   const ReadingTimeContainer = styled.span`
-    text-transform: uppercase;
     color: ${colors.postMetadata};
   `
   return <ReadingTimeContainer>{min} min read</ReadingTimeContainer>

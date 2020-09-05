@@ -3,7 +3,7 @@ title: 'ES6 Basics'
 slug: es6-basics
 date: 2018-10-12
 language: english
-category: JavaScript
+category: Programming
 tags:
   - ES6
   - JavaScript

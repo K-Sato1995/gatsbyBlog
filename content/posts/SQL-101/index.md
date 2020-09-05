@@ -3,7 +3,7 @@ title: 'SQL 101'
 slug: sql-101
 date: 2019-01-19
 language: english
-category: Others
+category: Memo
 tags:
   - SQL
 published: true

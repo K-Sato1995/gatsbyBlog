@@ -3,11 +3,11 @@ title: 'CircleCI Resources'
 slug: circleci-resources
 date: 2020-07-31
 language: english
-category: Others
+category: Resources
 tags:
   - CircleCI
 published: true
-description: "Here is a list of the resources I used to learn CircleCI. I'll keep adding more and more resources as I learn more about it."
+description: List of the resources I used to learn CircleCI."
 ---
 
 # Configuration options
@@ -55,7 +55,7 @@ Here is a simple CircleCI configuration for a react project.
 
 ```yml
 version: 2.1
-# List orbs you want to use.
+# list orbs you want to use.
 orbs:
   node: circleci/node@1.1.6
 jobs:

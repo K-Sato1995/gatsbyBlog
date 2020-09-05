@@ -4,6 +4,7 @@ const config = require('./data/siteConfig')
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
+    subTitle: config.siteSubTitle,
     author: config.authorName,
     description: config.siteDescription,
     ...config,
@@ -43,7 +44,7 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          default: require.resolve('./src/templates/page.js'),
+          default: require.resolve('./src/templates/page.tsx'),
         },
         gatsbyRemarkPlugins: [
           {

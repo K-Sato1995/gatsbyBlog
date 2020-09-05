@@ -5,7 +5,6 @@ import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import Article from '../components/Article'
 import SEO from '../components/SEO'
-import Disqus from '../components/Disqus'
 
 interface Props {
   data: { post: Post }
@@ -27,11 +26,11 @@ const BlogPostTemplate = ({ data, location }: Props) => {
       <Hero title={post.frontmatter.title} />
 
       <Wrapper>
-        <Article post={post} title={post.frontmatter.title} />
-      </Wrapper>
-
-      <Wrapper>
-        <Disqus slug={post.frontmatter.slug} title={post.frontmatter.title} />
+        <Article
+          post={post}
+          title={post.frontmatter.title}
+          slug={post.frontmatter.slug}
+        />
       </Wrapper>
     </Layout>
   )

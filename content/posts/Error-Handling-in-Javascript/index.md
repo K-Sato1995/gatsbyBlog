@@ -3,7 +3,7 @@ title: 'Error Handling in JavaScript'
 slug: error-handling-in-javascript
 date: 2019-06-21
 language: english
-category: JavaScript
+category: Programming
 tags:
   - JavaScript
   - Exception

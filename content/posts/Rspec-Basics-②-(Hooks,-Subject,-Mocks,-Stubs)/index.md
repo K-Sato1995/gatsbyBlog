@@ -3,7 +3,7 @@ title: 'Rspec Basics ② (Hooks, Subject, Mocks, Stubs)'
 slug: rspec-basics-hooks-subject-mocks-stubs
 date: 2018-09-20
 language: english
-category: Ruby
+category: Programming
 tags:
   - Rails
   - Ruby

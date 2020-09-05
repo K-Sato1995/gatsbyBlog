@@ -1,14 +1,34 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
 import Content from '../components/Content'
 import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import SEO from '../components/SEO'
-import Disqus from '../components/Disqus'
+import styled from 'styled-components'
 
-export default props => {
+const Container = styled.div`
+  padding-top: 26px;
+  max-width: 100%;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+`
+
+const PageContent = styled.div`
+  padding: 60px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  outline: none;
+`
+const Page = (props: any) => {
   const page = props.data.page
 
   return (
@@ -20,22 +40,15 @@ export default props => {
         cover={page.frontmatter.cover && page.frontmatter.cover.publicURL}
       />
 
-      <Hero
-        heroImg={page.frontmatter.cover && page.frontmatter.cover.publicURL}
-        title={page.frontmatter.title}
-      />
+      <Hero title={page.frontmatter.title} />
 
       <Wrapper>
-        <article>
-          <Content content={page.body} date={page.frontmatter.date} />
-        </article>
+        <Container>
+          <PageContent>
+            <Content content={page.body} date={page.frontmatter.date} />
+          </PageContent>
+        </Container>
       </Wrapper>
-
-      {page.frontmatter.disqus && (
-        <Wrapper>
-          <Disqus slug={page.frontmatter.slug} title={page.frontmatter.title} />
-        </Wrapper>
-      )}
     </Layout>
   )
 }
@@ -49,8 +62,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         slug
-        disqus
       }
     }
   }
 `
+
+export default Page

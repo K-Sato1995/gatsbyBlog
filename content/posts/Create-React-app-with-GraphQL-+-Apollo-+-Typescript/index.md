@@ -3,7 +3,7 @@ title: 'Create React app with GraphQL + Apollo + Typescript'
 slug: create-react-app-with-graphql-apollo-typescript
 date: 2019-07-20
 language: english
-category: React
+category: Programming
 tags:
   - GraphQL
   - Apollo

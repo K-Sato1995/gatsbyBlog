@@ -1,11 +1,35 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 import Layout from '../../components/Layout'
 import Wrapper from '../../components/Wrapper'
 import SEO from '../../components/SEO'
-import RelatedPosts from '../../components/RelatedPosts'
-import { Text } from '../../components/Commons'
+import Hero from '../../components/Hero'
 import styled from 'styled-components'
+
+interface Props {
+  location: string
+}
+
+const Container = styled.div`
+  padding-top: 26px;
+  max-width: 100%;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+`
+
+const Content = styled.div`
+  padding: 60px;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  position: relative;
+  z-index: 3;
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  outline: none;
+`
 
 const MainTitle = styled.h1`
   line-height: 1.5;
@@ -20,62 +44,29 @@ const Ghost = styled.span`
   font-size: 7rem;
 `
 
-const SubTitle = styled.h2`
-  padding-top: 40px;
-  line-height: 1.2;
-  border-top: 1px solid #ececec;
-  margin-top: 44px;
+const Text = styled.p`
+  text-align: center;
 `
 
-interface Props {
-  location: string
-}
-
 const NotFoundPage = ({ location }: Props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      posts: allMdx(
-        sort: { fields: [frontmatter___date], order: DESC }
-        filter: {
-          fileAbsolutePath: { regex: "//content/posts//" }
-          frontmatter: { published: { ne: false } }
-        }
-        limit: 5
-      ) {
-        edges {
-          node {
-            excerpt
-            frontmatter {
-              date(formatString: "DD MMMM, YYYY")
-              title
-              tags
-              language
-              slug
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const posts = data.posts.edges
-
   return (
     <Layout location={location} noCover={true}>
       <SEO title="Page Not Found" />
+      <Hero title="404 Page Not Found" />
+
       <Wrapper>
-        <MainTitle>404 Page Not Found</MainTitle>
-        <Ghost role="img" aria-label="Ghost">
-          👻
-        </Ghost>
-        <Text>
-          Looks like you've followed a broken link or entered a URL that doesn't
-          exist on this site.
-        </Text>
-
-        <SubTitle>Recent Posts</SubTitle>
-
-        <RelatedPosts posts={posts} />
+        <Container>
+          <Content>
+            <MainTitle>404 Page Not Found</MainTitle>
+            <Ghost role="img" aria-label="Ghost">
+              👻
+            </Ghost>
+            <Text>
+              Looks like you've followed a broken link or entered a URL that
+              doesn't exist on this site.
+            </Text>
+          </Content>
+        </Container>
       </Wrapper>
     </Layout>
   )

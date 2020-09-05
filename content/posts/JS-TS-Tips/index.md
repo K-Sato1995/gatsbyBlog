@@ -3,7 +3,7 @@ title: 'JS-TS Tips'
 slug: js-ts-tips
 date: 2019-12-09
 language: english
-category: TypeScript
+category: Programming
 tags:
   - JavaScript
   - TypeScript

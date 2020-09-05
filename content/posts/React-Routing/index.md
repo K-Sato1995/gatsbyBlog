@@ -3,7 +3,7 @@ title: 'React Routing'
 slug: react-routing
 date: 2018-11-10
 language: english
-category: React
+category: Programming
 tags:
   - React
   - react-routing-dom

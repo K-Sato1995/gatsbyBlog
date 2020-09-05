@@ -5,15 +5,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const BlogPostTemplate = require.resolve('./src/templates/blog-post.tsx')
   const BlogPostShareImage = require.resolve(
-    './src/templates/blog-post-share-image.js'
+    './src/templates/blog-post-share-image.js',
   )
-  const PageTemplate = require.resolve('./src/templates/page.js')
-  const PostsBytagTemplate = require.resolve('./src/templates/tags.js')
-  const PostsBycategoryTemplate = require.resolve(
-    './src/templates/categories.js'
-  )
+  const PageTemplate = require.resolve('./src/templates/page.tsx')
   const ListPostsTemplate = require.resolve(
-    './src/templates/blog-list-template.js'
+    './src/templates/blog-list-template.js',
   )
 
   const allMarkdownQuery = await graphql(`
@@ -58,7 +54,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const markdownFiles = allMarkdownQuery.data.allMarkdown.edges
 
   const posts = markdownFiles.filter(item =>
-    item.node.fileAbsolutePath.includes('/content/posts/')
+    item.node.fileAbsolutePath.includes('/content/posts/'),
   )
 
   // generate paginated post list
@@ -92,19 +88,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         next,
       },
     })
-
-    // generate post share images (dev only)
-    if (process.env.gatsby_executing_command.includes('develop')) {
-      createPage({
-        path: `${post.node.frontmatter.slug}/image_share`,
-        component: BlogPostShareImage,
-        context: {
-          slug: post.node.frontmatter.slug,
-          width: 440,
-          height: 220,
-        },
-      })
-    }
   })
 
   // generate pages
@@ -119,44 +102,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         },
       })
     })
-
-  // generate tags
-  markdownFiles
-    .filter(item => item.node.frontmatter.tags !== null)
-    .reduce(
-      (acc, cur) => [...new Set([...acc, ...cur.node.frontmatter.tags])],
-      []
-    )
-    .forEach(uniqTag => {
-      createPage({
-        path: `tags/${uniqTag}`,
-        component: PostsBytagTemplate,
-        context: {
-          tag: uniqTag,
-        },
-      })
-    })
-  // generate Categories
-  const categories = [
-    'Ruby',
-    'Go',
-    'JavaScript',
-    'TypeScript',
-    'React',
-    'Rails',
-    'Life',
-    'Others',
-  ]
-
-  categories.forEach(uniqCategory => {
-    createPage({
-      path: `categories/${uniqCategory}`,
-      component: PostsBycategoryTemplate,
-      context: {
-        category: uniqCategory,
-      },
-    })
-  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

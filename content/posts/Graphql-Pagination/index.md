@@ -3,7 +3,7 @@ title: 'GraphQL Pagination'
 slug: graphql-pagination
 date: 2020-02-23
 language: english
-category: Others
+category: Programming
 tags:
   - GraphQL
 published: true
@@ -67,7 +67,7 @@ According to the Facebook Graph API documentation,
 
 - [GraphQL Cursor Connections Specification](http://facebook.github.io/relay/graphql/connections.htm)
 
-# List of all the resources
+# list of all the resources
 
 ## Pagination(GraphQL)
 

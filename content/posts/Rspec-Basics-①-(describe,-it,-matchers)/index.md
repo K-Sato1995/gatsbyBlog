@@ -3,7 +3,7 @@ title: 'Rspec Basics ① (describe, it, matchers)'
 slug: rspec-basics-describe-it-matchers
 date: 2018-09-18
 language: english
-category: Ruby
+category: Programming
 tags:
   - Rails
   - Ruby

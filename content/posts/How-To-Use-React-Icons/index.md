@@ -3,7 +3,7 @@ title: 'How to use React icons'
 slug: how-to-use-react-icons
 date: 2020-04-12
 language: english
-category: React
+category: Programming
 tags:
   - React
   - Icons

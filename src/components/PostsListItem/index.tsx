@@ -1,64 +1,91 @@
 import React from 'react'
-import Flag from '../Flag/Flag'
-import TagList from '../TagList'
-import useSiteMetadata from '../../hooks/use-site-config'
 import { Bull, ReadingTime } from '../Commons'
-import Emoji from '../Emoji'
 import {
-  Post,
-  PostHeader,
-  Dscription,
-  PostTitleLink,
-  FooterLine,
-  iconStyle,
+  ItemSpace,
+  PostBox,
+  Collection,
+  CollectionLeft,
+  CollectionRight,
+  CollectionTitle,
+  CollectionDescription,
+  CollectionFooter,
+  ImageContainer,
 } from './styles'
+import {
+  SvgProgramming,
+  SvgList,
+  SvgLife,
+  SvgMemo,
+  SvgBookReport,
+} from '../Svgs'
 
 interface Props {
   title: string
   slug: string
   description: string
+  category: Category
   language: 'english' | 'japanese'
   tags: string[]
   timeToRead: number
   pinned?: boolean
 }
+
+const PostImage = (data: { category: Category }) => {
+  switch (data.category) {
+    case 'Programming':
+      return <SvgProgramming />
+    case 'Resources':
+      return <SvgList />
+    case 'BookReport':
+      return <SvgBookReport />
+    case 'Memo':
+      return <SvgMemo />
+    case 'Life':
+      return <SvgLife />
+    default:
+      return <SvgProgramming />
+  }
+}
+
 const PostsListItem = ({
   title,
   slug,
   description,
   language,
-  tags,
+  category,
   timeToRead,
   pinned,
 }: Props) => {
-  const { defaultLang } = useSiteMetadata()
-
   return (
-    <Post>
-      <PostHeader>
-        <h2>
-          <PostTitleLink to={`/${slug}`}>
-            {defaultLang !== language && <Flag language={language} />}
-            {title}
-          </PostTitleLink>
-          {pinned ? (
-            <Emoji symbol="📌" label="Warning" style={iconStyle} />
-          ) : (
-            <></>
-          )}
-        </h2>
-      </PostHeader>
-      <section>
-        <Dscription>{description}</Dscription>
-      </section>
-      <footer>
-        <FooterLine>
-          <ReadingTime min={timeToRead} />
-          <Bull />
-          <TagList tags={tags} />
-        </FooterLine>
-      </footer>
-    </Post>
+    <ItemSpace>
+      <PostBox to={`/${slug}`}>
+        <Collection>
+          <CollectionLeft>
+            <ImageContainer>
+              <PostImage category={category} />
+            </ImageContainer>
+          </CollectionLeft>
+
+          <CollectionRight>
+            <CollectionTitle>{title}</CollectionTitle>
+            <CollectionDescription>{description}</CollectionDescription>
+            <CollectionFooter>
+              <ReadingTime min={timeToRead} />
+              <Bull />
+              Lang: {language === 'english' ? 'EN' : 'JA'}
+              <Bull />
+              Written by: K-Sato
+              {pinned ? (
+                <>
+                  <Bull />
+                  <span>Pinned Post</span>
+                </>
+              ) : null}
+            </CollectionFooter>
+          </CollectionRight>
+        </Collection>
+      </PostBox>
+    </ItemSpace>
   )
 }
 export default PostsListItem

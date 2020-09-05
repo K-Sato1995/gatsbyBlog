@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import PostsListItem from '../PostsListItem'
+import { PostListContent } from './styles'
 
 interface Props {
   posts: any
@@ -8,12 +9,13 @@ interface Props {
 
 const PostsList = ({ posts, pinnedPosts }: Props) => {
   return (
-    <Fragment>
+    <PostListContent>
       {pinnedPosts?.map((post: any) => {
         const props = {
           title: post.node.frontmatter.title,
           description: post.node.frontmatter.description,
           slug: post.node.frontmatter.slug,
+          category: post.node.frontmatter.category,
           timeToRead: post.node.timeToRead,
           language: post.node.frontmatter.language || 'english',
           tags: post.node.frontmatter.tags || [],
@@ -26,13 +28,14 @@ const PostsList = ({ posts, pinnedPosts }: Props) => {
           title: post.node.frontmatter.title,
           description: post.node.frontmatter.description,
           slug: post.node.frontmatter.slug,
+          category: post.node.frontmatter.category,
           timeToRead: post.node.timeToRead,
           language: post.node.frontmatter.language || 'english',
           tags: post.node.frontmatter.tags || [],
         }
         return <PostsListItem key={props.slug} {...props} />
       })}
-    </Fragment>
+    </PostListContent>
   )
 }
 export default PostsList

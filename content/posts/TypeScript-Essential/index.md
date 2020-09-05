@@ -3,11 +3,11 @@ title: 'TypeScript Essential'
 slug: typeScript-essential
 date: 2020-05-03
 language: english
-category: TypeScript
+category: Programming
 tags:
   - TypeScript
 published: true
-description: 'This is a post for me to solidify the basic knowledge about Typescript I learnt from TypeScript Handbook'
+description: 'New and fundamental things I learnt from TypeScript Handbook'
 ---
 
 # About this post

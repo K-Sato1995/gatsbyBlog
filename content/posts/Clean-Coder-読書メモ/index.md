@@ -3,7 +3,7 @@ title: 'Clean Coder読書メモ'
 slug: clean-coder-memo
 date: 2020-08-30
 language: japanese
-category: Others
+category: BookReport
 tags:
   - Book
 published: true

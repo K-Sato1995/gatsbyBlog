@@ -3,7 +3,7 @@ title: 'Testing your app in windows using VirtualBox'
 slug: testing-your-app-in-windows-using-virtualbox
 date: 2019-06-13
 language: english
-category: Others
+category: Memo
 tags:
   - VirtualBox
 published: true

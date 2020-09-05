@@ -3,6 +3,7 @@ title: 'Yarn Upgrade and Yarnupgrade-Latest'
 slug: yarn-upgrade-yarnupgrade-latest
 date: 2019-02-27
 language: english
+category: Programming
 tags:
   - Yarn
   - React

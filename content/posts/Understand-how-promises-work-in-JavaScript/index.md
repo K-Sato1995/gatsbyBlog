@@ -3,7 +3,7 @@ title: 'Understand how promises work in JavaScript'
 slug: understand-how-promises-work-in-javaScript
 date: 2019-06-17
 language: english
-category: JavaScript
+category: Programming
 tags:
   - Promise
 published: true

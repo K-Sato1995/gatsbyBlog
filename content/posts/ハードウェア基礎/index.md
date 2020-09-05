@@ -3,7 +3,7 @@ title: 'ハードウェア基礎'
 slug: ハードウェア基礎
 date: 2019-02-24
 language: japanese
-category: Others
+category: Memo
 tags:
   - Hardware
 published: true
@@ -221,7 +221,7 @@ CPU の中にはレジスタという高速な記憶装置が用意されてい�
 
 半導体メモリは`ROM`と`RAM`に大別できる。
 
-- `RAM(Random Access Memory)`:読み書きが出来る。電源を切ると記憶していた内容が消える。(`揮発性`)
+- `RAM(Random AccessMemory)`:読み書きが出来る。電源を切ると記憶していた内容が消える。(`揮発性`)
 - `ROM(Read Only Memory)`:読み出し専用。電源を切っても記憶していた内容は消えない。(`不揮発性`)
 
 **RAM の種類と特徴**

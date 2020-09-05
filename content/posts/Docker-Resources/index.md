@@ -3,7 +3,7 @@ title: 'Docker Resources'
 slug: docker-resources
 date: 2019-03-07
 language: english
-category: Others
+category: Resources
 tags:
   - Docker
 published: true
@@ -261,7 +261,6 @@ $ docker exec -i [mysql_container_name] mysql -u[username] -p[password] [DB name
 The `EXPOSE` instruction exposes the specified port and makes it available only for inter-container communication.
 
 If you want to `EXPOSE` in docker-componse, you can use `-expose` option.
-
 
 - [Understanding “EXPOSE” in Dockerfile](https://we-are.bookmyshow.com/understanding-expose-in-dockerfile-266938b6a33d)
 - [What is the difference between docker-compose ports vs expose](https://stackoverflow.com/questions/40801772/what-is-the-difference-between-docker-compose-ports-vs-expose)

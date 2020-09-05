@@ -3,7 +3,7 @@ title: 'クリーンアーキテクチャ読書メモ'
 slug: clean-architecture
 date: 2020-03-25
 language: japanese
-category: Others
+category: BookReport
 tags:
   - CleanArchitecture
   - Book Review

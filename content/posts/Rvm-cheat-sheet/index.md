@@ -3,7 +3,7 @@ title: 'Rvm cheat sheet'
 slug: rvm-cheat-sheet
 date: 2019-09-02
 language: english
-category: Ruby
+category: Resources
 tags:
   - rvm
 published: true

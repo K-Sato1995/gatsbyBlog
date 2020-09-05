@@ -3,7 +3,7 @@ title: 'システムの構成と方式'
 slug: システムの構成と方式
 date: 2019-05-14
 language: japanese
-category: Others
+category: Memo
 tags:
   - 基本情報
 published: true

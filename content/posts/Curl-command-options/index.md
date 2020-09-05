@@ -3,12 +3,12 @@ title: 'Curl command options '
 slug: curl-command-options
 date: 2019-12-02
 language: english
-category: Others
+category: Programming
 tags:
   - Curl
   - Linux
 published: true
-description: 'List of options you can use with the curl command.'
+description: 'list of options you can use with the curl command.'
 ---
 
 # Add headers
@@ -64,4 +64,4 @@ $ curl -F title="Test" -F author="Test" -F attachment-file=@test.txt http://loca
 # Resources
 
 - [curl man page](http://www.mit.edu/afs.new/sipb/user/ssen/src/curl-7.11.1/docs/curl.html)
-- [List of `curl` options · GitHub](https://gist.github.com/eneko/dc2d8edd9a4b25c5b0725dd123f98b10)
+- [list of `curl` options · GitHub](https://gist.github.com/eneko/dc2d8edd9a4b25c5b0725dd123f98b10)

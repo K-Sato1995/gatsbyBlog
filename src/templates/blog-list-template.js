@@ -1,17 +1,15 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { CATEGORIES } from '../constants'
 import Layout from '../components/Layout'
 import Wrapper from '../components/Wrapper'
 import Hero from '../components/Hero'
 import PostsList from '../components/PostsList'
 import Pagination from '../components/Pagination'
-import CategoryList from '../components/CategoryList'
 import SEO from '../components/SEO'
 
 class BlogList extends React.Component {
   render() {
-    const { title, description } = this.props.data.site.siteMetadata
+    const { subTitle } = this.props.data.site.siteMetadata
     const posts = this.props.data.posts.edges
     const pinnedPosts = this.props.data.pinnedPosts.edges
     const { pageContext } = this.props
@@ -19,10 +17,9 @@ class BlogList extends React.Component {
     return (
       <Layout location={this.props.location}>
         <SEO />
-        <Hero title={title} subTitle={description} />
+        <Hero title={subTitle} />
 
         <Wrapper>
-          <CategoryList categories={CATEGORIES} />
           <PostsList posts={posts} pinnedPosts={pinnedPosts} />
         </Wrapper>
 
@@ -42,6 +39,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        subTitle
         description
       }
     }
@@ -60,7 +58,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             description
-            tags
+            category
             language
             slug
             pinned
@@ -83,8 +81,8 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            category
             description
-            tags
             language
             slug
           }

@@ -3,13 +3,13 @@ title: 'My Journey of Go ③ (Pointers, Structures)'
 slug: my-journey-of-go-pointers-structures
 date: 2018-09-26
 language: english
-category: Go
+category: Programming
 tags:
   - Go
   - Tutorial
 published: true
 pinned: true
-description: "This is one of my posts about my journey of the Go programming language. In this post, I'll talk about what pointers and structures are in Go and how you can use them when you are writing Go."
+description: 'Explaining what pointers and structures work in the Go programming language.'
 ---
 
 # Overview

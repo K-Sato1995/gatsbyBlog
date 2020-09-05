@@ -3,7 +3,7 @@ title: 'オブジェクト指向設計実践ガイド'
 slug: practical-object-oriented-design
 date: 2020-04-13
 language: japanese
-category: Others
+category: BookReport
 tags:
   - Book Review
 published: true

@@ -3,7 +3,7 @@ title: 'CamelCase Your Rails JSON API '
 slug: camelcase-your-rails-json-api
 date: 2020-01-28
 language: english
-category: Rails
+category: Programming
 tags:
   - Rails
 published: true

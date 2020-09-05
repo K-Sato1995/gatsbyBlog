@@ -11,26 +11,24 @@ const HeaderWrapper = styled.header`
   z-index: 1000;
   background-color: ${colors.primaryAlpha};
   font-weight: 700;
-
-  @media ${media.medium} {
-    position: fixed;
-  }
+  padding-left: 40px;
+  padding-right: 40px;
 `
 
 const HeaderNav = styled.nav`
   font-weight: 700;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 40px;
   height: 60px;
   display: flex;
   flex-direction: row;
-  max-width: 800px;
+  max-width: 900px;
   z-index: 1000;
   justify-content: space-between;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  padding: 0px 20px;
 `
 
 const HeaderLinksContainer = styled.div`
@@ -50,42 +48,21 @@ const HeaderLink = styled(Link)`
   border: 0;
   margin: 0;
   padding: 8px 10px;
-
+  font-weight: 400;
   min-width: 42px;
   z-index: 10;
   & + & {
     margin-left: 0.7rem;
   }
 `
-
-const HeaderExternalLink = styled.a`
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: ${colors.textLightest};
-  border: 0;
-  margin: 0;
-  padding: 8px 10px;
-
-  min-width: 42px;
-  z-index: 10;
-  & + & {
-    margin-left: 0.7rem;
-  }
-`
-
 const HeaderLinkTitle = styled(HeaderLink)`
   padding-left: 0;
+  font-weight: 600;
 `
 
 const HeaderLinkTitleContent = styled.span`
   display: block;
   padding-left: 0;
-`
-
-const HeaderImage = styled.img`
-  padding: 4px;
-  height: 57px;
 `
 
 const MobilePanel = styled.div`
@@ -182,10 +159,8 @@ export {
   HeaderNav,
   HeaderLinksContainer,
   HeaderLink,
-  HeaderExternalLink,
   HeaderLinkTitle,
   HeaderLinkTitleContent,
-  HeaderImage,
   MobilePanel,
   MobileNav,
   BurgerButton,

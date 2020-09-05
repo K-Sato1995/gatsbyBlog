@@ -3,7 +3,7 @@ title: 'Utilize settings.yml in Rails applications'
 slug: utilize-settings-yml-in-rails-applications
 date: 2019-07-04
 language: english
-category: Rails
+category: Programming
 tags:
   - Rails
   - Gem

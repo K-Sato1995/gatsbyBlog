@@ -3,7 +3,7 @@ title: 'Contributing to a GitHub project'
 slug: contributing-to-a-github-project
 date: 2018-11-01
 language: english
-category: Others
+category: Programming
 tags:
   - Git
   - Tutorial
