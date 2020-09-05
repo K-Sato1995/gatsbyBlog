@@ -88,19 +88,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         next,
       },
     })
-
-    // generate post share images (dev only)
-    if (process.env.gatsby_executing_command.includes('develop')) {
-      createPage({
-        path: `${post.node.frontmatter.slug}/image_share`,
-        component: BlogPostShareImage,
-        context: {
-          slug: post.node.frontmatter.slug,
-          width: 440,
-          height: 220,
-        },
-      })
-    }
   })
 
   // generate pages
