@@ -56,7 +56,6 @@ const PostsListItem = ({
   timeToRead,
   pinned,
 }: Props) => {
-  console.log(category)
   return (
     <ItemSpace>
       <PostBox to={`/${slug}`}>
