@@ -15,6 +15,15 @@ const SearchInput = styled.input`
   font-size: 18px;
   border-radius: 4px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  &:hover {
+    background: rgba(255, 255, 255, 0.27);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+  }
+  &:focus {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14);
+    background: white;
+    color: #3a3c4c;
+  }
 `
 
 const SearchIcon = styled(AiOutlineSearch)`
@@ -22,7 +31,7 @@ const SearchIcon = styled(AiOutlineSearch)`
   height: 22px;
   border: none;
   background: transparent;
-  color: rgba(255, 255, 255, 0.7);
+  color: #767676;
   position: absolute;
   top: 50%;
   left: 19px;

@@ -28,8 +28,7 @@ const PageContent = styled.div`
   display: block;
   outline: none;
 `
-
-export default (props: any) => {
+const Page = (props: any) => {
   const page = props.data.page
 
   return (
@@ -67,3 +66,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default Page

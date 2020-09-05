@@ -20,6 +20,10 @@ const PostBox = styled(Link)`
   -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.03);
 
+  &:hover {
+    border: 1px solid rgba(136, 149, 162, 0.2);
+    background-color: #fcfcfc;
+  }
   @media (max-width: 1023px) {
     padding: 30px 20px;
   }

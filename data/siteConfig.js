@@ -9,7 +9,6 @@ module.exports = {
   authorDescription: `I am a web-developer based somewhere on earth. I primarily code in Ruby, TypeScript and JavaScript at work. RoR and React are my go-to Frameworks. Sometimes I play with Go language.`,
   siteUrl: 'https://k-sato-blog.netlify.com',
   disqusSiteUrl: 'https://k-sato-blog.netlify.com',
-  // Prefixes all links. For cases when deployed to maxpou.fr/gatsby-starter-morning-dew/
   pathPrefix: '/k-sato', // Note: it must *not* have a trailing slash.
   siteCover: 'background.jpeg', // file in content/images
   googleAnalyticsId: 'UA-158903478-1',
