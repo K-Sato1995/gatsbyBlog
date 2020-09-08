@@ -59,13 +59,17 @@ ReactDOM.render(<App />, document.querySelector('#root'))
 
 Call useContext, pass in the context object you got from React.createContext, and out pops the value.
 
-```jsx
+```tsx
 // import useContext (or we could write React.useContext)
 import React, { useContext } from 'react'
 import ReactDOM from 'react-dom'
 
+type NumberValues = {
+  number: number
+}
+
 // Create a Context
-const NumberContext = React.createContext()
+const NumberContext = React.createContext<Partial<NumberValues>>({})
 // It returns an object with 2 values:
 // { Provider, Consumer }
 
@@ -73,7 +77,7 @@ function App() {
   // Use the Provider to make a value available to all
   // children and grandchildren
   return (
-    <NumberContext.Provider value={42}>
+    <NumberContext.Provider value={{ number: 42 }}>
       <div>
         <Display />
       </div>
@@ -87,7 +91,42 @@ function Display() {
 }
 ```
 
+### Create a Hook for easier access to the value
+
+```tsx
+import React, { useContext } from 'react'
+
+type NumberValues = {
+  number: number
+}
+
+const NumberContext = React.createContext<Partial<NumberValues>>({})
+
+const App = () => {
+  return (
+    <NumberContext.Provider value={{ number: 42 }}>
+      <div>
+        <Display />
+      </div>
+    </NumberContext.Provider>
+  )
+}
+
+// Hook!
+export const useNumber = () => {
+  return useContext(NumberContext)
+}
+
+function Display() {
+  const { number } = useNumber()
+  return <div>The answer is {number}.</div>
+}
+
+export default App
+```
+
 # References
 
 - [How the useContext Hook Works](https://daveceddia.com/usecontext-hook/)
-- [useContext(): a React hook that's an obvious win – Frontend Armory](https://frontarm.com/james-k-nelson/usecontext-react-hook/)
+- [useContext(): a React hook that's an obvious win – Frontend Armory](https://frontarm.com/james-k-nelson/usecontext-react-hook)
+- [Make useContext Data More Discoverable with Typescript](https://www.fullstacklabs.co/blog/usecontext-data-discoverable-typescript)
