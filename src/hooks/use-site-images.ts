@@ -1,6 +1,6 @@
 import { useStaticQuery, graphql } from 'gatsby'
 
-const useSiteImages = imageName => {
+const useSiteImages = (imageName: string) => {
   const result = useStaticQuery(graphql`
     {
       allFile(filter: { sourceInstanceName: { eq: "images" } }) {
