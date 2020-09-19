@@ -1,6 +1,7 @@
 ---
 title: 'Experience'
 slug: experience
+date: 2019-10-23
 disqus: true
 ---
 

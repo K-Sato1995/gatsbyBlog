@@ -1,6 +1,7 @@
 ---
 title: 'About K-Sato'
 subTitle: 'Dedicated Software-Engineer specializing in Web applicaiton development.'
+date: 2019-10-23
 slug: about
 disqus: true
 ---
