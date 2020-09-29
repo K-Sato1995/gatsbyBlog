@@ -4,7 +4,7 @@ import { withPrefix } from 'gatsby'
 import useSiteMetadata from '../../hooks/use-site-config'
 
 interface Props {
-  title: string
+  title?: string
   cover?: any
   description?: string
   imageShare?: any
