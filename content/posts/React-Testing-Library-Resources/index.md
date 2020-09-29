@@ -1,7 +1,7 @@
 ---
 title: 'React Testing Library Resources'
 slug: react-testing-library-resources
-date: 2020--9-29
+date: 2020-09-29
 language: english
 category: Programming
 published: true
