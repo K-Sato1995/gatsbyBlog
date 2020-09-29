@@ -7,29 +7,27 @@ import PostsList from '../components/PostsList'
 import Pagination from '../components/Pagination'
 import SEO from '../components/SEO'
 
-class BlogList extends React.Component {
-  render() {
-    const { subTitle } = this.props.data.site.siteMetadata
-    const posts = this.props.data.posts.edges
-    const pinnedPosts = this.props.data.pinnedPosts.edges
-    const { pageContext } = this.props
+const BlogList = props => {
+  const { subTitle } = props.data.site.siteMetadata
+  const posts = props.data.posts.edges
+  const pinnedPosts = props.data.pinnedPosts.edges
+  const { pageContext } = props
 
-    return (
-      <Layout location={this.props.location}>
-        <SEO />
-        <Hero title={subTitle} />
+  return (
+    <Layout location={props.location}>
+      <SEO />
+      <Hero title={subTitle} />
 
-        <Wrapper>
-          <PostsList posts={posts} pinnedPosts={pinnedPosts} />
-        </Wrapper>
+      <Wrapper>
+        <PostsList posts={posts} pinnedPosts={pinnedPosts} />
+      </Wrapper>
 
-        <Pagination
-          nbPages={pageContext.nbPages}
-          currentPage={pageContext.currentPage}
-        />
-      </Layout>
-    )
-  }
+      <Pagination
+        nbPages={pageContext.nbPages}
+        currentPage={pageContext.currentPage}
+      />
+    </Layout>
+  )
 }
 
 export default BlogList
