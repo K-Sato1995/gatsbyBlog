@@ -79,3 +79,7 @@ description: 'List of greate resources for react-testing-library.'
 ## Problems/Solutions
 
 [Fix the "not wrapped in act(...)" warning](https://kentcdodds.com/blog/fix-the-not-wrapped-in-act-warning)
+
+## Custom Render
+
+[Setup · Testing Library](https://testing-library.com/docs/react-testing-library/setup#custom-render)
