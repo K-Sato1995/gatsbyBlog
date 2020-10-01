@@ -12,7 +12,7 @@ description: 'A simple explanation about async and await in JavaScript.'
 
 # Async
 
-Using `async` simply implies that function returns a promise.
+Using `async` simply implies that a function returns a promise.
 
 ## Example
 
