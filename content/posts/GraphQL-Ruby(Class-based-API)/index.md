@@ -8,7 +8,7 @@ tags:
   - GraphQL
   - Tutorial
 published: true
-description: 'This post mainly focuses on how to use GraphQL on the back-end(specifically Ruby on Rails). '
+description: 'This post mainly focuses on how to use GraphQL on your rails server.'
 ---
 
 # Introduction
