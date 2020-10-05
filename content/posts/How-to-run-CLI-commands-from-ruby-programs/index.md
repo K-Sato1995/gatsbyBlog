@@ -7,7 +7,7 @@ category: Programming
 tags:
   - Ruby
 published: true
-description: 'This is how you run CLI commands from Ruby programs.'
+description: 'How to run CLI commands from Ruby programs.'
 ---
 
 # The Ruby System Method

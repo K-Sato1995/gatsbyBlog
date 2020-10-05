@@ -8,7 +8,7 @@ tags:
   - React
   - Icons
 published: true
-description: 'The post explains how to use the react-icons package.'
+description: 'How to use the react-icons package.'
 ---
 
 # Install

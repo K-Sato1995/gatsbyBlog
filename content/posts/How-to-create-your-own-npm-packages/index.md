@@ -8,7 +8,7 @@ tags:
   - npm
   - package
 published: true
-description: 'This is a simple guide about how to create your own npm package.'
+description: 'How to create your own npm package.'
 ---
 
 # Creating your package
