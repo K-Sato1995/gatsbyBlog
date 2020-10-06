@@ -7,7 +7,7 @@ category: Programming
 tags:
   - JavaScript
 published: true
-description: 'The post is about what a !(exclamation mark) means in JS'
+description: 'The post is about what the !(exclamation mark) means in JS'
 ---
 
 # What an exclamation mark means in JS/TS

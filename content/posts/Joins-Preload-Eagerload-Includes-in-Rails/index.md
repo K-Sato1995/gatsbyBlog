@@ -7,7 +7,7 @@ category: Programming
 tags:
   - ActiveRecord
 published: true
-description: 'I wrote this post to undersand the differences between joins, preload, eager_load and includes in Rails.'
+description: 'Differences between joins, preload, eager_load and includes in Rails.'
 ---
 
 # Joins

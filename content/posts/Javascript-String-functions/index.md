@@ -7,7 +7,7 @@ category: Programming
 tags:
   - JavaScript
 published: true
-description: 'Here are the basic string functions in JavaScript'
+description: 'Here are some basic string functions in JavaScript'
 ---
 
 # String functions
