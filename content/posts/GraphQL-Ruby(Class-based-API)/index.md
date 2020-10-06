@@ -8,7 +8,7 @@ tags:
   - GraphQL
   - Tutorial
 published: true
-description: 'This post mainly focuses on how to use GraphQL on your rails server.'
+description: 'How to use GraphQL on your rails server.'
 ---
 
 # Introduction

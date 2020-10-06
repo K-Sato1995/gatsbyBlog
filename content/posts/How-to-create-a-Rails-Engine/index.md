@@ -7,7 +7,7 @@ category: Programming
 tags:
   - Rails
 published: true
-description: 'The post is about how to create a rails engine.'
+description: How to create a rails engine.'
 ---
 
 # What are engines

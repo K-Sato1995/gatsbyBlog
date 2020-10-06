@@ -7,7 +7,7 @@ category: Programming
 tags:
   - Rails
 published: true
-description: 'Here is a concise guide to implemente authentication functionality without any third-party library in your rails applications.'
+description: 'How to implemente authentication functionality without any third-party library in your rails applications.'
 ---
 
 Here is how you can implement authentication in your rails application without using any gem.

@@ -7,7 +7,7 @@ category: Programming
 tags:
   - JavaScript
 published: true
-description: 'Here are the basic array functions'
+description: 'Here are some basic array functions'
 ---
 
 # Introduction
