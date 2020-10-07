@@ -7,7 +7,7 @@ category: Programming
 tags:
   - React
 published: true
-description: 'Just a short post about how to install pollyfill in react apps.'
+description: 'How to install pollyfill in react apps.'
 ---
 
 # Installation

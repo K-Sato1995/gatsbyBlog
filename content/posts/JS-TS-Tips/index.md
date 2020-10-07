@@ -9,7 +9,7 @@ tags:
   - TypeScript
   - Tips
 published: true
-description: 'Here are some tips about JavaScript and TypeScript I learned while I was working on some projects.'
+description: 'Tips about JavaScript and TypeScript I learned while I was working on some projects.'
 ---
 
 # Only use let if necessary
