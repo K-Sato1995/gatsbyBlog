@@ -8,7 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: 'The post focuses on how looping and conditional statements work in Go.'
+description: 'How looping and conditional statements work in Go.'
 ---
 
 # Overview
