@@ -8,7 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: 'The post focuses on Interfaces in Go.'
+description: 'How interfaces work in Go.'
 ---
 
 # Introduction
