@@ -8,7 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: 'The post is about how maps and ranges work in Go.'
+description: 'How maps and ranges work in Go.'
 ---
 
 # Maps

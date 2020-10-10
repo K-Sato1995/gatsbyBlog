@@ -8,7 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: 'The post focuses on Goroutines and Channels in Go.'
+description: 'How Goroutines and Channels work in Go.'
 ---
 
 # Introduction

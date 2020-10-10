@@ -8,7 +8,7 @@ tags:
   - Go
   - Tutorial
 published: true
-description: 'The post focuses on Arrays and Slices in Go.'
+description: 'Arrays and Slices in Go.'
 ---
 
 # Introduction
