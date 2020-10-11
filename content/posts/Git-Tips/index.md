@@ -116,3 +116,9 @@ git clean -df // use -f if you just wanna delete untracked files.
 ```
 
 - [Remove all untracked files](https://koukia.ca/how-to-remove-local-untracked-files-from-the-current-git-branch-571c6ce9b6b1)
+
+# Grep specific branches
+
+```
+& git branch --all | grep <id>
+```
