@@ -7,7 +7,7 @@ category: Resources
 tags:
   - graphql
 published: true
-description: 'Here are some resources and tips for understanding graphql better.'
+description: 'Some resources and tips for understanding graphql better.'
 ---
 
 # Enum type

@@ -7,7 +7,7 @@ category: Resources
 tags:
   - Go
 published: true
-description: 'Here is a list of the resources that were useful for me to learn Go programming language.'
+description: 'List of the resources that were useful for me to learn Go programming language.'
 ---
 
 # Introduction
