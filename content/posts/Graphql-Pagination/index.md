@@ -7,7 +7,7 @@ category: Programming
 tags:
   - GraphQL
 published: true
-description: 'Here are some resources and short explanations about pagination with Graphql.'
+description: 'Resources and short explanations about pagination with Graphql.'
 ---
 
 # Pagination

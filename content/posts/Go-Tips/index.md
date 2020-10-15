@@ -8,7 +8,7 @@ tags:
   - Go
   - Tips
 published: true
-description: 'Here are some tips I picked up while I was learning the Go programming language.'
+description: 'Some tips I picked up while I was learning the Go programming language.'
 ---
 
 # Unreferenced package

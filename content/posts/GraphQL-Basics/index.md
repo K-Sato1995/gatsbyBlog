@@ -7,7 +7,7 @@ category: Programming
 tags:
   - GraphQL
 published: true
-description: 'This post mainly focuses on the basic concept of GraphQL and how to use it on the front-end'
+description: 'The basic concept of GraphQL and how to use it on the front-end.'
 ---
 
 # Introduction
