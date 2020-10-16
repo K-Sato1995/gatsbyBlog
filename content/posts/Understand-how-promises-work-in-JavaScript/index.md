@@ -7,7 +7,7 @@ category: Programming
 tags:
   - Promise
 published: true
-description: 'I wrote this post to understand how promises work in JavaScript.'
+description: 'How promises work in JavaScript.'
 ---
 
 # What is a promise?
@@ -83,7 +83,7 @@ promise.then(
   },
   function(error) {
     /* handle an error */
-  }
+  },
 )
 ```
 
@@ -105,7 +105,7 @@ let promise = new Promise(function(resolve, reject) {
 // resolve runs the first function in .then
 promise.then(
   result => alert(result), // shows "done!" after 1 second
-  error => alert(error) // doesn't run
+  error => alert(error), // doesn't run
 )
 ```
 

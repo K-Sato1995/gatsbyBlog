@@ -8,7 +8,7 @@ tags:
   - Ruby
   - Tips
 published: true
-description: 'When I am trying to refactor code base in my personal projects or projects at work, I often forget how I did refactor similar code before. So I listed some useful refactoring methods to follow in this post. '
+description: 'Useful refactoring methods in Ruby.'
 ---
 
 # Common Refactoring approaches

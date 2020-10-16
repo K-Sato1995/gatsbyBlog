@@ -7,7 +7,7 @@ category: Programming
 tags:
   - npm
 published: true
-description: "What the f**k are the (~) and (^) in package.json??? Well...You'll find it out here in this post."
+description: 'What the (~) and (^) in package.json are.'
 ---
 
 # Introduction

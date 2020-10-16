@@ -7,7 +7,7 @@ category: Resources
 tags:
   - rvm
 published: true
-description: 'Here is a list of frequently used rvm commands.'
+description: 'List of frequently used rvm commands.'
 ---
 
 # Frequently used commands
