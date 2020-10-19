@@ -8,7 +8,7 @@ tags:
   - Mail
   - Rails
 published: true
-description: 'Here is a simple guideline about how to use MailCatcher locally.'
+description: 'Simple guideline about how to use MailCatcher locally.'
 ---
 
 # Install MailCatcher locally
