@@ -7,7 +7,7 @@ category: Memo
 tags:
   - Server
 published: true
-description: 'In this post, I will break down three main servers that are used for web-applications which are web server, application server and database server.'
+description: 'Three main servers that are used for web-applications which are web server, application server and database server.'
 ---
 
 In this post, I will break down three main `servers` that are used for web-applications which are `web server`, `application server` and `database server`.

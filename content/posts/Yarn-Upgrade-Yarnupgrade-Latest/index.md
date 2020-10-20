@@ -8,7 +8,7 @@ tags:
   - Yarn
   - React
 published: true
-description: 'Explainint What the differences between `yarn upgrade` and `yarn upgrade --latest` are. Incidentally, You can learn why yarn upgrade dose not update package.json.'
+description: 'Differences between `yarn upgrade` and `yarn upgrade --latest`.'
 ---
 
 # Overview

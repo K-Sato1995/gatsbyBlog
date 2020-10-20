@@ -7,7 +7,7 @@ category: Resources
 tags:
   - VScode
 published: true
-description: 'Here are some useful short cut keys you can use on VS code'
+description: 'Useful short cut keys you can use on VS code'
 ---
 
 # Short cut keys
