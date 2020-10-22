@@ -1,21 +1,13 @@
 ---
 title: 'Experience'
 slug: experience
-date: 2019-10-23
+date: 2020-10-22
 disqus: true
 ---
 
-# Table of Contents
-
-- [Work Experience](#work-experience)
-- [Teck Stack](#teck-stack)
-- [OSS contributions](#oss-contributions)
-- [Certifications](#certifications)
-- [Education](#education)
-
 # WORK EXPERIENCE👨🏻‍💻
 
-## DIAMOND MEDIA Co.,Ltd. (2019/10 ~ present)
+## UPDATA Inc. (2019/10 ~ present)
 
 - Developing the frontend of the application using React(TS) and apollo-client. Used Atomic Desgin Methodology for the component structure and used jest for testing.
 
@@ -57,8 +49,9 @@ disqus: true
 - [spy_rb](https://github.com/jbodah/spy_rb)
 - [Boostnote](https://github.com/BoostIO/Boostnote)
 - [puma_worker_killer](https://github.com/schneems/puma_worker_killer")
-- [spell_generator](https://github.com/K-Sato1995/spell_generator)
 - [apollo-client](https://github.com/apollographql/apollo-client)
+- [spell_generator](https://github.com/K-Sato1995/spell_generator)
+- [react-toc](https://github.com/K-Sato1995/react-toc)
 
 ## Documentations
 
