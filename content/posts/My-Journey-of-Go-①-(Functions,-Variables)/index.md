@@ -141,7 +141,7 @@ As you can see in the code above, A `var` statement can be used at package or fu
 ### Variables with initializers
 
 A `var` declaration can include an initializer.  
- If there is an initializer, the type of the variable can be omitted. The variable will take the type of the initializer.
+If there is an initializer, the type of the variable can be omitted. The variable will take the type of the initializer.
 
 ```go
 package main
