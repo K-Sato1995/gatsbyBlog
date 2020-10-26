@@ -101,9 +101,13 @@ const ReadTime = styled.span`
   padding-left: 8px;
 `
 
-const BlogPostShareImage = props => {
-  const post = props.data.post
-  const { width, height } = props.pageContext
+interface Props {
+  pageContext: any
+  data: any
+}
+const BlogPostShareImage = ({ data, pageContext }: Props) => {
+  const post = data.post
+  const { width, height } = pageContext
   const heroImg = post.frontmatter.cover && post.frontmatter.cover.publicURL
   const { siteCover, authorAvatar, headerTitle } = useSiteMetadata()
   const { fixed } = useSiteImages(authorAvatar)
