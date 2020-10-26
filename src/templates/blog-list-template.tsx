@@ -7,14 +7,19 @@ import PostsList from '../components/PostsList'
 import Pagination from '../components/Pagination'
 import SEO from '../components/SEO'
 
-const BlogList = props => {
-  const { subTitle } = props.data.site.siteMetadata
-  const posts = props.data.posts.edges
-  const pinnedPosts = props.data.pinnedPosts.edges
-  const { pageContext } = props
+interface Props {
+  data: any
+  pageContext: any
+  location: any
+}
+
+const BlogList = ({ data, pageContext, location }: Props) => {
+  const { subTitle } = data.site.siteMetadata
+  const posts = data.posts.edges
+  const pinnedPosts = data.pinnedPosts.edges
 
   return (
-    <Layout location={props.location}>
+    <Layout location={location}>
       <SEO />
       <Hero title={subTitle} />
 
