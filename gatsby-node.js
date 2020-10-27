@@ -4,12 +4,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
 
   const BlogPostTemplate = require.resolve('./src/templates/blog-post.tsx')
-  const BlogPostShareImage = require.resolve(
-    './src/templates/blog-post-share-image.js',
-  )
+
   const PageTemplate = require.resolve('./src/templates/page.tsx')
   const ListPostsTemplate = require.resolve(
-    './src/templates/blog-list-template.js',
+    './src/templates/blog-list-template.tsx',
   )
 
   const allMarkdownQuery = await graphql(`
