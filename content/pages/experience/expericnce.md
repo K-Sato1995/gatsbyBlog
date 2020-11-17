@@ -7,17 +7,17 @@ disqus: true
 
 # WORK EXPERIENCE👨🏻‍💻
 
-## UPDATA Inc. (2019/10 ~ present)
+## Software Engineer at UPDATA Inc. (2019/10 ~ present)
 
 - Developing the frontend of the application using React(TS) and apollo-client. Used Atomic Desgin Methodology for the component structure and used jest for testing.
 
-## Ruby Development Inc. (2018/04 ~ 2019/10)
+## Software Engineer at Ruby Development Inc. (2018/04 ~ 2019/10)
 
 - Developed web applications for our clients as a member of the development team.
   Mainly used RoR on the back-end and React.js on the front-end.
 - Supported training and mentoring new graduates in practical web development by reviewing their code and giving feedbacks.
 
-## Neo Career Co., LTD. (2017/02 ~ 2018/01)
+## Business/Software Engineering Intern at Neo Career Co., LTD. (2017/02 ~ 2018/01)
 
 - Developed an application to automate creating cost estimates for the sales team as an intern in the application development department.
 - Helped creating the profit and loss statement for a new project as an intern in the project planning department.
@@ -32,7 +32,7 @@ disqus: true
 ## BackEnd
 
 - Languages : Ruby / Go / JavaScript / TypeScript
-- FrameWorks : Rails / Express.js
+- FrameWorks : Rails / Gin / Express.js
 - Database : MySQL / PostgreSQL / SQLite / Redis
 - API : RESTful / GraphQL
 
