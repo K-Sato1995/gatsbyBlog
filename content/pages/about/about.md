@@ -1,7 +1,7 @@
 ---
 title: 'About K-Sato'
 subTitle: 'Dedicated Software-Engineer specializing in Web applicaiton development.'
-date: 2019-10-23
+date: 2020-11-17
 slug: about
 disqus: true
 ---
@@ -22,7 +22,7 @@ Love coding. Always eager to learn new things.
 
 ### Baseball⚾️
 
-Played baseball for 10 years. Don't play it anymore but still love to watch games.
+Played baseball for 10 years. Don't really play it anymore but still love to watch games.
 
 ### Dogs🐶
 
