@@ -20,11 +20,11 @@ A `map` is an unordered collection of key-value pairs, where each key is unique.
 You can define a `map` using the following syntax.
 
 ```go
-① make(map[key_type]value_type)
-② map[key_type]value_type { key1: value1, key2: value2, ......., keyX: valueX}
+① make(map[keyType]valueType)
+② map[keyType]valueType { key1: value1, key2: value2, ......., keyX: valueX}
 ```
 
-### ① make(map[key_type]value_type)
+### ① make(map[keyType]valueType)
 
 You can initialize a map using the built-in `make()` function. The `make()` function returns a `map` of the given type, initialized and ready for use. `Keys` and corresponding `values` can be added to a map like the code below.
 
@@ -45,7 +45,7 @@ func main() {
 }
 ```
 
-### ② map[key_type]value_type { key1: value1, key2: value2, ......., keyX: valueX}
+### ② map[keyType]valueType { key1: value1, key2: value2, ......., keyX: valueX}
 
 By using the `map literal`, you can initialize a `map` with some initial data.
 
@@ -71,13 +71,13 @@ package main
 import "fmt"
 
 func main() {
-  var nil_map map[int]string
+  var nilMap map[int]string
 
-  if nil_map == nil {
+  if nilMap == nil {
     fmt.Println("nil") //=> nil
   }
 
-  nil_map[1] = "GO" //=>  assignment to entry in nil map
+  nilMap[1] = "GO" //=>  assignment to entry in nil map
 }
 ```
 
@@ -91,20 +91,20 @@ package main
 import "fmt"
 
 func main(){
-  var map_ex = make(map[int]string)
+  var mapEx = make(map[int]string)
 
 
   //add keys and  values to a map
-  map_ex[1] = "GO"
-  map_ex[2] = "Ruby"
+  mapEx[1] = "GO"
+  mapEx[2] = "Ruby"
 
-  fmt.Println(map_ex) //=> map[1:GO 2:Ruby]
+  fmt.Println(mapEx) //=> map[1:GO 2:Ruby]
 
   //modify the data of a map
-  map_ex[1] = "Python"
-  map_ex[2] = "Java"
+  mapEx[1] = "Python"
+  mapEx[2] = "Java"
 
-  fmt.Println(map_ex) //=> map[1:Python 2:Java]
+  fmt.Println(mapEx) //=> map[1:Python 2:Java]
 }
 ```
 
@@ -118,12 +118,12 @@ package main
 import "fmt"
 
 func main(){
-  var map_ex = make(map[int]string)
+  var mapEx = make(map[int]string)
 
-  map_ex[1] = "GO"
-  map_ex[2] = "Ruby"
+  mapEx[1] = "GO"
+  mapEx[2] = "Ruby"
 
-  fmt.Println(map_ex[1]) //=> GO
+  fmt.Println(mapEx[1]) //=> GO
 ```
 
 ### Checking the existence of a key in a map
@@ -136,16 +136,16 @@ package main
 import "fmt"
 
 func main(){
-  var map_ex = make(map[int]string)
+  var mapEx = make(map[int]string)
 
-  map_ex[1] = "GO"
-  map_ex[2] = "Ruby"
+  mapEx[1] = "GO"
+  mapEx[2] = "Ruby"
 
-  //Trying to retrieve a key that exists in map_ex.
-  lang, ok := map_ex[1]
+  //Trying to retrieve a key that exists in mapEx.
+  lang, ok := mapEx[1]
 
- //Trying to retrieve a key that does not exist in map_ex.
-  lang2, ok2 := map_ex[4]
+ //Trying to retrieve a key that does not exist in mapEx.
+  lang2, ok2 := mapEx[4]
 
   fmt.Println(lang, ok) //=> GO true
   fmt.Println(lang2, ok2) //=>  false
@@ -160,13 +160,13 @@ package main
 import "fmt"
 
 func main(){
-  var map_ex = make(map[int]string)
+  var mapEx = make(map[int]string)
 
-  map_ex[1] = "GO"
-  map_ex[2] = "Ruby"
+  mapEx[1] = "GO"
+  mapEx[2] = "Ruby"
 
-  _, ok := map_ex[1]
-  _, ok2 := map_ex[4]
+  _, ok := mapEx[1]
+  _, ok2 := mapEx[4]
 
   fmt.Println(ok) //=> true
   fmt.Println(ok2) //=> false
@@ -183,13 +183,13 @@ package main
 import "fmt"
 
 func main(){
-  var map_ex = make(map[int]string)
+  var mapEx = make(map[int]string)
 
-  map_ex[1] = "GO"
-  map_ex[2] = "Ruby"
+  mapEx[1] = "GO"
+  mapEx[2] = "Ruby"
 
-  delete(map_ex, 1)
-  fmt.Println(map_ex) //=> map[2:Ruby]
+  delete(mapEx, 1)
+  fmt.Println(mapEx) //=> map[2:Ruby]
 }
 ```
 
@@ -204,10 +204,10 @@ package main
 
 import "fmt"
 
-var arry_ex  = [3]string { "Go", "Ruby", "Python" }
+var arryEx  = [3]string { "Go", "Ruby", "Python" }
 
 func main(){
-  for index, value := range arry_ex {
+  for index, value := range arryEx {
     fmt.Println(index, value)
     //=> 0 Go
     //=> 1 Ruby
@@ -223,9 +223,9 @@ package main
 
 import "fmt"
 
-var slice_ex = []string { "Go", "Ruby", "Python" }
+var sliceEx = []string { "Go", "Ruby", "Python" }
 
-  for index, ele := range slice_ex {
+  for index, ele := range sliceEx {
     fmt.Println(index, ele)
     //=> 0 Go
     //=> 1 Ruby
@@ -241,9 +241,9 @@ package main
 
 import "fmt"
 
-var map_ex = map[string]string{ "Name":"Sam", "Gender":"Male" }
+var mapEx = map[string]string{ "Name":"Sam", "Gender":"Male" }
 
-  for key, value := range map_ex {
+  for key, value := range mapEx {
     fmt.Println(key, value)
     //=> Name Sam
     //=> Gender Male
@@ -262,10 +262,10 @@ package main
 
 import "fmt"
 
-var arry_ex  = [3]string { "Go", "Ruby", "Python" }
+var arryEx  = [3]string { "Go", "Ruby", "Python" }
 
 func main(){
-  for index, _ := range arry_ex {
+  for index, _ := range arryEx {
     fmt.Println(index)
     //=> 0
     //=> 1
@@ -281,10 +281,10 @@ package main
 
 import "fmt"
 
-var arry_ex  = [3]string { "Go", "Ruby", "Python" }
+var arryEx  = [3]string { "Go", "Ruby", "Python" }
 
 func main(){
-  for _, value := range arry_ex {
+  for _, value := range arryEx {
     fmt.Println(value)
     //=> Go
     //=> Ruby

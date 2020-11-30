@@ -90,10 +90,10 @@ import "fmt"
 func main(){
   var num = 0
 
-  fmt.Println(if_statement(num)) //=> The value is 0
+  fmt.Println(ifStatement(num)) //=> The value is 0
 }
 
-func if_statement(arg int) string{
+func ifStatement(arg int) string{
   if arg == 0 {
     return "The value is 0"
   } else {

@@ -225,7 +225,7 @@ It is common to append new elements to a slice, and so Go provides a built-in `a
 The following code shows the structure of `append` function.
 
 ```go
-func append(slice []Type, new_elements) []Type
+func append(slice []Type, newElements) []Type
 
 //Type: The type of elements that the array contains.
 ```
@@ -239,9 +239,9 @@ func main(){
   arry := [...]string { "Go", "Ruby", "JavaScript" }
 
   slice := arry[:]
-  var new_slice = append(slice, "Java", "Swift", "C")
+  var newSlice = append(slice, "Java", "Swift", "C")
 
-  fmt.Println(new_slice) //=> [[Go Ruby JavaScript Java Swift C]
+  fmt.Println(newSlice) //=> [[Go Ruby JavaScript Java Swift C]
 }
 ```
 
@@ -255,9 +255,9 @@ package main
 import "fmt"
 
 func main(){
-  var nil_slice []int
+  var nilSlice []int
 
-  if nil_slice == nil {
+  if nilSlice == nil {
     fmt.Println("nil") //=> nil
   }
 ```
