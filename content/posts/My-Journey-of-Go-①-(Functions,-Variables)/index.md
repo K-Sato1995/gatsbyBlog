@@ -60,7 +60,7 @@ func main(){
 A function can take zero or more arguments. You can define a function like the code below.
 
 ```go
-func name_of_the_function(arguments) type {
+func nameOfTheFunction(arguments) type {
   [content of the function]
 }
 ```

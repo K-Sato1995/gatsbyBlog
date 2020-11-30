@@ -25,10 +25,10 @@ You can declare an `interface` like the following code. It is basically just a l
 
 ```go
 type NAME_OF_INTERFACE interface {
-    method_name1(return_type1)
-    method_name2(return_type2)
+    methodName1(returnType11)
+    methodName2(returnType12)
     ..........
-    method_namex(return_typex)
+    methodNamex(returnType1x)
 }
 ```
 
@@ -95,14 +95,14 @@ func main(){
 A `type assertion` provides access to an interface value's underlying concrete value.
 
 ```go
-concrete_value := Interface_value.(TYPE)
+concreteValue := InterfaceValue.(TYPE)
 ```
 
-This statement above asserts that `Interface_value` holds the concrete type `TYPE` and assigns the underlying `TYPE` value to `variable`.  
+This statement above asserts that `InterfaceValue` holds the concrete type `TYPE` and assigns the underlying `TYPE` value to `variable`.  
  To check whether an interface value holds a specific type, a `type assertion` can return two values. the `underlying value` and a `boolean value` that reports whether the assertion succeeded.
 
 ```go
-concrete_value, ok := Interface_value.(TYPE)
+concreteValue, ok := InterfaceValue.(TYPE)
 ```
 
 ```go

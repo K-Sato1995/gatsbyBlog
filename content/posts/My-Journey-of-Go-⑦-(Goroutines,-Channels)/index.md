@@ -24,7 +24,7 @@ A `goroutine` is a lightweight thread managed by the Go runtime.
 You can declare a `goroutine` by adding the keyword `go` before a function or method invocation like the code below.
 
 ```go
-go function_name(arg, ...)
+go functionName(arg, ...)
 ```
 
 In the following code, `go hello()` starts a new `goroutine` and `hello()` will run concurrently along with the `main` function which runs in its own Goroutine and its called the `main Goroutine`
