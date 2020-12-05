@@ -1,14 +1,14 @@
 ---
-title: 'Go Tips'
+title: 'Golang Tips (1)'
 slug: go-tips
-date: 2019-05-11
+date: 2020-12-04
 language: english
 category: Programming
 tags:
   - Go
   - Tips
 published: true
-description: 'Some tips I picked up while I was learning the Go programming language.'
+description: 'List of Golang tips(1)'
 ---
 
 # Unreferenced package
