@@ -1,14 +1,14 @@
 ---
-title: 'Go Tips'
+title: 'Golang Tips (1)'
 slug: go-tips
-date: 2019-05-11
+date: 2020-12-04
 language: english
 category: Programming
 tags:
   - Go
   - Tips
 published: true
-description: 'Some tips I picked up while I was learning the Go programming language.'
+description: 'List of Golang tips(1)'
 ---
 
 # Unreferenced package
@@ -256,3 +256,7 @@ func returnString(arr []string) string{
   return fmt.Sprintf("The array becomes a string. %v", arr)
 }
 ```
+
+# More golang tips?
+
+If you want to read more about Golang tips, check out [Go tips(2)](https://k-sato-0130.com/go-tips-2/)!
