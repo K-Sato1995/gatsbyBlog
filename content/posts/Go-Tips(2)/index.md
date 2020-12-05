@@ -11,8 +11,6 @@ published: true
 description: 'List of Golang tips(2)'
 ---
 
-If you want to read more about Golang tips, check out [Go tips(1)](https://k-sato-0130.com/go-tips/)!
-
 # Append()
 
 ```jsx
@@ -209,3 +207,8 @@ if value, err := hogeFunc(); err! = nil {
 # Update child records with GORM
 
 - [How to update the nested tables in sql using gorm?](https://stackoverflow.com/questions/52109279/how-to-update-the-nested-tables-in-sql-using-gorm)
+
+
+# More golang tips?
+
+If you want to read more about Golang tips, check out [Go tips(1)](https://k-sato-0130.com/go-tips/)!

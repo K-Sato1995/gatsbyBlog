@@ -256,3 +256,7 @@ func returnString(arr []string) string{
   return fmt.Sprintf("The array becomes a string. %v", arr)
 }
 ```
+
+# More golang tips?
+
+If you want to read more about Golang tips, check out [Go tips(2)](https://k-sato-0130.com/go-tips-2/)!
