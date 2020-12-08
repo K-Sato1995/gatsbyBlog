@@ -6,7 +6,7 @@ module.exports = {
   twitterUsername: '_k-sato',
   authorAvatar: 'avatar.png', // file in content/images
   defaultLang: 'en', // show flag if lang is not default. Leave empty to enable flags in post lists
-  authorDescription: `I am a web-developer based somewhere on earth. I primarily code in Ruby, TypeScript and JavaScript at work. RoR and React are my go-to Frameworks. Sometimes I play with Go language.`,
+  authorDescription: `I am a web-developer based somewhere on earth. I primarily code in TypeScript, Go and Ruby at work. React, RoR and Gin are my go-to Frameworks.`,
   siteUrl: 'https://k-sato-blog.netlify.com',
   disqusSiteUrl: 'https://k-sato-blog.netlify.com',
   pathPrefix: '/k-sato', // Note: it must *not* have a trailing slash.
