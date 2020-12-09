@@ -43,3 +43,10 @@ I like all kinds of movies. Especially into SF and Action movies.
 ### Books📖
 
 Haven't had a lot of time to read books lately. But I always liked reading novels and autobiographies.
+
+# Connect with me
+
+- [Github](https://github.com/)
+- [Dev.to](https://dev.to/)
+- [Qiita](https://qiita.com/k-penguin-sato)
+- [Wantedly](https://www.wantedly.com/id/katsuki_satou_b)
