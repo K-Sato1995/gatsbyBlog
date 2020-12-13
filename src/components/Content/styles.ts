@@ -7,26 +7,26 @@ const ContentBody = styled.div`
     white-space: pre-line;
   }
   & > h1 {
-    padding-top: 2.2rem;
+    padding-top: 2rem;
     padding-bottom: 0.2em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     border-bottom: 1px solid #ececec;
     font-size: 1.5em;
   }
 
   & > h2 {
-    padding-top: 2.2rem;
-    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 1.3em;
   }
 
   & > h3 {
-    padding-top: 2.2rem;
-    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   & > p {
-    // margin: 1em 0 0 0;
+    margin: 1em 0 0 0;
     line-height: 1.9;
   }
 
