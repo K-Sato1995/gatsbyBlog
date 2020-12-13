@@ -52,13 +52,13 @@ disqus: true
 - [apollo-client](https://github.com/apollographql/apollo-client)
 - [spell_generator](https://github.com/K-Sato1995/spell_generator)
 - [react-toc](https://github.com/K-Sato1995/react-toc)
+- [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth)
 
 ## Documentations
 
 - [The Modern JavaScript Tutorial](https://github.com/javascript-tutorial/en.javascript.info/graphs/contributors)
 - [Docker Documentation](https://github.com/docker/docker.github.io)
 - [Rails Guide(JP)](https://github.com/yasslab/railsguides.jp)
-- [devise_token_auth](https://github.com/lynndylanhurley/devise_token_auth)
 
 # CERTIFICATIONS🏅
 
