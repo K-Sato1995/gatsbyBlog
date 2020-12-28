@@ -43,6 +43,7 @@ export const pageQuery = graphql`
     post: mdx(frontmatter: { slug: { eq: $slug } }) {
       excerpt
       body
+      rawBody
       frontmatter {
         title
         date

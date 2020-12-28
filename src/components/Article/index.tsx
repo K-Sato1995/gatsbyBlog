@@ -11,11 +11,13 @@ interface Props {
 }
 
 const Article = ({ post, title, slug }: Props) => {
+  console.log(post.rawBody)
   return (
     <ArticleContainer>
       <ArticleContent>
         <Content
           content={post.body}
+          rawBody={post.rawBody}
           date={post.frontmatter.date}
           tags={post.frontmatter.tags}
           title={title}
