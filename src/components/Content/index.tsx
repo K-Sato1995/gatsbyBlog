@@ -3,7 +3,7 @@ import ContentHeader from '../ContentHeader'
 import MDXRenderer from 'gatsby-plugin-mdx/mdx-renderer'
 import PostOutdatedWarning from '../PostOutdatedWarning'
 import { ContentBody } from './styles'
-import Toc from 'react-toc'
+import Toc from '../Toc'
 
 interface Props {
   content: string
