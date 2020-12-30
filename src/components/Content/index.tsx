@@ -9,6 +9,8 @@ interface Props {
   content: string
   rawBody: string
   date: Date
+  tags: string[]
+  title: string
 }
 
 const Content = ({ content, rawBody, date }: Props) => {
