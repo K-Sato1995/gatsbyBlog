@@ -36,10 +36,7 @@ const extractHeadingsFromMd = (
 }
 
 const removeCodeBlockFromMd = (markdownText: string): string => {
-  const codeBlockRegex = new RegExp(
-    '((````.+?````)|(```.+?```)|(~~~.+?~~~))\n',
-    'gms',
-  )
+  const codeBlockRegex = new RegExp('```[a-z]*\n[sS]*?\n```', 'gms')
   return markdownText.replace(codeBlockRegex, '')
 }
 
