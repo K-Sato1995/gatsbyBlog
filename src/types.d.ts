@@ -3,6 +3,7 @@ declare module 'gatsby-plugin-mdx/mdx-renderer'
 interface Post {
   excerpt?: string
   body: string
+  rawBody: string
   frontmatter: {
     title: string
     date: Date

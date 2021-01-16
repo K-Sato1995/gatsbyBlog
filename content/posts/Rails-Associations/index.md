@@ -369,7 +369,7 @@ user.pictures << picture.new({}) :該当ユーザーにコメントを関連づ�
 [
   {id: 1, name: "ss", imageable_id: 1, imageable_type: "Post"},
   {id: 2, name: "ss", imageable_id: 1, imageable_type: "User"}
-  ]
+]
 ```
 
 # References

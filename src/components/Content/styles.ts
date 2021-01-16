@@ -2,6 +2,47 @@ import styled from 'styled-components'
 import { colors } from '../../tokens'
 
 const ContentBody = styled.div`
+  .toc ul {
+    // list-style: none;
+    // margin: 0px;
+    // padding: 0px;
+  }
+  .toc > li,
+  .toc > ul > li,
+  .toc > ul > ul > li,
+  .toc > ul > ul > ul > li,
+  .toc > ul > ul > ul > ul > li,
+  .toc > ul > ul > ul > ul > ul > li {
+    margin-left: 35px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  .toc > li > a,
+  .toc > ul > li > a,
+  .toc > ul > ul > li > a,
+  .toc > ul > ul > ul > li > a,
+  .toc > ul > ul > ul > ul > li > a,
+  .toc > ul > ul > ul > ul > ul > li > a {
+    display: block;
+    padding: 4px 8px;
+    color: #85837a;
+    text-decoration: none;
+    line-height: 0.5;
+  }
+
+  .toc > li > a:hover,
+  .toc > ul > li > a:hover,
+  .toc > ul > ul > li > a:hover,
+  .toc > ul > ul > ul > li > a:hover,
+  .toc > ul > ul > ul > ul > li > a:hover,
+  .toc > ul > ul > ul > ul > ul > li > a:hover {
+    filter: brightness(150%);
+    box-shadow: none;
+  }
+
   line-height: 1.6;
   p {
     white-space: pre-line;
@@ -31,7 +72,7 @@ const ContentBody = styled.div`
   }
 
   & a {
-    color: #007db5;
+    color: #85837a;
     text-decoration: underline;
     &:hover {
       filter: brightness(150%);

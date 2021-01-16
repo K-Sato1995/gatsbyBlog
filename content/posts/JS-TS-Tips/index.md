@@ -397,3 +397,24 @@ var re = new RegExp(replace, 'g')
 If you need to use an expression like `/\/word\:\w*$/`, be sure to escape your backslashes: `new RegExp( '\\/word\\:\\w*$' )`.
 
 - [How do you use a variable in a regular expression?](https://stackoverflow.com/questions/494035/how-do-you-use-a-variable-in-a-regular-expression)
+
+
+# Swap elements in an array
+
+You can use object destructing.
+
+```ts
+[elements[0], elements[3]] = [elements[3], elements[0]];
+```
+
+or simply do this.
+
+```ts
+const swap = (i: number, j: number, arr: number[]) => {
+  const tmp = arr[j]
+  arr[j] = arr[i]
+  arr[i] = tmp
+}
+```
+
+- [Typescript swap array Items](https://stackoverflow.com/questions/40523934/typescript-swap-array-items)

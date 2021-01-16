@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SearchResults from './SearchResults'
 import { SearchInput, SearchIcon, SearchContainer } from './style'
-import { AiOutlineSearch } from 'react-icons/ai'
+// import { AiOutlineSearch } from 'react-icons/ai'
 
 const Search = () => {
   const [isFocused, setIsFocused] = useState(false)
