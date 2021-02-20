@@ -1,7 +1,7 @@
 ---
 title: 'Webフロントエンドハイパフォーマンスチューニング読書メモ'
 slug: front-high-peformance
-date: 2020-02-20
+date: 2021-02-20
 language: japanese
 category: Memo
 tags:
