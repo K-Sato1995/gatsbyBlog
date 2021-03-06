@@ -31,6 +31,7 @@ const PageContent = styled.div`
 const Page = (props: any) => {
   const page = props.data.page
 
+  const { body, rawBody } = page
   return (
     <Layout location={props.location}>
       <SEO
@@ -45,7 +46,11 @@ const Page = (props: any) => {
       <Wrapper>
         <Container>
           <PageContent>
-            <Content content={page.body} date={page.frontmatter.date} />
+            <Content
+              rawBody={rawBody}
+              content={body}
+              date={page.frontmatter.date}
+            />
           </PageContent>
         </Container>
       </Wrapper>
@@ -58,6 +63,7 @@ export const pageQuery = graphql`
     page: mdx(frontmatter: { slug: { eq: $slug } }) {
       body
       excerpt
+      rawBody
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

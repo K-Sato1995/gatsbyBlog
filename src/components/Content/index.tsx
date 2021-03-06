@@ -9,8 +9,12 @@ interface Props {
   content: string
   rawBody: string
   date: Date
-  tags: string[]
-  title: string
+}
+
+const tableOfContents = (body?: string) => {
+  if (body) return <h1>Table of Contents</h1>
+
+  return <></>
 }
 
 const Content = ({ content, rawBody, date }: Props) => {
@@ -18,7 +22,7 @@ const Content = ({ content, rawBody, date }: Props) => {
     <ContentBody>
       <ContentHeader date={date} />
       <PostOutdatedWarning date={date} />
-      <h1>Table of Contents</h1>
+      {tableOfContents(rawBody)}
       <Toc markdownText={rawBody} type={'raw'} className={'toc'} />
       <MDXRenderer>{content}</MDXRenderer>
     </ContentBody>
