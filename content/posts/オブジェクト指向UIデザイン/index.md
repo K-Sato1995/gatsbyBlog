@@ -1,5 +1,5 @@
 ---
-title: 'オブジェクト指向UIデザイン'
+title: 'オブジェクト指向UIデザイン読書メモ'
 slug: object-oriented-ui
 date: 2021-02-21
 language: japanese

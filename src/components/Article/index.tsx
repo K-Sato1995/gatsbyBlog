@@ -11,7 +11,6 @@ interface Props {
 }
 
 const Article = ({ post, title, slug }: Props) => {
-  console.log(post.rawBody)
   return (
     <ArticleContainer>
       <ArticleContent>
@@ -19,8 +18,6 @@ const Article = ({ post, title, slug }: Props) => {
           content={post.body}
           rawBody={post.rawBody}
           date={post.frontmatter.date}
-          tags={post.frontmatter.tags}
-          title={title}
         />
         <ArticleFooter>
           <Bio />
