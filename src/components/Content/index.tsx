@@ -18,12 +18,22 @@ const tableOfContents = (body?: string) => {
 }
 
 const Content = ({ content, rawBody, date }: Props) => {
+  const matchers = {
+    '[?!()/*]': '',
+    '`': 'code-clause',
+  }
   return (
     <ContentBody>
       <ContentHeader date={date} />
       <PostOutdatedWarning date={date} />
       {tableOfContents(rawBody)}
-      <Toc markdownText={rawBody} type={'raw'} className={'toc'} />
+      <Toc
+        markdownText={rawBody}
+        type={'raw'}
+        className={'toc'}
+        lowestHeadingLevel={3}
+        customMatchers={matchers}
+      />
       <MDXRenderer>{content}</MDXRenderer>
     </ContentBody>
   )
