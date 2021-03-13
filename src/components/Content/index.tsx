@@ -19,8 +19,7 @@ const tableOfContents = (body?: string) => {
 
 const Content = ({ content, rawBody, date }: Props) => {
   const matchers = {
-    '[?!()/*]': '',
-    '`': 'code-clause',
+    '[?!()/*~.,]': '',
   }
   return (
     <ContentBody>
