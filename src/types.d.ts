@@ -9,7 +9,6 @@ interface Post {
     date: Date
     slug: string
     language: string
-    tags: string[]
     pinned?: boolean
   }
 }
