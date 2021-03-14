@@ -6,7 +6,7 @@ slug: about
 disqus: true
 ---
 
-# Self Introduction🐶
+# Self Introduction
 
 People often find me outgoing, upbeat, self-motivated and some of my close friends find me a little goofy. I grew up in a very small and peaceful town and moved to a huge city for college.
 
@@ -16,31 +16,31 @@ Though what I learnt in college was academically very interesting, I didn't nece
 
 # Interests
 
-## Programming💻
+## Programming
 
 Love coding. Always eager to learn new things.
 
-## Baseball⚾️
+## Baseball
 
 Played baseball for 10 years. Don't really play it anymore but still love to watch games.
 
-## Dogs🐶
+## Dogs
 
 Love dogs. My family has a little shiba-inu.
 
-## Traveling🗺
+## Traveling
 
 Love to travel. Being able to experience other cultures is such a privilege and it definetly broadens my perspective of the world.
 
-## Languages🌍
+## Languages
 
 I like learning foreign languages. Being able to speak more than 3 different languages has always been my dream.
 
-## Movies🎥
+## Movies
 
 I like all kinds of movies. Especially into SF and Action movies.
 
-## Books📖
+## Books
 
 Haven't had a lot of time to read books lately. But I always liked reading novels and autobiographies.
 

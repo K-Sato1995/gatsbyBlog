@@ -24,13 +24,13 @@ module.exports = {
     'https://github.com/K-Sato1995/gatsbyBlog/edit/master/content/posts',
   headerLinks: [
     {
-      label: 'About',
+      label: 'About me',
       url: '/about',
     },
-    {
-      label: 'Experience',
-      url: '/experience',
-    },
+    // {
+    //   label: 'Experience',
+    //   url: '/experience',
+    // },
   ],
   websiteHost: {
     name: 'Netlify',
