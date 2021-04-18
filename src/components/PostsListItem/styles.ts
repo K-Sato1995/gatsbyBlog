@@ -24,48 +24,44 @@ const PostBox = styled(Link)`
     border: 1px solid rgba(136, 149, 162, 0.2);
     background-color: #fcfcfc;
   }
-  @media (max-width: 1023px) {
-    padding: 30px 20px;
-  }
 `
 
 const Collection = styled.div`
-  position: relative;
+  display: flex;
   min-height: 80px;
-  padding-left: 150px;
 
-  @media (max-width: 1023px) {
-    padding-left: 80px;
-    min-height: 80px;
+  @media (max-width: 480px) {
+    flex-direction: column;
   }
 `
 
 const CollectionLeft = styled.div`
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 120px;
-  height: 100%;
+  display: block;
+  width: 140px;
 
   @media (max-width: 1023px) {
     width: 60px;
     height: 60px;
   }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 `
 
 const CollectionRight = styled.div`
+  position: relative;
+  width: 100%;
   font-size: 16px;
   line-height: 1.6;
   color: #565867;
   font-weight: 400;
-`
+  margin-left: 30px;
 
-const CollectionTitle = styled.h2`
-  display: block;
-  margin: -5px 0 2px;
-  font-size: 18px;
-  line-height: 1.24;
-  font-weight: 400;
+  @media (max-width: 480px) {
+    margin-left: 0;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -79,6 +75,15 @@ const ImageContainer = styled.div`
   left: 50%;
   margin: -24px 0 0 -24px;
 `
+
+const CollectionTitle = styled.h2`
+  display: block;
+  margin: -5px 0 2px;
+  font-size: 18px;
+  line-height: 1.24;
+  font-weight: 400;
+`
+
 const CollectionDescription = styled.p`
   font-size: 16px;
   line-height: 1.6;

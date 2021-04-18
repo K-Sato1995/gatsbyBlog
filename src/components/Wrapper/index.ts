@@ -10,6 +10,11 @@ const Wrapper = styled.main.attrs({
   width: 100%;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media (max-width: 480px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 `
 
 export default Wrapper

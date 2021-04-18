@@ -20,6 +20,10 @@ const ArticleContent = styled.div`
   width: 100%;
   display: block;
   outline: none;
+
+  @media (max-width: 480px) {
+    padding: 20px;
+  }
 `
 
 const ArticleFooter = styled.footer`
