@@ -4,6 +4,10 @@ import { colors } from '../../tokens'
 const HeroContainer = styled.div`
   background-color: #1f232a;
   padding: 35px 40px 35px 40px;
+
+  @media (max-width: 480px) {
+    padding: 25px 20px;
+  }
 `
 const TitleContainer = styled.div`
   margin-left: auto;

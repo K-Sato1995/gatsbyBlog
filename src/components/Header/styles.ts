@@ -13,6 +13,11 @@ const HeaderWrapper = styled.header`
   font-weight: 700;
   padding-left: 40px;
   padding-right: 40px;
+
+  @media (max-width: 480px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `
 
 const HeaderNav = styled.nav`
