@@ -27,7 +27,7 @@ const ContentBody = styled.div`
   .toc > ul > ul > ul > ul > li > a,
   .toc > ul > ul > ul > ul > ul > li > a {
     display: block;
-    padding: 4px 8px;
+    padding: 4px 0px;
     color: #85837a;
     text-decoration: none;
     line-height: 0.5;
