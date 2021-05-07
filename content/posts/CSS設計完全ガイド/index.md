@@ -1,13 +1,13 @@
 ---
 title: 'CSS設計完全ガイド読書メモ'
 slug: css-structure-perfect-guide
-date: 2001-05-02
+date: 2021-05-02
 language: japanese
 category: Memo
 tags:
   - Peformance
 published: true
-description: 'CSS設計完全ガイドをを読んだのでその読書メモ'
+description: 'CSS設計完全ガイドを読んだのでその読書メモ'
 ---
 
 # CSS設計の基本と実践
